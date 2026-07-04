@@ -1689,6 +1689,9 @@ body {
     </div>
   </div>
 
+  <!-- PIPELINE COACHES (populated from veer-data.json coaches field) -->
+  <div id="pipelineCoachesWrap" style="display:none"></div>
+
   <!-- ECOSYSTEM UPDATES -->
   <div class="sec-header">ecosystem updates</div>
   <div class="card card-full">
@@ -3241,8 +3244,57 @@ async function loadPipelineData() {
     }
     PIPELINE_META = { generated: j.generated || null, loadedAt: new Date().toISOString() };
     localStorage.setItem('veer_pipeline_meta', JSON.stringify(PIPELINE_META));
+    if (j.coaches) renderPipelineCoaches(j.coaches, j.coaches_generated);
     return true;
   } catch { PIPELINE_META = null; return false; }
+}
+
+function renderPipelineCoaches(plan, generatedAt) {
+  const wrap = document.getElementById('pipelineCoachesWrap');
+  if (!wrap) return;
+  const ts = generatedAt ? new Date(generatedAt).toLocaleString('en-US', { weekday: 'short', hour: '2-digit', minute: '2-digit' }) : '';
+  const esc = s => String(s || '').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  let html = `<div class="sec-header">pipeline plan · updated from your notes · ${ts}</div>`;
+  html += `<div class="card card-full" style="border:1px solid var(--green);padding:16px">`;
+
+  if (plan.training_call) {
+    const col = plan.training_call.includes('Full Push') ? 'var(--green)' : plan.training_call.includes('Walk') ? 'var(--amber)' : plan.training_call.includes('Rest') ? 'var(--coral)' : 'var(--text)';
+    html += `<div style="font-size:18px;font-weight:800;color:${col};margin-bottom:4px">${esc(plan.training_call)}</div>`;
+    html += `<div style="font-size:12px;color:var(--muted);margin-bottom:14px">${esc(plan.training_reason)}</div>`;
+  }
+
+  if (plan.workout?.exercises?.length) {
+    html += `<div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:var(--slate);letter-spacing:.06em;margin-bottom:6px">${esc(plan.workout.type)}</div>`;
+    html += plan.workout.exercises.map(e => `<div style="font-size:13px;color:var(--text);padding:4px 0;border-bottom:1px solid var(--border)">${esc(e)}</div>`).join('');
+    if (plan.workout.notes) html += `<div style="font-size:11px;color:var(--amber);margin-top:6px">${esc(plan.workout.notes)}</div>`;
+    html += '<br>';
+  }
+
+  if (plan.nutrition?.meals?.length) {
+    html += `<div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:var(--slate);letter-spacing:.06em;margin-bottom:6px">NUTRITION · ${plan.nutrition.protein_target_g}g protein</div>`;
+    plan.nutrition.meals.forEach(m => {
+      html += `<div style="font-size:12px;font-weight:700;color:var(--text);margin-top:8px">${esc(m.name)}</div>`;
+      html += (m.items||[]).map(i => `<div style="font-size:12px;color:var(--muted);padding-left:10px">· ${esc(i)}</div>`).join('');
+    });
+    html += '<br>';
+  }
+
+  if (plan.flags?.length) {
+    html += `<div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:var(--slate);letter-spacing:.06em;margin-bottom:6px">FLAGS</div>`;
+    html += plan.flags.map(f => `<div style="font-size:12px;color:var(--coral);padding:3px 0">⚑ ${esc(f)}</div>`).join('');
+    html += '<br>';
+  }
+
+  if (plan.coach_notes) {
+    html += `<div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:var(--slate);letter-spacing:.06em;margin-bottom:6px">EXPERT COACHES</div>`;
+    Object.entries(plan.coach_notes).forEach(([k,v]) => {
+      html += `<div style="font-size:12px;color:var(--text);padding:4px 0"><span style="color:var(--amber);font-weight:700">${esc(k)}: </span>${esc(v)}</div>`;
+    });
+  }
+
+  html += '</div>';
+  wrap.innerHTML = html;
+  wrap.style.display = 'block';
 }
 let PIPELINE_TODAY = null;
 
