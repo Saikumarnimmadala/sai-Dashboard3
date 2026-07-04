@@ -75,69 +75,100 @@
     }
   ],
   "coaches": {
-    "training_call": "Full Rest",
-    "training_reason": "Body battery peaked at 59 (below-60 walk-only threshold) and user explicitly designated today as a rest day \u00e2\u20ac\u201d both signals independently point to rest.",
+    "training_call": "Walk Only",
+    "training_reason": "Body Battery peaked at 59 \u00e2\u20ac\u201d below the 60 threshold (walk only, no gym) \u00e2\u20ac\u201d and user has explicitly designated today as a rest day; both signals align.",
     "workout": {
-      "type": "Rest",
-      "exercises": [],
-      "notes": "Full rest today as planned. Week adjusted for Monday Waves Utah hike: Mon = Hike (replaces Upper Body), Tue = Lower Body, Wed = Walk or rest (hike recovery), Thu = Upper Body, Fri = Lower Body, Sat = Rest."
+      "type": "Walk",
+      "exercises": [
+        "Easy flat walk \u00e2\u20ac\u201d 20\u00e2\u20ac\u201c30 min, HR under 110 bpm"
+      ],
+      "notes": "User-confirmed rest day. BB peak 59 rules out any gym work regardless. No incline, no hiking intensity \u00e2\u20ac\u201d full leg preservation ahead of Monday's Waves Utah hike. After-meal 10-min walks count toward today's movement quota."
     },
     "nutrition": {
-      "protein_target_g": 160,
+      "protein_target_g": 135,
       "meals": [
         {
           "name": "Breakfast",
           "items": [
-            "Eggs \u00e2\u20ac\u201d 3 whole",
-            "Greek yogurt (plain, full-fat) \u00e2\u20ac\u201d 1 cup (170g)",
-            "Berries \u00e2\u20ac\u201d \u00c2\u00bd cup"
+            "ACV \u00e2\u20ac\u201d 1 tbsp in water (before everything)",
+            "Goat bone broth + lemon \u00e2\u20ac\u201d 240ml warm",
+            "Whole eggs \u00e2\u20ac\u201d 2 (rest day)",
+            "Sprouted oats \u00e2\u20ac\u201d 35g (rest day, overnight prep)",
+            "Isopure whey \u00e2\u20ac\u201d 1 scoop (overnight prep)",
+            "Collagen \u00e2\u20ac\u201d 1\u00e2\u20ac\u201c2 scoops (overnight prep)",
+            "Almond milk \u00e2\u20ac\u201d 200ml (overnight prep)",
+            "Egg whites \u00e2\u20ac\u201d 6 tbsp (overnight prep)",
+            "Frozen berries \u00e2\u20ac\u201d 220g (overnight prep)",
+            "Cranberries \u00e2\u20ac\u201d 20g (overnight prep)",
+            "Chia seeds \u00e2\u20ac\u201d 10g (overnight prep)",
+            "Walnuts \u00e2\u20ac\u201d 15g (overnight prep)",
+            "Pumpkin seeds \u00e2\u20ac\u201d 10g (overnight prep)",
+            "Brazil nut \u00e2\u20ac\u201d 1 whole (add fresh this morning only)",
+            "Bee pollen \u00e2\u20ac\u201d 5g (add fresh this morning only)",
+            "Broccoli microgreens \u00e2\u20ac\u201d 1 tbsp raw (add fresh this morning only, last moment)",
+            "Kefir \u00e2\u20ac\u201d 100ml (after bowl)",
+            "10-min walk after"
           ]
         },
         {
           "name": "Lunch",
           "items": [
-            "Chicken breast \u00e2\u20ac\u201d 6 oz (170g)",
-            "Brown rice \u00e2\u20ac\u201d \u00c2\u00bd cup cooked",
-            "Mixed vegetables \u00e2\u20ac\u201d 1 cup"
+            "ACV \u00e2\u20ac\u201d 1 tbsp in water (before meal)",
+            "Mixed greens or cucumber slices \u00e2\u20ac\u201d eat first",
+            "Egg whites \u00e2\u20ac\u201d 8 tbsp cooked (protein anchor)",
+            "Garbanzo beans \u00e2\u20ac\u201d 80g cooked (Friday legume, fiber side \u00e2\u20ac\u201d verify Thu-night soak happened)",
+            "Avocado \u00e2\u20ac\u201d 50g or olive oil 1 tbsp drizzle (fats, after protein)",
+            "Kimchi \u00e2\u20ac\u201d 2 tbsp cold, eaten last",
+            "Broccoli microgreens \u00e2\u20ac\u201d 1 tsp raw, on top, last moment",
+            "10-min walk after"
           ]
         },
         {
           "name": "Dinner",
           "items": [
-            "Salmon or lean protein \u00e2\u20ac\u201d 6 oz (170g)",
-            "Sweet potato \u00e2\u20ac\u201d 1 medium",
-            "Leafy greens salad \u00e2\u20ac\u201d 2 cups with olive oil dressing"
+            "Psyllium husk \u00e2\u20ac\u201d 5g in warm water before meal (drink within 60 sec)",
+            "ACV \u00e2\u20ac\u201d 1 tbsp in water (before meal)",
+            "Microgreens or leafy greens \u00e2\u20ac\u201d eat first",
+            "Chicken breast \u00e2\u20ac\u201d 150g (primary protein, Friday rotation)",
+            "Sardines \u00e2\u20ac\u201d half tin (secondary protein, Friday rotation)",
+            "Garbanzo beans \u00e2\u20ac\u201d 80g cooked (remaining Friday legume portion)",
+            "Olive oil \u00e2\u20ac\u201d 1 tbsp drizzle (fats, after protein)",
+            "Kimchi \u00e2\u20ac\u201d 2 tbsp cold, eaten last",
+            "Broccoli microgreens \u00e2\u20ac\u201d 1 tsp raw, on top, last moment",
+            "10-min walk after"
           ]
         }
       ],
-      "notes": "Rest day \u00e2\u20ac\u201d hold full protein target (160g). Slightly lower total calories acceptable. Prioritize anti-inflammatory foods (salmon, olive oil, berries) to prep tissues for Monday's demanding Waves hike."
+      "notes": "Rest day target 130\u00e2\u20ac\u201c140g protein. Garbanzo beans should have been soaked Thursday night \u00e2\u20ac\u201d if missed, use canned (well-rinsed) as backup. Chicken + sardines is Friday's locked dinner rotation. Kimchi always cold, always last. Microgreens always raw, always on top at the last moment."
     },
     "supplements": [
       {
-        "time": "Morning",
-        "items": "Creatine 5g \u00e2\u20ac\u201d NO biotin today (Friday = skip day). NO fisetin (Jul 3 is not a dose day \u00e2\u20ac\u201d next doses Aug 1\u00e2\u20ac\u201c2)."
+        "time": "Morning with breakfast",
+        "items": "Creatine 5g | D3+K2 (Solaray) 5000 IU | Omega-3 (Nordic Naturals) 2 caps | Beef Liver 1 cap (rest day dose) | B12 sublingual 5000mcg \u00e2\u20ac\u201d hold 30 sec under tongue | CoQ10 Ubiquinol 100mg | SKIP Biotin (Friday = off day) | SKIP Fisetin (July 4 \u00e2\u20ac\u201d only 1st and 2nd of month) | Probiotic (Garden of Life 50B) \u00e2\u20ac\u201d separate, empty stomach, before breakfast or before bed"
       },
       {
         "time": "With dinner",
-        "items": "Fish oil, Vitamin D"
+        "items": "Zinc Picolinate (Solgar) 22mg | Thorne Copper 2mg \u00e2\u20ac\u201d always together, never separate"
       },
       {
         "time": "9:30pm",
-        "items": "Magnesium glycinate"
+        "items": "Magnesium Glycinate (Jarrow) 240mg | Tart Cherry Juice 60ml (not 8oz) | KSM-66 600mg"
       }
     ],
     "flags": [
-      "Body battery started at 16 and only peaked at 59 \u00e2\u20ac\u201d below walk-only threshold; rest is the correct call independent of user's rest-day designation.",
-      "Sleep only 6.1h (score 59) \u00e2\u20ac\u201d prioritize 7.5\u00e2\u20ac\u201c8h tonight and Saturday night; sleep debt going into Waves Utah hike increases injury and exhaustion risk significantly.",
-      "Monday Waves Utah hike overrides standard Upper Body session \u00e2\u20ac\u201d adjusted split: Mon=Hike, Tue=Lower Body, Wed=Walk/Rest (hike recovery), Thu=Upper Body, Fri=Lower Body.",
-      "No biotin today (Friday = skip). No fisetin (Jul 3 = not a dose day)."
+      "CRITICAL \u00e2\u20ac\u201d PULMONOLOGIST: Referral submitted Jun 1 (33 days ago), still unscheduled. Call MDLive / Dr. Chavez's office today. Get pulmonologist name + direct number. Standing #1 action item.",
+      "WAVES UTAH MONDAY: Treat Saturday and Sunday as full recovery days \u00e2\u20ac\u201d no gym, no strenuous activity. Goal is to arrive Monday with BB 75+ and TR recovered.",
+      "SLEEP DEBT: BB started at 16, peaked at 59. Lights out 10:30pm tonight \u00e2\u20ac\u201d full protocol (nose strip, mouth tape, O2Ring thumb, earplugs). Two consecutive recovery nights before The Waves is the highest-leverage prep you can do.",
+      "GARBANZO SOAK: Should have soaked Thu night. Verify \u00e2\u20ac\u201d if not, use canned rinsed as today's backup.",
+      "FISETIN JULY: Window closed (only Jul 1\u00e2\u20ac\u201c2). Confirm with Veer whether both doses were taken \u00e2\u20ac\u201d update MEMORY.md.",
+      "O2RING: Jul 1 and Jul 2 night PDFs still pending \u00e2\u20ac\u201d drop to OneDrive/GarminBriefs/O2Ring/ if available."
     ],
     "coach_notes": {
-      "recovery": "Body battery starting at 16 and peaking at 59 tells us overnight recovery was shallow \u00e2\u20ac\u201d today's rest is non-negotiable and Saturday should stay low-intensity to arrive at Waves Utah with a full tank.",
-      "longevity": "The Waves Utah hike is a high-demand event; use the next two days to maximize glycogen repletion, hydration, and tissue repair \u00e2\u20ac\u201d this is your pre-event taper window.",
-      "sleep": "6.1 hours last night is insufficient; aim for 7.5\u00e2\u20ac\u201c8 hours tonight and Saturday, no screens after 9 PM, to begin rebuilding sleep debt before Monday's hike.",
-      "hormones": "A body battery floor of 16 suggests elevated overnight cortisol \u00e2\u20ac\u201d protect the rest of today from stress spikes (no intense mental load late evening) to let the adrenal axis reset before a big output day Monday."
+      "recovery": "Body Battery starting at 16 and peaking at only 59 tells you you're still in a cumulative deficit \u00e2\u20ac\u201d today's rest call is correct, and the single most important thing you can do for Monday's Waves hike is to not undermine Saturday and Sunday recovery.",
+      "longevity": "Rest days are when muscle protein synthesis peaks, not training days \u00e2\u20ac\u201d treat 130\u00e2\u20ac\u201c140g protein on a rest day as non-negotiable, and let the garbanzo fiber plus bone broth do connective-tissue and microbiome work while you recover.",
+      "sleep": "6.1h at a score of 59 extends a pattern; your O2Ring data shows SpO2 dropping to 82\u00e2\u20ac\u201c83% on recent nights, and the pulmonologist call is not optional \u00e2\u20ac\u201d two full-protocol sleep nights now before a high-exertion desert hike is the minimum safe prep.",
+      "hormones": "RHR 54 and Balanced HRV are genuine green signals \u00e2\u20ac\u201d the limiting variable compressing your recovery is short sleep duration, not stress load; magnesium glycinate and tart cherry at 9:30pm are non-negotiable tonight."
     }
   },
-  "coaches_generated": "2026-07-03T19:21:11.199006-07:00"
+  "coaches_generated": "2026-07-04T07:47:22.420820-07:00"
 }
