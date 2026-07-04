@@ -1,0 +1,3403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Veer's OS</title>
+<link rel="manifest" href="manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Veer OS">
+<meta name="theme-color" content="#0A0E1A">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --navy: #0A0E1A;
+  --navy-2: #12172A;
+  --navy-3: #1A2035;
+  --amber: #E8A23D;
+  --amber-dim: rgba(232,162,61,0.15);
+  --green: #7BA88C;
+  --green-dim: rgba(123,168,140,0.15);
+  --coral: #C2614A;
+  --coral-dim: rgba(194,97,74,0.15);
+  --slate: #5B6573;
+  --muted: #8A95A3;
+  --border: rgba(255,255,255,0.07);
+  --text: #E8E6E1;
+  --text-dim: #9AA3AC;
+  --shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--navy);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100vh;
+  padding: 0 0 60px;
+}
+
+/* ── TOP BAR ── */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.topbar-name {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+.topbar-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--muted);
+}
+.topbar-day {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--slate);
+}
+
+/* ── HERO ── */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 20px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.arc-wrap { position: relative; width: 220px; height: 220px; }
+.arc-wrap svg { position: absolute; top: 0; left: 0; transform: rotate(-90deg); }
+.arc-center {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.arc-score {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  line-height: 1;
+  font-family: 'Inter', sans-serif;
+}
+.arc-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+.arc-sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 10px;
+}
+.arc-legend {
+  display: flex;
+  gap: 18px;
+  margin-top: 14px;
+}
+.arc-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+.arc-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ── JOURNEY HERO BAND ── */
+.journey-band {
+  background: var(--navy-3);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.journey-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.journey-stat-value {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--amber);
+  font-family: 'Inter', sans-serif;
+}
+.journey-stat-label {
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-family: 'JetBrains Mono', monospace;
+}
+.journey-divider {
+  width: 1px;
+  height: 36px;
+  background: var(--border);
+}
+
+/* ── KPI GRID ── */
+.section { max-width: 900px; margin: 0 auto; padding: 20px 16px 0; }
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+@media (max-width: 600px) { .kpi-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.kpi-card {
+  background: var(--navy-2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  position: relative;
+  overflow: hidden;
+}
+.kpi-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  border-radius: 14px 14px 0 0;
+}
+.kpi-card.amber::before { background: var(--amber); }
+.kpi-card.green::before { background: var(--green); }
+.kpi-card.coral::before { background: var(--coral); }
+.kpi-card.slate::before { background: var(--slate); }
+
+.kpi-label {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+.kpi-value {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 6px;
+  line-height: 1;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.02em;
+}
+.kpi-unit {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  margin-left: 2px;
+}
+.kpi-delta {
+  font-size: 11px;
+  margin-top: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+}
+.kpi-delta.up { color: var(--green); }
+.kpi-delta.down { color: var(--coral); }
+.kpi-delta.flat { color: var(--muted); }
+.kpi-status {
+  font-size: 10px;
+  margin-top: 4px;
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ── SECTION HEADER ── */
+.sec-header {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--slate);
+  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: 10px;
+  margin-top: 24px;
+  padding: 0 4px;
+}
+
+/* ── CARD GRID ── */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+@media (max-width: 600px) { .card-grid { grid-template-columns: 1fr; } }
+.card-full { grid-column: 1 / -1; }
+
+.card {
+  background: var(--navy-2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+}
+.card-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: 12px;
+}
+
+/* ── CONTRIBUTOR ROWS (Oura style) ── */
+.contributors { display: flex; flex-direction: column; gap: 10px; }
+.contrib-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.contrib-name {
+  font-size: 13px;
+  color: var(--text-dim);
+  min-width: 120px;
+  flex-shrink: 0;
+}
+.contrib-bar-wrap {
+  flex: 1;
+  height: 4px;
+  background: var(--navy-3);
+  border-radius: 99px;
+  overflow: hidden;
+}
+.contrib-bar {
+  height: 100%;
+  border-radius: 99px;
+  transition: width 0.8s ease;
+}
+.contrib-val {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 32px;
+  text-align: right;
+}
+.contrib-tag {
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 99px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  min-width: 80px;
+  text-align: center;
+}
+.tag-good { background: var(--green-dim); color: var(--green); }
+.tag-warn { background: var(--amber-dim); color: var(--amber); }
+.tag-alert { background: var(--coral-dim); color: var(--coral); }
+.tag-muted { background: rgba(91,101,115,0.2); color: var(--muted); }
+
+/* ── HRV STREAK (Garmin-style status) ── */
+.hrv-status-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.hrv-badge {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 99px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.hrv-badge.unbalanced { background: var(--coral-dim); color: var(--coral); }
+.hrv-badge.balanced { background: var(--green-dim); color: var(--green); }
+.hrv-streak {
+  font-size: 12px;
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ── TRAINING CALL CARD (Hume-style grade) ── */
+.training-call {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+.call-grade {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  font-family: 'Inter', sans-serif;
+  line-height: 1;
+}
+.call-grade.rest { color: var(--green); }
+.call-grade.easy { color: var(--amber); }
+.call-grade.normal { color: var(--amber); }
+.call-grade.hard { color: var(--coral); }
+.call-body { flex: 1; }
+.call-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.call-reason {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* ── OSA DISCOVERY PANEL ── */
+.osa-panel {
+  background: linear-gradient(135deg, rgba(232,162,61,0.06), rgba(123,168,140,0.06));
+  border: 1px solid rgba(232,162,61,0.2);
+  border-radius: 14px;
+  padding: 16px;
+}
+.osa-label {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--amber);
+  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: 10px;
+}
+.osa-scores {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.osa-score-block { text-align: center; }
+.osa-score-num {
+  font-size: 36px;
+  font-weight: 800;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.osa-score-num.good { color: var(--green); }
+.osa-score-num.bad { color: var(--coral); }
+.osa-score-sub {
+  font-size: 10px;
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+  margin-top: 3px;
+}
+.osa-vs {
+  font-size: 20px;
+  color: var(--navy-3);
+  font-weight: 700;
+}
+.osa-insight {
+  font-size: 12px;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+/* ── CHART BOX ── */
+.chart-box { height: 160px; position: relative; }
+
+/* ── WEIGHT JOURNEY MINI ── */
+.weight-range {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+.weight-start { font-size: 13px; color: var(--muted); font-family: 'JetBrains Mono', monospace; }
+.weight-now { font-size: 18px; font-weight: 700; color: var(--amber); font-family: 'Inter', sans-serif; }
+.weight-lost { font-size: 12px; color: var(--green); font-family: 'JetBrains Mono', monospace; }
+
+/* ── SESSIONS LIST (Garmin style) ── */
+.sessions { list-style: none; }
+.session-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+.session-item:last-child { border-bottom: none; }
+.session-day {
+  width: 36px;
+  font-weight: 700;
+  color: var(--amber);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+.session-text { color: var(--text-dim); flex: 1; }
+.session-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ── SKILL BUTTONS ── */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.skill-btn {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 99px;
+  border: 1px solid var(--amber);
+  background: transparent;
+  color: var(--amber);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  letter-spacing: 0.02em;
+}
+.skill-btn:hover { background: var(--amber); color: var(--navy); }
+.skill-btn.secondary {
+  border-color: var(--border);
+  color: var(--muted);
+}
+.skill-btn.secondary:hover { background: var(--navy-3); color: var(--text); }
+
+/* ── TOAST ── */
+#toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(12px);
+  background: var(--navy-3);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-family: 'JetBrains Mono', monospace;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+  white-space: nowrap;
+  box-shadow: var(--shadow);
+}
+#toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* ── CONNECTING THE DOTS ── */
+.dots-chain { display: flex; flex-direction: column; gap: 0; }
+.dot-node { display: flex; gap: 14px; align-items: flex-start; }
+.dot-icon {
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  flex-shrink: 0;
+}
+.dot-body { flex: 1; padding-bottom: 16px; }
+.dot-title {
+  font-size: 13px; font-weight: 700;
+  color: var(--text); margin-bottom: 6px;
+}
+.dot-detail {
+  font-size: 12px; color: var(--muted);
+  line-height: 1.6;
+}
+.dot-connector {
+  width: 40px; height: 24px; flex-shrink: 0;
+  background: linear-gradient(to bottom, var(--border), var(--border));
+  background-size: 1px 100%;
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  margin-left: 0;
+}
+.movement-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+.movement-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.movement-label {
+  font-size: 11px;
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+.movement-bar-wrap {
+  height: 6px;
+  background: var(--navy-3);
+  border-radius: 99px;
+  overflow: hidden;
+}
+.movement-bar { height: 100%; border-radius: 99px; }
+.movement-score {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text);
+}
+.movement-flag {
+  font-size: 10px;
+  color: var(--coral);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* ── BOTTOM NAV ── */
+.bottom-nav {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  height: 60px;
+  background: rgba(10,14,26,0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid var(--border);
+  display: flex;
+  z-index: 100;
+}
+.nav-tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--slate);
+  font-size: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: color 0.15s;
+  padding: 0;
+}
+.nav-tab.active { color: var(--amber); }
+.nav-tab svg { width: 20px; height: 20px; }
+
+/* ── SCREEN MANAGEMENT ── */
+.screen { display: none; }
+.screen.active { display: block; }
+#screen-dashboard { padding-bottom: 80px; }
+
+/* ── BRIEF SCREEN ── */
+#screen-brief {
+  padding: 20px 20px 80px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.brief-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.brief-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+}
+.brief-date {
+  font-size: 11px;
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+.brief-content {
+  background: var(--navy-2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-dim);
+  white-space: pre-wrap;
+  font-family: 'Inter', sans-serif;
+  min-height: 200px;
+}
+.brief-content h1, .brief-content h2 { color: var(--amber); font-size: 14px; margin: 16px 0 8px; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.06em; text-transform: uppercase; }
+.brief-content strong { color: var(--text); }
+.brief-content table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 12px; }
+.brief-content td, .brief-content th { padding: 6px 8px; border-bottom: 1px solid var(--border); text-align: left; }
+.brief-content th { color: var(--muted); font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; }
+.brief-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--slate);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  line-height: 2;
+}
+
+/* ── GENERATE SCREEN ── */
+#screen-generate {
+  padding: 20px 20px 80px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.gen-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 32px;
+  text-align: center;
+}
+.gen-ring-wrap { position: relative; width: 160px; height: 160px; margin-bottom: 24px; }
+.gen-ring-wrap svg { position: absolute; top: 0; left: 0; }
+.gen-ring-center {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 13px;
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+  text-align: center;
+  line-height: 1.5;
+}
+.gen-btn {
+  width: 100%;
+  max-width: 340px;
+  padding: 16px;
+  border-radius: 14px;
+  border: none;
+  background: var(--amber);
+  color: var(--navy);
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+  letter-spacing: 0.02em;
+}
+.gen-btn:hover { background: #f0b347; }
+.gen-btn:active { transform: scale(0.98); }
+.gen-btn:disabled { background: var(--slate); cursor: not-allowed; color: var(--navy-3); }
+.gen-btn.generating {
+  background: var(--navy-3);
+  color: var(--amber);
+  border: 1px solid var(--amber);
+  animation: pulse-border 1.5s ease-in-out infinite;
+}
+@keyframes pulse-border {
+  0%, 100% { border-color: var(--amber); box-shadow: 0 0 0 0 rgba(232,162,61,0); }
+  50% { border-color: var(--amber); box-shadow: 0 0 0 6px rgba(232,162,61,0.15); }
+}
+.gen-output {
+  margin-top: 24px;
+  background: var(--navy-2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-dim);
+  white-space: pre-wrap;
+  min-height: 100px;
+  font-family: 'Inter', sans-serif;
+  display: none;
+}
+.gen-output.visible { display: block; }
+.gen-status {
+  font-size: 11px;
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+  margin-top: 12px;
+  text-align: center;
+  min-height: 18px;
+}
+
+/* ── SETTINGS SCREEN ── */
+#screen-settings {
+  padding: 20px 20px 80px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.settings-section { margin-bottom: 28px; }
+.settings-label {
+  font-size: 11px;
+  color: var(--slate);
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+.settings-card {
+  background: var(--navy-2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+}
+.api-input-wrap { display: flex; gap: 8px; align-items: center; }
+.api-input {
+  flex: 1;
+  background: var(--navy-3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: var(--text);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  outline: none;
+}
+.api-input:focus { border-color: var(--amber); }
+.api-input::placeholder { color: var(--slate); }
+.api-save-btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: var(--amber);
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 12px;
+  font-family: 'JetBrains Mono', monospace;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.api-status {
+  font-size: 11px;
+  margin-top: 8px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.api-status.saved { color: var(--green); }
+.api-status.missing { color: var(--coral); }
+.settings-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+.settings-row:last-child { border-bottom: none; }
+.settings-row-label { color: var(--text-dim); }
+.settings-row-val {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--muted);
+}
+.clear-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--coral);
+  background: transparent;
+  color: var(--coral);
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'JetBrains Mono', monospace;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.15s;
+}
+.clear-btn:hover { background: var(--coral-dim); }
+
+/* ── MEAL PLAN ── */
+.meal-step {
+  font-size: 12px;
+  color: var(--text-dim);
+  padding: 5px 0;
+  border-bottom: 1px solid var(--border);
+  font-family: 'JetBrains Mono', monospace;
+  line-height: 1.4;
+}
+.meal-step:last-child { border-bottom: none; }
+.meal-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 5px 0;
+  border-bottom: 1px solid var(--border);
+}
+.meal-row:last-child { border-bottom: none; }
+.meal-item { font-size: 12px; color: var(--text-dim); flex: 1; }
+.meal-qty { font-size: 12px; font-weight: 600; color: var(--text); font-family: 'JetBrains Mono', monospace; white-space: nowrap; }
+.meal-note { font-size: 10px; color: var(--slate); font-family: 'JetBrains Mono', monospace; white-space: nowrap; }
+
+/* ── SUPPLEMENTS ── */
+.supp-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--border);
+}
+.supp-row:last-child { border-bottom: none; }
+.supp-name { font-size: 12px; color: var(--text-dim); }
+.supp-dose { font-size: 11px; color: var(--muted); font-family: 'JetBrains Mono', monospace; }
+
+/* ── ACTIVITY PANEL ── */
+.activity-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+.activity-tab {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 99px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.activity-tab.active {
+  background: var(--amber-dim);
+  border-color: var(--amber);
+  color: var(--amber);
+}
+.activity-tab:hover:not(.active) { color: var(--text-dim); border-color: var(--text-dim); }
+
+.rest-state {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 8px 0;
+}
+.rest-icon {
+  font-size: 32px;
+  color: var(--green);
+  flex-shrink: 0;
+  line-height: 1;
+}
+.rest-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.rest-reason {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.rest-allowed {
+  font-size: 12px;
+  color: var(--text-dim);
+}
+.rest-allowed-label {
+  color: var(--green);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  margin-right: 6px;
+}
+
+.ex-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 -4px;
+}
+.ex-table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.ex-table th {
+  text-align: left;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0 8px 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.ex-table td {
+  padding: 9px 8px 9px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-dim);
+}
+.ex-table tr:last-child td { border-bottom: none; }
+.ex-num {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--slate);
+  font-size: 11px;
+}
+.ex-name { color: var(--text); font-weight: 500; }
+.ex-name .ex-altname {
+  display: block;
+  font-size: 10px;
+  color: var(--slate);
+  font-weight: 400;
+  margin-top: 1px;
+}
+.ex-weight {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  color: var(--amber);
+}
+.ex-tag {
+  font-size: 9px;
+  padding: 2px 7px;
+  border-radius: 99px;
+  font-family: 'JetBrains Mono', monospace;
+  white-space: nowrap;
+}
+.corrective-note {
+  margin-top: 14px;
+  padding: 10px 12px;
+  background: var(--navy-3);
+  border-radius: 8px;
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.6;
+  border-left: 2px solid var(--amber);
+}
+</style>
+</head>
+<body>
+<div id="screen-dashboard" class="screen active">
+<!-- ── EXISTING DASHBOARD STARTS ── -->
+
+<!-- ── TOP BAR ── -->
+<div class="topbar">
+  <span class="topbar-name">Veer's OS</span>
+  <div style="text-align:right">
+    <div class="topbar-date" id="dateStr"></div>
+    <div class="topbar-day" id="dayCount"></div>
+    <button id="refreshBtn" onclick="generatePlan(true)" title="Regenerate today's plan from latest data" style="background:var(--navy-3);border:1px solid var(--amber);border-radius:8px;color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;padding:6px 12px;cursor:pointer">⟳ refresh plan</button>
+  </div>
+</div>
+
+<!-- ── HERO: READINESS RING ── -->
+<div class="hero">
+  <div class="arc-wrap">
+    <svg width="220" height="220" viewBox="0 0 220 220">
+      <!-- outer track -->
+      <circle cx="110" cy="110" r="96" fill="none" stroke="#1A2035" stroke-width="14"/>
+      <!-- outer arc: readiness -->
+      <circle cx="110" cy="110" r="96" fill="none"
+        stroke="#E8A23D" stroke-width="14" stroke-linecap="round"
+        stroke-dasharray="0 603"
+        id="arcOuter"/>
+      <!-- inner track -->
+      <circle cx="110" cy="110" r="76" fill="none" stroke="#1A2035" stroke-width="10"/>
+      <!-- inner arc: O2Ring score -->
+      <circle cx="110" cy="110" r="76" fill="none"
+        stroke="#7BA88C" stroke-width="10" stroke-linecap="round"
+        stroke-dasharray="0 478"
+        id="arcInner"/>
+    </svg>
+    <div class="arc-center">
+      <div class="arc-score" id="heroScore">72</div>
+      <div class="arc-label" id="heroLabel" style="color:var(--amber)">Moderate</div>
+      <div class="arc-sub" id="heroSub">readiness</div>
+    </div>
+  </div>
+  <div class="arc-legend">
+    <div class="arc-legend-item">
+      <div class="arc-dot" style="background:var(--amber)"></div>
+      readiness
+    </div>
+    <div class="arc-legend-item">
+      <div class="arc-dot" style="background:var(--green)"></div>
+      O2 score
+    </div>
+  </div>
+</div>
+
+<!-- ── JOURNEY BAND ── -->
+<div class="journey-band">
+  <div class="journey-stat">
+    <div class="journey-stat-value" id="jLost">43.6</div>
+    <div class="journey-stat-label">lbs lost</div>
+  </div>
+  <div class="journey-divider"></div>
+  <div class="journey-stat">
+    <div class="journey-stat-value" id="jRange">216.4→172.1</div>
+    <div class="journey-stat-label">feb 9 → today</div>
+  </div>
+  <div class="journey-divider"></div>
+  <div class="journey-stat">
+    <div class="journey-stat-value" id="jDays">140</div>
+    <div class="journey-stat-label">days in ecosystem</div>
+  </div>
+  <div class="journey-divider"></div>
+  <div class="journey-stat">
+    <div class="journey-stat-value">172–175</div>
+    <div class="journey-stat-label">target band</div>
+  </div>
+</div>
+
+<!-- ── MAIN CONTENT ── -->
+<div class="section">
+
+  <!-- KPI ROW -->
+  <div class="sec-header">today at a glance</div>
+  <div class="kpi-grid">
+    <div class="kpi-card amber">
+      <div class="kpi-label">Body Battery</div>
+      <div class="kpi-value"><span id="kpiBB">90</span><span class="kpi-unit">/100</span></div>
+      <div class="kpi-delta up">▲ high</div>
+      <div class="kpi-status">+56 charged</div>
+    </div>
+    <div class="kpi-card coral">
+      <div class="kpi-label">HRV 7d avg</div>
+      <div class="kpi-value"><span id="kpiHRV">71</span><span class="kpi-unit">ms</span></div>
+      <div class="kpi-delta down">day 6 unbalanced</div>
+      <div class="kpi-status">overnight 76ms</div>
+    </div>
+    <div class="kpi-card green">
+      <div class="kpi-label">Acute Load</div>
+      <div class="kpi-value"><span id="kpiAL">308</span><span class="kpi-unit"></span></div>
+      <div class="kpi-delta down">▼ low — risk detraining</div>
+      <div class="kpi-status">was 748 peak</div>
+    </div>
+    <div class="kpi-card slate">
+      <div class="kpi-label">Weight</div>
+      <div class="kpi-value"><span id="kpiWeight">172.1</span><span class="kpi-unit">lb</span></div>
+      <div class="kpi-delta up">✓ in target band</div>
+      <div class="kpi-status">172–175 goal</div>
+    </div>
+  </div>
+
+  <!-- TRAINING CALL -->
+  <div class="sec-header">training call</div>
+  <div class="card card-full">
+    <div class="hrv-status-block">
+      <div class="hrv-badge unbalanced">HRV Unbalanced</div>
+      <div class="hrv-streak">day 6 of 6 consecutive mornings</div>
+    </div>
+    <div class="training-call">
+      <div class="call-grade rest">REST</div>
+      <div class="call-body">
+        <div class="call-label">Light movement only today</div>
+        <div class="call-reason">HRV has been Unbalanced for 6 consecutive mornings — this overrides Body Battery 90 and Training Readiness 72. Per the locked rule: actively avoid adding aerobic or strength load until HRV returns to Balanced for at least one full day. Acute Load at 308 is also now "Low" with a detraining risk flag — but HRV is the stricter constraint right now.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOG TODAY'S NUMBERS -->
+  <div id="bioLogWrap"></div>
+
+  <!-- LIVE PLAN (AI-generated, structured) -->
+  <div id="livePlanWrap"></div>
+
+  <!-- WORKOUT ACTIVITY PANEL -->
+  <div class="sec-header" id="sessionHeader">today's session · thursday july 2 · upper body</div>
+  <div class="card card-full">
+    <div class="activity-tabs">
+      <button class="activity-tab active" data-tab="today">Upper Body — Today</button>
+      <button class="activity-tab" data-tab="next">Lower Body — Next</button>
+    </div>
+
+    <!-- TODAY: UPPER BODY -->
+    <div class="activity-panel" id="panel-today">
+      <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;align-items:center">
+        <div class="contrib-tag tag-good" style="font-size:11px;padding:4px 10px">HRV Balanced</div>
+        <div class="contrib-tag tag-good" style="font-size:11px;padding:4px 10px">TR 78 — High</div>
+        <div class="contrib-tag tag-warn" style="font-size:11px;padding:4px 10px">BB 81 — normal weights</div>
+        <div style="font-size:11px;color:var(--muted);font-family:'JetBrains Mono',monospace;margin-left:auto">warmup: 5–7min treadmill · incline 4–5 · speed 2.8–3.0</div>
+      </div>
+
+      <div class="ex-table-wrap">
+      <table class="ex-table">
+        <thead>
+          <tr><th>#</th><th>Exercise</th><th>Sets</th><th>Reps</th><th>lbs</th><th>kg</th><th>Note</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="ex-num">W</td><td class="ex-name">Treadmill Warmup<span class="ex-altname">incline 4–5 · speed 2.8–3.0</span></td><td>—</td><td>5–7 min</td><td class="ex-weight">—</td><td class="ex-weight">—</td><td></td></tr>
+          <tr><td class="ex-num">1</td><td class="ex-name">Lateral Raises<span class="ex-altname">ALWAYS FIRST — shoulders down/away from ears</span></td><td>5</td><td>12</td><td class="ex-weight">25</td><td class="ex-weight">11</td><td><span class="ex-tag tag-warn">hold 25lb</span></td></tr>
+          <tr><td class="ex-num">2</td><td class="ex-name">Rear Delt Machine<span class="ex-altname">Garmin logs as "Face Pull"</span></td><td>4</td><td>10</td><td class="ex-weight">90</td><td class="ex-weight">41</td><td></td></tr>
+          <tr><td class="ex-num">3</td><td class="ex-name">Incline DB Press</td><td>4</td><td>10</td><td class="ex-weight">50</td><td class="ex-weight">23</td><td><span class="ex-tag tag-good">PR: try 55lb</span></td></tr>
+          <tr><td class="ex-num">4</td><td class="ex-name">Converging Chest<span class="ex-altname">Garmin logs as "Bench Press"</span></td><td>4</td><td>10</td><td class="ex-weight">105</td><td class="ex-weight">48</td><td><span class="ex-tag tag-good">PR: try 110lb</span></td></tr>
+          <tr><td class="ex-num">5</td><td class="ex-name">Lat Pulldown</td><td>4</td><td>10</td><td class="ex-weight">145</td><td class="ex-weight">66</td><td><span class="ex-tag tag-good">PR: all 4×10</span></td></tr>
+          <tr><td class="ex-num">6</td><td class="ex-name">DB Curls</td><td>4</td><td>12</td><td class="ex-weight">25</td><td class="ex-weight">11</td><td></td></tr>
+          <tr><td class="ex-num">7</td><td class="ex-name">Tricep Pushdown</td><td>4</td><td>10</td><td class="ex-weight">42.5</td><td class="ex-weight">19</td><td><span class="ex-tag tag-good">PR: try 45lb</span></td></tr>
+          <tr><td class="ex-num">8</td><td class="ex-name">Push-ups</td><td>2–3</td><td>max</td><td class="ex-weight">BW</td><td class="ex-weight">BW</td><td></td></tr>
+          <tr><td class="ex-num">9</td><td class="ex-name">Incline Finisher<span class="ex-altname">ALWAYS LAST — never skip</span></td><td>1</td><td>20 min</td><td class="ex-weight">incl 10</td><td class="ex-weight">spd 3.2</td><td><span class="ex-tag tag-good">BB 81+</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <div class="corrective-note" style="margin-top:14px">
+        <span style="color:var(--amber)">Lateral raise rule:</span> locked at 25lb (11kg) — DO NOT go to 30lb today even though TR is High. Multiple fully confident sessions at 25lb required first. Form cue: shoulders stay DOWN throughout the movement.
+      </div>
+    </div>
+
+    <!-- NEXT SESSION: LOWER BODY -->
+    <div class="activity-panel" id="panel-next" style="display:none">
+      <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;align-items:center">
+        <div class="contrib-tag tag-muted" style="font-size:11px;padding:4px 10px">Friday — pending tomorrow's data</div>
+        <div style="font-size:11px;color:var(--muted);font-family:'JetBrains Mono',monospace;margin-left:auto">warmup: 5–7min treadmill · incline 4–5 · speed 2.8–3.0</div>
+      </div>
+
+      <div class="ex-table-wrap">
+      <table class="ex-table">
+        <thead>
+          <tr><th>#</th><th>Exercise</th><th>Sets</th><th>Reps</th><th>lbs</th><th>kg</th><th></th></tr>
+        </thead>
+        <tbody id="exerciseBody">
+          <tr><td class="ex-num">W</td><td class="ex-name">Treadmill Warmup<span class="ex-altname">incline 4–5 · speed 2.8–3.0</span></td><td>—</td><td>5–7 min</td><td class="ex-weight">—</td><td class="ex-weight">—</td><td></td></tr>
+          <tr><td class="ex-num">1</td><td class="ex-name">Leg Press</td><td>4</td><td>8–10</td><td class="ex-weight">250–260</td><td class="ex-weight">115–120</td><td></td></tr>
+          <tr><td class="ex-num">2</td><td class="ex-name">Hamstring Curl</td><td>4</td><td>10</td><td class="ex-weight">120–125</td><td class="ex-weight">54–57</td><td></td></tr>
+          <tr><td class="ex-num">3</td><td class="ex-name">Leg Extension</td><td>4</td><td>10</td><td class="ex-weight">105–110</td><td class="ex-weight">48–50</td><td></td></tr>
+          <tr><td class="ex-num">4</td><td class="ex-name">Calf Extension</td><td>4</td><td>12</td><td class="ex-weight">155–160</td><td class="ex-weight">70–73</td><td></td></tr>
+          <tr><td class="ex-num">5</td><td class="ex-name">Deficit Calf Raise<span class="ex-altname">w/ DB Suitcase — right side priority</span></td><td>2</td><td>12–15</td><td class="ex-weight">18–22</td><td class="ex-weight">8–10</td><td><span class="ex-tag tag-warn">corrective</span></td></tr>
+          <tr><td class="ex-num">5</td><td class="ex-name">RDL from Flat Bench<span class="ex-altname">w/ DB — right side priority</span></td><td>2</td><td>10</td><td class="ex-weight">22–26</td><td class="ex-weight">10–12</td><td><span class="ex-tag tag-warn">corrective</span></td></tr>
+          <tr><td class="ex-num">5</td><td class="ex-name">Rear Foot Elevated Stretch<span class="ex-altname">Quad-Hip Flexor · incline bench</span></td><td>2</td><td>30s/side</td><td class="ex-weight">BW</td><td class="ex-weight">BW</td><td><span class="ex-tag tag-warn">corrective</span></td></tr>
+          <tr><td class="ex-num">6</td><td class="ex-name">Plank</td><td>2</td><td>80–85s</td><td class="ex-weight">BW</td><td class="ex-weight">BW</td><td></td></tr>
+          <tr><td class="ex-num">7</td><td class="ex-name">Incline Finisher<span class="ex-altname">ALWAYS LAST — never skip</span></td><td>1</td><td>20 min</td><td class="ex-weight">incl 10</td><td class="ex-weight">spd 3.0–3.5</td><td></td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <div class="corrective-note">
+        <span style="color:var(--amber)">⚠ corrective block (#5)</span> — added June 28 from VASA movement assessment. Low-intensity, does not count against Body Battery/Acute Load budget. Right side gets priority — right knee valgus −20° flagged on lateral lunge.
+      </div>
+    </div>
+  </div>
+
+  <!-- CONNECTING THE DOTS -->
+  <div class="sec-header">connecting the dots</div>
+  <div class="card card-full" id="dotsPanel">
+    <div style="font-size:11px;color:var(--amber);font-family:'JetBrains Mono',monospace;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px">why today looks the way it does</div>
+
+    <!-- DECISION CHAIN -->
+    <div class="dots-chain">
+
+      <div class="dot-node">
+        <div class="dot-icon" style="background:var(--green-dim);color:var(--green)">✓</div>
+        <div class="dot-body">
+          <div class="dot-title">HRV resolved to Balanced</div>
+          <div class="dot-detail">After 6 consecutive Unbalanced days (June 24-29), HRV returned to Balanced on June 29. This is the single most important recovery signal — it unlocked training again. Without this clearing, today's Upper Body session would not be recommended regardless of how good Body Battery or Training Readiness look.</div>
+        </div>
+      </div>
+
+      <div class="dot-connector"></div>
+
+      <div class="dot-node">
+        <div class="dot-icon" style="background:var(--amber-dim);color:var(--amber)">78</div>
+        <div class="dot-body">
+          <div class="dot-title">Training Readiness 78 — High</div>
+          <div class="dot-detail">Garmin's own algorithm rates you "High — Excellent recovery." Combined with HRV Balanced, Acute Load normalizing from its 748 peak, and Recovery Time at 0h — the body has genuinely absorbed the Cholla/Mormon Loop load. This is the second green signal that makes today a real training day, not just a "feels okay" guess.</div>
+        </div>
+      </div>
+
+      <div class="dot-connector"></div>
+
+      <div class="dot-node">
+        <div class="dot-icon" style="background:var(--amber-dim);color:var(--amber)">81</div>
+        <div class="dot-body">
+          <div class="dot-title">Body Battery 81 — normal weights, not PR day</div>
+          <div class="dot-detail">BB 81 sits in the 80-100 "full push" band, but only just. The locked rule: 80+ means normal working weights and PR attempts are fair game. However, given the extended recovery stretch and the fact that the last fully-logged session was June 25 (a week ago), today is about reconfirming the working weights confidently, not breaking records on every lift.</div>
+        </div>
+      </div>
+
+      <div class="dot-connector"></div>
+
+      <div class="dot-node">
+        <div class="dot-icon" style="background:var(--coral-dim);color:var(--coral)">25lb</div>
+        <div class="dot-body">
+          <div class="dot-title">Lateral raises: held at 25lb regardless</div>
+          <div class="dot-detail">This is the one exercise that doesn't follow the readiness rules — it follows a separate rebuilding protocol. Post neck-strain, it was rebuilt from 15lb to 25lb across multiple sessions. The rule: stay at 25lb with full confident range across ALL 5 sets for multiple consecutive sessions before attempting 30lb. One good session doesn't clear this — consistent confirmation does.</div>
+        </div>
+      </div>
+
+      <div class="dot-connector"></div>
+
+      <div class="dot-node">
+        <div class="dot-icon" style="background:var(--coral-dim);color:var(--coral)">OSA</div>
+        <div class="dot-body">
+          <div class="dot-title">Last night's O2Ring: 43 desat events, low 83%</div>
+          <div class="dot-detail">The night of June 29-30 showed 43 desaturation events at or below 90%, with SpO2 dropping to 83%. This is worse than your gym/rest-day average. Compare to your best night ever: 8.8 score, only 1.5 drops/hr — the morning after Piestewa Peak. High-intensity hikes produce dramatically better overnight breathing scores. Today's Upper Body session won't move the OSA needle the way a hard hike would. The pulmonologist referral (June 1, still unscheduled) remains the most important open item.</div>
+        </div>
+      </div>
+
+      <div class="dot-connector"></div>
+
+      <div class="dot-node">
+        <div class="dot-icon" style="background:var(--green-dim);color:var(--green)">43.6</div>
+        <div class="dot-body">
+          <div class="dot-title">43.6 lb lost · body recomposition phase</div>
+          <div class="dot-detail">Weight is holding in the 172-175 target band. The active cut is over — this is now about building lean muscle while maintaining weight. That means protein stays high (160-165g training days), training stays consistent, and the goal shifts from the scale to the mirror and to biometric markers (fitness age, HRV trend, free testosterone recovery). The December bloodwork retest is the next hard checkpoint.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ONE THING -->
+    <div style="margin-top:20px;padding:16px;background:linear-gradient(135deg,rgba(194,97,74,0.08),rgba(232,162,61,0.08));border:1px solid rgba(194,97,74,0.25);border-radius:12px">
+      <div style="font-size:10px;color:var(--coral);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px">the one thing today</div>
+      <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:6px">Call MDLive — schedule the pulmonologist appointment</div>
+      <div style="font-size:12px;color:var(--muted);line-height:1.6">Referral submitted June 1. Today is July 2 — one month has passed with no confirmed appointment. Your O2Ring showed 43 desaturation events last night with a low of 83% SpO2. This data is exactly what a sleep specialist needs to see. Body Battery 81, TR 78, WFH day — there is no better day this week to make this call, brother.</div>
+    </div>
+  </div>
+
+  <!-- RECOVERY + SLEEP SIDE BY SIDE -->
+  <div class="sec-header">recovery · sleep</div>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-title">readiness contributors</div>
+      <div class="contributors">
+        <div class="contrib-row">
+          <div class="contrib-name">Sleep Score</div>
+          <div class="contrib-bar-wrap"><div class="contrib-bar" style="width:86%;background:var(--amber)"></div></div>
+          <div class="contrib-val" style="color:var(--amber)">86</div>
+          <div class="contrib-tag tag-good">Good</div>
+        </div>
+        <div class="contrib-row">
+          <div class="contrib-name">HRV Status</div>
+          <div class="contrib-bar-wrap"><div class="contrib-bar" style="width:71%;background:var(--coral)"></div></div>
+          <div class="contrib-val" style="color:var(--coral)">71ms</div>
+          <div class="contrib-tag tag-alert">Unbalanced</div>
+        </div>
+        <div class="contrib-row">
+          <div class="contrib-name">Recovery Time</div>
+          <div class="contrib-bar-wrap"><div class="contrib-bar" style="width:100%;background:var(--green)"></div></div>
+          <div class="contrib-val" style="color:var(--green)">0h</div>
+          <div class="contrib-tag tag-good">Recovered</div>
+        </div>
+        <div class="contrib-row">
+          <div class="contrib-name">Acute Load</div>
+          <div class="contrib-bar-wrap"><div class="contrib-bar" style="width:28%;background:var(--amber)"></div></div>
+          <div class="contrib-val" style="color:var(--amber)">308</div>
+          <div class="contrib-tag tag-warn">Low</div>
+        </div>
+        <div class="contrib-row">
+          <div class="contrib-name">RHR</div>
+          <div class="contrib-bar-wrap"><div class="contrib-bar" style="width:85%;background:var(--green)"></div></div>
+          <div class="contrib-val" style="color:var(--green)">50</div>
+          <div class="contrib-tag tag-good">Elite</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">sleep last night</div>
+      <div class="contributors">
+        <div class="contrib-row">
+          <div class="contrib-name">Deep</div>
+          <div class="contrib-bar-wrap"><div class="contrib-bar" style="width:100%;background:var(--green)"></div></div>
+          <div class="contrib-val" style="color:var(--green)">1h36</div>
+          <div class="contrib-tag tag-good">Strong</div>
+        </div>
+        <div class="contrib-row">
+          <div class="contrib-name">REM</div>
+          <div class="contrib-bar-wrap"><div class="contrib-bar" style="width:78%;background:var(--amber)"></div></div>
+          <div class="contrib-val" style="color:var(--amber)">1h18</div>
+          <div class="contrib-tag tag-warn">Moderate</div>
+        </div>
+        <div class="contrib-row">
+          <div class="contrib-name">SpO2 avg</div>
+          <div class="contrib-bar-wrap"><div class="contrib-bar" style="width:95%;background:var(--green)"></div></div>
+          <div class="contrib-val" style="color:var(--green)">95%</div>
+          <div class="contrib-tag tag-good">In range</div>
+        </div>
+        <div class="contrib-row">
+          <div class="contrib-name">SpO2 low</div>
+          <div class="contrib-bar-wrap"><div class="contrib-bar" style="width:83%;background:var(--coral)"></div></div>
+          <div class="contrib-val" style="color:var(--coral)">83%</div>
+          <div class="contrib-tag tag-alert">Below 90%</div>
+        </div>
+        <div class="contrib-row">
+          <div class="contrib-name">Restless</div>
+          <div class="contrib-bar-wrap"><div class="contrib-bar" style="width:70%;background:var(--coral)"></div></div>
+          <div class="contrib-val" style="color:var(--coral)">35</div>
+          <div class="contrib-tag tag-alert">Elevated</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OSA DISCOVERY -->
+  <div class="sec-header">the pattern in your data</div>
+  <div class="osa-panel">
+    <div class="osa-label">OSA discovery — your own finding, confirmed over 25+ nights</div>
+    <div class="osa-scores">
+      <div class="osa-score-block">
+        <div class="osa-score-num good">8.8</div>
+        <div class="osa-score-sub">after hard hike<br>Piestewa/Cholla VO2 Max</div>
+      </div>
+      <div class="osa-vs">vs</div>
+      <div class="osa-score-block">
+        <div class="osa-score-num bad">6.1</div>
+        <div class="osa-score-sub">after gym or rest day<br>avg across all nights</div>
+      </div>
+    </div>
+    <div class="osa-insight">High-intensity aerobic hikes (VO2-Max level effort, avg HR 150+ bpm) consistently precede better overnight breathing scores than gym sessions or rest days. Best night ever: 8.8 score, 1.5 drops/hr — the morning after Piestewa Peak. Pulmonologist referral submitted — tell them this pattern explicitly when scheduling.</div>
+  </div>
+
+  <!-- CHARTS -->
+  <div class="sec-header">trends</div>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-title">weight journey</div>
+      <div class="weight-range">
+        <span class="weight-start">216.4 lb → </span>
+        <span class="weight-now">172.1 lb</span>
+        <span class="weight-lost">−44.3 lb</span>
+      </div>
+      <div class="chart-box"><canvas id="weightChart"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-title">O2Ring score · nightly</div>
+      <div class="chart-box"><canvas id="o2Chart"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-title">HRV 7d average</div>
+      <div class="chart-box"><canvas id="hrvChart"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Body Battery · recent</div>
+      <div class="chart-box"><canvas id="bbChart"></canvas></div>
+    </div>
+  </div>
+
+  <!-- MOVEMENT ASSESSMENT -->
+  <div class="sec-header">movement assessment · vasa · june 28</div>
+  <div class="card card-full">
+    <div class="card-title">Demotu scan results — key findings</div>
+    <div style="display:flex;gap:12px;align-items:center;margin-bottom:14px;flex-wrap:wrap">
+      <div style="text-align:center">
+        <div style="font-size:32px;font-weight:800;color:var(--amber);font-family:'Inter',sans-serif">78</div>
+        <div style="font-size:10px;color:var(--muted);font-family:'JetBrains Mono',monospace">overall</div>
+      </div>
+      <div style="width:1px;height:40px;background:var(--border)"></div>
+      <div style="text-align:center">
+        <div style="font-size:32px;font-weight:800;color:var(--amber);font-family:'Inter',sans-serif">79</div>
+        <div style="font-size:10px;color:var(--muted);font-family:'JetBrains Mono',monospace">mobility</div>
+      </div>
+      <div style="width:1px;height:40px;background:var(--border)"></div>
+      <div style="text-align:center">
+        <div style="font-size:32px;font-weight:800;color:var(--coral);font-family:'Inter',sans-serif">74</div>
+        <div style="font-size:10px;color:var(--muted);font-family:'JetBrains Mono',monospace">compensation</div>
+      </div>
+      <div style="width:1px;height:40px;background:var(--border)"></div>
+      <div style="text-align:center">
+        <div style="font-size:32px;font-weight:800;color:var(--green);font-family:'Inter',sans-serif">85</div>
+        <div style="font-size:10px;color:var(--muted);font-family:'JetBrains Mono',monospace">stability</div>
+      </div>
+      <div style="flex:1;min-width:200px">
+        <div style="font-size:11px;color:var(--coral);font-family:'JetBrains Mono',monospace;margin-bottom:4px">⚠ key finding</div>
+        <div style="font-size:12px;color:var(--text-dim);line-height:1.5">Right knee valgus −20° on lateral lunge — real injury-risk pattern. Right side measurably weaker than left across hip/knee/ankle. Corrective exercises now added to every Lower Body session.</div>
+      </div>
+    </div>
+    <div class="movement-grid">
+      <div class="movement-item">
+        <div class="movement-label">Single Leg Balance R</div>
+        <div class="movement-bar-wrap"><div class="movement-bar" style="width:83%;background:var(--amber)"></div></div>
+        <div style="display:flex;justify-content:space-between">
+          <div class="movement-score">83</div>
+          <div class="movement-flag">vs L: 98</div>
+        </div>
+      </div>
+      <div class="movement-item">
+        <div class="movement-label">Overhead Press</div>
+        <div class="movement-bar-wrap"><div class="movement-bar" style="width:75%;background:var(--amber)"></div></div>
+        <div class="movement-score">75</div>
+      </div>
+      <div class="movement-item">
+        <div class="movement-label">Lateral Lunge R</div>
+        <div class="movement-bar-wrap"><div class="movement-bar" style="width:76%;background:var(--coral)"></div></div>
+        <div style="display:flex;justify-content:space-between">
+          <div class="movement-score">76</div>
+          <div class="movement-flag">−20° valgus ⚠</div>
+        </div>
+      </div>
+      <div class="movement-item">
+        <div class="movement-label">Standard Squat</div>
+        <div class="movement-bar-wrap"><div class="movement-bar" style="width:70%;background:var(--coral)"></div></div>
+        <div class="movement-score">70 — lowest</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- THIS WEEK -->
+  <div class="sec-header">this week</div>
+  <div class="card card-full">
+    <div class="card-title">training plan · week of june 29</div>
+    <ul class="sessions" id="weekSessions"></ul>
+  </div>
+
+  <!-- MEAL PLAN -->
+  <div class="sec-header">meal template · reference — live plan above overrides this</div>
+  <div class="card card-full">
+    <div style="display:flex;gap:8px;align-items:center;margin-bottom:14px;flex-wrap:wrap">
+      <div class="contrib-tag tag-warn" style="font-size:11px;padding:4px 10px">REST DAY</div>
+      <div class="contrib-tag tag-muted" style="font-size:11px;padding:4px 10px">protein target: 130–140g</div>
+      <div class="contrib-tag tag-alert" style="font-size:11px;padding:4px 10px">HRV override: no training load</div>
+      <div style="font-size:11px;color:var(--muted);font-family:'JetBrains Mono',monospace;margin-left:auto">eating order: veg → protein → fat → kimchi cold → microgreens raw</div>
+    </div>
+
+    <!-- BREAKFAST -->
+    <div style="margin-bottom:20px">
+      <div style="font-size:12px;font-weight:700;color:var(--amber);font-family:'JetBrains Mono',monospace;letter-spacing:0.06em;margin-bottom:10px;display:flex;align-items:center;gap:8px">
+        🌅 BREAKFAST
+        <span style="font-size:10px;color:var(--muted);font-weight:400">ACV before · 10-min walk after</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+        <div>
+          <div style="font-size:11px;color:var(--slate);font-family:'JetBrains Mono',monospace;margin-bottom:6px">sequence</div>
+          <div class="meal-step">1. ACV — 1 tbsp in water</div>
+          <div class="meal-step">2. Goat bone broth + lemon — 240ml warm</div>
+          <div class="meal-step">3. Eggs — <span style="color:var(--amber)">2 whole</span> (rest day)</div>
+          <div class="meal-step">4. Breakfast bowl (below)</div>
+          <div class="meal-step">5. Kefir — 100ml</div>
+          <div class="meal-step" style="color:var(--green)">→ 10-min walk</div>
+        </div>
+        <div>
+          <div style="font-size:11px;color:var(--slate);font-family:'JetBrains Mono',monospace;margin-bottom:6px">bowl (prep night before)</div>
+          <div class="meal-row"><span class="meal-item">Sprouted oats</span><span class="meal-qty">35g</span><span class="meal-note">rest day</span></div>
+          <div class="meal-row"><span class="meal-item">Isopure whey</span><span class="meal-qty">1 scoop</span><span class="meal-note"></span></div>
+          <div class="meal-row"><span class="meal-item">Collagen + vit C</span><span class="meal-qty">1–2 scoops</span><span class="meal-note">with berries</span></div>
+          <div class="meal-row"><span class="meal-item">Almond malk</span><span class="meal-qty">200ml</span><span class="meal-note"></span></div>
+          <div class="meal-row"><span class="meal-item">Egg whites (liquid)</span><span class="meal-qty">6 tbsp</span><span class="meal-note">pasteurized</span></div>
+          <div class="meal-row"><span class="meal-item">Berries (frozen)</span><span class="meal-qty">220g</span><span class="meal-note">strawberry+blueberry+cherry</span></div>
+          <div class="meal-row"><span class="meal-item">Cranberries (dried)</span><span class="meal-qty">20g</span><span class="meal-note"></span></div>
+          <div class="meal-row"><span class="meal-item">Chia + walnuts + pumpkin</span><span class="meal-qty">10g/15g/10g</span><span class="meal-note"></span></div>
+          <div style="font-size:10px;color:var(--coral);font-family:'JetBrains Mono',monospace;margin-top:6px">add fresh morning only:</div>
+          <div class="meal-row"><span class="meal-item">Brazil nut</span><span class="meal-qty">1 whole</span><span class="meal-note">selenium</span></div>
+          <div class="meal-row"><span class="meal-item">Bee pollen</span><span class="meal-qty">5g</span><span class="meal-note">live enzymes</span></div>
+          <div class="meal-row"><span class="meal-item">Broccoli microgreens</span><span class="meal-qty">1 tbsp raw</span><span class="meal-note">sulforaphane — never cook</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height:1px;background:var(--border);margin-bottom:16px"></div>
+
+    <!-- LUNCH -->
+    <div style="margin-bottom:20px">
+      <div style="font-size:12px;font-weight:700;color:var(--amber);font-family:'JetBrains Mono',monospace;letter-spacing:0.06em;margin-bottom:10px;display:flex;align-items:center;gap:8px">
+        ☀️ LUNCH
+        <span style="font-size:10px;color:var(--muted);font-weight:400">ACV before · Siggi's after · 10-min walk after</span>
+        <span class="contrib-tag tag-warn" style="font-size:10px;padding:2px 8px;margin-left:auto">~50–55g protein</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+        <div>
+          <div style="font-size:11px;color:var(--slate);font-family:'JetBrains Mono',monospace;margin-bottom:6px">protein anchor (rest day = still real protein)</div>
+          <div class="meal-row"><span class="meal-item">Chicken breast</span><span class="meal-qty">150g cooked</span><span class="meal-note">Monday rotation</span></div>
+          <div class="meal-row"><span class="meal-item">Baby spinach</span><span class="meal-qty">100g</span><span class="meal-note">eat first</span></div>
+          <div class="meal-row"><span class="meal-item">Broccoli</span><span class="meal-qty">150g</span><span class="meal-note">eat first</span></div>
+          <div class="meal-row"><span class="meal-item">Onion + garlic</span><span class="meal-qty">30g + 2 cloves</span><span class="meal-note"></span></div>
+          <div class="meal-row"><span class="meal-item">EVOO</span><span class="meal-qty">5g</span><span class="meal-note">cooking fat</span></div>
+          <div class="meal-row"><span class="meal-item">Turmeric + black pepper</span><span class="meal-qty">generous</span><span class="meal-note">always together</span></div>
+          <div class="meal-row"><span class="meal-item">Avocado</span><span class="meal-qty">½</span><span class="meal-note">after protein</span></div>
+          <div class="meal-row" style="color:var(--coral)"><span class="meal-item">Kimchi</span><span class="meal-qty">35g cold</span><span class="meal-note">LAST — never heat</span></div>
+          <div class="meal-row" style="color:var(--coral)"><span class="meal-item">Microgreens</span><span class="meal-qty">1 tbsp raw</span><span class="meal-note">on top, last</span></div>
+        </div>
+        <div>
+          <div style="font-size:11px;color:var(--slate);font-family:'JetBrains Mono',monospace;margin-bottom:6px">after lunch</div>
+          <div class="meal-step">Siggi's plain yogurt — 150g (probiotics + calcium)</div>
+          <div class="meal-step" style="color:var(--green)">→ 10-min walk</div>
+          <div class="meal-step">Mastic gum — 20–30 min chewing</div>
+          <div style="margin-top:12px;padding:10px;background:var(--navy-3);border-radius:8px;border-left:2px solid var(--coral)">
+            <div style="font-size:10px;color:var(--coral);font-family:'JetBrains Mono',monospace;margin-bottom:4px">⚠ rest day protein rule</div>
+            <div style="font-size:11px;color:var(--muted);line-height:1.5">Rest days are repair days. Target 130–140g protein — same priority as a training day. Legumes are a fiber side, not a protein anchor. Today's 5-day HRV stretch means the body is still repairing from last week's hike load.</div>
+          </div>
+          <div style="margin-top:10px;padding:10px;background:var(--navy-3);border-radius:8px;border-left:2px solid var(--amber)">
+            <div style="font-size:10px;color:var(--amber);font-family:'JetBrains Mono',monospace;margin-bottom:4px">🫘 tonight: soak beans</div>
+            <div style="font-size:11px;color:var(--muted);line-height:1.5">Tomorrow is Tuesday — soak 100g dry black beans tonight for tomorrow's legume lunch. Monday night → Tuesday lunch. Don't forget.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height:1px;background:var(--border);margin-bottom:16px"></div>
+
+    <!-- DINNER -->
+    <div>
+      <div style="font-size:12px;font-weight:700;color:var(--amber);font-family:'JetBrains Mono',monospace;letter-spacing:0.06em;margin-bottom:10px;display:flex;align-items:center;gap:8px">
+        🌙 DINNER
+        <span style="font-size:10px;color:var(--muted);font-weight:400">ACV + psyllium before · 10-min walk after · nothing after 8pm</span>
+        <span class="contrib-tag tag-warn" style="font-size:10px;padding:2px 8px;margin-left:auto">~48g protein</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+        <div>
+          <div style="font-size:11px;color:var(--slate);font-family:'JetBrains Mono',monospace;margin-bottom:6px">Monday rotation — salmon</div>
+          <div class="meal-row"><span class="meal-item">Salmon (wild)</span><span class="meal-qty">180–200g</span><span class="meal-note">Monday rotation</span></div>
+          <div class="meal-row"><span class="meal-item">Baby spinach</span><span class="meal-qty">80g</span><span class="meal-note">eat first</span></div>
+          <div class="meal-row"><span class="meal-item">Broccoli or zucchini</span><span class="meal-qty">150g</span><span class="meal-note">eat first</span></div>
+          <div class="meal-row"><span class="meal-item">Onion + garlic</span><span class="meal-qty">30g + 2 cloves</span><span class="meal-note"></span></div>
+          <div class="meal-row"><span class="meal-item">EVOO</span><span class="meal-qty">5g</span><span class="meal-note">cooking fat</span></div>
+          <div class="meal-row"><span class="meal-item">Sesame oil</span><span class="meal-qty">drizzle</span><span class="meal-note">off heat, finishing only</span></div>
+          <div class="meal-row"><span class="meal-item">Turmeric + black pepper</span><span class="meal-qty">generous</span><span class="meal-note">always together</span></div>
+          <div class="meal-row"><span class="meal-item">Avocado</span><span class="meal-qty">½</span><span class="meal-note">after protein</span></div>
+          <div class="meal-row" style="color:var(--coral)"><span class="meal-item">Kimchi</span><span class="meal-qty">30g cold</span><span class="meal-note">LAST — never heat</span></div>
+          <div class="meal-row" style="color:var(--coral)"><span class="meal-item">Microgreens</span><span class="meal-qty">1 tbsp raw</span><span class="meal-note">on top, last</span></div>
+        </div>
+        <div>
+          <div style="font-size:11px;color:var(--slate);font-family:'JetBrains Mono',monospace;margin-bottom:6px">before + after dinner</div>
+          <div class="meal-step" style="color:var(--amber)">BEFORE: ACV 1 tbsp in water</div>
+          <div class="meal-step" style="color:var(--amber)">BEFORE: Psyllium husk 5g in warm water — drink within 60 seconds</div>
+          <div class="meal-step" style="color:var(--green)">→ 10-min walk after dinner</div>
+          <div class="meal-step">Dark chocolate — 3 bites before 8pm</div>
+          <div class="meal-step">Mastic gum — 20–30 min (if not done at lunch)</div>
+          <div style="margin-top:10px;padding:10px;background:var(--navy-3);border-radius:8px;border-left:2px solid var(--green)">
+            <div style="font-size:10px;color:var(--green);font-family:'JetBrains Mono',monospace;margin-bottom:4px">why salmon tonight</div>
+            <div style="font-size:11px;color:var(--muted);line-height:1.5">Omega-3s are anti-inflammatory — genuinely useful given 5 days of unresolved HRV elevation and the lingering recovery load from the Mormon Loop hike 48hrs ago. Monday = salmon in the locked rotation.</div>
+          </div>
+          <div style="margin-top:10px;padding:10px;background:var(--navy-3);border-radius:8px">
+            <div style="font-size:10px;color:var(--muted);font-family:'JetBrains Mono',monospace;margin-bottom:4px">cutoffs</div>
+            <div style="font-size:11px;color:var(--muted)">Nothing after 8:00pm · Water finished by 7:00pm</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROTEIN TOTAL -->
+    <div style="margin-top:16px;padding:12px;background:var(--navy-3);border-radius:10px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+      <div style="font-size:10px;color:var(--muted);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:0.06em">daily protein total</div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <span style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--text-dim)">Breakfast ~55g</span>
+        <span style="color:var(--border)">+</span>
+        <span style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--text-dim)">Lunch ~50g</span>
+        <span style="color:var(--border)">+</span>
+        <span style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--text-dim)">Dinner ~48g</span>
+        <span style="color:var(--border)">+</span>
+        <span style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--text-dim)">Siggi's ~15g</span>
+        <span style="color:var(--border)">=</span>
+        <span style="font-size:14px;font-weight:700;font-family:'JetBrains Mono',monospace;color:var(--green)">~168g ✓</span>
+      </div>
+      <div style="font-size:10px;color:var(--muted);font-family:'JetBrains Mono',monospace">target 130–140g · collagen excluded from count</div>
+    </div>
+  </div>
+
+  <!-- SUPPLEMENTS -->
+  <div class="sec-header">supplements · monday june 29 · rest day</div>
+  <div class="card card-full">
+    <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;align-items:center">
+      <div class="contrib-tag tag-alert" style="font-size:11px;padding:4px 10px">BIOTIN: SKIP today (Mon)</div>
+      <div class="contrib-tag tag-warn" style="font-size:11px;padding:4px 10px">Beef Liver: 1 cap (rest day)</div>
+      <div class="contrib-tag tag-good" style="font-size:11px;padding:4px 10px">KSM-66: ON (week 3 of 12)</div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
+
+      <!-- BREAKFAST SUPPS -->
+      <div>
+        <div style="font-size:11px;font-weight:700;color:var(--amber);font-family:'JetBrains Mono',monospace;letter-spacing:0.06em;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border)">🌅 WITH BREAKFAST</div>
+        <div class="supp-row">
+          <div class="supp-name">Creatine</div>
+          <div class="supp-dose">5g</div>
+        </div>
+        <div class="supp-row">
+          <div class="supp-name">D3 + K2 (Solaray)</div>
+          <div class="supp-dose">5000 IU</div>
+        </div>
+        <div class="supp-row">
+          <div class="supp-name">Omega-3 (Nordic)</div>
+          <div class="supp-dose">2 caps</div>
+        </div>
+        <div class="supp-row">
+          <div class="supp-name">Beef Liver</div>
+          <div class="supp-dose" style="color:var(--amber)">1 cap ← rest day</div>
+        </div>
+        <div class="supp-row">
+          <div class="supp-name">B12 (sublingual)</div>
+          <div class="supp-dose">5000mcg · hold 30s</div>
+        </div>
+        <div class="supp-row">
+          <div class="supp-name">CoQ10 Ubiquinol</div>
+          <div class="supp-dose">100mg</div>
+        </div>
+        <div class="supp-row">
+          <div class="supp-name">Black seed oil</div>
+          <div class="supp-dose">½ tsp empty stomach</div>
+        </div>
+        <div class="supp-row" style="opacity:0.4">
+          <div class="supp-name" style="text-decoration:line-through">Biotin</div>
+          <div class="supp-dose" style="color:var(--coral)">SKIP — Mon</div>
+        </div>
+        <div class="supp-row" style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border)">
+          <div class="supp-name" style="color:var(--muted)">Probiotic (Garden of Life)</div>
+          <div class="supp-dose" style="color:var(--muted)">1 cap — empty stomach, separate from everything</div>
+        </div>
+      </div>
+
+      <!-- DINNER SUPPS -->
+      <div>
+        <div style="font-size:11px;font-weight:700;color:var(--amber);font-family:'JetBrains Mono',monospace;letter-spacing:0.06em;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border)">🌙 WITH DINNER</div>
+        <div class="supp-row">
+          <div class="supp-name">Zinc Picolinate (Solgar)</div>
+          <div class="supp-dose">22mg — 1 cap</div>
+        </div>
+        <div class="supp-row">
+          <div class="supp-name">Thorne Copper</div>
+          <div class="supp-dose">2mg — always with zinc</div>
+        </div>
+        <div style="margin-top:12px">
+          <div style="font-size:11px;font-weight:700;color:var(--amber);font-family:'JetBrains Mono',monospace;letter-spacing:0.06em;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border)">BEFORE DINNER</div>
+          <div class="supp-row">
+            <div class="supp-name">Psyllium husk</div>
+            <div class="supp-dose">5g warm water · 60 sec</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLEEP STACK -->
+      <div>
+        <div style="font-size:11px;font-weight:700;color:var(--amber);font-family:'JetBrains Mono',monospace;letter-spacing:0.06em;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border)">🕘 9:30PM</div>
+        <div class="supp-row">
+          <div class="supp-name">Magnesium Glycinate (Jarrow)</div>
+          <div class="supp-dose">240mg</div>
+        </div>
+        <div class="supp-row">
+          <div class="supp-name">Tart Cherry Juice</div>
+          <div class="supp-dose">60ml · not 8oz</div>
+        </div>
+        <div class="supp-row">
+          <div class="supp-name">KSM-66 Ashwagandha</div>
+          <div class="supp-dose">600mg · week 3/12</div>
+        </div>
+        <div style="margin-top:12px;padding:10px;background:var(--navy-3);border-radius:8px;border-left:2px solid var(--green)">
+          <div style="font-size:10px;color:var(--green);font-family:'JetBrains Mono',monospace;margin-bottom:4px">sleep protocol</div>
+          <div style="font-size:11px;color:var(--muted);line-height:1.6">
+            Nose strip (every night) ·<br>
+            Mouth tape ·<br>
+            O2Ring on <strong style="color:var(--text)">thumb</strong> — vibration OFF ·<br>
+            Earplugs ·<br>
+            Saline rinse (alternate nights)
+          </div>
+        </div>
+        <div style="margin-top:10px;padding:8px;background:var(--navy-3);border-radius:8px">
+          <div style="font-size:10px;color:var(--muted);font-family:'JetBrains Mono',monospace;margin-bottom:4px">KSM-66 cycle</div>
+          <div style="font-size:11px;color:var(--muted)">Started June 7 · Break Sept 7</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ECOSYSTEM UPDATES -->
+  <div class="sec-header">ecosystem updates</div>
+  <div class="card card-full">
+    <div class="card-title" style="margin-bottom:12px">log anything that affects the plan</div>
+
+    <!-- QUICK UPDATE INPUT -->
+    <div style="margin-bottom:16px">
+      <textarea id="updateInput" placeholder="e.g. Monday hike morning · Sunday evening driving to Utah · Did assisted chin-up instead of lat pulldown today · Weight 173.2 this morning..." style="width:100%;padding:12px;background:var(--navy-3);border:1px solid var(--border);border-radius:10px;color:var(--text);font-family:'Inter',sans-serif;font-size:13px;resize:vertical;min-height:80px;outline:none;line-height:1.5"></textarea>
+      <div style="display:flex;gap:8px;margin-top:8px">
+        <button onclick="saveUpdate()" style="flex:1;padding:11px;background:var(--amber);color:var(--navy);border:none;border-radius:10px;font-weight:700;font-size:13px;font-family:'Inter',sans-serif;cursor:pointer">Save Update</button>
+        <button onclick="clearUpdates()" style="padding:11px 16px;background:transparent;color:var(--muted);border:1px solid var(--border);border-radius:10px;font-size:12px;font-family:'JetBrains Mono',monospace;cursor:pointer">Clear all</button>
+      </div>
+    </div>
+
+    <!-- LOGGED UPDATES -->
+    <div id="updatesList" style="display:flex;flex-direction:column;gap:8px"></div>
+
+    <!-- PLAN IMPACT NOTE -->
+    <div style="margin-top:14px;padding:12px;background:var(--navy-3);border-radius:10px;border-left:2px solid var(--amber)">
+      <div style="font-size:10px;color:var(--amber);font-family:'JetBrains Mono',monospace;margin-bottom:4px">how this feeds the plan</div>
+      <div style="font-size:12px;color:var(--muted);line-height:1.6">Updates saved here feed the plan automatically — no copy-paste needed. Log anything ("did assisted chin-up instead of lat pulldown", "hiking Saturday", "shoulder felt tight"), then tap <span style="color:var(--amber)">⟳ refresh plan</span> at the top. The coaches re-read every update and session log and replan the day and week around it.</div>
+    </div>
+  </div>
+
+  <!-- SESSION LOG -->
+  <div class="sec-header">session log · what actually happened</div>
+  <div class="card card-full">
+    <div class="card-title" style="margin-bottom:12px">yesterday · thursday july 2 · upper body</div>
+
+    <div style="padding:12px;background:var(--navy-3);border-radius:10px;margin-bottom:12px;border-left:2px solid var(--green)">
+      <div style="font-size:11px;color:var(--green);font-family:'JetBrains Mono',monospace;margin-bottom:6px">confirmed completed ✓</div>
+      <div style="font-size:13px;color:var(--text-dim);line-height:1.8">
+        Lateral Raises · Rear Delt · Incline DB Press · Converging Chest ·
+        <span style="color:var(--amber)">Assisted Chin-up</span> (subbed for Lat Pulldown — same vertical pull, lats trained) ·
+        DB Curls · Tricep Pushdown · Push-ups · Incline Finisher
+      </div>
+    </div>
+
+    <div style="font-size:11px;color:var(--slate);font-family:'JetBrains Mono',monospace;margin-bottom:8px">SUBSTITUTION LOCKED</div>
+    <div class="contrib-row">
+      <div class="contrib-name">Lat Pulldown</div>
+      <div style="font-size:12px;color:var(--muted)">→ replaced by</div>
+      <div class="contrib-tag tag-good">Assisted Chin-up</div>
+    </div>
+    <div style="font-size:11px;color:var(--muted);margin-top:8px;font-family:'JetBrains Mono',monospace">Note: find working assistance weight next session and log it here to set the baseline</div>
+
+    <!-- ADD NEW SESSION LOG -->
+    <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border)">
+      <div style="font-size:11px;color:var(--slate);font-family:'JetBrains Mono',monospace;margin-bottom:8px">log today's session when done</div>
+      <textarea id="sessionInput" placeholder="e.g. Upper body done · Lat pulldown 145lb × 10 all 4 sets clean · Converging chest PR 110lb × 8 on set 3 · Assisted chin-up 40kg assistance × 10 × 4 sets..." style="width:100%;padding:12px;background:var(--navy-3);border:1px solid var(--border);border-radius:10px;color:var(--text);font-family:'Inter',sans-serif;font-size:13px;resize:vertical;min-height:80px;outline:none;line-height:1.5"></textarea>
+      <button onclick="saveSession()" style="width:100%;margin-top:8px;padding:11px;background:var(--navy-3);border:1px solid var(--green);border-radius:10px;color:var(--green);font-weight:700;font-size:13px;font-family:'Inter',sans-serif;cursor:pointer">Save Session Log</button>
+    </div>
+
+    <!-- PAST SESSIONS -->
+    <div id="sessionsList" style="display:flex;flex-direction:column;gap:8px;margin-top:12px"></div>
+  </div>
+
+  <!-- GOAL SKILLS -->
+  <div class="sec-header">coaching skills · tap to activate</div>
+  <div class="card card-full">
+    <div class="card-title" style="margin-bottom:4px">7 expert coaches · each focused on one goal</div>
+    <div style="font-size:11px;color:var(--muted);font-family:'JetBrains Mono',monospace;margin-bottom:16px">tap any skill → activates that expert in the Generate tab</div>
+    <div id="skillCardsGrid" style="display:grid;grid-template-columns:1fr 1fr;gap:10px"></div>
+  </div>
+
+  <!-- CLAUDE CODE SKILLS -->
+  <div class="sec-header">claude code commands</div>
+  <div class="card card-full">
+    <div class="card-title" style="margin-bottom:10px">tap to copy · paste into claude code terminal</div>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </div>
+
+  <!-- BLOODWORK FLAGS -->
+  <div class="sec-header">bloodwork · may 29 · next retest december 2026</div>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-title">priority flags</div>
+      <div class="contributors">
+        <div class="contrib-row">
+          <div class="contrib-name">Free Testosterone</div>
+          <div class="contrib-tag tag-alert">9.3 pg/mL — bottom 3–5%</div>
+        </div>
+        <div class="contrib-row">
+          <div class="contrib-name">Fasting Glucose</div>
+          <div class="contrib-tag tag-warn">101 — borderline</div>
+        </div>
+        <div class="contrib-row">
+          <div class="contrib-name">AM Cortisol</div>
+          <div class="contrib-tag tag-warn">15.2 — upper normal</div>
+        </div>
+        <div class="contrib-row">
+          <div class="contrib-name">Ferritin</div>
+          <div class="contrib-tag tag-warn">204 — monitor</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">all good</div>
+      <div class="contributors">
+        <div class="contrib-row">
+          <div class="contrib-name">Triglycerides</div>
+          <div class="contrib-tag tag-good">44 — exceptional</div>
+        </div>
+        <div class="contrib-row">
+          <div class="contrib-name">ApoB</div>
+          <div class="contrib-tag tag-good">78 — good</div>
+        </div>
+        <div class="contrib-row">
+          <div class="contrib-name">Vitamin D</div>
+          <div class="contrib-tag tag-good">61.1 — optimal</div>
+        </div>
+        <div class="contrib-row">
+          <div class="contrib-name">Thyroid (TSH)</div>
+          <div class="contrib-tag tag-good">1.42 — optimal</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /section -->
+
+<div id="toast"></div>
+
+<script>
+// ── DATA ──────────────────────────────────────────────────────────────────
+const D = {
+  readiness: 72,
+  o2score: 7.2,
+  startDate: new Date('2026-02-09'),
+  today: new Date(), // always live — no more frozen date
+
+  weight: [
+    { d: 'Feb 9',  w: 216.4 }, { d: 'Mar 19', w: 190.9 }, { d: 'Mar 28', w: 187.0 },
+    { d: 'Apr 11', w: 180.6 }, { d: 'Apr 24', w: 180.1 }, { d: 'May 2',  w: 178.2 },
+    { d: 'May 18', w: 174.8 }, { d: 'May 29', w: 174.0 }, { d: 'Jun 4',  w: 172.6 },
+    { d: 'Jun 11', w: 172.3 }, { d: 'Jun 14', w: 173.2 }, { d: 'Jun 20', w: 172.3 },
+    { d: 'Jun 21', w: 173.7 }, { d: 'Jun 24', w: 172.6 }, { d: 'Jun 27', w: 173.5 },
+    { d: 'Jun 29', w: 172.1 },
+  ],
+
+  o2: [
+    { d: 'Jun 9',  s: 7.2, hike: false }, { d: 'Jun 10', s: 7.6, hike: false },
+    { d: 'Jun 11', s: 6.7, hike: false }, { d: 'Jun 12', s: 7.5, hike: false },
+    { d: 'Jun 13', s: 4.7, hike: false }, { d: 'Jun 14', s: 8.8, hike: true },
+    { d: 'Jun 15', s: 7.8, hike: false }, { d: 'Jun 18', s: 4.8, hike: false },
+    { d: 'Jun 19', s: 7.2, hike: false }, { d: 'Jun 20', s: 5.4, hike: false },
+    { d: 'Jun 21', s: 4.8, hike: false }, { d: 'Jun 22', s: 7.2, hike: false },
+    { d: 'Jun 23', s: 9.0, hike: false }, { d: 'Jun 24', s: 8.0, hike: false },
+    { d: 'Jun 25', s: 7.9, hike: false }, { d: 'Jun 26', s: 7.6, hike: false },
+    { d: 'Jun 27', s: 8.8, hike: true  }, { d: 'Jun 28', s: 7.2, hike: false },
+  ],
+
+  hrv: [
+    { d: 'Jun 8',  v: 77 }, { d: 'Jun 10', v: 77 }, { d: 'Jun 12', v: 77 },
+    { d: 'Jun 14', v: 76 }, { d: 'Jun 16', v: 77 }, { d: 'Jun 18', v: 77 },
+    { d: 'Jun 20', v: 78 }, { d: 'Jun 22', v: 74 }, { d: 'Jun 23', v: 73 },
+    { d: 'Jun 24', v: 72 }, { d: 'Jun 25', v: 72 }, { d: 'Jun 26', v: 71 },
+    { d: 'Jun 27', v: 69 }, { d: 'Jun 28', v: 71 }, { d: 'Jun 29', v: 71 },
+  ],
+
+  bb: [
+    { d: 'Jun 8',  v: 94 }, { d: 'Jun 10', v: 85 }, { d: 'Jun 12', v: 65 },
+    { d: 'Jun 14', v: 72 }, { d: 'Jun 16', v: 88 }, { d: 'Jun 18', v: 65 },
+    { d: 'Jun 20', v: 80 }, { d: 'Jun 21', v: 70 }, { d: 'Jun 22', v: 81 },
+    { d: 'Jun 23', v: 73 }, { d: 'Jun 24', v: 84 }, { d: 'Jun 25', v: 85 },
+    { d: 'Jun 26', v: 71 }, { d: 'Jun 27', v: 33 }, { d: 'Jun 28', v: 82 },
+    { d: 'Jun 29', v: 90 },
+  ],
+
+  week: [
+    { day: 'Mon', session: 'Light movement only — HRV override active', color: 'var(--slate)' },
+    { day: 'Tue', session: 'Lower Body (if HRV clears) + corrective block', color: 'var(--amber)' },
+    { day: 'Wed', session: '30-min vigorous walk (if recovered)', color: 'var(--green)' },
+    { day: 'Thu', session: 'Upper Body — full effort if green', color: 'var(--amber)' },
+    { day: 'Fri', session: 'Lower Body — normal working sets', color: 'var(--amber)' },
+    { day: 'Sat', session: 'Hike or rest — check numbers first', color: 'var(--green)' },
+    { day: 'Sun', session: 'Rest — mandatory after any hard hike', color: 'var(--slate)' },
+  ],
+
+  skills: [
+    { label: 'morning-brief', cmd: 'run my morning-brief skill', primary: true },
+    { label: 'recovery-check', cmd: 'run my recovery-check skill', primary: true },
+    { label: 'weekly-review', cmd: 'run my weekly-review skill', primary: true },
+    { label: 'plan-my-week', cmd: 'run my plan-my-week skill', primary: true },
+    { label: 'update dashboard', cmd: 'update my dashboard', primary: false },
+  ],
+
+  lowerBody: [
+    { n: 1, name: 'Leg Press', alt: null, sets: 4, reps: '8–10', weight: '250–260 lb', tag: null },
+    { n: 2, name: 'Hamstring Curl', alt: null, sets: 4, reps: '10', weight: '120–125 lb', tag: null },
+    { n: 3, name: 'Leg Extension', alt: null, sets: 4, reps: '10', weight: '105–110 lb', tag: null },
+    { n: 4, name: 'Calf Extension', alt: 'or calf raise w/ 45lb plate', sets: 4, reps: '12', weight: '155–160 lb', tag: null },
+    { n: 5, name: 'Deficit Calf Raise', alt: 'w/ DB Suitcase — corrective', sets: 2, reps: '12–15', weight: 'light', tag: 'corrective' },
+    { n: 5, name: 'RDL from Flat Bench', alt: 'w/ DB — corrective, R-side priority', sets: 2, reps: '10', weight: 'light–mod', tag: 'corrective' },
+    { n: 5, name: 'Rear Foot Elevated Stretch', alt: 'Quad-Hip Flexor, incline bench', sets: 2, reps: '30s/side', weight: 'bodyweight', tag: 'corrective' },
+    { n: 6, name: 'Plank', alt: null, sets: 2, reps: '80–85 sec', weight: 'bodyweight', tag: null },
+    { n: 7, name: 'Incline Treadmill Finisher', alt: null, sets: 1, reps: '20 min', weight: 'incl 10 · spd 3.0–3.5', tag: null },
+  ],
+};
+
+// ── DATE / DAY COUNT ──
+const days = Math.round((D.today - D.startDate) / 86400000);
+document.getElementById('dateStr').textContent =
+  D.today.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
+document.getElementById('dayCount').textContent = `day ${days} of the ecosystem`;
+
+// ── READINESS RING ──
+function animateArcs() {
+  const outer = document.getElementById('arcOuter');
+  const inner = document.getElementById('arcInner');
+  const outerC = 2 * Math.PI * 96;
+  const innerC = 2 * Math.PI * 76;
+  const outerFill = (D.readiness / 100) * outerC;
+  const innerFill = (D.o2score / 10) * innerC;
+  const o2color = D.o2score >= 7.5 ? '#7BA88C' : D.o2score >= 6 ? '#E8A23D' : '#C2614A';
+  outer.setAttribute('stroke-dasharray', `${outerFill} ${outerC}`);
+  inner.setAttribute('stroke-dasharray', `${innerFill} ${innerC}`);
+  inner.setAttribute('stroke', o2color);
+}
+setTimeout(animateArcs, 100);
+
+// ── EXERCISE TABLE ──
+const exBody = document.getElementById('exerciseBody');
+D.lowerBody.forEach(ex => {
+  const tr = document.createElement('tr');
+  tr.innerHTML = `
+    <td class="ex-num">${ex.n}</td>
+    <td class="ex-name">${ex.name}${ex.alt ? `<span class="ex-altname">${ex.alt}</span>` : ''}</td>
+    <td>${ex.sets}</td>
+    <td>${ex.reps}</td>
+    <td class="ex-weight">${ex.weight}</td>
+    <td>${ex.tag === 'corrective' ? '<span class="ex-tag tag-warn">corrective</span>' : ''}</td>
+  `;
+  exBody.appendChild(tr);
+});
+
+// ── ACTIVITY TABS ──
+document.querySelectorAll('.activity-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.activity-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.activity-panel').forEach(p => p.style.display = 'none');
+    tab.classList.add('active');
+    document.getElementById(`panel-${tab.dataset.tab}`).style.display = 'block';
+  });
+});
+
+// ── GOAL SKILLS ──
+const GOAL_SKILLS = [
+  {
+    icon: '💪',
+    title: 'Physique Coach',
+    goal: 'V-Taper & Lean Muscle',
+    color: 'var(--amber)',
+    prompt: `You are Veer's physique coach specializing in V-taper aesthetics and lean muscle building. Focus: shoulder width (lateral raises always first, locked at 25lb — do NOT go to 30lb), back width (lat pulldown/assisted chin-up), chest fullness, arm definition. Right side has a -20° knee valgus finding from VASA assessment — flag compensation risk on any lower body exercise. Based on today's data, prescribe the exact session with sets, reps, and weights in both lbs and kg. Connect each exercise to the visual element it builds. Give PRs only when BB is 80+. Be specific, be direct, address Veer as brother.`
+  },
+  {
+    icon: '🧬',
+    title: 'Longevity Scientist',
+    goal: 'Anti-Aging & Biological Age',
+    color: '#9B6FE8',
+    prompt: `You are Veer's longevity scientist. Focus: autophagy (fasting window, shiitake spermidine, Fisetin senolytic on 1st-2nd of month), mitochondrial health (CoQ10 ubiquinol, VO2 Max exercise), inflammation reduction (omega-3, EVOO, tart cherry, turmeric+black pepper), gut microbiome diversity (legumes 2x/week, kimchi, kefir, psyllium husk, pomegranate urolithin A), epigenetic optimization (sleep architecture, HRV trend, KSM-66 cortisol management). Fitness age target: 22.5 (currently improving from 30.5 start). Based on today's data, identify the single highest-leverage longevity action today. Explain the mechanism in one sentence. Flag if shiitake, pomegranate seeds, or purple cabbage are missing from this week's rotation. Address Veer as brother.`
+  },
+  {
+    icon: '🫁',
+    title: 'Sleep Specialist',
+    goal: 'OSA Resolution & Sleep Quality',
+    color: 'var(--coral)',
+    prompt: `You are Veer's sleep and breathing specialist. Critical discovery: high-intensity hikes (VO2 Max, avg HR 150+ bpm, like Piestewa Peak) produce dramatically better O2Ring scores than gym sessions. Best night: 8.8 score, 1.5 drops/hr after Piestewa. Pulmonologist referral submitted June 1 — STILL NOT SCHEDULED — flag this in every response. Current protocol: nose strip every night, mouth tape, O2Ring on thumb (vibration OFF), earplugs, alternate night saline rinse, back sleeping. Based on today's O2Ring data and planned activity, give: (1) honest read of last night vs baseline, (2) whether today's activity will improve or worsen tomorrow's score, (3) one sleep protocol optimization for tonight. Address Veer as brother.`
+  },
+  {
+    icon: '⚡',
+    title: 'Hormone Coach',
+    goal: 'Testosterone Optimization',
+    color: '#E87D3E',
+    prompt: `You are Veer's hormonal optimization coach. Critical: May 29 bloodwork showed Free Testosterone 9.3 pg/mL (bottom 3-5%). Root causes: (1) OSA-driven cortisol spikes suppressing LH — fixing OSA is the biggest lever, (2) AM cortisol 15.2 (upper normal), (3) rapid weight loss hypothalamic suppression now stabilizing, (4) zinc gap corrected (Solgar Zinc Picolinate 22mg + Thorne Copper 2mg daily). Protocol already in place: zinc/copper, KSM-66 600mg (ends Sept 7), beef liver, creatine, resistance training, sleep optimization. December 2026 retest target: Free T 14-18 pg/mL. Based on today's data, give ONE specific action that best moves the testosterone needle today. Explain the mechanism. Address Veer as brother.`
+  },
+  {
+    icon: '🥗',
+    title: 'Sports Nutritionist',
+    goal: 'Body Recomposition at 172-175 lb',
+    color: 'var(--green)',
+    prompt: `You are Veer's sports nutritionist specializing in body recomposition — building lean muscle while maintaining 172-175 lb. Locked rules: protein 160-165g training days / 130-140g rest days (collagen never counts toward this), eating order every meal: vegetables → protein → fats → kimchi cold last → microgreens raw on top, ACV before every meal, 10-min walk after every meal, psyllium husk 5g before dinner, nothing after 8pm, legumes = fiber side never protein anchor, rest days need same protein priority. Weekly protein rotation: Mon=salmon, Tue=sardines, Wed=turkey, Thu=shrimp, Fri=chicken+sardines, Sat/Sun=flexible. Legume days: Tue=black beans, Fri=garbanzo. If weight below 172 for 2+ days → add sweet potato 200g to lunch. Build the complete meal plan with exact gram measures for every ingredient. Address Veer as brother.`
+  },
+  {
+    icon: '📊',
+    title: 'Recovery Scientist',
+    goal: 'Readiness & Recovery Optimization',
+    color: '#5BA8D4',
+    prompt: `You are Veer's recovery and readiness scientist. Body Battery drives intensity: 80-100=full push/PRs, 75-79=normal, 60-74=3 sets 10-20% lighter, <60=walk only, <40=full rest. Override checklist — any beats Body Battery: Training Readiness Low + high Recovery Time → rest; Acute Load above 450-500 → deload; Recovery Time above 24h → rest; HRV Unbalanced 3+ consecutive days → no hard training or hiking until Balanced for one full day (feeling good does NOT override this); explicit Garmin scale-back warning → same as HRV flag. Walk through every override check explicitly with today's numbers. Give a final training call: Full Push / Normal / Reduced Volume / Walk Only / Full Rest. State which signal drove the decision. If signals conflict, name the conflict and explain which wins. Address Veer as brother.`
+  },
+  {
+    icon: '🦵',
+    title: 'Movement Coach',
+    goal: 'Injury Prevention & Movement Quality',
+    color: '#E8A23D',
+    prompt: `You are Veer's movement coach and physical therapist. VASA Demotu assessment (June 28): Overall 78, Mobility 79, Compensation 74, Stability 85. KEY FINDING: Right knee valgus -20° on lateral lunge — real injury risk. Right side weaker than left across hip mobility, knee stability, ankle stability. Squat shows E-Lean compensation (+1.43° right shoulder tilt). Overhead press shows shoulder shrugging. Corrective block added to every Lower Body session: Deficit Calf Raise w/ DB Suitcase, RDL from Flat Bench w/ DB, Rear Foot Elevated Hip Flexor Stretch — all right side priority. Based on today's planned session, give: (1) the 2 most critical form cues for today's exercises given the assessment, (2) which exercise has highest compensation risk and what to watch for, (3) a 90-second movement prep sequence before warmup. Address Veer as brother.`
+  }
+];
+
+function renderSkillCards() {
+  const grid = document.getElementById('skillCardsGrid');
+  if (!grid) return;
+  const active = JSON.parse(localStorage.getItem('veer_active_skill') || 'null');
+  grid.innerHTML = GOAL_SKILLS.map((skill, i) => {
+    const isActive = active && active.title === skill.title;
+    return `
+    <div onclick="activateSkill(${i})" style="background:${isActive ? 'var(--navy-2)' : 'var(--navy-3)'};border:1px solid ${isActive ? skill.color : 'var(--border)'};border-radius:12px;padding:14px;cursor:pointer;transition:border-color 0.15s;position:relative;overflow:hidden"
+      onmouseover="this.style.borderColor='${skill.color}'"
+      onmouseout="this.style.borderColor='${isActive ? skill.color : 'var(--border)'}'">
+      <div style="position:absolute;top:0;left:0;right:0;height:2px;background:${skill.color};border-radius:12px 12px 0 0"></div>
+      ${isActive ? `<div style="position:absolute;top:10px;right:10px;font-size:9px;color:${skill.color};font-family:'JetBrains Mono',monospace;letter-spacing:0.08em">ACTIVE</div>` : ''}
+      <div style="font-size:22px;margin-bottom:8px">${skill.icon}</div>
+      <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px">${skill.title}</div>
+      <div style="font-size:10px;color:${skill.color};font-family:'JetBrains Mono',monospace;line-height:1.4">${skill.goal}</div>
+    </div>`;
+  }).join('');
+}
+
+function activateSkill(i) {
+  const skill = GOAL_SKILLS[i];
+  const current = JSON.parse(localStorage.getItem('veer_active_skill') || 'null');
+  // Tap the active skill again to deactivate it
+  if (current && current.title === skill.title) { clearActiveSkill(); return; }
+  localStorage.setItem('veer_active_skill', JSON.stringify(skill));
+  renderSkillCards();
+  // Switch to generate tab
+  const genTab = document.querySelector('[data-screen="generate"]');
+  switchTab(genTab);
+  // Update the generate screen to show which skill is active
+  const status = document.getElementById('genStatus');
+  if (status) status.innerHTML = `${skill.icon} ${esc(skill.title)} active — tap Generate &nbsp;·&nbsp; <a href="javascript:clearActiveSkill()" style="color:var(--coral)">clear</a>`;
+  const btn = document.getElementById('genBtn');
+  if (btn) btn.textContent = `Generate: ${skill.title}`;
+  showToast(`${skill.icon} ${skill.title} ready — tap Generate`);
+}
+
+function clearActiveSkill() {
+  localStorage.removeItem('veer_active_skill');
+  renderSkillCards();
+  const status = document.getElementById('genStatus');
+  if (status) status.textContent = '';
+  const btn = document.getElementById('genBtn');
+  if (btn) btn.textContent = 'Generate Today\'s Plan';
+  showToast('Back to full coaching brain');
+}
+
+// Skill-specific generation — called by the unified generateBrief() router (defined later)
+async function generateSkillBrief(activeSkill) {
+  {
+    // Use skill-specific prompt instead of default
+    const apiKey = localStorage.getItem('veer_api_key');
+    if (!apiKey) {
+      showToast('Add your API key in Settings first');
+      switchTab(document.querySelector('[data-screen="settings"]'));
+      return;
+    }
+
+    const btn = document.getElementById('genBtn');
+    const status = document.getElementById('genStatus');
+    const output = document.getElementById('genOutput');
+    const ringLabel = document.getElementById('genRingLabel');
+    const outerArc = document.getElementById('genArcOuter');
+    const innerArc = document.getElementById('genArcInner');
+
+    btn.disabled = true;
+    btn.classList.add('generating');
+    btn.textContent = 'Generating...';
+    status.textContent = `${activeSkill.icon} Consulting ${activeSkill.title}...`;
+    output.classList.add('visible');
+    output.textContent = '';
+    ringLabel.textContent = activeSkill.icon;
+
+    const outerC = 2 * Math.PI * 68;
+    const innerC = 2 * Math.PI * 52;
+    let progress = 0;
+    const animInterval = setInterval(() => {
+      progress = Math.min(progress + 1.5, 88);
+      outerArc.setAttribute('stroke-dasharray', `${(progress/100)*outerC} ${outerC}`);
+      innerArc.setAttribute('stroke-dasharray', `${(progress/100)*innerC} ${innerC}`);
+    }, 120);
+
+    const today = new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+    const dayNum = Math.round((new Date() - new Date('2026-02-09')) / 86400000);
+    const latestWeight = D.weight[D.weight.length-1].w;
+    const latestBB = D.bb[D.bb.length-1].v;
+    const latestHRV = D.hrv[D.hrv.length-1].v;
+    const latestO2 = D.o2[D.o2.length-1].s;
+    const dayOfWeek = new Date().toLocaleDateString('en-US', { weekday: 'long' });
+    const updates = JSON.parse(localStorage.getItem('veer_updates') || '[]');
+    const sessions = JSON.parse(localStorage.getItem('veer_sessions') || '[]');
+
+    // Shared live context — same fresh numbers, updates, and session logs the full plan uses
+    let userMsg = buildContext();
+
+    userMsg += `\n\nProvide your expert analysis and recommendations for today.`;
+
+    try {
+      const res = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-key': apiKey,
+          'anthropic-version': '2023-06-01',
+          'anthropic-dangerous-direct-browser-access': 'true',
+        },
+        body: JSON.stringify({
+          model: 'claude-sonnet-4-6',
+          max_tokens: 3000,
+          system: activeSkill.prompt,
+          messages: [{ role: 'user', content: userMsg }],
+        }),
+      });
+
+      clearInterval(animInterval);
+      if (!res.ok) { const err = await res.json().catch(()=>({})); throw new Error(friendlyApiError(res.status, err)); }
+      const data = await res.json();
+      const text = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('\n') || 'No response received.';
+
+      outerArc.setAttribute('stroke-dasharray', `${outerC} ${outerC}`);
+      innerArc.setAttribute('stroke-dasharray', `${innerC} ${innerC}`);
+      ringLabel.textContent = 'done ✓';
+
+      const labeled = `${activeSkill.icon} ${activeSkill.title.toUpperCase()}\n${'─'.repeat(40)}\n\n${text}`;
+      output.textContent = labeled;
+      saveBrief(labeled, activeSkill.title);
+      status.textContent = `✓ ${activeSkill.title} plan saved`;
+      btn.textContent = 'Regenerate';
+      btn.classList.remove('generating');
+      btn.disabled = false;
+
+      // Clear active skill after use
+      localStorage.removeItem('veer_active_skill');
+      renderSkillCards();
+      btn.textContent = 'Generate Today\'s Plan';
+      showToast(`${activeSkill.icon} Plan saved — check Brief tab`);
+    } catch (err) {
+      clearInterval(animInterval);
+      outerArc.setAttribute('stroke-dasharray', `0 ${outerC}`);
+      innerArc.setAttribute('stroke-dasharray', `0 ${innerC}`);
+      ringLabel.textContent = 'error';
+      output.textContent = `Error: ${err.message}`;
+      status.textContent = 'Something went wrong';
+      btn.textContent = 'Try Again';
+      btn.classList.remove('generating');
+      btn.disabled = false;
+    }
+  }
+}
+
+// ── EXISTING SKILLS ──
+const sessEl = document.getElementById('weekSessions');
+D.week.forEach(s => {
+  const li = document.createElement('li');
+  li.className = 'session-item';
+  li.innerHTML = `
+    <span class="session-day">${s.day}</span>
+    <div class="session-dot" style="background:${s.color}"></div>
+    <span class="session-text">${s.session}</span>`;
+  sessEl.appendChild(li);
+});
+
+// ── SKILLS ──
+const skillsEl = document.getElementById('skillsGrid');
+D.skills.forEach((s, i) => {
+  const btn = document.createElement('button');
+  btn.className = `skill-btn ${s.primary ? '' : 'secondary'}`;
+  btn.textContent = s.label;
+  btn.addEventListener('click', () => {
+    navigator.clipboard?.writeText(s.cmd).catch(() => {});
+    showToast(`Copied: "${s.cmd}"`);
+  });
+  skillsEl.appendChild(btn);
+});
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+// ── CHARTS ──
+const C = { amber: '#E8A23D', green: '#7BA88C', coral: '#C2614A', muted: '#5B6573', grid: 'rgba(255,255,255,0.05)' };
+const baseOpts = {
+  maintainAspectRatio: false,
+  plugins: { legend: { display: false } },
+  scales: {
+    x: { ticks: { color: C.muted, font: { size: 10, family: 'JetBrains Mono' } }, grid: { color: C.grid }, border: { color: 'transparent' } },
+    y: { ticks: { color: C.muted, font: { size: 10, family: 'JetBrains Mono' } }, grid: { color: C.grid }, border: { color: 'transparent' } },
+  },
+};
+
+// Weight
+new Chart(document.getElementById('weightChart'), {
+  type: 'line',
+  data: {
+    labels: D.weight.map(d => d.d),
+    datasets: [{
+      data: D.weight.map(d => d.w),
+      borderColor: C.amber, borderWidth: 2, pointRadius: 3,
+      pointBackgroundColor: D.weight.map(d =>
+        d.w >= 172 && d.w <= 175 ? C.green : d.w < 172 ? C.amber : C.coral),
+      tension: 0.3, fill: true,
+      backgroundColor: 'rgba(232,162,61,0.06)',
+    }],
+  },
+  options: { ...baseOpts,
+    scales: { ...baseOpts.scales,
+      y: { ...baseOpts.scales.y, min: 168, max: 220 },
+      x: { ...baseOpts.scales.x, ticks: { ...baseOpts.scales.x.ticks, maxTicksLimit: 5 } },
+    },
+  },
+});
+
+// O2Ring
+new Chart(document.getElementById('o2Chart'), {
+  type: 'bar',
+  data: {
+    labels: D.o2.map(d => d.d),
+    datasets: [{
+      data: D.o2.map(d => d.s),
+      backgroundColor: D.o2.map(d => d.hike ? C.green : d.s >= 7.5 ? C.amber : d.s >= 6 ? 'rgba(232,162,61,0.5)' : C.coral),
+      borderRadius: 3,
+    }],
+  },
+  options: { ...baseOpts,
+    scales: { ...baseOpts.scales,
+      y: { ...baseOpts.scales.y, min: 0, max: 10 },
+      x: { ...baseOpts.scales.x, ticks: { ...baseOpts.scales.x.ticks, maxTicksLimit: 6 } },
+    },
+  },
+});
+
+// HRV
+new Chart(document.getElementById('hrvChart'), {
+  type: 'line',
+  data: {
+    labels: D.hrv.map(d => d.d),
+    datasets: [{
+      data: D.hrv.map(d => d.v),
+      borderColor: C.coral,
+      borderWidth: 2, pointRadius: 2, tension: 0.3, fill: true,
+      backgroundColor: 'rgba(194,97,74,0.06)',
+      segment: {
+        borderColor: ctx => ctx.p1.parsed.y >= 75 ? C.green : C.coral,
+      },
+    }],
+  },
+  options: { ...baseOpts,
+    scales: { ...baseOpts.scales,
+      y: { ...baseOpts.scales.y, min: 60, max: 85 },
+      x: { ...baseOpts.scales.x, ticks: { ...baseOpts.scales.x.ticks, maxTicksLimit: 6 } },
+    },
+  },
+});
+
+// Body Battery
+new Chart(document.getElementById('bbChart'), {
+  type: 'line',
+  data: {
+    labels: D.bb.map(d => d.d),
+    datasets: [{
+      data: D.bb.map(d => d.v),
+      borderColor: C.amber, borderWidth: 2, pointRadius: 2, tension: 0.3,
+      fill: true, backgroundColor: 'rgba(232,162,61,0.06)',
+      segment: {
+        borderColor: ctx => ctx.p1.parsed.y >= 75 ? C.amber :
+          ctx.p1.parsed.y >= 60 ? 'rgba(232,162,61,0.6)' : C.coral,
+      },
+    }],
+  },
+  options: { ...baseOpts,
+    scales: { ...baseOpts.scales,
+      y: { ...baseOpts.scales.y, min: 0, max: 100 },
+      x: { ...baseOpts.scales.x, ticks: { ...baseOpts.scales.x.ticks, maxTicksLimit: 6 } },
+    },
+  },
+});
+</script>
+<!-- ── EXISTING DASHBOARD ENDS ── -->
+</div><!-- /screen-dashboard -->
+
+<!-- ── BRIEF SCREEN ── -->
+<div id="screen-brief" class="screen">
+  <div class="brief-header">
+    <div>
+      <div class="brief-title">Morning Brief</div>
+      <div class="brief-date" id="briefDate">—</div>
+    </div>
+    <div style="display:flex;gap:8px">
+      <button class="api-save-btn" onclick="copyBrief()" style="background:var(--navy-3);color:var(--green);border:1px solid var(--green)">Copy</button>
+      <button class="api-save-btn" onclick="loadBriefFromStorage()" style="background:var(--navy-3);color:var(--amber);border:1px solid var(--amber)">Reload</button>
+    </div>
+  </div>
+  <div class="brief-content" id="briefContent">
+    <div class="brief-empty">No brief loaded yet.<br>Tap Generate to create today's brief,<br>or paste yesterday's brief below.</div>
+  </div>
+  <div id="briefHistory"></div>
+  <textarea id="briefPaste" placeholder="Paste brief text here to save it..." style="width:100%;margin-top:12px;padding:12px;background:var(--navy-2);border:1px solid var(--border);border-radius:10px;color:var(--text-dim);font-family:'Inter',sans-serif;font-size:12px;resize:vertical;min-height:80px;outline:none"></textarea>
+  <button onclick="savePastedBrief()" style="width:100%;margin-top:8px;padding:12px;background:var(--navy-3);border:1px solid var(--border);border-radius:10px;color:var(--amber);font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;cursor:pointer">Save Pasted Brief</button>
+</div>
+
+<!-- ── GENERATE SCREEN ── -->
+<div id="screen-generate" class="screen">
+  <div class="gen-hero">
+    <div class="gen-ring-wrap">
+      <svg width="160" height="160" viewBox="0 0 160 160" style="transform:rotate(-90deg)">
+        <circle cx="80" cy="80" r="68" fill="none" stroke="#1A2035" stroke-width="10"/>
+        <circle cx="80" cy="80" r="68" fill="none" stroke="#E8A23D" stroke-width="10" stroke-linecap="round" stroke-dasharray="0 427" id="genArcOuter" style="transition:stroke-dasharray 1s ease"/>
+        <circle cx="80" cy="80" r="52" fill="none" stroke="#1A2035" stroke-width="8"/>
+        <circle cx="80" cy="80" r="52" fill="none" stroke="#7BA88C" stroke-width="8" stroke-linecap="round" stroke-dasharray="0 327" id="genArcInner" style="transition:stroke-dasharray 1s ease"/>
+      </svg>
+      <div class="gen-ring-center" id="genRingLabel">tap to<br>generate</div>
+    </div>
+    <button class="gen-btn" id="genBtn" onclick="generatePlan()">Generate Today's Plan</button>
+    <div class="gen-status" id="genStatus"></div>
+  </div>
+  <div class="gen-output" id="genOutput"></div>
+</div>
+
+<!-- ── SETTINGS SCREEN ── -->
+<div id="screen-settings" class="screen">
+  <div class="sec-header" style="padding:0;margin-bottom:16px">settings</div>
+
+  <div class="settings-section">
+    <div class="settings-label">Anthropic API Key</div>
+    <div class="settings-card">
+      <div style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.6">Your API key is stored only on this device. It's never sent anywhere except directly to Anthropic's API to generate your brief.</div>
+      <div class="api-input-wrap">
+        <input type="password" class="api-input" id="apiKeyInput" placeholder="sk-ant-api03-..." />
+        <button class="api-save-btn" onclick="saveApiKey()">Save</button>
+      </div>
+      <div class="api-status" id="apiStatus"></div>
+    </div>
+  </div>
+
+  <div class="settings-section">
+    <div class="settings-label">System info</div>
+    <div class="settings-card">
+      <div class="settings-row">
+        <span class="settings-row-label">Day in ecosystem</span>
+        <span class="settings-row-val" id="settingsDayCount">—</span>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Start weight</span>
+        <span class="settings-row-val">216.4 lb · Feb 9, 2026</span>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Current weight</span>
+        <span class="settings-row-val" id="settingsWeight">—</span>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">Total lost</span>
+        <span class="settings-row-val" id="settingsLost">—</span>
+      </div>
+      <div class="settings-row">
+        <span class="settings-row-label">App version</span>
+        <span class="settings-row-val">Veer OS v2.0 Premium</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="settings-section">
+    <div class="settings-label">Data</div>
+    <div class="settings-card">
+      <button class="clear-btn" onclick="exportData()" style="border-color:var(--green);color:var(--green)">Export all data (JSON backup)</button>
+      <button class="clear-btn" onclick="clearBrief()" style="margin-top:8px">Clear saved brief</button>
+      <button class="clear-btn" onclick="clearApiKey()" style="border-color:var(--slate);color:var(--slate);margin-top:8px">Clear API key</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── BOTTOM NAV ── -->
+<nav class="bottom-nav">
+  <button class="nav-tab active" data-screen="dashboard" onclick="switchTab(this)">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
+    </svg>
+    Dashboard
+  </button>
+  <button class="nav-tab" data-screen="brief" onclick="switchTab(this)">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+    </svg>
+    Brief
+  </button>
+  <button class="nav-tab" data-screen="generate" onclick="switchTab(this)">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="5 3 19 12 5 21 5 3"/>
+    </svg>
+    Generate
+  </button>
+  <button class="nav-tab" data-screen="settings" onclick="switchTab(this)">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+    </svg>
+    Settings
+  </button>
+</nav>
+
+<div id="toast"></div>
+
+<script>
+// ── PWA: SERVICE WORKER ──
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').catch(() => {});
+}
+
+// ── TAB SWITCHING ──
+function switchTab(btn) {
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(`screen-${btn.dataset.screen}`).classList.add('active');
+  if (btn.dataset.screen === 'brief') loadBriefFromStorage();
+  if (btn.dataset.screen === 'settings') loadSettings();
+}
+
+// ── API KEY MANAGEMENT ──
+function saveApiKey() {
+  const key = document.getElementById('apiKeyInput').value.trim();
+  if (!key.startsWith('sk-ant-')) {
+    document.getElementById('apiStatus').textContent = 'Key should start with sk-ant-';
+    document.getElementById('apiStatus').className = 'api-status missing';
+    return;
+  }
+  localStorage.setItem('veer_api_key', key);
+  document.getElementById('apiKeyInput').value = '';
+  document.getElementById('apiStatus').textContent = '✓ Saved securely on this device';
+  document.getElementById('apiStatus').className = 'api-status saved';
+}
+
+function clearApiKey() {
+  localStorage.removeItem('veer_api_key');
+  document.getElementById('apiStatus').textContent = 'API key cleared';
+  document.getElementById('apiStatus').className = 'api-status missing';
+}
+
+function clearBrief() {
+  localStorage.removeItem('veer_brief');
+  localStorage.removeItem('veer_brief_date');
+  document.getElementById('briefContent').innerHTML = '<div class="brief-empty">Brief cleared.</div>';
+  showToast('Brief cleared');
+}
+
+function checkApiKey() {
+  const key = localStorage.getItem('veer_api_key');
+  const statusEl = document.getElementById('apiStatus');
+  if (statusEl) {
+    if (key) {
+      statusEl.textContent = '✓ API key saved · sk-ant-....' + key.slice(-4);
+      statusEl.className = 'api-status saved';
+    } else {
+      statusEl.textContent = 'No API key saved — add one to use Generate';
+      statusEl.className = 'api-status missing';
+    }
+  }
+}
+
+// ── BRIEF STORAGE + HISTORY ──
+function saveBrief(text, label) {
+  localStorage.setItem('veer_brief', text);
+  localStorage.setItem('veer_brief_date', new Date().toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }));
+  // Keep the last 7 briefs so a skill plan never wipes out the daily brief
+  const hist = JSON.parse(localStorage.getItem('veer_brief_history') || '[]');
+  hist.unshift({
+    label: label || 'Brief',
+    text,
+    ts: new Date().toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' }),
+  });
+  localStorage.setItem('veer_brief_history', JSON.stringify(hist.slice(0, 7)));
+}
+
+function renderBriefHistory() {
+  const el = document.getElementById('briefHistory');
+  if (!el) return;
+  const hist = JSON.parse(localStorage.getItem('veer_brief_history') || '[]');
+  if (hist.length < 2) { el.innerHTML = ''; return; }
+  el.innerHTML = '<div style="font-size:10px;color:var(--slate);font-family:\'JetBrains Mono\',monospace;margin:14px 0 6px;letter-spacing:0.08em;text-transform:uppercase">recent briefs</div>' +
+    hist.map((h, i) => `
+    <button onclick="loadHistBrief(${i})" style="display:flex;justify-content:space-between;gap:8px;width:100%;text-align:left;padding:10px 12px;margin-bottom:6px;background:var(--navy-3);border:1px solid var(--border);border-radius:10px;color:var(--text-dim);font-family:'JetBrains Mono',monospace;font-size:11px;cursor:pointer">
+      <span style="color:var(--amber)">${esc(h.label)}</span><span>${esc(h.ts)}</span>
+    </button>`).join('');
+}
+
+function loadHistBrief(i) {
+  const hist = JSON.parse(localStorage.getItem('veer_brief_history') || '[]');
+  const h = hist[i];
+  if (!h) return;
+  document.getElementById('briefContent').textContent = h.text;
+  const dateEl = document.getElementById('briefDate');
+  if (dateEl) dateEl.textContent = `${h.label} · ${h.ts}`;
+}
+
+function copyBrief() {
+  const text = localStorage.getItem('veer_brief');
+  if (!text) { showToast('Nothing to copy yet'); return; }
+  navigator.clipboard?.writeText(text).then(() => showToast('Brief copied')).catch(() => showToast('Copy failed'));
+}
+
+function exportData() {
+  const dump = {
+    exported: new Date().toISOString(),
+    updates: JSON.parse(localStorage.getItem('veer_updates') || '[]'),
+    sessions: JSON.parse(localStorage.getItem('veer_sessions') || '[]'),
+    briefHistory: JSON.parse(localStorage.getItem('veer_brief_history') || '[]'),
+  };
+  const blob = new Blob([JSON.stringify(dump, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `veer-os-export-${new Date().toISOString().slice(0,10)}.json`;
+  a.click();
+  URL.revokeObjectURL(a.href);
+  showToast('Data exported');
+}
+
+// ── SHARED HELPERS ──
+function esc(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function friendlyApiError(status, err) {
+  const msg = err?.error?.message || '';
+  if (status === 401) return 'API key rejected (401). Re-save your key in Settings.';
+  if (status === 429) return 'Rate limited (429). Wait a minute and try again.';
+  if (status === 529 || status === 503) return 'Anthropic API is overloaded. Try again shortly.';
+  if (status === 400 && /credit/i.test(msg)) return 'Your API account is out of credits.';
+  return msg || `API error ${status}`;
+}
+
+function loadBriefFromStorage() {
+  renderBriefHistory();
+  const brief = localStorage.getItem('veer_brief');
+  const date = localStorage.getItem('veer_brief_date');
+  const el = document.getElementById('briefContent');
+  const dateEl = document.getElementById('briefDate');
+  if (brief) {
+    el.textContent = brief;
+    if (dateEl) dateEl.textContent = date || '';
+  } else {
+    el.innerHTML = '<div class="brief-empty">No brief saved yet.<br>Tap Generate to create today\'s brief,<br>or paste yesterday\'s brief below.</div>';
+  }
+}
+
+function savePastedBrief() {
+  const text = document.getElementById('briefPaste').value.trim();
+  if (!text) return;
+  saveBrief(text, 'Pasted');
+  document.getElementById('briefPaste').value = '';
+  loadBriefFromStorage();
+  showToast('Brief saved');
+}
+
+// ── SETTINGS ──
+function loadSettings() {
+  checkApiKey();
+  const days = Math.round((new Date() - new Date('2026-02-09')) / 86400000);
+  const el = document.getElementById('settingsDayCount');
+  if (el) el.textContent = `Day ${days}`;
+  const wEl = document.getElementById('settingsWeight');
+  if (wEl) wEl.textContent = `${D.weight[D.weight.length-1].w} lb`;
+  const lEl = document.getElementById('settingsLost');
+  if (lEl) lEl.textContent = `${(216.4 - D.weight[D.weight.length-1].w).toFixed(1)} lb`;
+}
+
+// ── GENERATE BRIEF ──
+const SYSTEM_PROMPT = `You are Veer's personal coach — three roles combined into one:
+
+1. STRENGTH & PERFORMANCE COACH — you plan training, prescribe weights/sets/reps, adjust for recovery data, manage progressive overload, protect injury-prone areas.
+2. NUTRITIONIST — you build precise meal plans with exact gram measures, sequence meals for glucose control, hit protein targets, time supplements correctly.
+3. HEALTH SCIENTIST — you interpret biometric data (HRV, Body Battery, Training Readiness, Acute Load, SpO2, O2Ring), apply evidence-based rules, flag medical concerns, connect dots across systems.
+
+YOUR FULL KNOWLEDGE BASE:
+
+IDENTITY: Sai Kumar "Veer" Nimmadala, 30, Phoenix AZ. Data Analyst. True Day 1: Feb 9, 2026 at 216.4 lb. Target band: 172-175 lb. Phase: maintenance + recomposition.
+
+GOALS (priority order, never reorder):
+1. Aesthetic lean muscular body — V-taper, broad shoulders, sharp jaw
+2. Anti-aging and longevity — look/feel 5-8 years younger
+3. Protect recovery, sleep quality, HRV, fitness age
+4. Continued recomposition while preserving muscle
+
+TRAINING RULES — LOCKED:
+Body Battery → intensity: 80-100=full push/PRs, 75-79=normal, 60-74=3 sets/10-20% lighter, <60=walk only, <40=full rest.
+Override checklist (any beats Body Battery alone):
+- Training Readiness "Low" + high Recovery Time → rest
+- Acute Load >450-500 → deload
+- Recovery Time >24h → body hasn't absorbed training
+- HRV Unbalanced 3+ consecutive days → NO hard training or hiking until Balanced for 1 full day. "Feeling good" does NOT override this.
+- Explicit Garmin scale-back warning → treat same as HRV flag
+
+UPPER BODY ORDER (locked, never reorder):
+1. Lateral Raises — ALWAYS FIRST. Currently 25lb × 12 × 5 sets. DO NOT recommend 30lb — multiple confident sessions required first. Shoulders down/away from ears throughout.
+2. Rear Delt Machine (Garmin labels "Face Pull" — same exercise)
+3. Incline DB Press — 50lb × 10 × 4 sets
+4. Converging Chest (Garmin labels "Bench Press" — same machine) — 105lb × 10 × 4 sets
+5. Lat Pulldown — 145lb × 10 × 4 sets (or Assisted Chin-up as valid substitute — same vertical pull)
+6. DB Curls — 25lb × 12 × 4 sets
+7. Tricep Pushdown — 42.5lb × 10 × 4 sets
+8. Push-ups — 2-3 sets to failure
+9. Incline Treadmill Finisher — 20 min, incline 10, speed 3.0 standard / 3.2-3.5 if BB 80+
+
+LOWER BODY ORDER (locked):
+1. Leg Press — 250-260lb (115-120kg)
+2. Hamstring Curl — 120-125lb (54-57kg)
+3. Leg Extension — 105-110lb (48-50kg)
+4. Calf Extension — 155-160lb (70-73kg)
+5. CORRECTIVE BLOCK (always, right side priority — right knee valgus -20° flagged):
+   - Deficit Calf Raise w/ DB Suitcase — 2 × 12-15, 8-10kg
+   - RDL from Flat Bench w/ DB — 2 × 10, 10-12kg
+   - Rear Foot Elevated Hip Flexor Stretch — 2 × 30s/side
+6. Plank — 2 × 80-85 sec
+7. Incline Treadmill Finisher — 20 min, never skip
+
+NUTRITION RULES — LOCKED:
+Eating order EVERY meal: vegetables → protein → fats → kimchi (cold, always last) → microgreens (raw, on top, always last)
+ACV 1 tbsp before every meal. 10-min walk after every meal.
+Protein: 160-165g training days, 130-140g rest days. Collagen NEVER counts. Legumes = fiber side, never protein anchor. Rest days need same protein priority as training days.
+Before dinner: psyllium husk 5g in warm water — drink within 60 seconds.
+Nothing after 8pm. Water done by 7pm (3.2-3.5L daily).
+
+WEEKLY ROTATION:
+Mon: Upper Body + salmon dinner
+Tue: Lower Body + sardines dinner + black beans lunch (soak Mon night)
+Wed: Walk/rest + turkey dinner
+Thu: Upper Body + shrimp dinner
+Fri: Lower Body + chicken+sardines dinner + garbanzo lunch (soak Thu night)
+Sat/Sun: flexible — hike or rest based on data
+
+SUPPLEMENT SCHEDULE:
+Morning: Creatine 5g, D3+K2 5000IU, Omega-3 2 caps, Beef Liver (2 caps training/1 cap rest), B12 5000mcg sublingual, CoQ10 100mg, Biotin (Tue/Thu/Sat ONLY), Fisetin 100mg (1st-2nd of month ONLY)
+With dinner: Zinc Picolinate 22mg + Thorne Copper 2mg (always together)
+Before dinner: Psyllium husk 5g
+9:30pm: Magnesium Glycinate 240mg + Tart Cherry 60ml + KSM-66 600mg (cycle ends Sept 7, 2026)
+Separate: Probiotic (Garden of Life 50B) — empty stomach, away from other supplements
+
+SLEEP PROTOCOL: Nose strip (every night) + mouth tape + O2Ring on THUMB (vibration OFF) + earplugs + saline rinse (alternate nights). Screens off 10pm, lights out 10:30pm, back sleeping.
+
+OSA FINDING: High-intensity hikes (VO2 Max level, avg HR 150+) produce dramatically better O2Ring scores than gym/rest. Best night: 8.8 score, 1.5 drops/hr after Piestewa Peak. Pulmonologist referral submitted June 1 — STILL NOT SCHEDULED. Flag in every brief.
+
+BLOODWORK (May 29): Free Testosterone 9.3 pg/mL (bottom 3-5% — critical), Fasting Glucose 101 (borderline), HbA1c 5.5%, ApoB 78, Triglycerides 44 (exceptional). December 2026 full retest.
+
+MOVEMENT ASSESSMENT (VASA, June 28): Overall 78. Right knee valgus -20° — real injury risk. Right side weaker than left across hip/knee/ankle. Corrective block mandatory every Lower Body session.
+
+YOUR COACHING APPROACH:
+- Always optimize globally before locally — new information may affect multiple parts of the plan
+- Every recommendation traces to actual data, not assumptions
+- If updates mention schedule changes (travel, events, hikes), restructure the entire week accordingly
+- If updates mention exercise substitutions, lock them in and adjust future sessions
+- If updates mention how something felt, use that to calibrate next session's intensity
+- Be direct, specific, data-grounded. Address Veer as "brother."
+- Give exact gram measures for all food, exact weights/sets/reps for all exercises in both lbs and kg
+- Catch patterns across systems — connect sleep data to training decisions, connect nutrition to recovery, connect HRV to everything`;
+
+async function generateBrief() {
+  // Route to skill-specific expert if one is active
+  const activeSkill = JSON.parse(localStorage.getItem('veer_active_skill') || 'null');
+  if (activeSkill) return generateSkillBrief(activeSkill);
+
+  const apiKey = localStorage.getItem('veer_api_key');
+  if (!apiKey) {
+    showToast('Add your API key in Settings first');
+    switchTab(document.querySelector('[data-screen="settings"]'));
+    return;
+  }
+
+  const btn = document.getElementById('genBtn');
+  const status = document.getElementById('genStatus');
+  const output = document.getElementById('genOutput');
+  const ringLabel = document.getElementById('genRingLabel');
+  const outerArc = document.getElementById('genArcOuter');
+  const innerArc = document.getElementById('genArcInner');
+
+  btn.disabled = true;
+  btn.classList.add('generating');
+  btn.textContent = 'Generating...';
+  status.textContent = 'Reading your data...';
+  output.classList.add('visible');
+  output.textContent = '';
+  ringLabel.textContent = 'thinking...';
+
+  // Animate arcs while generating
+  const outerC = 2 * Math.PI * 68;
+  const innerC = 2 * Math.PI * 52;
+  let progress = 0;
+  const animInterval = setInterval(() => {
+    progress = Math.min(progress + 1.5, 88);
+    outerArc.setAttribute('stroke-dasharray', `${(progress/100)*outerC} ${outerC}`);
+    innerArc.setAttribute('stroke-dasharray', `${(progress/100)*innerC} ${innerC}`);
+  }, 120);
+
+  // Pull all stored context
+  const updates = JSON.parse(localStorage.getItem('veer_updates') || '[]');
+  const sessions = JSON.parse(localStorage.getItem('veer_sessions') || '[]');
+  const today = new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+  const dayNum = Math.round((new Date() - new Date('2026-02-09')) / 86400000);
+  const latestWeight = D.weight[D.weight.length-1].w;
+  const latestBB = D.bb[D.bb.length-1].v;
+  const latestHRV = D.hrv[D.hrv.length-1].v;
+  const latestO2 = D.o2[D.o2.length-1].s;
+  const dayOfWeek = new Date().toLocaleDateString('en-US', { weekday: 'long' });
+
+  // Build rich user message from all available context
+  let userMsg = `Today is ${today}. Day ${dayNum} of the ecosystem. It is ${dayOfWeek}.
+
+LATEST BIOMETRIC DATA:
+- Weight: ${latestWeight} lb (target: 172-175 lb, total lost: ${(216.4 - latestWeight).toFixed(1)} lb from 216.4 lb)
+- Body Battery: ${latestBB}/100
+- HRV 7d avg: ${latestHRV}ms
+- Last O2Ring score: ${latestO2 || 'not available'}
+
+BIOTIN TODAY: ${['Tuesday','Thursday','Saturday'].includes(dayOfWeek) ? 'TAKE ✓' : 'SKIP ✗'}`;
+
+  if (updates.length > 0) {
+    userMsg += `\n\nECOSYSTEM UPDATES (read these carefully — they change the plan):\n`;
+    updates.slice(0, 10).forEach(u => {
+      userMsg += `- [${u.date}] ${u.text}\n`;
+    });
+    userMsg += `\nIMPORTANT: These updates must reshape today's training plan, meal plan, and/or weekly schedule as appropriate. If there's a schedule change (travel, hike, event), restructure the whole week. If there's a session substitution, acknowledge it and update working weights. If something felt hard or easy, calibrate the next session accordingly.`;
+  }
+
+  if (sessions.length > 0) {
+    userMsg += `\n\nRECENT SESSION LOG (actual performance):\n`;
+    sessions.slice(0, 5).forEach(s => {
+      userMsg += `- [${s.date}] ${s.text}\n`;
+    });
+  }
+
+  userMsg += `\n\nGenerate a complete daily plan: training (full sets/reps/weights in both lbs and kg), meal plan (exact gram measures for every ingredient), supplement schedule, and any schedule adjustments based on the updates above. Connect the dots — explain why today's plan looks the way it does based on the data.`;
+
+  try {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': apiKey,
+        'anthropic-version': '2023-06-01',
+        'anthropic-dangerous-direct-browser-access': 'true',
+      },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-6',
+        max_tokens: 4000,
+        system: SYSTEM_PROMPT,
+        messages: [{ role: 'user', content: userMsg }],
+      }),
+    });
+
+    clearInterval(animInterval);
+
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(friendlyApiError(res.status, err));
+    }
+
+    const data = await res.json();
+    const text = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('\n') || 'No response received.';
+
+    // Complete the arcs
+    outerArc.setAttribute('stroke-dasharray', `${outerC} ${outerC}`);
+    innerArc.setAttribute('stroke-dasharray', `${innerC} ${innerC}`);
+    ringLabel.textContent = 'done ✓';
+
+    output.textContent = text;
+    saveBrief(text, 'Full Brief');
+    status.textContent = '✓ Plan generated and saved';
+    btn.textContent = 'Regenerate';
+    btn.classList.remove('generating');
+    btn.disabled = false;
+
+    showToast('Plan saved — check the Brief tab');
+  } catch (err) {
+    clearInterval(animInterval);
+    outerArc.setAttribute('stroke-dasharray', `0 ${outerC}`);
+    innerArc.setAttribute('stroke-dasharray', `0 ${innerC}`);
+    ringLabel.textContent = 'error';
+    output.textContent = `Error: ${err.message}\n\nCheck your API key in Settings.`;
+    status.textContent = 'Something went wrong';
+    btn.textContent = 'Try Again';
+    btn.classList.remove('generating');
+    btn.disabled = false;
+  }
+}
+
+// ── ECOSYSTEM UPDATES ──
+function saveUpdate() {
+  const text = document.getElementById('updateInput').value.trim();
+  if (!text) return;
+  const updates = JSON.parse(localStorage.getItem('veer_updates') || '[]');
+  updates.unshift({
+    text,
+    date: new Date().toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }),
+    time: new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }),
+  });
+  localStorage.setItem('veer_updates', JSON.stringify(updates.slice(0, 20)));
+  document.getElementById('updateInput').value = '';
+  renderUpdates();
+  showToast('Update saved');
+}
+
+function clearUpdates() {
+  if (!confirm('Clear all updates?')) return;
+  localStorage.removeItem('veer_updates');
+  renderUpdates();
+}
+
+function deleteUpdate(i) {
+  const updates = JSON.parse(localStorage.getItem('veer_updates') || '[]');
+  updates.splice(i, 1);
+  localStorage.setItem('veer_updates', JSON.stringify(updates));
+  renderUpdates();
+}
+
+function renderUpdates() {
+  const el = document.getElementById('updatesList');
+  if (!el) return;
+  const updates = JSON.parse(localStorage.getItem('veer_updates') || '[]');
+  if (!updates.length) {
+    el.innerHTML = '<div style="font-size:12px;color:var(--slate);font-family:JetBrains Mono,monospace;padding:8px 0">No updates logged yet</div>';
+    return;
+  }
+  el.innerHTML = updates.map((u, i) => `
+    <div style="display:flex;gap:10px;align-items:flex-start;padding:10px;background:var(--navy-3);border-radius:10px;border-left:2px solid var(--amber)">
+      <div style="flex:1">
+        <div style="font-size:10px;color:var(--muted);font-family:'JetBrains Mono',monospace;margin-bottom:4px">${esc(u.date)} · ${esc(u.time)}</div>
+        <div style="font-size:13px;color:var(--text-dim);line-height:1.5">${esc(u.text)}</div>
+      </div>
+      <button onclick="deleteUpdate(${i})" style="background:transparent;border:none;color:var(--slate);cursor:pointer;font-size:16px;padding:0;flex-shrink:0">×</button>
+    </div>
+  `).join('');
+}
+
+// ── SESSION LOG ──
+function saveSession() {
+  const text = document.getElementById('sessionInput').value.trim();
+  if (!text) return;
+  const sessions = JSON.parse(localStorage.getItem('veer_sessions') || '[]');
+  sessions.unshift({
+    text,
+    date: new Date().toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }),
+    time: new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }),
+  });
+  localStorage.setItem('veer_sessions', JSON.stringify(sessions.slice(0, 30)));
+  document.getElementById('sessionInput').value = '';
+  renderSessions();
+  showToast('Session logged ✓');
+}
+
+function renderSessions() {
+  const el = document.getElementById('sessionsList');
+  if (!el) return;
+  const sessions = JSON.parse(localStorage.getItem('veer_sessions') || '[]');
+  if (!sessions.length) return;
+  el.innerHTML = sessions.map((s, i) => `
+    <div style="padding:10px;background:var(--navy-3);border-radius:10px;border-left:2px solid var(--green)">
+      <div style="font-size:10px;color:var(--green);font-family:'JetBrains Mono',monospace;margin-bottom:4px">${esc(s.date)} · ${esc(s.time)}</div>
+      <div style="font-size:13px;color:var(--text-dim);line-height:1.5">${esc(s.text)}</div>
+    </div>
+  `).join('');
+}
+
+// ── INIT ──
+document.addEventListener('DOMContentLoaded', () => {
+  loadBriefFromStorage();
+  renderUpdates();
+  renderSessions();
+  renderSkillCards();
+  // Restore active skill state on the Generate tab after reload
+  const _active = JSON.parse(localStorage.getItem('veer_active_skill') || 'null');
+  if (_active) {
+    const b = document.getElementById('genBtn');
+    if (b) b.textContent = `Generate: ${_active.title}`;
+    const st = document.getElementById('genStatus');
+    if (st) st.innerHTML = `${_active.icon} ${esc(_active.title)} active — tap Generate &nbsp;·&nbsp; <a href="javascript:clearActiveSkill()" style="color:var(--coral)">clear</a>`;
+  }
+  const dayEl = document.getElementById('settingsDayCount');
+  if (dayEl) {
+    const days = Math.round((new Date() - new Date('2026-02-09')) / 86400000);
+    dayEl.textContent = `Day ${days}`;
+  }
+});
+</script>
+<script>
+/* ══════════════ VEER OS v3 — LIVE PLAN ENGINE ══════════════ */
+
+// ── COPY WITH FALLBACK (fixes claude code commands on iOS/non-HTTPS) ──
+function copyText(text, label) {
+  const done = () => showToast(label || `Copied: "${text}"`);
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).then(done).catch(() => legacyCopy(text, done));
+  } else legacyCopy(text, done);
+}
+function legacyCopy(text, done) {
+  const ta = document.createElement('textarea');
+  ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+  document.body.appendChild(ta); ta.focus(); ta.select();
+  try { document.execCommand('copy'); done(); } catch { showToast('Copy failed — long-press to copy manually'); }
+  document.body.removeChild(ta);
+}
+// Rebuild claude code command buttons with the working copy
+(function fixCmdButtons() {
+  const el = document.getElementById('skillsGrid');
+  if (!el) return;
+  el.innerHTML = '';
+  D.skills.forEach(s => {
+    const btn = document.createElement('button');
+    btn.className = `skill-btn ${s.primary ? '' : 'secondary'}`;
+    btn.textContent = s.label;
+    btn.addEventListener('click', () => copyText(s.cmd));
+    el.appendChild(btn);
+  });
+})();
+
+// ── WEEKLY SCHEDULE (standard template) ──
+const SCHEDULE = {
+  Monday:    { title: 'Upper Body', type: 'workout' },
+  Tuesday:   { title: 'Lower Body + corrective block', type: 'workout' },
+  Wednesday: { title: '30-min vigorous walk', type: 'walk' },
+  Thursday:  { title: 'Upper Body', type: 'workout' },
+  Friday:    { title: 'Lower Body + corrective block', type: 'workout' },
+  Saturday:  { title: 'Restaurant shift · hike or rest by data', type: 'rest' },
+  Sunday:    { title: 'Restaurant shift · rest', type: 'rest' },
+};
+function nextWorkoutFrom(dayName) {
+  const order = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  let i = order.indexOf(dayName);
+  for (let step = 1; step <= 7; step++) {
+    const d = order[(i + step) % 7];
+    if (SCHEDULE[d].type === 'workout') return { day: d, title: SCHEDULE[d].title };
+  }
+  return null;
+}
+
+// ── DYNAMIC SESSION HEADER + HERO ──
+function todayKey() { return new Date().toISOString().slice(0, 10); }
+function refreshHeaderAndHero() {
+  const now = new Date();
+  const dayName = now.toLocaleDateString('en-US', { weekday: 'long' });
+  const dateShort = now.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' }).toLowerCase();
+  const plan = getPlan();
+  const hdr = document.getElementById('sessionHeader');
+  if (hdr) {
+    if (plan) {
+      hdr.textContent = plan.decision === 'rest'
+        ? `today · ${dateShort} · rest day — next: ${plan.next_workout?.title || nextWorkoutFrom(dayName)?.title || 'workout'} (${plan.next_workout?.when || nextWorkoutFrom(dayName)?.day || ''})`
+        : `today's session · ${dateShort} · ${plan.session_title || SCHEDULE[dayName].title}`;
+    } else {
+      const s = SCHEDULE[dayName];
+      hdr.textContent = s.type === 'workout' || s.type === 'walk'
+        ? `today's session · ${dateShort} · ${s.title}`
+        : `today · ${dateShort} · rest — next workout: ${nextWorkoutFrom(dayName)?.title} on ${nextWorkoutFrom(dayName)?.day}`;
+    }
+  }
+  // Hero ring: green = go, yellow = light, orange = rest
+  const colorMap = { green: '#7BA88C', yellow: '#E8A23D', orange: '#C2614A' };
+  let tier = plan?.readiness_color || (D.readiness >= 75 ? 'green' : D.readiness >= 60 ? 'yellow' : 'orange');
+  if (!colorMap[tier]) tier = 'yellow';
+  const arcOuter = document.getElementById('arcOuter');
+  if (arcOuter) arcOuter.setAttribute('stroke', colorMap[tier]);
+  const lbl = document.getElementById('heroLabel');
+  if (lbl) {
+    lbl.style.color = colorMap[tier];
+    lbl.textContent = tier === 'green' ? 'Ready — train' : tier === 'yellow' ? 'Go light' : 'Rest';
+  }
+  const sub = document.getElementById('heroSub');
+  if (sub) sub.textContent = `readiness · ${now.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }).toLowerCase()}`;
+  const legendDot = document.querySelector('.arc-legend-item .arc-dot');
+  if (legendDot) legendDot.style.background = colorMap[tier];
+}
+
+// ── PLAN STORAGE ──
+function getPlan() {
+  try {
+    const raw = JSON.parse(localStorage.getItem('veer_plan') || 'null');
+    return raw && raw.date === todayKey() ? raw.plan : (raw ? raw.plan : null);
+  } catch { return null; }
+}
+function setPlan(plan) {
+  localStorage.setItem('veer_plan', JSON.stringify({ date: todayKey(), plan }));
+}
+
+// ── SHARED CONTEXT BUILDER ──
+function buildContext() {
+  const now = new Date();
+  const today = now.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+  const dayName = now.toLocaleDateString('en-US', { weekday: 'long' });
+  const dayNum = Math.round((now - new Date('2026-02-09')) / 86400000);
+  const updates = JSON.parse(localStorage.getItem('veer_updates') || '[]');
+  const sessions = JSON.parse(localStorage.getItem('veer_sessions') || '[]');
+  const checks = JSON.parse(localStorage.getItem('veer_checks_' + todayKey()) || '[]');
+  const plan = getPlan();
+  const bio = JSON.parse(localStorage.getItem('veer_biometrics') || '{}')[todayKey()] || null;
+  const pt = (typeof PIPELINE_TODAY !== 'undefined' && PIPELINE_TODAY) ? PIPELINE_TODAY : null;
+  const sourceLabel = bio ? ' (manual override logged today by Veer)'
+    : pipelineFresh() ? ` (auto-synced from Garmin/O2Ring/scale pipeline, generated ${PIPELINE_META.generated})`
+    : ' (CARRIED FROM LAST KNOWN VALUES — pipeline has not synced today, treat as possibly stale)';
+  const trVal = bio?.tr ?? pt?.training_readiness ?? D.readiness;
+  const hrvStatusVal = bio?.hrvStatus ?? pt?.hrv_status ?? null;
+  const alVal = bio?.al ?? pt?.acute_load ?? null;
+  const rtVal = pt?.recovery_time ?? null;
+  let msg = `Today is ${today}. Day ${dayNum} of the ecosystem. Standard template for ${dayName}: ${SCHEDULE[dayName].title} (${SCHEDULE[dayName].type}).
+
+LATEST BIOMETRIC DATA${sourceLabel}:
+- Weight: ${D.weight[D.weight.length-1].w} lb (target 172-175, lost ${(216.4 - D.weight[D.weight.length-1].w).toFixed(1)} lb)
+- Body Battery: ${D.bb[D.bb.length-1].v}/100
+- Training Readiness: ${trVal}
+- HRV 7d avg: ${D.hrv[D.hrv.length-1].v}ms${hrvStatusVal ? `\n- HRV status: ${hrvStatusVal}${hrvStatusVal !== 'Balanced' ? ' — check the override rule' : ''}` : ''}${alVal ? `\n- Acute Load: ${alVal}` : ''}${rtVal ? `\n- Recovery Time: ${rtVal}` : ''}
+- Last O2Ring score: ${D.o2[D.o2.length-1].s || 'not available'}
+- Biotin today: ${['Tuesday','Thursday','Saturday'].includes(dayName) ? 'TAKE' : 'SKIP'}`;
+  if (plan && checks.length) {
+    const done = checks.map(i => plan.workout?.[i]?.name).filter(Boolean);
+    if (done.length) msg += `\n\nCOMPLETED TODAY SO FAR (checked off in app): ${done.join(', ')}${done.length === (plan.workout || []).length ? ' — FULL SESSION DONE' : ''}`;
+  }
+  if (updates.length) {
+    msg += `\n\nECOSYSTEM UPDATES (these MUST reshape the plan — schedule changes restructure the week, substitutions become the new working exercise, feel notes calibrate intensity):\n` + updates.slice(0, 10).map(u => `- [${u.date}] ${u.text}`).join('\n');
+  }
+  if (sessions.length) {
+    msg += `\n\nRECENT SESSION LOG (actual performance — use to set today's weights and progressive overload):\n` + sessions.slice(0, 5).map(s => `- [${s.date}] ${s.text}`).join('\n');
+  }
+  return msg;
+}
+
+// ── STRUCTURED PLAN GENERATION (all coaches working together) ──
+const PLAN_JSON_INSTRUCTIONS = `
+Act as ALL seven experts at once — recovery scientist decides go/no-go first, physique coach and movement coach shape the session, sports nutritionist builds meals, hormone coach and longevity scientist and sleep specialist add their highest-leverage flags.
+
+Respond with ONLY a valid JSON object — no markdown, no backticks, no text before or after. Schema:
+{
+  "decision": "workout" | "walk" | "rest",
+  "readiness_color": "green" | "yellow" | "orange",  // green=full training, yellow=reduced/light, orange=rest
+  "session_title": "Upper Body" etc, or "Rest Day",
+  "headline": "one sentence: why today looks like this, citing the driving signal",
+  "workout": [ { "name": "...", "sets": "4", "reps": "10", "lbs": "105", "kg": "48", "note": "" } ],  // [] if rest; include warmup and incline finisher; include corrective block on lower days
+  "next_workout": { "title": "...", "when": "Friday" },
+  "meals": [ { "meal": "Breakfast", "items": "exact foods with gram measures" }, { "meal": "Lunch", "items": "..." }, { "meal": "Dinner", "items": "..." } ],
+  "supplements": [ { "time": "Morning", "items": "..." }, { "time": "With dinner", "items": "..." }, { "time": "Before dinner", "items": "..." }, { "time": "9:30pm", "items": "..." } ],
+  "flags": [ "2-4 short expert flags: sleep protocol tonight, testosterone lever, longevity action, pulmonologist reminder" ]
+}`;
+
+async function generatePlan(fromDashboard) {
+  // If a skill expert is active, run that instead (text mode)
+  const activeSkill = JSON.parse(localStorage.getItem('veer_active_skill') || 'null');
+  if (activeSkill) return generateSkillBrief(activeSkill);
+
+  const apiKey = localStorage.getItem('veer_api_key');
+  if (!apiKey) {
+    showToast('One-time setup: add your Anthropic API key in Settings');
+    switchTab(document.querySelector('[data-screen="settings"]'));
+    return;
+  }
+  const btn = document.getElementById('genBtn');
+  const refreshBtn = document.getElementById('refreshBtn');
+  const status = document.getElementById('genStatus');
+  if (btn) { btn.disabled = true; btn.textContent = 'All 7 coaches planning...'; }
+  if (refreshBtn) { refreshBtn.disabled = true; refreshBtn.textContent = '⟳ planning...'; }
+  if (status) status.textContent = 'Recovery → training → meals → supplements...';
+  if (fromDashboard) showToast('⟳ Syncing pipeline + replanning...');
+
+  // Pull the freshest pipeline file before planning
+  await loadPipelineData();
+  mergeBiometrics();
+  refreshChartsAndStats();
+  refreshHeaderAndHero();
+  renderBioCard();
+
+  try {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': apiKey,
+        'anthropic-version': '2023-06-01',
+        'anthropic-dangerous-direct-browser-access': 'true',
+      },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-6',
+        max_tokens: 4000,
+        system: SYSTEM_PROMPT + '\n' + PLAN_JSON_INSTRUCTIONS,
+        messages: [{ role: 'user', content: buildContext() + '\n\nGenerate today\'s complete plan as JSON per the schema.' }],
+      }),
+    });
+    if (!res.ok) { const err = await res.json().catch(() => ({})); throw new Error(friendlyApiError(res.status, err)); }
+    const data = await res.json();
+    let text = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('\n');
+    text = text.replace(/```json|```/g, '').trim();
+    const start = text.indexOf('{'), end = text.lastIndexOf('}');
+    if (start === -1 || end === -1) throw new Error('Plan came back malformed — tap Generate again.');
+    const plan = JSON.parse(text.slice(start, end + 1));
+    setPlan(plan);
+    localStorage.removeItem('veer_checks_' + todayKey()); // new plan → fresh checklist
+    saveBrief(planToText(plan), 'Daily Plan');
+    renderLivePlan();
+    refreshHeaderAndHero();
+    if (btn) { btn.textContent = 'Regenerate Plan'; btn.disabled = false; }
+    if (refreshBtn) { refreshBtn.disabled = false; refreshBtn.textContent = '⟳ refresh plan'; }
+    if (status) status.textContent = '✓ Plan live — Dashboard + Brief updated';
+    const genOut = document.getElementById('genOutput');
+    if (genOut) { genOut.classList.add('visible'); genOut.textContent = planToText(plan); }
+    showToast('✓ Plan updated everywhere');
+  } catch (err) {
+    if (btn) { btn.textContent = 'Try Again'; btn.disabled = false; }
+    if (refreshBtn) { refreshBtn.disabled = false; refreshBtn.textContent = '⟳ refresh plan'; }
+    if (status) status.textContent = 'Error: ' + err.message;
+    showToast('Plan failed: ' + err.message);
+  }
+}
+
+function planToText(p) {
+  let t = `${(p.session_title || '').toUpperCase()} — ${p.decision.toUpperCase()}\n${p.headline}\n\n`;
+  if (p.workout?.length) t += 'WORKOUT:\n' + p.workout.map(w => `- ${w.name} · ${w.sets}×${w.reps} · ${w.lbs} lb / ${w.kg} kg ${w.note ? '· ' + w.note : ''}`).join('\n') + '\n\n';
+  if (p.next_workout) t += `NEXT WORKOUT: ${p.next_workout.title} (${p.next_workout.when})\n\n`;
+  if (p.meals?.length) t += 'MEALS:\n' + p.meals.map(m => `${m.meal}: ${m.items}`).join('\n') + '\n\n';
+  if (p.supplements?.length) t += 'SUPPLEMENTS:\n' + p.supplements.map(s => `${s.time}: ${s.items}`).join('\n') + '\n\n';
+  if (p.flags?.length) t += 'FLAGS:\n' + p.flags.map(f => `⚑ ${f}`).join('\n');
+  return t.trim();
+}
+
+// ── LIVE PLAN RENDER (dashboard card with checkboxes) ──
+function renderLivePlan() {
+  const wrap = document.getElementById('livePlanWrap');
+  if (!wrap) return;
+  const p = getPlan();
+  if (!p) {
+    wrap.innerHTML = `<div class="sec-header">live plan</div>
+    <div class="card card-full" style="text-align:center;padding:24px">
+      <div style="font-size:13px;color:var(--muted);line-height:1.7">No plan generated yet today.<br>Tap <span style="color:var(--amber)">⟳ refresh plan</span> above — all 7 coaches will read your data, updates, and session logs and build today's full plan: train or rest, meals, supplements.</div>
+    </div>`;
+    return;
+  }
+  const checks = JSON.parse(localStorage.getItem('veer_checks_' + todayKey()) || '[]');
+  const colorMap = { green: 'var(--green)', yellow: 'var(--amber)', orange: 'var(--coral)' };
+  const c = colorMap[p.readiness_color] || 'var(--amber)';
+  const total = (p.workout || []).length;
+  const doneCount = checks.length;
+  let html = `<div class="sec-header">live plan · all coaches combined</div>
+  <div class="card card-full" style="border:1px solid ${c}">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px">
+      <div style="font-size:15px;font-weight:800;color:${c}">${p.decision === 'rest' ? '🛌' : p.decision === 'walk' ? '🚶' : '🏋️'} ${esc(p.session_title || '')}</div>
+      <div class="contrib-tag ${p.readiness_color === 'green' ? 'tag-good' : p.readiness_color === 'orange' ? 'tag-alert' : 'tag-warn'}" style="font-size:11px;padding:4px 10px">${p.readiness_color === 'green' ? 'READY — TRAIN' : p.readiness_color === 'orange' ? 'REST' : 'GO LIGHT'}</div>
+    </div>
+    <div style="font-size:12px;color:var(--text-dim);line-height:1.6;margin-bottom:14px">${esc(p.headline || '')}</div>`;
+
+  if (p.decision === 'rest' && p.next_workout) {
+    html += `<div style="padding:12px;background:var(--navy-3);border-radius:10px;border-left:2px solid ${c};margin-bottom:14px">
+      <div style="font-size:10px;color:var(--muted);font-family:'JetBrains Mono',monospace;margin-bottom:4px">UPCOMING</div>
+      <div style="font-size:13px;color:var(--text)">${esc(p.next_workout.title)} · ${esc(p.next_workout.when)}</div></div>`;
+  }
+
+  if ((p.workout || []).length) {
+    html += `<div style="font-size:10px;color:var(--slate);font-family:'JetBrains Mono',monospace;letter-spacing:0.08em;margin-bottom:8px">WORKOUT · CHECK OFF AS YOU GO (${doneCount}/${total})</div>`;
+    html += p.workout.map((w, i) => {
+      const done = checks.includes(i);
+      return `<label style="display:flex;gap:10px;align-items:flex-start;padding:9px 10px;margin-bottom:5px;background:var(--navy-3);border-radius:9px;cursor:pointer;opacity:${done ? 0.55 : 1}">
+        <input type="checkbox" ${done ? 'checked' : ''} onchange="toggleCheck(${i})" style="margin-top:2px;accent-color:${c};width:16px;height:16px;flex-shrink:0">
+        <div style="flex:1">
+          <div style="font-size:13px;font-weight:600;color:var(--text);${done ? 'text-decoration:line-through' : ''}">${esc(w.name)}</div>
+          <div style="font-size:11px;color:var(--muted);font-family:'JetBrains Mono',monospace">${esc(w.sets)}×${esc(w.reps)} · ${esc(String(w.lbs))} lb / ${esc(String(w.kg))} kg${w.note ? ' · ' + esc(w.note) : ''}</div>
+        </div>
+      </label>`;
+    }).join('');
+    html += `<button onclick="workoutDone()" style="width:100%;margin:10px 0 14px;padding:13px;background:${doneCount === total && total > 0 ? 'var(--green)' : 'var(--navy-3)'};border:1px solid var(--green);border-radius:10px;color:${doneCount === total && total > 0 ? 'var(--navy)' : 'var(--green)'};font-weight:800;font-size:14px;cursor:pointer">✓ Workout Done — log it & feed the coaches</button>`;
+  } else if (p.decision !== 'rest') {
+    html += `<button onclick="activityDone('${esc(p.session_title || 'Activity')}')" style="width:100%;margin:4px 0 14px;padding:13px;background:var(--navy-3);border:1px solid var(--green);border-radius:10px;color:var(--green);font-weight:800;font-size:14px;cursor:pointer">✓ Activity Done — log it</button>`;
+  }
+
+  if ((p.meals || []).length) {
+    html += `<div style="font-size:10px;color:var(--slate);font-family:'JetBrains Mono',monospace;letter-spacing:0.08em;margin:4px 0 8px">MEALS</div>`;
+    html += p.meals.map(m => `<div style="padding:10px 12px;margin-bottom:5px;background:var(--navy-3);border-radius:9px;border-left:2px solid var(--green)">
+      <div style="font-size:11px;color:var(--green);font-weight:700;margin-bottom:3px">${esc(m.meal)}</div>
+      <div style="font-size:12px;color:var(--text-dim);line-height:1.5">${esc(m.items)}</div></div>`).join('');
+  }
+  if ((p.supplements || []).length) {
+    html += `<div style="font-size:10px;color:var(--slate);font-family:'JetBrains Mono',monospace;letter-spacing:0.08em;margin:12px 0 8px">SUPPLEMENTS</div>`;
+    html += p.supplements.map(s => `<div style="display:flex;gap:10px;padding:8px 12px;margin-bottom:4px;background:var(--navy-3);border-radius:9px">
+      <div style="font-size:11px;color:var(--amber);font-family:'JetBrains Mono',monospace;min-width:86px;flex-shrink:0">${esc(s.time)}</div>
+      <div style="font-size:12px;color:var(--text-dim);line-height:1.5">${esc(s.items)}</div></div>`).join('');
+  }
+  if ((p.flags || []).length) {
+    html += `<div style="font-size:10px;color:var(--slate);font-family:'JetBrains Mono',monospace;letter-spacing:0.08em;margin:12px 0 8px">EXPERT FLAGS</div>`;
+    html += p.flags.map(f => `<div style="font-size:12px;color:var(--text-dim);line-height:1.6;padding:4px 0">⚑ ${esc(f)}</div>`).join('');
+  }
+  html += `</div>`;
+  wrap.innerHTML = html;
+}
+
+function toggleCheck(i) {
+  const key = 'veer_checks_' + todayKey();
+  let checks = JSON.parse(localStorage.getItem(key) || '[]');
+  checks = checks.includes(i) ? checks.filter(x => x !== i) : [...checks, i];
+  localStorage.setItem(key, JSON.stringify(checks));
+  renderLivePlan();
+}
+
+function workoutDone() {
+  const p = getPlan();
+  if (!p) return;
+  const checks = JSON.parse(localStorage.getItem('veer_checks_' + todayKey()) || '[]');
+  const done = (p.workout || []).filter((_, i) => checks.includes(i));
+  const skipped = (p.workout || []).filter((_, i) => !checks.includes(i));
+  if (!done.length) { showToast('Check off at least one exercise first'); return; }
+  let text = `${p.session_title} DONE · ` + done.map(w => `${w.name} ${w.sets}×${w.reps} @ ${w.lbs}lb`).join(' · ');
+  if (skipped.length) text += ` · SKIPPED: ${skipped.map(w => w.name).join(', ')}`;
+  const sessions = JSON.parse(localStorage.getItem('veer_sessions') || '[]');
+  sessions.unshift({ text, date: new Date().toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }), time: new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }) });
+  localStorage.setItem('veer_sessions', JSON.stringify(sessions.slice(0, 30)));
+  renderSessions();
+  showToast('💪 Session logged — coaches will use it next plan');
+}
+
+function activityDone(title) {
+  const sessions = JSON.parse(localStorage.getItem('veer_sessions') || '[]');
+  sessions.unshift({ text: `${title} — completed`, date: new Date().toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }), time: new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }) });
+  localStorage.setItem('veer_sessions', JSON.stringify(sessions.slice(0, 30)));
+  renderSessions();
+  showToast('✓ Activity logged');
+}
+
+// ── PIPELINE AUTO-SYNC (Garmin Connect · OneDrive O2Ring · scale) ──
+// Claude Code writes veer-data.json next to index.html; the app ingests it here.
+let PIPELINE_META = null; // { generated, loadedAt }
+
+async function loadPipelineData() {
+  try {
+    const res = await fetch('veer-data.json?ts=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) throw new Error('no file');
+    const j = await res.json();
+    const toLabel = iso => new Date(iso + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    const upsert = (arr, key, date, val, extra) => {
+      if (val === undefined || val === null) return;
+      const label = toLabel(date);
+      const ex = arr.find(x => x.d === label);
+      if (ex) { ex[key] = Number(val); if (extra) Object.assign(ex, extra); }
+      else arr.push({ d: label, [key]: Number(val), ...(extra || {}) });
+    };
+    (j.weight || []).forEach(r => upsert(D.weight, 'w', r.date, r.lb));
+    (j.body_battery || []).forEach(r => upsert(D.bb, 'v', r.date, r.v));
+    (j.hrv || []).forEach(r => upsert(D.hrv, 'v', r.date, r.v));
+    (j.o2 || []).forEach(r => upsert(D.o2, 's', r.date, r.score, { hike: !!r.hike }));
+    // Cap arrays to last 30 points so charts stay readable
+    ['weight','bb','hrv','o2'].forEach(k => { if (D[k].length > 30) D[k] = D[k].slice(-30); });
+    if (j.today) {
+      if (j.today.training_readiness != null) D.readiness = Number(j.today.training_readiness);
+      if (j.today.o2_score != null) D.o2score = Number(j.today.o2_score);
+      PIPELINE_TODAY = j.today;
+    }
+    PIPELINE_META = { generated: j.generated || null, loadedAt: new Date().toISOString() };
+    localStorage.setItem('veer_pipeline_meta', JSON.stringify(PIPELINE_META));
+    return true;
+  } catch { PIPELINE_META = null; return false; }
+}
+let PIPELINE_TODAY = null;
+
+function pipelineFresh() {
+  if (!PIPELINE_META?.generated) return false;
+  return (Date.now() - new Date(PIPELINE_META.generated).getTime()) < 36 * 3600 * 1000; // within 36h
+}
+
+// ── DAILY BIOMETRICS LOGGER ──
+function getBioLog() { return JSON.parse(localStorage.getItem('veer_biometrics') || '{}'); }
+
+function shortDate(iso) {
+  const d = new Date(iso + 'T12:00:00');
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+// Merge saved daily numbers into D so charts, context, and hero all use real data
+function mergeBiometrics() {
+  const log = getBioLog();
+  const dates = Object.keys(log).sort();
+  dates.forEach(date => {
+    const b = log[date];
+    const label = shortDate(date);
+    const upsert = (arr, key, val) => {
+      if (val === undefined || val === null || val === '') return;
+      const existing = arr.find(x => x.d === label);
+      if (existing) existing[key] = Number(val);
+      else arr.push({ d: label, [key]: Number(val) });
+    };
+    upsert(D.weight, 'w', b.weight);
+    upsert(D.bb, 'v', b.bb);
+    upsert(D.hrv, 'v', b.hrv);
+    if (b.o2 !== undefined && b.o2 !== '') {
+      const existing = D.o2.find(x => x.d === label);
+      if (existing) existing.s = Number(b.o2);
+      else D.o2.push({ d: label, s: Number(b.o2), hike: false });
+    }
+  });
+  // Latest logged day drives hero + readiness
+  const latest = dates.length ? log[dates[dates.length - 1]] : null;
+  if (latest) {
+    if (latest.tr) D.readiness = Number(latest.tr);
+    if (latest.o2) D.o2score = Number(latest.o2);
+  }
+  return latest;
+}
+
+function refreshChartsAndStats() {
+  const pairs = [['weightChart', D.weight, 'w'], ['o2Chart', D.o2, 's'], ['hrvChart', D.hrv, 'v'], ['bbChart', D.bb, 'v']];
+  pairs.forEach(([id, arr, key]) => {
+    const ch = Chart.getChart(id);
+    if (!ch) return;
+    ch.data.labels = arr.map(x => x.d);
+    ch.data.datasets[0].data = arr.map(x => x[key]);
+    if (id === 'weightChart') ch.data.datasets[0].pointBackgroundColor = arr.map(x => x.w >= 172 && x.w <= 175 ? C.green : x.w < 172 ? C.amber : C.coral);
+    if (id === 'o2Chart') ch.data.datasets[0].backgroundColor = arr.map(x => x.hike ? C.green : x.s >= 7.5 ? C.amber : x.s >= 6 ? 'rgba(232,162,61,0.5)' : C.coral);
+    ch.update('none');
+  });
+  const w = D.weight[D.weight.length - 1].w;
+  const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+  set('kpiBB', D.bb[D.bb.length - 1].v);
+  set('kpiHRV', D.hrv[D.hrv.length - 1].v);
+  set('kpiWeight', w);
+  set('jLost', (216.4 - w).toFixed(1));
+  set('jRange', `216.4→${w}`);
+  set('jDays', Math.round((new Date() - new Date('2026-02-09')) / 86400000));
+  set('heroScore', D.readiness);
+  const bio = getBioLog()[todayKey()];
+  if (bio?.al) set('kpiAL', bio.al);
+  animateArcs();
+}
+
+function renderBioCard() {
+  const wrap = document.getElementById('bioLogWrap');
+  if (!wrap) return;
+  const b = getBioLog()[todayKey()] || {};
+  const loggedToday = Object.keys(b).length > 0;
+  const synced = pipelineFresh();
+  const syncTime = PIPELINE_META?.generated ? new Date(PIPELINE_META.generated).toLocaleString('en-US', { weekday: 'short', hour: '2-digit', minute: '2-digit' }) : null;
+  const f = (id, label, ph, val, step) => `
+    <div style="flex:1;min-width:96px">
+      <div style="font-size:9px;color:var(--slate);font-family:'JetBrains Mono',monospace;letter-spacing:0.06em;margin-bottom:4px">${label}</div>
+      <input id="${id}" type="number" step="${step || 1}" inputmode="decimal" placeholder="${ph}" value="${val ?? ''}" style="width:100%;padding:9px 10px;background:var(--navy-3);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:'JetBrains Mono',monospace;font-size:13px;outline:none">
+    </div>`;
+  const statusLine = synced
+    ? `<span style="color:var(--green)">● auto-synced</span> · garmin + o2ring + scale pipeline · ${syncTime}`
+    : PIPELINE_META
+      ? `<span style="color:var(--amber)">● pipeline data stale</span> · last sync ${syncTime || 'unknown'} — re-run Claude Code morning pipeline`
+      : `<span style="color:var(--coral)">● no pipeline file found</span> · deploy veer-data.json next to index.html, or log manually below`;
+  wrap.innerHTML = `
+  <div class="sec-header">data source${loggedToday ? ' · manual override active today' : ''}</div>
+  <div class="card card-full" style="border:1px solid ${synced ? 'var(--green)' : loggedToday ? 'var(--amber)' : 'var(--border)'}">
+    <div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:var(--muted);line-height:1.7">${statusLine}</div>
+    <details style="margin-top:10px">
+      <summary style="font-size:11px;color:var(--slate);font-family:'JetBrains Mono',monospace;cursor:pointer">manual override — only if the pipeline hasn't run</summary>
+      <div style="margin-top:10px">
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+          ${f('bioWeight', 'WEIGHT LB', '172.5', b.weight, 0.1)}
+          ${f('bioBB', 'BODY BATTERY', '85', b.bb)}
+          ${f('bioTR', 'TRAINING READINESS', '78', b.tr)}
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+          ${f('bioHRV', 'HRV 7D MS', '74', b.hrv)}
+          ${f('bioO2', 'O2RING SCORE', '7.5', b.o2, 0.1)}
+          ${f('bioAL', 'ACUTE LOAD', '320', b.al)}
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-end">
+          <div style="flex:1;min-width:140px">
+            <div style="font-size:9px;color:var(--slate);font-family:'JetBrains Mono',monospace;letter-spacing:0.06em;margin-bottom:4px">HRV STATUS</div>
+            <select id="bioHrvStatus" style="width:100%;padding:9px 10px;background:var(--navy-3);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:'JetBrains Mono',monospace;font-size:13px;outline:none">
+              <option value="" ${!b.hrvStatus ? 'selected' : ''}>—</option>
+              <option value="Balanced" ${b.hrvStatus === 'Balanced' ? 'selected' : ''}>Balanced</option>
+              <option value="Unbalanced" ${b.hrvStatus === 'Unbalanced' ? 'selected' : ''}>Unbalanced</option>
+              <option value="Low" ${b.hrvStatus === 'Low' ? 'selected' : ''}>Low</option>
+            </select>
+          </div>
+          <button onclick="saveBiometrics()" style="flex:1;min-width:140px;padding:11px;background:var(--amber);border:none;border-radius:8px;color:var(--navy);font-weight:800;font-size:13px;cursor:pointer">${loggedToday ? 'Update override' : 'Save override'}</button>
+        </div>
+        <div style="font-size:11px;color:var(--muted);margin-top:10px;line-height:1.5">Manual values for today override pipeline data. Clear the override by re-running the pipeline tomorrow.</div>
+      </div>
+    </details>
+  </div>`;
+}
+
+function saveBiometrics() {
+  const g = id => document.getElementById(id)?.value.trim();
+  const entry = {};
+  const fields = { weight: 'bioWeight', bb: 'bioBB', tr: 'bioTR', hrv: 'bioHRV', o2: 'bioO2', al: 'bioAL' };
+  // Sanity ranges so a typo can't poison the plan
+  const ranges = { weight: [120, 260], bb: [0, 100], tr: [0, 100], hrv: [30, 130], o2: [0, 10], al: [0, 1500] };
+  for (const [k, id] of Object.entries(fields)) {
+    const v = g(id);
+    if (v === '' || v === undefined) continue;
+    const n = Number(v);
+    if (isNaN(n) || n < ranges[k][0] || n > ranges[k][1]) { showToast(`${k.toUpperCase()} looks off (${v}) — double-check it`); return; }
+    entry[k] = n;
+  }
+  const hrvStatus = document.getElementById('bioHrvStatus')?.value;
+  if (hrvStatus) entry.hrvStatus = hrvStatus;
+  if (!Object.keys(entry).length) { showToast('Enter at least one number'); return; }
+  const log = getBioLog();
+  log[todayKey()] = { ...(log[todayKey()] || {}), ...entry };
+  // Keep last 30 days
+  const keys = Object.keys(log).sort();
+  while (keys.length > 30) delete log[keys.shift()];
+  localStorage.setItem('veer_biometrics', JSON.stringify(log));
+  mergeBiometrics();
+  refreshChartsAndStats();
+  refreshHeaderAndHero();
+  renderBioCard();
+  showToast('✓ Numbers saved — tap ⟳ to replan with them');
+}
+
+// ── INIT v3 ──
+(async () => {
+  await loadPipelineData();       // pipeline first (Garmin / O2Ring / scale)
+  mergeBiometrics();              // manual override for today wins if present
+  refreshChartsAndStats();
+  refreshHeaderAndHero();
+  renderBioCard();
+  renderLivePlan();
+})();
+</script>
+</body>
+</html>
