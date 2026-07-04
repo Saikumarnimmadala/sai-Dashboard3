@@ -73,5 +73,71 @@
       "date": "2026-07-03",
       "v": 59
     }
-  ]
+  ],
+  "coaches": {
+    "training_call": "Full Rest",
+    "training_reason": "User confirmed Friday as rest day; body battery peak 59 (below 60 threshold) independently reinforces no-gym call.",
+    "workout": {
+      "type": "Rest",
+      "exercises": [],
+      "notes": "WEEK PLAN \u00e2\u20ac\u201d adjusted for Monday Waves Utah hike: Sat Jul 4 (check BB morning \u00e2\u20ac\u201d if 80+ consider Lower Body makeup, otherwise full rest for holiday); Sun Jul 5 \u00e2\u20ac\u201d rest; Mon Jul 6 \u00e2\u20ac\u201d Waves Utah Hike replaces Upper Body (large aerobic load, not a gym day \u00e2\u20ac\u201d pre-hydrate Sat + Sun, pack electrolytes); Tue Jul 7 \u00e2\u20ac\u201d rest or easy walk only (hike recovery); Wed Jul 8 \u00e2\u20ac\u201d 30-min walk if body battery allows; Thu Jul 9 \u00e2\u20ac\u201d Upper Body; Fri Jul 10 \u00e2\u20ac\u201d Lower Body. NOTE: Thu Jul 2 Upper Body session confirmed by Veer today."
+    },
+    "nutrition": {
+      "protein_target_g": 160,
+      "meals": [
+        {
+          "name": "Breakfast",
+          "items": [
+            "Eggs \u00e2\u20ac\u201d 3 whole + 2 whites scrambled",
+            "Greek yogurt \u00e2\u20ac\u201d 1 cup (170g)",
+            "Berries \u00e2\u20ac\u201d 1/2 cup"
+          ]
+        },
+        {
+          "name": "Lunch",
+          "items": [
+            "Grilled chicken breast \u00e2\u20ac\u201d 6 oz",
+            "Brown rice \u00e2\u20ac\u201d 1/2 cup cooked",
+            "Mixed vegetables \u00e2\u20ac\u201d 1 cup"
+          ]
+        },
+        {
+          "name": "Dinner",
+          "items": [
+            "Salmon or lean beef \u00e2\u20ac\u201d 6\u00e2\u20ac\u201c8 oz",
+            "Sweet potato \u00e2\u20ac\u201d 1 medium",
+            "Green salad with olive oil and lemon"
+          ]
+        }
+      ],
+      "notes": "Rest day \u00e2\u20ac\u201d no intra-workout nutrition needed. Hit protein target to support tissue repair from Thursday Upper Body. Begin front-loading hydration today and Saturday ahead of Monday's hike; aim 3L+ water both days."
+    },
+    "supplements": [
+      {
+        "time": "Morning",
+        "items": "Creatine 5g, Vitamin D, Fish Oil, Magnesium"
+      },
+      {
+        "time": "With dinner",
+        "items": "Zinc (if in rotation)"
+      },
+      {
+        "time": "9:30pm",
+        "items": "Magnesium glycinate \u00e2\u20ac\u201d sleep support"
+      }
+    ],
+    "flags": [
+      "BIOTIN: SKIP \u00e2\u20ac\u201d Friday is a skip day (take Tue / Thu / Sat only)",
+      "FISETIN: SKIP \u00e2\u20ac\u201d next doses are Aug 1 and Aug 2",
+      "MONDAY HIKE ALERT: Waves Utah is strenuous slot-canyon terrain \u00e2\u20ac\u201d check body battery AND HRV status morning of Jul 6 before committing; HRV Unbalanced 3+ days would be a hard pause even if feeling good",
+      "WEIGHT TREND: 174.1 lb today vs 172.6 lb Jun 29 \u00e2\u20ac\u201d minor upward drift, monitor through next week"
+    ],
+    "coach_notes": {
+      "recovery": "Body battery peaked at 59 and readiness at 50 \u00e2\u20ac\u201d rest is the correct call; every hour of quality downtime today compounds directly into Monday's hike performance.",
+      "longevity": "Waves Utah is a high-load aerobic event; prioritize omega-3-rich dinner tonight and anti-inflammatory foods Saturday to arrive primed rather than inflamed.",
+      "sleep": "6.1h at score 59 is below your optimal band \u00e2\u20ac\u201d target 7.5h+ tonight and Saturday night; those two nights are the most leveraged sleep of your entire week given Monday's demand.",
+      "hormones": "RHR 54 and HRV balanced with zero unbalanced streak is a clean baseline \u00e2\u20ac\u201d protect it with early bedtimes this weekend to keep cortisol low going into the hike."
+    }
+  },
+  "coaches_generated": "2026-07-03T19:19:43.870853-07:00"
 }
