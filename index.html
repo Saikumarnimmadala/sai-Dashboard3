@@ -3037,14 +3037,23 @@ Respond with ONLY a valid JSON object — no markdown, no backticks, no text bef
 }`;
 
 async function generatePlan(fromDashboard) {
+  // Always re-fetch pipeline data first — shows coach plan even without API key
+  const refreshBtn = document.getElementById('refreshBtn');
+  if (refreshBtn) { refreshBtn.disabled = true; refreshBtn.textContent = '⟳ fetching...'; }
+  const ok = await loadPipelineData();
+  refreshChartsAndStats();
+  if (refreshBtn) { refreshBtn.disabled = false; refreshBtn.textContent = '⟳ refresh plan'; }
+  if (ok && document.getElementById('pipelineCoachesWrap').innerHTML) {
+    showToast('Plan updated from pipeline');
+  }
+
   // If a skill expert is active, run that instead (text mode)
   const activeSkill = JSON.parse(localStorage.getItem('veer_active_skill') || 'null');
   if (activeSkill) return generateSkillBrief(activeSkill);
 
   const apiKey = localStorage.getItem('veer_api_key');
   if (!apiKey) {
-    showToast('One-time setup: add your Anthropic API key in Settings');
-    switchTab(document.querySelector('[data-screen="settings"]'));
+    // Pipeline coaches already rendered above — no API key needed for that
     return;
   }
   const btn = document.getElementById('genBtn');
