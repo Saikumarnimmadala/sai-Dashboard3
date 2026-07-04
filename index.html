@@ -2776,15 +2776,22 @@ function saveUpdate() {
   const text = document.getElementById('updateInput').value.trim();
   if (!text) return;
   const updates = JSON.parse(localStorage.getItem('veer_updates') || '[]');
-  updates.unshift({
+  const entry = {
     text,
     date: new Date().toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }),
     time: new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }),
-  });
+  };
+  updates.unshift(entry);
   localStorage.setItem('veer_updates', JSON.stringify(updates.slice(0, 20)));
   document.getElementById('updateInput').value = '';
   renderUpdates();
   showToast('Update saved');
+  // Forward note to local pipeline so morning brief picks it up
+  fetch('http://localhost:5055/save-note', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ text, date: entry.date, time: entry.time })
+  }).catch(() => {}); // silent if refresh server not running
 }
 
 function clearUpdates() {
