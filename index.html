@@ -3037,9 +3037,13 @@ Respond with ONLY a valid JSON object — no markdown, no backticks, no text bef
 }`;
 
 async function generatePlan(fromDashboard) {
-  // Always re-fetch pipeline data first — shows coach plan even without API key
   const refreshBtn = document.getElementById('refreshBtn');
-  if (refreshBtn) { refreshBtn.disabled = true; refreshBtn.textContent = '⟳ fetching...'; }
+  if (refreshBtn) { refreshBtn.disabled = true; refreshBtn.textContent = '⟳ pulling data...'; }
+  // Hit local server /refresh first — pulls fresh Garmin + Omada → writes veer-data.json
+  try {
+    const r = await fetch('http://localhost:5055/refresh', { method: 'POST', signal: AbortSignal.timeout(90000) });
+    if (r.ok) { if (refreshBtn) refreshBtn.textContent = '⟳ loading...'; }
+  } catch { /* server not running — fall through to cached data */ }
   const ok = await loadPipelineData();
   refreshChartsAndStats();
   if (refreshBtn) { refreshBtn.disabled = false; refreshBtn.textContent = '⟳ refresh plan'; }
@@ -3229,7 +3233,11 @@ let PIPELINE_META = null; // { generated, loadedAt }
 
 async function loadPipelineData() {
   try {
-    const res = await fetch('veer-data.json?ts=' + Date.now(), { cache: 'no-store' });
+    // Try local server first (instant, no CDN lag). Fall back to GitHub Pages.
+    let res;
+    try { res = await fetch('http://localhost:5055/veer-data', { signal: AbortSignal.timeout(3000) }); }
+    catch { res = null; }
+    if (!res || !res.ok) res = await fetch('veer-data.json?ts=' + Date.now(), { cache: 'no-store' });
     if (!res.ok) throw new Error('no file');
     const j = await res.json();
     const toLabel = iso => new Date(iso + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
