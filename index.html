@@ -3041,12 +3041,33 @@ Respond with ONLY a valid JSON object — no markdown, no backticks, no text bef
 
 async function generatePlan(fromDashboard) {
   const refreshBtn = document.getElementById('refreshBtn');
-  if (refreshBtn) { refreshBtn.disabled = true; refreshBtn.textContent = '⟳ pulling data...'; }
-  // Hit local server /refresh first — pulls fresh Garmin + Omada → writes veer-data.json
+  if (refreshBtn) { refreshBtn.disabled = true; refreshBtn.textContent = '⟳ syncing...'; }
+
+  // Try local server first (laptop); fall back to GitHub Actions dispatch (mobile/anywhere)
+  let refreshed = false;
   try {
-    const r = await fetch('http://localhost:5055/refresh', { method: 'POST', signal: AbortSignal.timeout(90000) });
-    if (r.ok) { if (refreshBtn) refreshBtn.textContent = '⟳ loading...'; }
-  } catch { /* server not running — fall through to cached data */ }
+    const r = await fetch('http://localhost:5055/refresh', { method: 'POST',
+      signal: AbortSignal.timeout ? AbortSignal.timeout(30000) : undefined });
+    refreshed = r.ok;
+  } catch { /* local server not running */ }
+
+  if (!refreshed) {
+    // Trigger GitHub Actions workflow and wait ~45s for it to finish
+    try {
+      const ghToken = localStorage.getItem('veer_gh_token');
+      if (refreshBtn) refreshBtn.textContent = '⟳ cloud sync...';
+      await fetch('https://api.github.com/repos/Saikumarnimmadala/sai-Dashboard3/actions/workflows/sync-data.yml/dispatches', {
+        method: 'POST',
+        headers: { 'Authorization': `Bearer ${ghToken}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ref: 'main' })
+      });
+      // Wait for Actions to run (~45s)
+      if (refreshBtn) refreshBtn.textContent = '⟳ waiting 45s...';
+      await new Promise(r => setTimeout(r, 45000));
+    } catch { /* ignore */ }
+  }
+
+  if (refreshBtn) refreshBtn.textContent = '⟳ loading...';
   const ok = await loadPipelineData();
   refreshChartsAndStats();
   if (refreshBtn) { refreshBtn.disabled = false; refreshBtn.textContent = '⟳ refresh plan'; }
