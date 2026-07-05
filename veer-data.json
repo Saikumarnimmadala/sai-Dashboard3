@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-05T07:11:42.746230-07:00",
+  "generated": "2026-07-05T07:17:32.539954-07:00",
   "today": {
     "training_readiness": 78,
     "body_battery_start": 20,
@@ -118,6 +118,8 @@
       "v": 71
     }
   ],
+  "hrv": [],
+  "o2": [],
   "coaches": {
     "training_call": "Walk Only",
     "training_reason": "Body Battery peaked at 59 â€” below the 60 threshold (walk only, no gym) â€” and user has explicitly designated today as a rest day; both signals align.",
