@@ -3247,9 +3247,39 @@ async function loadPipelineData() {
     // Cap arrays to last 30 points so charts stay readable
     ['weight','bb','hrv','o2'].forEach(k => { if (D[k].length > 30) D[k] = D[k].slice(-30); });
     if (j.today) {
-      if (j.today.training_readiness != null) D.readiness = Number(j.today.training_readiness);
+      if (j.today.training_readiness != null) { D.readiness = Number(j.today.training_readiness); D._pipelineReadiness = D.readiness; }
       if (j.today.o2_score != null) D.o2score = Number(j.today.o2_score);
+      // Inject today's BB peak into the bb array so the last point is always today
+      if (j.today.body_battery_peak != null) {
+        const todayLbl = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        const ex = D.bb.find(x => x.d === todayLbl);
+        if (ex) ex.v = Number(j.today.body_battery_peak);
+        else D.bb.push({ d: todayLbl, v: Number(j.today.body_battery_peak) });
+        D._pipelineBB = Number(j.today.body_battery_peak);
+      }
       PIPELINE_TODAY = j.today;
+    }
+    // Latest pipeline weight as the authoritative last point
+    if (j.weight?.length) {
+      const lr = j.weight[j.weight.length - 1];
+      D._pipelineWeight = lr.lb;
+    }
+    // Direct DOM updates — run immediately so values are correct even before refreshChartsAndStats
+    const _qs = id => document.getElementById(id);
+    const _set = (id, v) => { const el = _qs(id); if (el) el.textContent = v; };
+    if (D._pipelineBB != null) _set('kpiBB', D._pipelineBB);
+    if (D._pipelineReadiness != null) _set('heroScore', D._pipelineReadiness);
+    if (D._pipelineWeight != null) {
+      _set('kpiWeight', D._pipelineWeight);
+      _set('jLost', (216.4 - D._pipelineWeight).toFixed(1));
+      _set('jRange', '216.4→' + D._pipelineWeight);
+    }
+    if (PIPELINE_TODAY?.hrv_status) {
+      const hrvCard = _qs('kpiHRV')?.closest('.kpi-card');
+      if (hrvCard) {
+        const delta = hrvCard.querySelector('.kpi-delta');
+        if (delta) { delta.textContent = PIPELINE_TODAY.hrv_status; delta.className = 'kpi-delta ' + (PIPELINE_TODAY.hrv_status.toLowerCase().includes('balanced') ? 'up' : 'down'); }
+      }
     }
     PIPELINE_META = { generated: j.generated || null, loadedAt: new Date().toISOString() };
     localStorage.setItem('veer_pipeline_meta', JSON.stringify(PIPELINE_META));
@@ -3362,15 +3392,22 @@ function refreshChartsAndStats() {
     if (id === 'o2Chart') ch.data.datasets[0].backgroundColor = arr.map(x => x.hike ? C.green : x.s >= 7.5 ? C.amber : x.s >= 6 ? 'rgba(232,162,61,0.5)' : C.coral);
     ch.update('none');
   });
-  const w = D.weight[D.weight.length - 1].w;
+  const w = D._pipelineWeight ?? D.weight[D.weight.length - 1].w;
   const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
-  set('kpiBB', D.bb[D.bb.length - 1].v);
+  set('kpiBB', D._pipelineBB ?? D.bb[D.bb.length - 1].v);
   set('kpiHRV', D.hrv[D.hrv.length - 1].v);
   set('kpiWeight', w);
   set('jLost', (216.4 - w).toFixed(1));
   set('jRange', `216.4→${w}`);
   set('jDays', Math.round((new Date() - new Date('2026-02-09')) / 86400000));
-  set('heroScore', D.readiness);
+  set('heroScore', D._pipelineReadiness ?? D.readiness);
+  if (PIPELINE_TODAY?.hrv_status) {
+    const hrvCard = document.getElementById('kpiHRV')?.closest('.kpi-card');
+    if (hrvCard) {
+      const delta = hrvCard.querySelector('.kpi-delta');
+      if (delta) { delta.textContent = PIPELINE_TODAY.hrv_status; delta.className = 'kpi-delta ' + (PIPELINE_TODAY.hrv_status.toLowerCase().includes('balanced') ? 'up' : 'down'); }
+    }
+  }
   const bio = getBioLog()[todayKey()];
   if (bio?.al) set('kpiAL', bio.al);
   animateArcs();
