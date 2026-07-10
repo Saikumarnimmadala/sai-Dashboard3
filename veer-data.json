@@ -1,12 +1,12 @@
 {
-  "generated": "2026-07-09T06:38:09.518887-07:00",
+  "generated": "2026-07-10T06:33:12.557319-07:00",
   "today": {
-    "training_readiness": 85,
-    "body_battery_start": 47,
-    "body_battery_peak": 99,
-    "rhr": 47,
+    "training_readiness": 78,
+    "body_battery_start": 26,
+    "body_battery_peak": 83,
+    "rhr": 50,
     "sleep_h": 7.3,
-    "sleep_score": 93,
+    "sleep_score": 88,
     "hrv_status": "Balanced",
     "hrv_streak": 0
   },
@@ -128,6 +128,10 @@
     {
       "date": "2026-07-09",
       "v": 99
+    },
+    {
+      "date": "2026-07-10",
+      "v": 83
     }
   ],
   "hrv": [],
