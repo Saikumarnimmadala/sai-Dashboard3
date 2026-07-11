@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-11T08:13:48.809878-07:00",
+  "generated": "2026-07-11T09:48:52.976323-07:00",
   "today": {
     "training_readiness": 83,
     "body_battery_start": 32,
@@ -83,6 +83,10 @@
     {
       "date": "2026-07-10",
       "lb": 172.1
+    },
+    {
+      "date": "2026-07-11",
+      "lb": 173.0
     }
   ],
   "body_battery": [
