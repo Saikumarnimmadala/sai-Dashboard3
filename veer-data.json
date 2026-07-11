@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-11T10:43:56.930683-07:00",
+  "generated": "2026-07-11T10:44:38.073438-07:00",
   "today": {
     "training_readiness": 83,
     "body_battery_start": 32,
@@ -19,7 +19,7 @@
     "hrv_status": "LOW",
     "hrv_5day_avg": 64,
     "hrv_7day_avg": 64,
-    "hrv_last_night": null,
+    "hrv_last_night": 76,
     "hrv_streak": 0,
     "acute_load": 139,
     "chronic_load": 307,
