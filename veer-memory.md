@@ -1,19 +1,20 @@
 # Veer Health Memory — 2026-07-11
-Generated: 2026-07-11 10:17
+Generated: 2026-07-11 10:43
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
-Read the LIVE DATA section first — it overrides anything in the static memory below.
+⚠️ IMPORTANT: LIVE DATA BELOW IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that is stale manual data.
 
 ---
 
-## QUICK DECISION SNAPSHOT
+## QUICK DECISION SNAPSHOT (LIVE — 2026-07-11)
 - **Date:** 2026-07-11
 - **Weight:** 173.0 lb (as of 2026-07-11)
 - **Training Readiness:** 83
 - **Body Battery:** 32 → 91
-- **HRV Status:** LOW | 5-day avg: 64 ms
-- **Acute Load:** 139
-- **Sleep:** 7.2h / score 88
+- **HRV Status:** **LOW** | Last night: None ms | 7-day avg: 64 ms
+- **Acute Load:** 139 | Chronic Load: 307 | Recovery: 1 hrs
+- **Sleep:** 7.2h / score 88 | Deep:83m REM:90m
+- **VO2 Max:** None
 - **O2 Score:** 8.4 | Lowest SpO2: 88% | Drops/hr: 6.5
 
 ---
@@ -21,20 +22,36 @@ Read the LIVE DATA section first — it overrides anything in the static memory 
 
 ## TODAY'S LIVE DATA — 2026-07-11
 _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
+**⚠️ LIVE DATA BELOW OVERRIDES ANY 'CURRENT STATUS' IN THE STATIC MEMORY SECTION**
 
 | Metric | Value |
 |--------|-------|
 | Training Readiness | **83** |
 | Body Battery | **32 → 91** |
 | Resting HR | 49 bpm |
-| Sleep | 7.2h / score 88 |
+| Sleep Total | 7.2h / score 88 |
+| Deep Sleep | 83m |
+| REM Sleep | 90m |
+| Light Sleep | 260m |
+| Awake Count | 1 |
+| Avg Breathing Rate | 15.0 brpm |
+| Lowest SpO2 (overnight) | 78% |
+| Avg SpO2 | 97.0% |
+| Breathing Disruption | LOW |
 | HRV Status | **LOW** |
+| HRV Last Night | None ms |
+| HRV 7-day avg | 64 ms |
 | HRV 5-day avg | 64 ms |
 | Acute Load | 139 |
-| Stress avg | 17 |
-| Steps | 1611 |
+| Chronic Load | 307 |
+| Recovery Time | 1 hrs |
+| Load Focus | LoAero:532 HiAero:488 Ana:119 |
+| Stress avg | 18 |
+| Steps | 1698 |
+| Intensity Minutes | Mod:0 Vig:0 |
+| VO2 Max | None |
 | O2 Score | 8.4 |
-| SpO2 Lowest | 88% |
+| SpO2 Lowest (O2Ring) | 88% |
 | Drops/hr | 6.5 |
 | Weight | **173.0 lb** (as of 2026-07-11) |
 | Lost from peak | 43.4 lb (from 216.4) |
@@ -187,20 +204,7 @@ Address as "brother" in all briefs and responses.
 
 ---
 
-## CURRENT STATUS (as of July 11, 2026)
-
-**Weight:** 173.0 lb (July 11, Omada confirmed) — in target band 172–175 lb
-**Total lost:** 43.4 lb (216.4 → 173.0)
-**Phase:** Maintenance + recomposition — not active cut
-
-**HRV:** Balanced (streak: 0)
-**Training Readiness:** 83 — High
-**Body Battery:** 91 peak
-**Sleep:** 7.2h / score 88
-**O2 Score:** 8.4 | SpO2 lowest 88% | Drops/hr 6.5
-**RHR:** 49 bpm
-
----
+_(current status removed — see LIVE DATA at top of this file)_
 
 ## MEMORY FILE SETUP (COMPLETED July 11, 2026)
 
