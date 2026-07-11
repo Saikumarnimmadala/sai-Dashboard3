@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-11
-Generated: 2026-07-11 13:21
+Generated: 2026-07-11 13:27
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -266,6 +266,25 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 # Veer Conversation Log
 Summaries of all Claude chat sessions. Most recent first.
 Auto-appended after each session via /log-conversation endpoint.
+
+---
+
+## 2026-07-11 — Full Garmin metrics expansion
+
+Expanded Garmin data pull to capture every available API metric. Fixed HRV status reading LOW correctly (was showing Balanced from stale static memory). Added sleep breakdown (Deep 83m/REM 90m/Light 260m), acute/chronic load (139/307, ACWR 0.40 LOW), load focus zones with target ranges, breathing rate, SpO2 overnight, last session data, weekly rollup. Fixed veer-memory.md to strip stale CURRENT STATUS section so Claude chat always reads live data first.
+
+**Weight confirmed:** 173.0 lb
+**Sessions logged:** Treadmill Running 2026-07-09 21min Load=88
+**New rules added:** HRV LOW = do not push training intensity,ACWR < 0.5 = recovery priority
+
+**Decisions made:**
+- All Garmin fields now live in veer-memory.md
+- Stale CURRENT STATUS stripped from static memory
+- Last session (Treadmill Running Jul 9) now shows in brain
+
+**Open items:**
+- [ ] Book pulmonologist referral — 40+ days unscheduled
+- [ ] Add O2Ring automated PDF parsing (pytesseract not installed)
 
 ---
 
