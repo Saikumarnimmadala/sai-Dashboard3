@@ -1,36 +1,42 @@
 # Veer Health Memory — 2026-07-11
-Generated: 2026-07-11 10:01
+Generated: 2026-07-11 10:17
+Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
-This file is the single source of truth for all Claude conversations.
-It is rebuilt every morning after Garmin + O2Ring + Omada data is pulled.
-Conversation summaries are appended after each chat session.
+Read the LIVE DATA section first — it overrides anything in the static memory below.
 
 ---
 
-## Quick Stats
-- **Today:** 2026-07-11
-- **Weight:** 173.0 lb
+## QUICK DECISION SNAPSHOT
+- **Date:** 2026-07-11
+- **Weight:** 173.0 lb (as of 2026-07-11)
 - **Training Readiness:** 83
-- **Body Battery Peak:** 91
-- **HRV:** Balanced
-- **Sleep:** 7.2h / 88
+- **Body Battery:** 32 → 91
+- **HRV Status:** LOW | 5-day avg: 64 ms
+- **Acute Load:** 139
+- **Sleep:** 7.2h / score 88
+- **O2 Score:** 8.4 | Lowest SpO2: 88% | Drops/hr: 6.5
 
 ---
 
 
-## Daily Biometrics — 2026-07-11
+## TODAY'S LIVE DATA — 2026-07-11
+_(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 
 | Metric | Value |
 |--------|-------|
-| Training Readiness | 83 |
-| Body Battery | 32 → 91 |
+| Training Readiness | **83** |
+| Body Battery | **32 → 91** |
 | Resting HR | 49 bpm |
 | Sleep | 7.2h / score 88 |
-| HRV Status | Balanced (streak: 0) |
+| HRV Status | **LOW** |
+| HRV 5-day avg | 64 ms |
+| Acute Load | 139 |
+| Stress avg | 17 |
+| Steps | 1611 |
 | O2 Score | 8.4 |
 | SpO2 Lowest | 88% |
 | Drops/hr | 6.5 |
-| Weight | 173.0 lb (as of 2026-07-11) |
+| Weight | **173.0 lb** (as of 2026-07-11) |
 | Lost from peak | 43.4 lb (from 216.4) |
 
 ### Weight Trend (last 14 entries)
@@ -62,6 +68,7 @@ Conversation summaries are appended after each chat session.
 | Night | Score | Lowest SpO2 | Avg SpO2 | Drops/hr |
 |-------|-------|-------------|----------|----------|
 | 2026-07-09 | 8.4 | 88% | 94% | 6.5 |
+
 
 ---
 
@@ -143,6 +150,7 @@ Conversation summaries are appended after each chat session.
 - **Sleep:** 6.1h at a score of 59 extends a pattern; your O2Ring data shows SpO2 dropping to 82â€“83% on recent nights, and the pulmonologist call is not optional â€” two full-protocol sleep nights now before a high-exertion desert hike is the minimum safe prep.
 - **Hormones:** RHR 54 and Balanced HRV are genuine green signals â€” the limiting variable compressing your recovery is short sleep duration, not stress load; magnesium glycinate and tart cherry at 9:30pm are non-negotiable tonight.
 
+
 ---
 
 
@@ -154,91 +162,424 @@ Auto-appended after each session via /log-conversation endpoint.
 
 ---
 
----
-
-
-## Open Items (carry forward)
-
-(carry forward until resolved)
-- [ ] CRITICAL: Pulmonologist appointment â€” referral submitted Jun 1 (32 days ago as of Jul 3), still unscheduled. Call MDLive / Dr. Chavez's office TODAY before noon. Get pulmonologist name + direct number, then call to schedule. Standing #1 action item.
-- [ ] Dr. Marina Rasnow Hill (wellness) follow-up â€” canceled, rescheduling unconfirmed. Bundle into same MDLive call as pulmonologist.
-- [ ] Confirm CoQ10 + Fisetin + Mastic Gum all delivered and in active rotation.
-- [ ] Humidifier (Levoit LV600S) â€” not yet ordered.
-- [ ] Ferritin recheck â€” target September 2026
-- [ ] KSM-66 break begins ~September 7, 2026
-- [ ] Fisetin window CLOSED for July â€” days were Jul 1 and Jul 2. Confirm with Veer whether both doses were actually taken. Next window: Aug 1â€“2.
-- [ ] Restaurant leave check-in: ~July 21 â€” was time redirected to SaaS/passive income?
-- [ ] Right-side corrective exercises (VASA) integrated into Lower Body order â€” track right-side improvement; consider formal reassessment in 4â€“6 weeks
-- [x] Weight Jul 3 confirmed: 174.1 lb (Omada scale, 7:17 AM)
-- [ ] O2Ring: Jul 1 and Jul 2 night PDFs not found. Drop to OneDrive\Documents\GarminBriefs\O2Ring\ if available. Last confirmed: 2 consecutive worsening nights (Jun 29: 8.2/hr, Jun 30: 11.4/hr).
-- [ ] Next strategic VO2-Max hike (Piestewa/Shaw Butte): plan for a day when TR and BB are both 80+. Check Saturday Jul 5 numbers after today's Lower Body session. Earliest realistic window: weekend Jul 5â€“6 or early next week.
-- [ ] Upper Body session Jul 2 (Thursday) â€” confirm whether completed; only 277 steps logged, no activity file found.
-- [ ] Garbanzo bean soak (Thursday Jul 2 evening, 100g dry for Jul 3 legume lunch) â€” confirm whether soak happened; if not, use canned garbanzo as backup.
-- [ ] Jul 4 (Saturday) â€” national holiday, gym hours may differ. Check ahead for hike or session planning.
 
 ---
 
 
-## Protocols Summary
+# PERMANENT MEMORY (working weights, rules, history, protocols)
 
-# DAILY_RULES.md
-# Lightweight daily reference for morning brief generation.
-# Read this + MEMORY.md every morning. Do NOT read VEER_COMPLETE_KT.txt unless specifically asked.
-# Last updated: July 1, 2026
 
----
+# CLAUDE CODE MEMORY FILE
+# Read this FIRST before reading the KT doc, data files, or doing anything else.
+# Update this file at the end of every session with anything new.
+# If something here conflicts with the KT doc, ask Veer to clarify before proceeding.
 
-## 1. BIOTIN SCHEDULE (state this every morning, no exceptions)
-- TAKE: Tuesday, Thursday, Saturday
-- SKIP: Monday, Wednesday, Friday, Sunday
+Last updated: July 11, 2026
 
 ---
 
-## 2. FISETIN (monthly senolytic — 2 days only)
-- Take: 1st and 2nd of every calendar month, with breakfast
-- Skip all other days
-- Next doses: check MEMORY.md for current month status
+## WHO THIS IS
+
+Veer (Sai Kumar Nimmadala), 30, Phoenix AZ.
+Data Analyst at GCE. STEM OPT begins July 2026.
+True Day 1: February 9, 2026 at 216.4 lb.
+Address as "brother" in all briefs and responses.
 
 ---
 
-## 3. BODY BATTERY → TRAINING INTENSITY
+## CURRENT STATUS (as of July 11, 2026)
 
-| Body Battery | Action |
+**Weight:** 173.0 lb (July 11, Omada confirmed) — in target band 172–175 lb
+**Total lost:** 43.4 lb (216.4 → 173.0)
+**Phase:** Maintenance + recomposition — not active cut
+
+**HRV:** Balanced (streak: 0)
+**Training Readiness:** 83 — High
+**Body Battery:** 91 peak
+**Sleep:** 7.2h / score 88
+**O2 Score:** 8.4 | SpO2 lowest 88% | Drops/hr 6.5
+**RHR:** 49 bpm
+
+---
+
+## MEMORY FILE SETUP (COMPLETED July 11, 2026)
+
+Claude now fetches this URL at the start of every conversation:
+https://raw.githubusercontent.com/Saikumarnimmadala/sai-Dashboard3/main/veer-memory.md
+
+Instructions saved in Claude settings:
+- Silently fetch memory file before every response
+- Never ask Veer to manually state Garmin numbers
+- Always reference actual numbers, not generic advice
+- Apply BB thresholds and HRV override rules exactly
+- Flag pulmonologist appointment every conversation until scheduled
+- Address as "brother"
+- Exact gram measures for food, exact weights/sets/reps in both lbs and kg
+- File is single source of truth
+
+---
+
+## RECENT EVENTS (July 2026)
+
+- **Jul 1-2:** Fisetin taken both days ✅ — next doses August 1-2
+- **Jul 6 (Sun):** Departed Phoenix → Utah (afternoon)
+- **Jul 7 (Mon):** THE WAVE HIKE COMPLETED ✅
+  - Exactly 3L water used (bladder empty at parking lot)
+  - Garmin alerts set: 15min hydration, 50min nutrition, 170bpm HR
+  - Trail snacks: 4 zip lock bags (45/90/WAVE/BACK)
+  - Outfit: royal blue long sleeve + light grey Tek Gear pants (L) + tan Orvis wide brim hat + blue Osprey Talon 22
+  - DJI Pocket 3 on monopod for photos/video
+  - Shot guide PDF created and used
+- **Jul 8 (Tue):** Drive home, arrived Phoenix. Rest day.
+- **Jul 9 (Thu):** Upper Body session — full working weights confirmed:
+  - Lateral Raises 25lb × 12 × 5 sets ✅
+  - Rear Delt Machine 90lb × 4 × 10 ✅
+  - Incline DB Press 50lb × 4 × 10 ✅
+  - Converging Chest 105lb × 4 × 10 ✅
+  - Lat Pulldown 145lb × 4 × 10 ✅
+  - DB Curls 25lb × 4 × 12 ✅
+  - Tricep Pushdown 42.5lb × 4 × 10 ✅
+  - Push-ups 2 × max ✅
+  - Treadmill Finisher incline 10, 3.0mph, 20 min ✅
+  - POST SESSION: HRV went unstable
+- **Jul 10 (Fri):** FULL REST — HRV unstable, correct call
+- **Jul 11 (Sat):** TODAY — TR 83, BB 91, HRV Balanced. Green light for Lower Body.
+
+---
+
+## CURRENT WORKING WEIGHTS (confirmed June 25 + July 9, 2026)
+
+### Upper Body
+| Exercise | lbs | kg | Sets × Reps |
+|---|---|---|---|
+| Lateral Raises | 25 | 11 | 5 × 12 — DO NOT chase 30lb yet |
+| Rear Delt Machine | 90 | 41 | 4 × 10 |
+| Incline DB Press | 50 | 23 | 4 × 10 |
+| Converging Chest | 105 | 48 | 4 × 10 |
+| Lat Pulldown | 145 | 66 | 4 × 10 |
+| DB Curls | 25 | 11 | 4 × 12 |
+| Tricep Pushdown | 42.5 | 19 | 4 × 10 |
+| Push-ups | BW | BW | 2-3 × max |
+| Incline Finisher | — | — | incline 10, spd 3.0/3.2-3.5 if BB 80+, 20 min |
+
+### Lower Body
+| Exercise | lbs | kg | Sets × Reps |
+|---|---|---|---|
+| Leg Press | 250-260 | 115-120 | 4 × 8-10 |
+| Hamstring Curl | 120-125 | 54-57 | 4 × 10 |
+| Leg Extension | 105-110 | 48-50 | 4 × 10 |
+| Calf Extension | 155-160 | 70-73 | 4 × 12 |
+| Deficit Calf Raise w/ DB | 18-22 | 8-10 | 2 × 12-15 corrective R-priority |
+| RDL from Flat Bench | 22-26 | 10-12 | 2 × 10 corrective R-priority |
+| Rear Foot Elevated Stretch | BW | BW | 2 × 30s/side corrective |
+| Plank | BW | BW | 2 × 80-85 sec |
+| Incline Finisher | — | — | incline 10, spd 3.0/3.2-3.5 if BB 80+, 20 min |
+
+---
+
+## LOCKED RULES
+
+1. **HRV Persistence:** 3+ consecutive Unbalanced days → no hard training or hiking until Balanced 1 full day
+2. **Pre-hike check:** Always check TR + BB BEFORE leaving. Never after.
+3. **Lateral raises:** 25lb locked. DO NOT recommend 30lb.
+4. **Rest day protein:** Same target as training days (130-140g). Legumes = fiber side only.
+5. **BB thresholds:** 80-100=full push, 75-79=normal, 60-74=3 sets/10-20% lighter, <60=walk, <40=rest
+6. **Log Strength Training** on Forerunner 970 always
+7. **Eating order:** veg → protein → fats → kimchi cold last → microgreens raw on top
+8. **ACV** before every meal, **10-min walk** after every meal
+
+---
+
+## OPEN ITEMS
+
+### CRITICAL #1
+- [ ] **Pulmonologist appointment** — referral June 1, still NOT scheduled as of July 11. 40+ days. O2Ring: 43 desat events, SpO2 low 83% on June 29-30. Flag every single conversation.
+
+### UPCOMING
+- [ ] KSM-66 break: September 7, 2026
+- [ ] Ferritin recheck: September 2026
+- [ ] Full bloodwork retest: December 2026
+- [ ] Fisetin next doses: August 1-2, 2026 ← set reminder
+
+### ECOSYSTEM / TECH
+- [ ] Claude memory file (veer-memory.md) on GitHub auto-updates at 6:10am ✅ WORKING
+- [ ] Claude settings updated with memory fetch instructions ✅ DONE July 11
+- [ ] PWA dashboard live on Netlify (site ID: b7b2236b-fc3c-420e-8e35-d0b3b4ed3a2a)
+- [ ] Claude Code morning pipeline running at 6:15am ✅ WORKING
+- [ ] Netlify auto-deploy from Claude Code — pending setup
+- [ ] 7 coaching skill cards built into PWA (Physique, Longevity, Sleep, Hormone, Nutrition, Recovery, Movement)
+- [ ] Ecosystem updates + session log sections in PWA dashboard
+
+---
+
+## WEEKLY SCHEDULE
+| Day | Session |
 |---|---|
-| 80–100 | Full push — chase PRs, normal/heavier weight |
-| 75–79 | Normal effort — maintain current weights |
-| 60–74 | 3 sets per exercise, cut weight 10–20% |
-| Below 60 | Walk only — no gym |
-| Below 40 | Full rest — no exercise at all |
+| Mon | Upper Body |
+| Tue | Lower Body |
+| Wed | Walk/rest |
+| Thu | Upper Body |
+| Fri | Lower Body |
+| Sat | Hike/rest — check data |
+| Sun | Rest |
+
+**BIOTIN:** TAKE Tue/Thu/Sat — SKIP Mon/Wed/Fri/Sun
+**LEGUMES:** Tue=black beans (soak Mon night 100g dry), Fri=garbanzo (soak Thu night 100g dry)
 
 ---
 
-## 4. OVERRIDE CHECKLIST (check ALL of these before giving a training call)
-Check in this order — any one can override Body Battery alone:
-
-**A. Training Readiness**
-- "Low" with high Recovery Time → rest, even if Body Battery looks good
-
-**B. Acute Load**
-- Above 450–500 = deload signal regardless of Body Battery
-
-**C. Recovery Time**
-- Above 24h = body hasn't absorbed prior training
-
-**D. HRV PERSISTENCE RULE (most commonly missed — always check)**
-- If HRV "Unbalanced" for 3+ CONSECUTIVE DAYS → actively avoid ALL aerobic/hiking load
-- Check MEMORY.md for current HRV streak count
-- "Feeling good" does NOT override this
-- Body Battery looking high does NOT override this
-- Rule clears only when HRV returns to Balanced for at least ONE full day
-- When flagging: state it clearly once, don't repeat it 10 times in the same brief
-
-**E. Load Focus explicit warning**
-- If Garmin app shows text warning "scale back duration and frequency" → treat same as HRV persistence flag
+## MOVEMENT ASSESSMENT (VASA June 28, 2026)
+Overall 78 | Mobility 79 | Compensation 74 | Stability 85
+Right knee valgus -20° on lateral lunge — injury risk
+Right side weaker than left: hip, knee, ankle
+Corrective block every Lower Body: Deficit Calf Raise, RDL from Flat Bench, Rear Foot Elevated Stretch — RIGHT SIDE PRIORITY always
 
 ---
 
-## 5. WEEKLY TRAINING SPLIT (standard — check MEMORY.md for actual this-week schedule)
+## WEIGHT JOURNEY (recent)
+| Date | Weight | Notes |
+|---|---|---|
+| Feb 9 | 216.4 lb | TRUE DAY 1 |
+| Jun 29 | 172.1 lb | Post-HRV resolution |
+| Jul 2 | 173.2 lb | |
+| Jul 3 | 174.1 lb | |
+| Jul 9 | 173.0 lb | |
+| Jul 10 | 172.1 lb | |
+| Jul 11 | 173.0 lb | Omada confirmed |
+
+---
+
+## SESSION HISTORY (recent)
+| Date | Session | Notes |
+|---|---|---|
+| Jun 25 | Upper Body | First Garmin-logged. 302 reps, 7,044kg. Weights confirmed. |
+| Jun 27 | Mormon Loop hike | 8.6km, 413m. Against HRV advice. TR→47 post. |
+| Jun 28 | REST | VASA movement assessment. |
+| Jun 29 | Upper Body | HRV Balanced. Full push. 172.6lb. |
+| Jun 30 | Lower Body | BB 57→3 sets reduced. Corrective block. |
+| Jul 2 | Upper Body | TR 78, BB 81. Assisted chin-up subbed lat pulldown. |
+| Jul 7 | THE WAVE HIKE | ✅ Completed. 3L exact. Utah. |
+| Jul 9 | Upper Body | Full weights matched. HRV unstable post. |
+| Jul 10 | REST | HRV unstable. Correct call. |
+| Jul 11 | Lower Body | TR 83, BB 91, HRV Balanced. GREEN LIGHT. |
+
+---
+
+## SUPPLEMENT STACK
+**Morning:** Creatine 5g, D3+K2 5000IU, Omega-3 2 caps, Beef Liver (2 training/1 rest), B12 5000mcg sublingual, CoQ10 100mg, Biotin (Tue/Thu/Sat), Fisetin (1st-2nd monthly)
+**Dinner:** Zinc Picolinate 22mg + Thorne Copper 2mg (always together)
+**Before dinner:** Psyllium husk 5g in warm water — 60 sec
+**9:30pm:** Magnesium Glycinate 240mg + Tart Cherry 60ml + KSM-66 600mg (ends Sept 7)
+**Separate:** Probiotic Garden of Life 50B — empty stomach
+
+---
+
+## OSA PATTERN (key finding)
+High-intensity hikes (VO2 Max, avg HR 150+) produce dramatically better O2Ring scores than gym/rest.
+Best night: 8.8 score, 1.5 drops/hr — morning after Piestewa Peak.
+Tell pulmonologist this explicitly when appointment is scheduled.
+
+
+**Recent events:**
+- Sun July 6: Departed Phoenix → Utah (Sunday afternoon)
+- Mon July 7: THE WAVE HIKE COMPLETED ✅
+  - Used exactly 3L water (bladder completely empty at parking lot)
+  - Trip went as planned per itinerary
+- Tue July 8: Drive home, arrived Phoenix Tuesday night. Rest day.
+- Wed July 9: Rest/recovery (day after drive)
+- Thu July 9: Upper Body session — same plan as last confirmed session
+  - Lateral Raises 25lb × 12 × 5 sets ✅
+  - Rear Delt Machine 90lb × 4 × 10 ✅
+  - Incline DB Press 50lb × 4 × 10 ✅
+  - Converging Chest 105lb × 4 × 10 ✅
+  - Lat Pulldown 145lb × 4 × 10 ✅
+  - DB Curls 25lb × 4 × 12 ✅
+  - Tricep Pushdown 42.5lb × 4 × 10 ✅
+  - Push-ups 2 × max ✅
+  - Treadmill Finisher incline 10, 3.0mph, 20 min ✅
+  - POST SESSION: HRV found to be unstable
+- Fri July 10: FULL REST — HRV unstable, correct decision
+- Sat July 11: TODAY — need Garmin data to make training call
+
+**Fisetin:** July 1 ✓ July 2 ✓ — next doses August 1-2
+
+---
+
+## CURRENT WORKING WEIGHTS (confirmed June 25 + July 9, 2026)
+
+### Upper Body
+| Exercise | Weight | Sets x Reps |
+|---|---|---|
+| Lateral Raises | 25lb (11kg) | 5 x 12 — DO NOT chase 30lb yet |
+| Rear Delt Machine | 90lb (41kg) | 4 x 10 |
+| Incline DB Press | 50lb (23kg) | 4 x 10 |
+| Converging Chest | 105lb (48kg) | 4 x 10 |
+| Lat Pulldown | 145lb (66kg) | 4 x 10 |
+| DB Curls | 25lb (11kg) | 4 x 12 |
+| Tricep Pushdown | 42.5lb (19kg) | 4 x 10 |
+| Push-ups | BW | 2-3 sets to failure |
+| Incline Finisher | incline 10, speed 3.0/3.2-3.5 if BB 80+ | 20 min |
+
+### Lower Body
+| Exercise | Weight | Sets x Reps |
+|---|---|---|
+| Leg Press | 250-260lb (115-120kg) | 4 x 8-10 |
+| Hamstring Curl | 120-125lb (54-57kg) | 4 x 10 |
+| Leg Extension | 105-110lb (48-50kg) | 4 x 10 |
+| Calf Extension | 155-160lb (70-73kg) | 4 x 12 |
+| Deficit Calf Raise w/ DB Suitcase | 8-10kg | 2 x 12-15 corrective, right side priority |
+| RDL from Flat Bench w/ DB | 10-12kg | 2 x 10 corrective, right side priority |
+| Rear Foot Elevated Stretch | bodyweight | 2 x 30s/side corrective |
+| Plank | BW | 2 x 80-85 sec |
+| Incline Finisher | incline 10, speed 3.0/3.2-3.5 if BB 80+ | 20 min |
+
+---
+
+## LOCKED RULES THAT OVERRIDE EVERYTHING
+
+1. **HRV Persistence Rule:** If HRV Unbalanced 3+ consecutive days → no hard training or hiking until Balanced for 1 full day. "Feeling good" does NOT override this.
+2. **Pre-hike check:** Always check TR + BB BEFORE leaving. Never after. (Cholla lesson)
+3. **Lateral raises:** Locked at 25lb. DO NOT recommend 30lb yet.
+4. **Rest day protein:** Same target as training days (130-140g). Legumes = fiber side only.
+5. **Body Battery thresholds:** 80-100=full push, 75-79=normal, 60-74=3 sets/10-20% lighter, <60=walk only, <40=full rest.
+6. **Always log Strength Training on Forerunner 970** — not just cardio.
+
+---
+
+## OPEN ITEMS
+
+### CRITICAL #1
+- [ ] **Pulmonologist appointment** — referral June 1, still NOT scheduled. O2Ring showed 43 desat events, low 83% SpO2 on June 29-30. Flag every brief.
+
+### UPCOMING
+- [ ] KSM-66 break: September 7, 2026
+- [ ] Ferritin recheck: September 2026
+- [ ] Full bloodwork retest: December 2026
+- [ ] Fisetin next doses: August 1-2, 2026
+
+---
+
+## WEEKLY SCHEDULE (standard)
+| Day | Session |
+|---|---|
+| Monday | Upper Body |
+| Tuesday | Lower Body |
+| Wednesday | Walk/rest |
+| Thursday | Upper Body |
+| Friday | Lower Body |
+| Saturday | Hike/rest — check data first |
+| Sunday | Rest |
+
+## BIOTIN: TAKE Tue/Thu/Sat — SKIP Mon/Wed/Fri/Sun
+## LEGUMES: Tue=black beans (soak Mon night), Fri=garbanzo (soak Thu night)
+
+---
+
+## MOVEMENT ASSESSMENT (VASA June 28)
+Overall 78 | Right knee valgus -20° on lateral lunge — injury risk
+Corrective block every Lower Body: Deficit Calf Raise, RDL from Flat Bench, Rear Foot Elevated Stretch — right side priority always
+
+---
+
+## RECENT SESSION HISTORY
+| Date | Session | Key notes |
+|---|---|---|
+| Jun 25 | Upper Body | First Garmin-logged session. 302 reps, 7,044kg. All weights confirmed. |
+| Jun 27 | Mormon Loop hike | 8.6km, 413m. Done against HRV advice. TR dropped to 47 post-hike. |
+| Jun 28 | REST | VASA movement assessment. |
+| Jun 29 | Upper Body | HRV resolved to Balanced. Full push. 172.6lb. |
+| Jun 30 | Lower Body | BB 57 → 3 sets reduced weight. Corrective block done. |
+| Jul 2 | Upper Body | TR 78 High, BB 81. Full weights. Assisted chin-up subbed for lat pulldown. |
+| Jul 7 | THE WAVE HIKE | Completed ✅ Exactly 3L water used. |
+| Jul 9 | Upper Body | Full session, all weights matched. HRV unstable post-session. |
+| Jul 10 | REST | HRV unstable — correct call. |
+| Jul 11 | TODAY | Need Garmin data — pending. |
+
+---
+
+## WEIGHT JOURNEY (recent)
+| Date | Weight | Notes |
+|---|---|---|
+| Feb 9 | 216.4 lb | TRUE DAY 1 |
+| Jun 29 | 172.6 lb | Post-HRV resolution |
+| Jul 2 | 173.4 lb | Last confirmed |
+| Jul 11 | TBC | Update when provided |
+
+---
+
+## CURRENT WORKING WEIGHTS (confirmed June 25, 2026 — first properly Garmin-logged session)
+
+### Upper Body
+| Exercise | Weight | Sets x Reps |
+|---|---|---|
+| Lateral Raises | 25lb | 5 x 12 — DO NOT chase 30lb yet |
+| Rear Delt Machine | 90lb | 4 x 10 |
+| Incline DB Press | 50lb | 4 x 10 |
+| Converging Chest | 105lb | 4 x 10 |
+| Lat Pulldown | 145lb | 4 x 10 (dropped to 9 on last set June 25 — PR = complete all 4 at 10) |
+| DB Curls | 25lb | 4 x 12 |
+| Tricep Pushdown | 42.5lb | 4 x 10 |
+| Push-ups | BW | 2-3 sets to failure |
+| Incline Finisher | incline 10, speed 3.0 standard / 3.2-3.5 if BB 80+ | 20 min |
+
+### Lower Body
+| Exercise | Weight | Sets x Reps |
+|---|---|---|
+| Leg Press | 250-260lb (115-120kg) | 4 x 8-10 |
+| Hamstring Curl | 120-125lb (54-57kg) | 4 x 10 |
+| Leg Extension | 105-110lb (48-50kg) | 4 x 10 |
+| Calf Extension | 155-160lb (70-73kg) | 4 x 12 |
+| Deficit Calf Raise w/ DB Suitcase | 8-10kg | 2 x 12-15 — corrective, right side priority |
+| RDL from Flat Bench w/ DB | 10-12kg | 2 x 10 — corrective, right side priority |
+| Rear Foot Elevated Stretch | bodyweight | 2 x 30s/side — corrective |
+| Plank | BW | 2 x 80-85 sec |
+| Incline Finisher | incline 10, speed 3.0 standard / 3.2-3.5 if BB 80+ | 20 min |
+
+### Garmin Auto-Label Notes
+Garmin sometimes mislabels exercises — these are NOT substitutions:
+- "Face Pull" in Garmin logs = Rear Delt Machine (actual exercise performed)
+- "Bench Press" in Garmin logs = Converging Chest Press (actual exercise performed)
+
+---
+
+## LOCKED RULES THAT OVERRIDE EVERYTHING
+
+1. **HRV Persistence Rule (Section 4b):** If HRV Unbalanced 3+ consecutive days → actively avoid all aerobic/hiking load until HRV returns to Balanced for at least ONE full day. "Feeling good" does not override this. Body Battery looking high does not override this.
+
+2. **Pre-hike check (non-negotiable):** Always check Training Readiness AND Body Battery BEFORE leaving for any hike. Never after. If TR is "Low/Poor" or HRV is Unbalanced, downgrade or cancel — regardless of how the prior night's O2Ring scored.
+
+3. **Lateral raises:** Locked at 25lb until fully confident across multiple sessions. DO NOT recommend 30lb even if Body Battery and Training Readiness are perfect.
+
+4. **Rest day protein:** Rest days need the same protein target as training days (130-140g). Legumes are a fiber side, never the primary protein anchor for a meal.
+
+5. **Body Battery thresholds:**
+   - 80-100: full push, chase PRs
+   - 75-79: normal effort
+   - 60-74: 3 sets, reduce weight 10-20%
+   - Below 60: walk only
+   - Below 40: full rest
+
+6. **Garmin Strength Training logging:** Always log gym sessions as "Strength Training" on the Forerunner 970, not just cardio. This is how lifting sessions contribute to Acute Load/Training Readiness calculations.
+
+---
+
+## OPEN ITEMS (check these every morning brief)
+
+### CRITICAL — #1 PRIORITY
+- [ ] **Pulmonologist appointment** — referral submitted June 1 by Dr. Chavez. Still NOT scheduled as of June 30. This is now 4+ weeks without an appointment. Flag this in every single brief until it is confirmed scheduled. Tie it to today's data: the O2Ring is now showing 43 desaturation events in a single 6-hour window (June 29-30), SpO2 low of 83%. This is the most important medical action item in the entire ecosystem.
+
+### UPCOMING
+- [ ] **Fisetin senolytic days: July 1 and July 2** — 100mg with breakfast both days. Flag the night before each.
+- [ ] **KSM-66 break: September 7, 2026** — 12-week cycle started June 7. Break begins Sept 7 for 4 weeks.
+- [ ] **Ferritin recheck: September 2026** — mid-point check given beef liver dosing change.
+- [ ] **Full bloodwork retest: December 2026** — expanded panel locked in KT Section 7b.
+
+### SUPPLY
+- [ ] Confirm CoQ10, Fisetin, and Mastic Gum are all in active rotation (were ordered but not 100% confirmed delivered as of late June).
+
+---
+
+## WEEKLY SCHEDULE (standard — overridden by actual data)
 
 | Day | Session |
 |---|---|
@@ -247,36 +588,100 @@ Check in this order — any one can override Body Battery alone:
 | Wednesday | 30-min vigorous walk (or rest if recovery demands) |
 | Thursday | Upper Body |
 | Friday | Lower Body |
-| Saturday | Hike / rest (check numbers first) |
-| Sunday | Rest |
+| Saturday | Restaurant shift / hike / rest depending on data |
+| Sunday | Restaurant shift / rest |
+
+Note: Restaurant leave taken ~June 21 for ~1 month. Weekends currently free for passive income work or hiking.
 
 ---
 
-## 6. UPPER BODY — LOCKED EXERCISE ORDER (never reorder)
-
-1. Lateral Raises — ALWAYS FIRST
-2. Rear Delt Machine
-3. Incline DB Press
-4. Converging Chest Press
-5. Lat Pulldown
-6. DB Curls
-7. Tricep Pushdown
-8. Push-ups
-9. Incline Treadmill Finisher — 20 min, ALWAYS LAST, never skip
-
-**Warmup:** 5–7 min treadmill, incline 4–5, speed 2.8–3.0 before any lifting
-
-**Finisher:** incline 10, speed 3.0 standard / 3.2–3.5 if Body Battery 80+
-
-**Garmin label quirks (NOT real exercise substitutions):**
-- "Face Pull" in Garmin logs = Rear Delt Machine
-- "Bench Press" in Garmin logs = Converging Chest Press
-
-**Form cues (from VASA assessment):**
-- Shoulders stay DOWN and away from ears throughout Lateral Raises and Incline DB Press
+## BIOTIN SCHEDULE (state this every morning without fail)
+- TAKE: Tuesday, Thursday, Saturday
+- SKIP: Monday, Wednesday, Friday, Sunday
 
 ---
 
-## 7. LOWER BODY — LOCKED EXERCISE ORDER
+## LEGUME ROTATION
+- Tuesday lunch: black beans (soak 100g dry MONDAY NIGHT)
+- Friday lunch: garbanzo beans (soak 100g dry THURSDAY NIGHT)
+- Remind the night before every single time — this was missed multiple times early on.
 
-1. Leg P...(truncated — full rules in DAILY_RULES.md)
+---
+
+## O2RING PIPELINE
+- Veer exports PDF from ViHealth app each morning
+- Saves to: `OneDrive\Documents\GarminBriefs\O2Ring\`
+- Naming: any format with yesterday's date in filename works
+- Script uses vision-based extraction (pypdfium2 → Claude vision) — NOT pdfplumber (O2Ring PDFs are image-based)
+- If no PDF found: write "O2Ring data not provided today" explicitly — never carry forward old data
+
+### Key finding to always mention in context:
+High-intensity hikes (Piestewa/Cholla, VO2 Max level) consistently produce BETTER O2Ring scores the following night than gym sessions or rest days. Best night ever: 8.8 score after Piestewa. This is the most clinically significant pattern in the entire dataset — mention it to the pulmonologist explicitly.
+
+---
+
+## DATA SOURCE RULES (non-negotiable after the trust-verification fixes)
+1. Every number in the recovery scorecard must cite its exact source file and field
+2. If a field is missing: write "not available in today's data pull" — never estimate or invent
+3. If using yesterday's data as a fallback (e.g. weight not yet logged): label it clearly as "CARRIED FROM YESTERDAY — NOT TODAY'S ACTUAL READING"
+4. At the bottom of every brief: list which files were read (e.g. "Sources: garmin/daily/2026-06-30.md, O2Ring/2026-06-30.pdf")
+
+---
+
+## MOVEMENT ASSESSMENT (VASA, June 28, 2026)
+Overall: 78 | Mobility: 79 | Compensation: 74 | Stability: 85
+
+Key finding: Right knee valgus -20° on lateral lunge — real injury-risk pattern.
+Right side measurably weaker than left across hip, knee, and ankle.
+
+Corrective exercises added to EVERY Lower Body session:
+1. Deficit Calf Raise w/ DB Suitcase (ankle stability)
+2. RDL from Flat Bench w/ DB (hip mobility)
+3. Rear Foot Elevated Quad-Hip Flexor Stretch (hip flexor)
+→ Always prioritize right side slightly more than left on these exercises.
+
+Form cue for Upper Body: shoulders stay DOWN and away from ears during Lateral Raises and Incline DB Press (overhead press compensation pattern flagged).
+
+---
+
+## RECENT SESSION HISTORY
+
+| Date | Session | Key notes |
+|---|---|---|
+| Jun 20 | Cholla hike | Acute Load peaked at 748 — highest ever. Checked data AFTER, not before. Lesson locked. |
+| Jun 23 | Upper Body | Reduced volume (TR 63, Moderate) |
+| Jun 24 | Lower Body | Full weights. HRV flipped Unbalanced same day. |
+| Jun 25 | Upper Body | First properly Garmin-logged Strength session. 302 reps, 7,044kg. All weights confirmed. |
+| Jun 26 | REST | HRV Unbalanced day 3 + explicit Garmin scale-back warning. Converted from planned light Lower Body. |
+| Jun 27 | Mormon Loop hike | 8.6km, 413m, 2,476ml sweat. Done against advice (HRV Unbalanced day 4). TR dropped to 47 post-hike. |
+| Jun 28 | REST | VASA PT consultation + movement assessment. |
+| Jun 29 | Upper Body | HRV resolved to Balanced. Full push. Lateral raises held at 25lb. Weight 172.6lb. |
+| Jun 30 | Lower Body | Body Battery 57 → 3 sets, reduced weight (100kg leg press). Corrective block done. Weight TBC. |
+
+---
+
+## WEIGHT JOURNEY (recent — full table in KT Section 2)
+| Date | Weight | Notes |
+|---|---|---|
+| Feb 9 | 216.4 lb | TRUE DAY 1 |
+| May 18 | 174.8 lb | First touched target range |
+| Jun 20 | 172.3 lb | Post-Cholla |
+| Jun 21 | 173.7 lb | Water retention from Cholla |
+| Jun 24 | 172.6 lb | |
+| Jun 27 | 173.5 lb | Post-Mormon Loop water retention |
+| Jun 28 | 172.8 lb | |
+| Jun 29 | 172.6 lb | Confirmed |
+| Jun 30 | TBC | Update when provided |
+
+---
+
+## HOW TO UPDATE THIS FILE
+
+At the end of every session or morning brief generation, append any new information:
+- New confirmed weight → update weight journey table
+- New PR or weight change → update working weights table
+- Open item resolved → check it off
+- New rule or decision → add to relevant section
+- New session completed → add to session history
+
+Do NOT silently overwrite old entries — keep history visible.
