@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-11T10:01:39.201795-07:00",
+  "generated": "2026-07-11T10:17:20.690583-07:00",
   "today": {
     "training_readiness": 83,
     "body_battery_start": 32,
@@ -7,8 +7,15 @@
     "rhr": 49,
     "sleep_h": 7.2,
     "sleep_score": 88,
-    "hrv_status": "Balanced",
+    "hrv_status": "LOW",
+    "hrv_5day_avg": 64,
+    "hrv_last_night": null,
     "hrv_streak": 0,
+    "acute_load": 139,
+    "chronic_load": null,
+    "stress_avg": 17,
+    "steps": 1611,
+    "vo2max": null,
     "o2_score": 8.4,
     "o2_lowest": 88,
     "o2_avg": 94,
