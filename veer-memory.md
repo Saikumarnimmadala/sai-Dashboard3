@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-11
-Generated: 2026-07-11 11:06
+Generated: 2026-07-11 13:21
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -11,7 +11,7 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 |---|---|
 | **Weight** | 173.0 lb (−43.4 lb from 216.4 peak) |
 | **Training Readiness** | 83 / 100 (HIGH) — HIGH_HRV_LOW |
-| **Body Battery** | 32 → 91 (end: 71) |
+| **Body Battery** | 32 → 91 (end: 69) |
 | **Recovery Time** | 1 hrs |
 | **Acute Load / Chronic / ACWR** | 139 / 307 / 0.40 (LOW) |
 | **HRV Status** | **LOW** — last night: 76 ms | 7-day: 64 ms | baseline: 71–91 ms (LOW<67) |
@@ -34,7 +34,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 |--------|-------|
 | Training Readiness | **83** / 100 (HIGH) |
 | Readiness Feedback | HIGH_HRV_LOW |
-| Body Battery | 32 → 91 (end: 71) +59 / -20 |
+| Body Battery | 32 → 91 (end: 69) +59 / -22 |
 | Body Battery Feedback | DAY_RECOVERING_AND_INACTIVE |
 | Recovery Time | 1 hrs (NO_CHANGE_SLEEP) |
 | Acute Load | 139 |
@@ -108,8 +108,8 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Fitness Age | not available |
 | Intensity Minutes — Moderate (today) | 0 min |
 | Intensity Minutes — Vigorous (today) | 0 min |
-| Steps Today | 1724 |
-| Active Calories Today | 15 kcal |
+| Steps Today | 1879 |
+| Active Calories Today | 16 kcal |
 | Floors Climbed Today | 0 |
 
 ### WEIGHT
@@ -128,7 +128,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Avg HR / Max HR | 151.0 / 176.0 bpm |
 | Aerobic Training Effect | 3.0999999046325684 (TEMPO) — IMPACTING_TEMPO_22 |
 | Anaerobic Training Effect | 0.8999999761581421 — NO_ANAEROBIC_BENEFIT_0 |
-| Exercise Load | 88.04151916503906 |
+| Exercise Load | 88 |
 | Calories | 252.0 kcal |
 | Sweat Loss | 176.0 ml |
 | Body Battery Impact | -6 |
