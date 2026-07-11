@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-11T11:01:41.054189-07:00",
+  "generated": "2026-07-11T11:06:21.543678-07:00",
   "today": {
     "training_readiness": 83,
     "readiness_level": "HIGH",
@@ -320,5 +320,31 @@
       "hormones": "RHR 54 and Balanced HRV are genuine green signals â€” the limiting variable compressing your recovery is short sleep duration, not stress load; magnesium glycinate and tart cherry at 9:30pm are non-negotiable tonight."
     }
   },
-  "coaches_generated": "2026-07-04T07:47:22.420820-07:00"
+  "coaches_generated": "2026-07-04T07:47:22.420820-07:00",
+  "last_session": {
+    "date": "2026-07-09",
+    "start_time": "2026-07-09 09:58",
+    "name": "Treadmill Running",
+    "type": "treadmill_running",
+    "duration_s": 1270.5799560546875,
+    "distance_m": 1656.1199951171875,
+    "avg_hr": 151.0,
+    "max_hr": 176.0,
+    "calories": 252.0,
+    "aerobic_te": 3.0999999046325684,
+    "aerobic_te_msg": "IMPACTING_TEMPO_22",
+    "te_label": "TEMPO",
+    "anaerobic_te": 0.8999999761581421,
+    "anaerobic_te_msg": "NO_ANAEROBIC_BENEFIT_0",
+    "exercise_load": 88.04151916503906,
+    "avg_power": 104.0,
+    "max_power": 311.0,
+    "sweat_ml": 176.0,
+    "bb_delta": -6,
+    "hr_z1_s": 19.303,
+    "hr_z2_s": 35.002,
+    "hr_z3_s": 638.258,
+    "hr_z4_s": 540.002,
+    "hr_z5_s": 38.001
+  }
 }
