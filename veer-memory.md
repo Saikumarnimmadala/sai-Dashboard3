@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-11
-Generated: 2026-07-11 10:43
+Generated: 2026-07-11 10:44
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ IMPORTANT: LIVE DATA BELOW IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that is stale manual data.
@@ -11,7 +11,7 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 - **Weight:** 173.0 lb (as of 2026-07-11)
 - **Training Readiness:** 83
 - **Body Battery:** 32 → 91
-- **HRV Status:** **LOW** | Last night: None ms | 7-day avg: 64 ms
+- **HRV Status:** **LOW** | Last night: 76 ms | 7-day avg: 64 ms
 - **Acute Load:** 139 | Chronic Load: 307 | Recovery: 1 hrs
 - **Sleep:** 7.2h / score 88 | Deep:83m REM:90m
 - **VO2 Max:** None
@@ -39,7 +39,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Avg SpO2 | 97.0% |
 | Breathing Disruption | LOW |
 | HRV Status | **LOW** |
-| HRV Last Night | None ms |
+| HRV Last Night | 76 ms |
 | HRV 7-day avg | 64 ms |
 | HRV 5-day avg | 64 ms |
 | Acute Load | 139 |
