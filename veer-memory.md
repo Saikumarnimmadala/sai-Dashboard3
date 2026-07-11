@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-11
-Generated: 2026-07-11 11:01
+Generated: 2026-07-11 11:06
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -19,7 +19,7 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 | **Resting HR** | 49 bpm (7-day avg: 51 bpm) |
 | **SpO2** | Garmin overnight avg: 97.0% low: 78% | O2Ring: 8.4 score low: 88% |
 | **Stress** | avg 18 / peak 75 |
-| **Last Session** | not available |
+| **Last Session** | Treadmill Running on 2026-07-09 | Load=88.04151916503906 | TEMPO |
 | **Weekly** | 5 sessions | Mod:185m + Vig:45m |
 
 ---
@@ -121,7 +121,21 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### LAST SESSION
 | Metric | Value |
 |--------|-------|
-| Activity | not available |
+| Activity | Treadmill Running (treadmill_running) |
+| Date / Time | 2026-07-09 2026-07-09 09:58 |
+| Duration | 21m |
+| Distance | 1.66 km (1.03 mi) |
+| Avg HR / Max HR | 151.0 / 176.0 bpm |
+| Aerobic Training Effect | 3.0999999046325684 (TEMPO) — IMPACTING_TEMPO_22 |
+| Anaerobic Training Effect | 0.8999999761581421 — NO_ANAEROBIC_BENEFIT_0 |
+| Exercise Load | 88.04151916503906 |
+| Calories | 252.0 kcal |
+| Sweat Loss | 176.0 ml |
+| Body Battery Impact | -6 |
+| Avg / Max Power | 104.0 / 311.0 W |
+| HR Zones | Z1:19s | Z2:35s | Z3:638s | Z4:540s | Z5:38s |
+| Total Volume (strength) | not available |
+| Total Reps (strength) | not available |
 
 ### WEEKLY SUMMARY (last 7 days)
 | Metric | Value |
