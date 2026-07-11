@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-11
-Generated: 2026-07-11 13:27
+Generated: 2026-07-11 13:33
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -266,6 +266,24 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 # Veer Conversation Log
 Summaries of all Claude chat sessions. Most recent first.
 Auto-appended after each session via /log-conversation endpoint.
+
+---
+
+## 2026-07-11 — Conversation logging setup
+
+Set up the full conversation logging pipeline. Created log_chat.py standalone script that appends session summaries to conversation_log.md, rebuilds veer-memory.md, and pushes to GitHub in one command. Fixed /log-conversation server endpoint to also push to GitHub after rebuild. Provided Claude.ai Projects instructions so Claude chat auto-generates a paste-ready session log block at the end of every conversation.
+
+**Weight confirmed:** 173.0 lb
+**New rules added:** End of every Claude chat: copy session log block and paste to Claude Code to trigger logging
+
+**Decisions made:**
+- Option 1 (Claude Code script) chosen over server endpoint - more reliable with no server dependency
+- Claude.ai Projects instructions added so Claude chat auto-formats session log at end of every conversation
+- Workflow: chat ends -> copy log block -> paste here -> say log this -> pushed to GitHub in 10 seconds
+
+**Open items:**
+- [ ] Book pulmonologist referral - 40+ days unscheduled
+- [ ] O2Ring automated PDF parsing needs pytesseract installed
 
 ---
 
