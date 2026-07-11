@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-11
-Generated: 2026-07-11 09:12
+Generated: 2026-07-11 09:48
 
 This file is the single source of truth for all Claude conversations.
 It is rebuilt every morning after Garmin + O2Ring + Omada data is pulled.
@@ -9,7 +9,7 @@ Conversation summaries are appended after each chat session.
 
 ## Quick Stats
 - **Today:** 2026-07-11
-- **Weight:** 172.1 lb
+- **Weight:** 173.0 lb
 - **Training Readiness:** 83
 - **Body Battery Peak:** 91
 - **HRV:** Balanced
@@ -30,11 +30,10 @@ Conversation summaries are appended after each chat session.
 | O2 Score | 8.4 |
 | SpO2 Lowest | 88% |
 | Drops/hr | 6.5 |
-| Weight | 172.1 lb (as of 2026-07-10) |
-| Lost from peak | 44.3 lb (from 216.4) |
+| Weight | 173.0 lb (as of 2026-07-11) |
+| Lost from peak | 43.4 lb (from 216.4) |
 
 ### Weight Trend (last 14 entries)
-- 2026-06-23: 177.6 lb
 - 2026-06-24: 172.6 lb
 - 2026-06-25: 173.7 lb
 - 2026-06-26: 173.5 lb
@@ -48,6 +47,7 @@ Conversation summaries are appended after each chat session.
 - 2026-07-05: 173.5 lb
 - 2026-07-09: 173.0 lb
 - 2026-07-10: 172.1 lb
+- 2026-07-11: 173.0 lb
 
 ### Body Battery Trend (last 7 days)
 - 2026-07-01: peak 82
