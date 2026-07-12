@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-12
-Generated: 2026-07-12 04:27
+Generated: 2026-07-12 16:13
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -10,17 +10,17 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 | | |
 |---|---|
 | **Weight** | 173.0 lb (−43.4 lb from 216.4 peak) |
-| **Training Readiness** | 81 / 100 (HIGH) — HIGH_HRV_LOW |
-| **Body Battery** | 38 → 87 (end: 87) |
-| **Recovery Time** | 1 hrs |
-| **Acute Load / Chronic / ACWR** | 111 / 288 / 0.30 (LOW) |
+| **Training Readiness** | 1 / 100 (POOR) — POOR_HRV_LOW |
+| **Body Battery** | 19 → 87 (end: 19) |
+| **Recovery Time** | 4458 hrs |
+| **Acute Load / Chronic / ACWR** | 491 / 357 / 1.30 (OPTIMAL) |
 | **HRV Status** | **LOW** — last night: 80 ms | 7-day: 67 ms | baseline: 71–91 ms (LOW<67) |
 | **Sleep** | 5.6h / score 79 — Deep:95m REM:57m |
 | **Resting HR** | 47 bpm (7-day avg: 50 bpm) |
 | **SpO2** | Garmin overnight avg: 94.0% low: 86% | O2Ring: 8.4 score low: 88% |
-| **Stress** | avg 10 / peak 58 |
-| **Last Session** | Treadmill Running on 2026-07-09 | Load=88.04151916503906 | TEMPO |
-| **Weekly** | 5 sessions | Mod:185m + Vig:45m |
+| **Stress** | avg 30 / peak 98 |
+| **Last Session** | Pinal County Hiking on 2026-07-12 | Load=298.8507995605469 | LACTATE_THRESHOLD |
+| **Weekly** | 6 sessions | Mod:246m + Vig:184m |
 
 ---
 
@@ -32,19 +32,19 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### READINESS & RECOVERY
 | Metric | Value |
 |--------|-------|
-| Training Readiness | **81** / 100 (HIGH) |
-| Readiness Feedback | HIGH_HRV_LOW |
-| Body Battery | 38 → 87 (end: 87) +49 / -1 |
-| Body Battery Feedback | not available |
-| Recovery Time | 1 hrs (NO_CHANGE_SLEEP) |
-| Acute Load | 111 |
-| Chronic Load | 288 |
-| Load Ratio (ACWR) | 0.30 (LOW) |
+| Training Readiness | **1** / 100 (POOR) |
+| Readiness Feedback | POOR_HRV_LOW |
+| Body Battery | 19 → 87 (end: 19) +51 / -70 |
+| Body Battery Feedback | DAY_NOT_STRESS_DATA_AND_INTENSIVE_EXERCISE |
+| Recovery Time | 4458 hrs (REACHED_ZERO) |
+| Acute Load | 491 |
+| Chronic Load | 357 |
+| Load Ratio (ACWR) | 1.30 (OPTIMAL) |
 | Load Focus — Low Aerobic | 529 (target 233–634, ✓ in range) |
-| Load Focus — High Aerobic | 488 (target 501–901, ⚠ out of range) |
-| Load Focus — Anaerobic | 119 (target 133–400, ⚠ out of range) |
-| Load Balance Phrase | AEROBIC_HIGH_SHORTAGE |
-| Training Status | STRAINED_3 |
+| Load Focus — High Aerobic | 767 (target 501–901, ✓ in range) |
+| Load Focus — Anaerobic | 138 (target 133–400, ✓ in range) |
+| Load Balance Phrase | BALANCED |
+| Training Status | STRAINED_4 |
 
 ### HRV
 | Metric | Value |
@@ -64,9 +64,9 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Resting HR | 47 bpm |
 | RHR 7-day Avg | 50 bpm |
 | Overnight / Day Low HR | 46 bpm |
-| Max HR (today) | 69 bpm |
-| Stress Avg | 10 |
-| Stress Peak | 58 |
+| Max HR (today) | 181 bpm |
+| Stress Avg | 30 |
+| Stress Peak | 98 |
 
 ### SLEEP
 | Metric | Value |
@@ -85,7 +85,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Sleep Stress | 10 |
 | Avg Respiration (sleep) | 15 brpm |
 | Lowest Respiration | 9 brpm |
-| Highest Respiration | 18 brpm |
+| Highest Respiration | 20 brpm |
 | Breathing Disruption | NONE |
 
 ### SpO2 / PULSE OX
@@ -106,11 +106,11 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 |--------|-------|
 | VO2 Max | not available |
 | Fitness Age | not available |
-| Intensity Minutes — Moderate (today) | 0 min |
-| Intensity Minutes — Vigorous (today) | 0 min |
-| Steps Today | 17 |
-| Active Calories Today | 0 kcal |
-| Floors Climbed Today | 0 |
+| Intensity Minutes — Moderate (today) | 61 min |
+| Intensity Minutes — Vigorous (today) | 139 min |
+| Steps Today | 17551 |
+| Active Calories Today | 1877 kcal |
+| Floors Climbed Today | 184.7 |
 
 ### WEIGHT
 | Metric | Value |
@@ -121,30 +121,30 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### LAST SESSION
 | Metric | Value |
 |--------|-------|
-| Activity | Treadmill Running (treadmill_running) |
-| Date / Time | 2026-07-09 2026-07-09 09:58 |
-| Duration | 21m |
-| Distance | 1.66 km (1.03 mi) |
-| Avg HR / Max HR | 151.0 / 176.0 bpm |
-| Aerobic Training Effect | 3.0999999046325684 (TEMPO) — IMPACTING_TEMPO_22 |
-| Anaerobic Training Effect | 0.8999999761581421 — NO_ANAEROBIC_BENEFIT_0 |
-| Exercise Load | 88 |
-| Calories | 252.0 kcal |
-| Sweat Loss | 176.0 ml |
-| Body Battery Impact | -6 |
-| Avg / Max Power | 104.0 / 311.0 W |
-| HR Zones | Z1:19s | Z2:35s | Z3:638s | Z4:540s | Z5:38s |
+| Activity | Pinal County Hiking (hiking) |
+| Date / Time | 2026-07-12 2026-07-12 06:55 |
+| Duration | 255m |
+| Distance | 12.69 km (7.88 mi) |
+| Avg HR / Max HR | 147.0 / 182.0 bpm |
+| Aerobic Training Effect | 5.0 (LACTATE_THRESHOLD) — OVERREACHING_14 |
+| Anaerobic Training Effect | 1.7999999523162842 — MINOR_ANAEROBIC_BENEFIT_15 |
+| Exercise Load | 299 |
+| Calories | 2180.0 kcal |
+| Sweat Loss | 4255.0 ml |
+| Body Battery Impact | -42 |
+| Avg / Max Power | None / None W |
+| HR Zones | Z1:536s | Z2:2309s | Z3:4872s | Z4:6971s | Z5:554s |
 | Total Volume (strength) | not available |
 | Total Reps (strength) | not available |
 
 ### WEEKLY SUMMARY (last 7 days)
 | Metric | Value |
 |--------|-------|
-| Sessions This Week | 5 |
-| Intensity — Moderate | 185 min |
-| Intensity — Vigorous | 45 min |
-| Total Intensity (mod+vig) | 230 min |
-| Active Calories | 2777 kcal |
+| Sessions This Week | 6 |
+| Intensity — Moderate | 246 min |
+| Intensity — Vigorous | 184 min |
+| Total Intensity (mod+vig) | 430 min |
+| Active Calories | 4957 kcal |
 
 ### Weight Trend (last 14 entries)
 - 2026-06-24: 172.6 lb
