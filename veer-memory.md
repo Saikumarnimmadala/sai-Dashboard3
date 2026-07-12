@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-12
-Generated: 2026-07-12 16:17
+Generated: 2026-07-12 16:19
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -269,6 +269,29 @@ Auto-appended after each session via /log-conversation endpoint.
 
 ---
 
+## 2026-07-12 — Peralta Trail rattlesnakes + trail blacklist locked
+
+Veer completed Pinal County Hiking (Peralta Trail) on July 11. Encountered TWO Western Diamondback rattlesnakes on same trail — sat next to second one without knowing it. Trail permanently blacklisted. Garmin load=299 (massive) — TR crashed to 1/POOR on July 12, BB started at 19. Full mandatory rest day July 12. Trail blacklist + approved trail profile locked into permanent memory. Garmin data refresh confirmed July 12 numbers.
+
+**Weight confirmed:** 173.0 (July 11 — no July 12 weigh-in yet) lb
+**Sessions logged:** Peralta Trail hike Jul 11 — Load 299, two rattlesnakes encountered
+**New rules added:** Never recommend Peralta Trail or Superstition Mountains — permanently blacklisted. Only open desert trails with clear sight lines and cell signal.
+**Open items resolved:** None
+
+**Decisions made:**
+- Peralta Trail permanently blacklisted — never recommend again
+- All Superstition Mountains trails blacklisted
+- Approved trail profile locked: open desert only Phoenix Mountains Preserve style
+- July 12 is mandatory full rest day — TR=1 POOR no exceptions
+- Trail blacklist rule added to LOCKED RULES in static memory
+
+**Open items:**
+- [ ] Book pulmonologist referral — CRITICAL 40+ days unscheduled
+- [ ] O2Ring PDF parsing needs pytesseract
+- [ ] Get today weight on Omada scale
+
+---
+
 ## 2026-07-12 — July 12 morning data refresh
 
 Ran full Garmin sync for July 12. First pull showed stale data (TR=81). Second pull after activity sync captured Pinal County Hiking session — massive load of 299 pushed Training Readiness to 1/POOR. Body Battery started at 19 (depleted from hike). Weight still showing 173.0 lb from yesterday's Omada reading — no new weigh-in today yet.
@@ -427,11 +450,34 @@ Instructions saved in Claude settings:
 
 ---
 
+## TRAIL BLACKLIST (PERMANENT — never recommend these)
+
+| Trail | Reason | Date blacklisted |
+|-------|---------|-----------------|
+| ❌ Peralta Trail | Two Western Diamondback rattlesnakes encountered. Remote, overgrown, dense vegetation, poor cell signal. | Jul 11, 2026 |
+| ❌ Any Superstition Mountains trail | Too remote, dense terrain, high snake risk | Jul 11, 2026 |
+| ❌ Any trail described as "remote", "primitive", or "overgrown" | Snake country + no cell signal = unacceptable risk | Jul 11, 2026 |
+| ❌ Dense vegetation / jungle-like terrain | Visibility too low for snake avoidance | Jul 11, 2026 |
+
+**APPROVED TRAIL PROFILE — only recommend trails matching ALL of these:**
+- Open desert terrain — wide clear sight lines
+- Well-maintained marked paths, regularly cleared
+- Popular enough to have other hikers on trail
+- Good cell signal throughout
+- Reviews mention clear paths, no dense vegetation
+- Phoenix Mountains Preserve style
+
+**APPROVED TRAILS (confirmed safe):**
+✅ Piestewa Peak | ✅ Cholla Trail | ✅ Mormon Loop + National Trail | ✅ Lookout Mountain | ✅ North Mountain Trail 44 | ✅ The Wave (permit only)
+
+---
+
 ## LOCKED RULES
 
 1. **HRV Persistence:** 3+ consecutive Unbalanced days → no hard training or hiking until Balanced 1 full day
 2. **Pre-hike check:** Always check TR + BB BEFORE leaving. Never after.
 3. **Lateral raises:** 25lb locked. DO NOT recommend 30lb.
+4. **Trail safety:** Never recommend blacklisted trails. Never recommend remote/overgrown terrain regardless of scenery reviews.
 4. **Rest day protein:** Same target as training days (130-140g). Legumes = fiber side only.
 5. **BB thresholds:** 80-100=full push, 75-79=normal, 60-74=3 sets/10-20% lighter, <60=walk, <40=rest
 6. **Log Strength Training** on Forerunner 970 always
@@ -643,7 +689,8 @@ Corrective block every Lower Body: Deficit Calf Raise, RDL from Flat Bench, Rear
 | Jul 7 | THE WAVE HIKE | Completed ✅ Exactly 3L water used. |
 | Jul 9 | Upper Body | Full session, all weights matched. HRV unstable post-session. |
 | Jul 10 | REST | HRV unstable — correct call. |
-| Jul 11 | TODAY | Need Garmin data — pending. |
+| Jul 11 | Pinal County Hiking (Peralta Trail) | TWO Western Diamondback rattlesnakes encountered. Load=299 (massive). TR crashed to 1/POOR next morning. TRAIL PERMANENTLY BLACKLISTED. |
+| Jul 12 | REST (mandatory) | TR=1/POOR from hiking load 299. BB started at 19. Full rest day. |
 
 ---
 
