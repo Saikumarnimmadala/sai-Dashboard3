@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-12
-Generated: 2026-07-12 16:13
+Generated: 2026-07-12 16:17
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -266,6 +266,25 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 # Veer Conversation Log
 Summaries of all Claude chat sessions. Most recent first.
 Auto-appended after each session via /log-conversation endpoint.
+
+---
+
+## 2026-07-12 — July 12 morning data refresh
+
+Ran full Garmin sync for July 12. First pull showed stale data (TR=81). Second pull after activity sync captured Pinal County Hiking session — massive load of 299 pushed Training Readiness to 1/POOR. Body Battery started at 19 (depleted from hike). Weight still showing 173.0 lb from yesterday's Omada reading — no new weigh-in today yet.
+
+**Weight confirmed:** 173.0 (2026-07-11 — no new reading yet) lb
+**Sessions logged:** Pinal County Hiking 2026-07-12 Load=299
+
+**Decisions made:**
+- TR=1/POOR means full rest day today - no training
+- Hiking load 299 explains HRV stress pattern
+- Weight 173.0 lb carried from 2026-07-11 until today's Omada sync
+
+**Open items:**
+- [ ] Book pulmonologist referral - 40+ days unscheduled
+- [ ] Get today's weight on Omada scale
+- [ ] O2Ring PDF parsing needs pytesseract
 
 ---
 
