@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-13
-Generated: 2026-07-13 10:15
+Generated: 2026-07-13 13:45
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -34,7 +34,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 |--------|-------|
 | Training Readiness | **1** / 100 (POOR) |
 | Readiness Feedback | POOR_HRV_UNBALANCED |
-| Body Battery | 5 → 48 (end: 48) +43 / -0 |
+| Body Battery | 5 → 48 (end: 48) +43 / -2 |
 | Body Battery Feedback | MORNING_RECOVERING_AND_INACTIVE |
 | Recovery Time | 3570 hrs (NO_CHANGE_SLEEP) |
 | Acute Load | 436 |
@@ -84,7 +84,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Restlessness | GOOD |
 | Sleep Stress | 25 |
 | Avg Respiration (sleep) | 15 brpm |
-| Lowest Respiration | 9 brpm |
+| Lowest Respiration | 8 brpm |
 | Highest Respiration | 19 brpm |
 | Breathing Disruption | NONE |
 
@@ -108,7 +108,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Fitness Age | not available |
 | Intensity Minutes — Moderate (today) | 0 min |
 | Intensity Minutes — Vigorous (today) | 0 min |
-| Steps Today | 260 |
+| Steps Today | 338 |
 | Active Calories Today | 3 kcal |
 | Floors Climbed Today | 0 |
 
