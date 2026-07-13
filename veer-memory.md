@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-13
-Generated: 2026-07-13 09:20
+Generated: 2026-07-13 09:28
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -17,7 +17,7 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 | **HRV Status** | **UNBALANCED** — last night: 54 ms | 7-day: 69 ms | baseline: 70–92 ms (LOW<65) |
 | **Sleep** | 7.4h / score 80 — Deep:70m REM:97m |
 | **Resting HR** | 52 bpm (7-day avg: 49 bpm) |
-| **SpO2** | Garmin overnight avg: 95.0% low: 79% | O2Ring: 8.4 score low: 88% |
+| **SpO2** | Garmin overnight avg: 95.0% low: 79% | O2Ring: 8.1 score low: 88% |
 | **Stress** | avg 21 / peak 72 |
 | **Last Session** | Peralta trail, Superstition Mountains on 2026-07-12 | Load=298.8507995605469 | LACTATE_THRESHOLD |
 | **Weekly** | 5 sessions | Mod:243m + Vig:184m |
@@ -93,7 +93,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 |--------|-------|
 | Avg Overnight SpO2 | 95% |
 | Lowest Overnight SpO2 | **79%** |
-| O2Ring Score | 8.4 |
+| O2Ring Score | 8.1 |
 | O2Ring Lowest SpO2 | 88% |
 | O2Ring Avg SpO2 | 94% |
 | O2Ring Drops/hr | 6.5 |
@@ -175,6 +175,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Night | Score | Lowest SpO2 | Avg SpO2 | Drops/hr |
 |-------|-------|-------------|----------|----------|
 | 2026-07-09 | 8.4 | 88% | 94% | 6.5 |
+| 2026-07-12 | 8.1 | 85% | 95% | 6.9 |
 
 
 ---
