@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-13T09:20:05.817420-07:00",
+  "generated": "2026-07-13T09:28:14.837027-07:00",
   "today": {
     "training_readiness": 1,
     "readiness_level": "POOR",
@@ -71,7 +71,7 @@
     "weekly_intensity_mod": 243,
     "weekly_intensity_vig": 184,
     "weekly_active_calories": 4814,
-    "o2_score": 8.4,
+    "o2_score": 8.1,
     "o2_lowest": 88,
     "o2_avg": 94,
     "o2_drops_4pct": 22,
@@ -230,6 +230,15 @@
       "avg": 94,
       "drops_4pct": 22,
       "drops_hr": 6.5
+    },
+    {
+      "date": "2026-07-12",
+      "s": 8.1,
+      "lowest": 85,
+      "avg": 95,
+      "drops_4pct": 41,
+      "drops_hr": 6.9,
+      "time_below_90m": 3.5
     }
   ],
   "coaches": {
