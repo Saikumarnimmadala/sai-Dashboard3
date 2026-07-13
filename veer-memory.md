@@ -1,31 +1,31 @@
-# Veer Health Memory — 2026-07-12
-Generated: 2026-07-12 16:19
+# Veer Health Memory — 2026-07-13
+Generated: 2026-07-13 09:04
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
 
 ---
 
-## QUICK DECISION SNAPSHOT (LIVE — 2026-07-12)
+## QUICK DECISION SNAPSHOT (LIVE — 2026-07-13)
 | | |
 |---|---|
 | **Weight** | 173.0 lb (−43.4 lb from 216.4 peak) |
-| **Training Readiness** | 1 / 100 (POOR) — POOR_HRV_LOW |
-| **Body Battery** | 19 → 87 (end: 19) |
-| **Recovery Time** | 4458 hrs |
-| **Acute Load / Chronic / ACWR** | 491 / 357 / 1.30 (OPTIMAL) |
-| **HRV Status** | **LOW** — last night: 80 ms | 7-day: 67 ms | baseline: 71–91 ms (LOW<67) |
-| **Sleep** | 5.6h / score 79 — Deep:95m REM:57m |
-| **Resting HR** | 47 bpm (7-day avg: 50 bpm) |
-| **SpO2** | Garmin overnight avg: 94.0% low: 86% | O2Ring: 8.4 score low: 88% |
-| **Stress** | avg 30 / peak 98 |
-| **Last Session** | Pinal County Hiking on 2026-07-12 | Load=298.8507995605469 | LACTATE_THRESHOLD |
-| **Weekly** | 6 sessions | Mod:246m + Vig:184m |
+| **Training Readiness** | 1 / 100 (POOR) — POOR_HRV_UNBALANCED |
+| **Body Battery** | 5 → 48 (end: 48) |
+| **Recovery Time** | 3570 hrs |
+| **Acute Load / Chronic / ACWR** | 436 / 339 / 1.20 (OPTIMAL) |
+| **HRV Status** | **UNBALANCED** — last night: 54 ms | 7-day: 69 ms | baseline: 70–92 ms (LOW<65) |
+| **Sleep** | 7.4h / score 80 — Deep:70m REM:97m |
+| **Resting HR** | 52 bpm (7-day avg: 49 bpm) |
+| **SpO2** | Garmin overnight avg: 95.0% low: 79% | O2Ring: 8.4 score low: 88% |
+| **Stress** | avg 21 / peak 72 |
+| **Last Session** | Peralta trail, Superstition Mountains on 2026-07-12 | Load=298.8507995605469 | LACTATE_THRESHOLD |
+| **Weekly** | 5 sessions | Mod:243m + Vig:184m |
 
 ---
 
 
-## TODAY'S LIVE DATA — 2026-07-12
+## TODAY'S LIVE DATA — 2026-07-13
 _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 **⚠️ THESE LIVE VALUES OVERRIDE ANY 'CURRENT STATUS' IN THE STATIC MEMORY BELOW**
 
@@ -33,66 +33,66 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Metric | Value |
 |--------|-------|
 | Training Readiness | **1** / 100 (POOR) |
-| Readiness Feedback | POOR_HRV_LOW |
-| Body Battery | 19 → 87 (end: 19) +51 / -70 |
-| Body Battery Feedback | DAY_NOT_STRESS_DATA_AND_INTENSIVE_EXERCISE |
-| Recovery Time | 4458 hrs (REACHED_ZERO) |
-| Acute Load | 491 |
-| Chronic Load | 357 |
-| Load Ratio (ACWR) | 1.30 (OPTIMAL) |
+| Readiness Feedback | POOR_HRV_UNBALANCED |
+| Body Battery | 5 → 48 (end: 48) +43 / -0 |
+| Body Battery Feedback | MORNING_RECOVERING_AND_INACTIVE |
+| Recovery Time | 3570 hrs (NO_CHANGE_SLEEP) |
+| Acute Load | 436 |
+| Chronic Load | 339 |
+| Load Ratio (ACWR) | 1.20 (OPTIMAL) |
 | Load Focus — Low Aerobic | 529 (target 233–634, ✓ in range) |
 | Load Focus — High Aerobic | 767 (target 501–901, ✓ in range) |
 | Load Focus — Anaerobic | 138 (target 133–400, ✓ in range) |
 | Load Balance Phrase | BALANCED |
-| Training Status | STRAINED_4 |
+| Training Status | PRODUCTIVE_1 |
 
 ### HRV
 | Metric | Value |
 |--------|-------|
-| HRV Status | **LOW** |
-| HRV Feedback | HRV_LOW_5 |
-| HRV Last Night Avg | **80 ms** |
-| HRV Highest 5-min | 118 ms |
-| HRV 7-day Avg | 67 ms |
-| HRV Balanced Baseline | 71–91 ms (LOW<67 ms) |
+| HRV Status | **UNBALANCED** |
+| HRV Feedback | HRV_UNBALANCED_9 |
+| HRV Last Night Avg | **54 ms** |
+| HRV Highest 5-min | 79 ms |
+| HRV 7-day Avg | 69 ms |
+| HRV Balanced Baseline | 70–92 ms (LOW<65 ms) |
 | HRV Streak (consec. LOW) | 0 days |
 | HRV Factor % (readiness) | not available% (not available) |
 
 ### HEART RATE
 | Metric | Value |
 |--------|-------|
-| Resting HR | 47 bpm |
-| RHR 7-day Avg | 50 bpm |
-| Overnight / Day Low HR | 46 bpm |
-| Max HR (today) | 181 bpm |
-| Stress Avg | 30 |
-| Stress Peak | 98 |
+| Resting HR | 52 bpm |
+| RHR 7-day Avg | 49 bpm |
+| Overnight / Day Low HR | 49 bpm |
+| Max HR (today) | 85 bpm |
+| Stress Avg | 21 |
+| Stress Peak | 72 |
 
 ### SLEEP
 | Metric | Value |
 |--------|-------|
-| Sleep Score | **79** / 100 |
-| Sleep Feedback | POSITIVE_RECOVERING |
-| Total Sleep | **5.6 hrs** |
+| Sleep Score | **80** / 100 |
+| Sleep Feedback | POSITIVE_LONG_AND_CALM |
+| Total Sleep | **7.4 hrs** |
 | Sleep Need Tonight | 7.2 hrs |
-| Sleep Window | 15:33 → 21:09 |
-| Deep Sleep | 95 min |
-| REM Sleep | 57 min |
-| Light Sleep | 184 min |
-| Awake Time | not available min |
-| Awake Count | 0 |
-| Restlessness | EXCELLENT |
-| Sleep Stress | 10 |
+| Sleep Window | 15:16 → 23:00 |
+| Deep Sleep | 70 min |
+| REM Sleep | 97 min |
+| Light Sleep | 279 min |
+| Awake Time | 18 min |
+| Awake Count | 1 |
+| Restlessness | GOOD |
+| Sleep Stress | 25 |
 | Avg Respiration (sleep) | 15 brpm |
 | Lowest Respiration | 9 brpm |
-| Highest Respiration | 20 brpm |
+| Highest Respiration | 19 brpm |
 | Breathing Disruption | NONE |
 
 ### SpO2 / PULSE OX
 | Metric | Value |
 |--------|-------|
-| Avg Overnight SpO2 | 94% |
-| Lowest Overnight SpO2 | **86%** |
+| Avg Overnight SpO2 | 95% |
+| Lowest Overnight SpO2 | **79%** |
 | O2Ring Score | 8.4 |
 | O2Ring Lowest SpO2 | 88% |
 | O2Ring Avg SpO2 | 94% |
@@ -106,11 +106,11 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 |--------|-------|
 | VO2 Max | not available |
 | Fitness Age | not available |
-| Intensity Minutes — Moderate (today) | 61 min |
-| Intensity Minutes — Vigorous (today) | 139 min |
-| Steps Today | 17551 |
-| Active Calories Today | 1877 kcal |
-| Floors Climbed Today | 184.7 |
+| Intensity Minutes — Moderate (today) | 0 min |
+| Intensity Minutes — Vigorous (today) | 0 min |
+| Steps Today | 260 |
+| Active Calories Today | 3 kcal |
+| Floors Climbed Today | 0 |
 
 ### WEIGHT
 | Metric | Value |
@@ -121,7 +121,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### LAST SESSION
 | Metric | Value |
 |--------|-------|
-| Activity | Pinal County Hiking (hiking) |
+| Activity | Peralta trail, Superstition Mountains (hiking) |
 | Date / Time | 2026-07-12 2026-07-12 06:55 |
 | Duration | 255m |
 | Distance | 12.69 km (7.88 mi) |
@@ -140,11 +140,11 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### WEEKLY SUMMARY (last 7 days)
 | Metric | Value |
 |--------|-------|
-| Sessions This Week | 6 |
-| Intensity — Moderate | 246 min |
+| Sessions This Week | 5 |
+| Intensity — Moderate | 243 min |
 | Intensity — Vigorous | 184 min |
-| Total Intensity (mod+vig) | 430 min |
-| Active Calories | 4957 kcal |
+| Total Intensity (mod+vig) | 427 min |
+| Active Calories | 4814 kcal |
 
 ### Weight Trend (last 14 entries)
 - 2026-06-24: 172.6 lb
@@ -163,13 +163,13 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 - 2026-07-11: 173.0 lb
 
 ### Body Battery Trend (last 7 days)
-- 2026-07-02: peak 81
 - 2026-07-03: peak 59
 - 2026-07-05: peak 71
 - 2026-07-09: peak 99
 - 2026-07-10: peak 83
 - 2026-07-11: peak 91
 - 2026-07-12: peak 87
+- 2026-07-13: peak 48
 
 ### O2Ring History (last 7 nights)
 | Night | Score | Lowest SpO2 | Avg SpO2 | Drops/hr |
