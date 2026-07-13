@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-13
-Generated: 2026-07-13 09:28
+Generated: 2026-07-13 09:29
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -267,6 +267,26 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 # Veer Conversation Log
 Summaries of all Claude chat sessions. Most recent first.
 Auto-appended after each session via /log-conversation endpoint.
+
+---
+
+## 2026-07-13 — Fix all 3 data flows - Garmin/O2Ring/brain pipeline
+
+Fixed all three data flows: (1) Garmin->veer-data.json: tesseract path set before OCR, runner uses env var for GITHUB_TOKEN, Tesseract added to PATH, LogonTrigger removed from VeerDataExport to prevent 6am race. (2) O2Ring PDF: fixed score regex to match '02 score' (OCR reads O as 0), now parsing score=8.1 lowest=85% drops=41 drops/hr=6.9. (3) Brain/chat: veer-memory.md now pushed every export run, morning_brief.py updated to read deploy/veer-memory.md and find claude.exe dynamically (was hardcoded to v2.1.170, now finds latest). RefreshServer confirmed running on port 5055. Claude.ai Projects instructions written to claude_projects_instructions.md.
+
+**Open items resolved:** O2Ring PDF score regex fixed,Tesseract path in export_veer_data.py fixed,LogonTrigger removed from VeerDataExport,morning_brief.py claude.exe path fixed
+
+**Decisions made:**
+- Use env var not hardcoded GitHub token in runner
+- Remove LogonTrigger from VeerDataExport
+- O2Ring now fully parsed score+drops+time_below_90
+- morning_brief reads deploy/veer-memory.md not old garmin/MEMORY.md
+- claude.exe path now dynamic not hardcoded version
+
+**Open items:**
+- [ ] Set Claude.ai Projects instructions from claude_projects_instructions.md
+- [ ] Schedule pulmonologist appointment (41+ days overdue)
+- [ ] Omada weight only works at 6am when Chrome closed
 
 ---
 
