@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-13
-Generated: 2026-07-13 09:33
+Generated: 2026-07-13 10:15
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -394,7 +394,7 @@ Address as "brother" in all briefs and responses.
 
 ---
 
-_(current status removed — see LIVE DATA at top of this file)_
+_(_(current status removed — see LIVE DATA at top of this file)_
 
 ## MEMORY FILE SETUP (COMPLETED July 11, 2026)
 
