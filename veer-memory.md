@@ -1,60 +1,60 @@
-# Veer Health Memory — 2026-07-13
-Generated: 2026-07-13 13:45
+# Veer Health Memory — 2026-07-14
+Generated: 2026-07-14 15:38
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
 
 ---
 
-## QUICK DECISION SNAPSHOT (LIVE — 2026-07-13)
+## QUICK DECISION SNAPSHOT (LIVE — 2026-07-14)
 | | |
 |---|---|
 | **Weight** | 173.0 lb (−43.4 lb from 216.4 peak) |
-| **Training Readiness** | 1 / 100 (POOR) — POOR_HRV_UNBALANCED |
-| **Body Battery** | 5 → 48 (end: 48) |
-| **Recovery Time** | 3570 hrs |
-| **Acute Load / Chronic / ACWR** | 436 / 339 / 1.20 (OPTIMAL) |
-| **HRV Status** | **UNBALANCED** — last night: 54 ms | 7-day: 69 ms | baseline: 70–92 ms (LOW<65) |
-| **Sleep** | 7.4h / score 80 — Deep:70m REM:97m |
+| **Training Readiness** | 50 / 100 (MODERATE) — MOD_RT_MOD_SS_GOOD |
+| **Body Battery** | 12 → 68 (end: 60) |
+| **Recovery Time** | 1765 hrs |
+| **Acute Load / Chronic / ACWR** | 381 / 323 / 1.10 (OPTIMAL) |
+| **HRV Status** | **BALANCED** — last night: 65 ms | 7-day: 72 ms | baseline: 69–93 ms (LOW<64) |
+| **Sleep** | 7.2h / score 81 — Deep:64m REM:98m |
 | **Resting HR** | 52 bpm (7-day avg: 49 bpm) |
-| **SpO2** | Garmin overnight avg: 95.0% low: 79% | O2Ring: 8.1 score low: 85% |
-| **Stress** | avg 21 / peak 72 |
+| **SpO2** | Garmin overnight avg: 97.0% low: 84% | O2Ring: 8.1 score low: 85% |
+| **Stress** | avg 20 / peak 89 |
 | **Last Session** | Peralta trail, Superstition Mountains on 2026-07-12 | Load=298.8507995605469 | LACTATE_THRESHOLD |
-| **Weekly** | 5 sessions | Mod:243m + Vig:184m |
+| **Weekly** | 3 sessions | Mod:107m + Vig:159m |
 
 ---
 
 
-## TODAY'S LIVE DATA — 2026-07-13
+## TODAY'S LIVE DATA — 2026-07-14
 _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 **⚠️ THESE LIVE VALUES OVERRIDE ANY 'CURRENT STATUS' IN THE STATIC MEMORY BELOW**
 
 ### READINESS & RECOVERY
 | Metric | Value |
 |--------|-------|
-| Training Readiness | **1** / 100 (POOR) |
-| Readiness Feedback | POOR_HRV_UNBALANCED |
-| Body Battery | 5 → 48 (end: 48) +43 / -2 |
+| Training Readiness | **50** / 100 (MODERATE) |
+| Readiness Feedback | MOD_RT_MOD_SS_GOOD |
+| Body Battery | 12 → 68 (end: 60) +56 / -8 |
 | Body Battery Feedback | MORNING_RECOVERING_AND_INACTIVE |
-| Recovery Time | 3570 hrs (NO_CHANGE_SLEEP) |
-| Acute Load | 436 |
-| Chronic Load | 339 |
-| Load Ratio (ACWR) | 1.20 (OPTIMAL) |
-| Load Focus — Low Aerobic | 529 (target 233–634, ✓ in range) |
+| Recovery Time | 1765 hrs (not available) |
+| Acute Load | 381 |
+| Chronic Load | 323 |
+| Load Ratio (ACWR) | 1.10 (OPTIMAL) |
+| Load Focus — Low Aerobic | 460 (target 233–634, ✓ in range) |
 | Load Focus — High Aerobic | 767 (target 501–901, ✓ in range) |
 | Load Focus — Anaerobic | 138 (target 133–400, ✓ in range) |
 | Load Balance Phrase | BALANCED |
-| Training Status | PRODUCTIVE_1 |
+| Training Status | MAINTAINING_1 |
 
 ### HRV
 | Metric | Value |
 |--------|-------|
-| HRV Status | **UNBALANCED** |
-| HRV Feedback | HRV_UNBALANCED_9 |
-| HRV Last Night Avg | **54 ms** |
-| HRV Highest 5-min | 79 ms |
-| HRV 7-day Avg | 69 ms |
-| HRV Balanced Baseline | 70–92 ms (LOW<65 ms) |
+| HRV Status | **BALANCED** |
+| HRV Feedback | HRV_BALANCED_1 |
+| HRV Last Night Avg | **65 ms** |
+| HRV Highest 5-min | 92 ms |
+| HRV 7-day Avg | 72 ms |
+| HRV Balanced Baseline | 69–93 ms (LOW<64 ms) |
 | HRV Streak (consec. LOW) | 0 days |
 | HRV Factor % (readiness) | not available% (not available) |
 
@@ -64,35 +64,35 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Resting HR | 52 bpm |
 | RHR 7-day Avg | 49 bpm |
 | Overnight / Day Low HR | 49 bpm |
-| Max HR (today) | 85 bpm |
-| Stress Avg | 21 |
-| Stress Peak | 72 |
+| Max HR (today) | 89 bpm |
+| Stress Avg | 20 |
+| Stress Peak | 89 |
 
 ### SLEEP
 | Metric | Value |
 |--------|-------|
-| Sleep Score | **80** / 100 |
-| Sleep Feedback | POSITIVE_LONG_AND_CALM |
-| Total Sleep | **7.4 hrs** |
+| Sleep Score | **81** / 100 |
+| Sleep Feedback | POSITIVE_LONG_AND_REFRESHING |
+| Total Sleep | **7.2 hrs** |
 | Sleep Need Tonight | 7.2 hrs |
-| Sleep Window | 15:16 → 23:00 |
-| Deep Sleep | 70 min |
-| REM Sleep | 97 min |
-| Light Sleep | 279 min |
-| Awake Time | 18 min |
-| Awake Count | 1 |
-| Restlessness | GOOD |
-| Sleep Stress | 25 |
+| Sleep Window | 15:34 → 23:33 |
+| Deep Sleep | 64 min |
+| REM Sleep | 98 min |
+| Light Sleep | 272 min |
+| Awake Time | 45 min |
+| Awake Count | 2 |
+| Restlessness | FAIR |
+| Sleep Stress | 20 |
 | Avg Respiration (sleep) | 15 brpm |
-| Lowest Respiration | 8 brpm |
-| Highest Respiration | 19 brpm |
+| Lowest Respiration | 9 brpm |
+| Highest Respiration | 20 brpm |
 | Breathing Disruption | NONE |
 
 ### SpO2 / PULSE OX
 | Metric | Value |
 |--------|-------|
-| Avg Overnight SpO2 | 95% |
-| Lowest Overnight SpO2 | **79%** |
+| Avg Overnight SpO2 | 97% |
+| Lowest Overnight SpO2 | **84%** |
 | O2Ring Score | 8.1 |
 | O2Ring Lowest SpO2 | 85% |
 | O2Ring Avg SpO2 | 95% |
@@ -108,9 +108,9 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Fitness Age | not available |
 | Intensity Minutes — Moderate (today) | 0 min |
 | Intensity Minutes — Vigorous (today) | 0 min |
-| Steps Today | 338 |
-| Active Calories Today | 3 kcal |
-| Floors Climbed Today | 0 |
+| Steps Today | 1142 |
+| Active Calories Today | 8 kcal |
+| Floors Climbed Today | 2.2 |
 
 ### WEIGHT
 | Metric | Value |
@@ -140,11 +140,11 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### WEEKLY SUMMARY (last 7 days)
 | Metric | Value |
 |--------|-------|
-| Sessions This Week | 5 |
-| Intensity — Moderate | 243 min |
-| Intensity — Vigorous | 184 min |
-| Total Intensity (mod+vig) | 427 min |
-| Active Calories | 4814 kcal |
+| Sessions This Week | 3 |
+| Intensity — Moderate | 107 min |
+| Intensity — Vigorous | 159 min |
+| Total Intensity (mod+vig) | 266 min |
+| Active Calories | 3069 kcal |
 
 ### Weight Trend (last 14 entries)
 - 2026-06-24: 172.6 lb
@@ -163,13 +163,13 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 - 2026-07-11: 173.0 lb
 
 ### Body Battery Trend (last 7 days)
-- 2026-07-03: peak 59
 - 2026-07-05: peak 71
 - 2026-07-09: peak 99
 - 2026-07-10: peak 83
 - 2026-07-11: peak 91
 - 2026-07-12: peak 87
 - 2026-07-13: peak 48
+- 2026-07-14: peak 68
 
 ### O2Ring History (last 7 nights)
 | Night | Score | Lowest SpO2 | Avg SpO2 | Drops/hr |
