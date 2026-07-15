@@ -1,12 +1,12 @@
-# Veer Health Memory — 2026-07-14
-Generated: 2026-07-14 17:54
+# Veer Health Memory — 2026-07-15
+Generated: 2026-07-15 07:35
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
 
 ---
 
-## QUICK DECISION SNAPSHOT (LIVE — 2026-07-14)
+## QUICK DECISION SNAPSHOT (LIVE — 2026-07-15)
 | | |
 |---|---|
 | **Weight** | 173.0 lb (−43.4 lb from 216.4 peak) |
@@ -25,7 +25,7 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 ---
 
 
-## TODAY'S LIVE DATA — 2026-07-14
+## TODAY'S LIVE DATA — 2026-07-15
 _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 **⚠️ THESE LIVE VALUES OVERRIDE ANY 'CURRENT STATUS' IN THE STATIC MEMORY BELOW**
 
@@ -163,13 +163,13 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 - 2026-07-14: 173.0 lb
 
 ### Body Battery Trend (last 7 days)
-- 2026-07-05: peak 71
 - 2026-07-09: peak 99
 - 2026-07-10: peak 83
 - 2026-07-11: peak 91
 - 2026-07-12: peak 87
 - 2026-07-13: peak 48
 - 2026-07-14: peak 68
+- 2026-07-15: peak 68
 
 ### O2Ring History (last 7 nights)
 | Night | Score | Lowest SpO2 | Avg SpO2 | Drops/hr |
