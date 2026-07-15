@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-15
-Generated: 2026-07-15 07:53
+Generated: 2026-07-15 07:58
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -267,6 +267,23 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 # Veer Conversation Log
 Summaries of all Claude chat sessions. Most recent first.
 Auto-appended after each session via /log-conversation endpoint.
+
+---
+
+## 2026-07-15 — Wednesday walk day - O2Ring absence explained
+
+Confirmed 173.5 lb, BB 74/TR 67, no override flags, standard vigorous walk day. O2Ring data missing 07-13 through 07-15 because ring was not worn (user confirmed) - not a pipeline failure. Date-stamp on not-found message is by design (PDF dated to prior night).
+
+
+**Decisions made:**
+- Vigorous walk confirmed as today's session
+- rest-day protein 135g target
+- O2Ring gap attributed to ring not worn - no pipeline fix needed
+
+**Open items:**
+- [ ] Pulmonologist referral still unscheduled (44 days)
+- [ ] Resume wearing O2Ring tonight for OSA data continuity
+- [ ] Recovery Time field anomaly unresolved
 
 ---
 
