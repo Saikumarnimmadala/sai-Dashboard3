@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-14
-Generated: 2026-07-14 17:41
+Generated: 2026-07-14 17:54
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -379,7 +379,7 @@ Expanded Garmin data pull to capture every available API metric. Fixed HRV statu
 # Veer Health Memory — 2026-07-14 (updated post-brief)
 
 ## LATEST STATUS
-- Weight: 173.0 lb (2026-07-11, last confirmed) — CARRIED, no 07-14 Omada reading yet
+- Weight: 173.0 lb — CONFIRMED today (2026-07-14, Omada scale 8:08 AM)
 - HRV: BALANCED today (65ms) — resolved from single-day UNBALANCED on 07-13 (54ms). Streak: 0 consecutive unbalanced days.
 - Training Readiness: 50 MODERATE (up from 1 POOR on 07-13)
 - Body Battery: 12→68 (end 60) today
