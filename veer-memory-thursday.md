@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-16
-Generated: 2026-07-16 06:47
+Generated: 2026-07-16 07:05
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -393,56 +393,59 @@ Expanded Garmin data pull to capture every available API metric. Fixed HRV statu
 # PERMANENT MEMORY (working weights, rules, history, protocols)
 
 
-# Veer Health Memory — 2026-07-15
+# Veer Health Memory — 2026-07-16 (post-brief update)
 
-## LATEST STATUS
-- Weight: not available in today's data pull. Last confirmed 173.0 lb (2026-07-14, Omada scale).
-- HRV: no today reading yet. Last known: BALANCED 65ms (2026-07-14). Unbalanced streak ending 2026-07-15: 0 days.
-- Training Readiness: no today reading yet. Last known: 50 MODERATE (2026-07-14).
-- Body Battery: no today reading yet. Last known: 12→68, end 60 (2026-07-14).
-- Training call 07-15 (Wednesday): 30-min vigorous walk per standard weekly split. No overrides fired (checked against 07-14 carried-forward data — TR moderate, acute load 381, HRV streak 0, load focus balanced). Recovery Time field excluded from override logic (see anomaly note below).
-- Garmin daily file for 2026-07-15 does not exist yet at time of brief generation — likely pre-sync. Re-pull later today if possible.
+## QUICK STATUS
+- Weight: not available today. Last confirmed 173.5 lb (2026-07-15, Omada), within 172-175 band.
+- Garmin daily file for 2026-07-16: MISSING at time of brief generation — export job needs verification.
+- Last real Garmin reading (07-15): TR 67 MODERATE | BB 26→74 | HRV BALANCED 61ms | RHR 52 | Sleep 7.2h/score 80 | SpO2 low 87%
+- HRV Unbalanced streak ending 07-16: 0 days (last status: BALANCED)
+- Training call 07-16 (Thursday): Upper Body, standard split. No overrides fired using carried-forward 07-15 data. BB intensity modifier defaulted to 3 sets/-10-20% (carried-forward BB=74); confirm actual reading before session.
 
-## DATA PIPELINE STATUS — NEEDS ATTENTION
-- O2Ring: 3 consecutive nights missing now — 07-13, 07-14, 07-15. Last real O2Ring data is 07-12 (score 8.1, lowest 85%, 6.9 drops/hr).
-- PIPELINE ANOMALY (new): the O2Ring "no PDF found" message generated for the 07-15 brief was stamped with date 2026-07-14, not 07-15 — the lookup itself may be querying/logging the wrong date. Needs a pipeline check, not just a missing-file explanation.
-- Recovery Time field still showing implausible multi-thousand-hour values (1765 on 07-14, 3570 on 07-13, 4458 mentioned prior day) — flagged anomalous since 07-14, excluded from training-call logic until fixed.
-- Garmin daily export for 07-15 not present as of brief generation — check whether the 6am export job actually ran today.
+## PIPELINE ANOMALY — NEW, NEEDS FIX
+MEMORY.md's "TODAY'S LIVE DATA" block for 2026-07-16 was found to be an exact duplicate of 2026-07-15's data (all fields identical: TR 67, BB 26->74, HRV 61ms, Recovery Time 646hrs, RHR 52). The generation script appears to re-stamp yesterday's file as "today" when the actual daily export hasn't landed yet, instead of leaving fields blank/not-available. This is a distinct bug from the previously-fixed O2Ring date-stamp issue (07-15, confirmed by-design). Needs a pipeline check: the memory generator should detect a missing daily file and NOT relabel the prior day's data as current.
 
-## O2RING HISTORY (last real data)
+## O2RING STATUS
+4 consecutive nights missing: 07-13, 07-14, 07-15, 07-16 (ring not worn, confirmed by user on 07-15). Last real O2Ring data still 07-12.
+
 | Night | Score | Lowest SpO2 | Avg SpO2 | Drops/hr |
 |---|---|---|---|---|
 | 2026-07-09 | 8.4 | 88% | 94% | 6.5 |
 | 2026-07-12 | 8.1 | 85% | 95% | 6.9 |
 
 ## OPEN ITEMS
-- [ ] CRITICAL: Pulmonologist appointment — referral Jun 1, 44 days unscheduled as of 2026-07-15
-- [ ] Fix O2Ring PDF pipeline — 3 consecutive nights missing (07-13, 07-14, 07-15) AND investigate date-stamp mismatch bug found today
-- [ ] Confirm whether 2026-07-15 Garmin export job ran — file is missing
-- [ ] Investigate Recovery Time field units bug (values in thousands of "hours")
+- [ ] CRITICAL: Pulmonologist appointment — referral Jun 1, 45 days unscheduled as of 2026-07-16
+- [ ] Fix MEMORY.md live-data generator — do not relabel prior day's data as "today" when export missing
+- [ ] Verify 2026-07-16 Garmin export job ran
+- [ ] Resume wearing O2Ring — 4-night gap
+- [ ] Recovery Time field units bug still unresolved (646 hrs on 07-15, 1765 hrs on 07-14)
 - [ ] Fisetin next doses: August 1-2, 2026
 - [ ] KSM-66 break begins: September 7, 2026
 - [ ] Ferritin recheck: September 2026
 - [ ] Full bloodwork retest: December 2026
 
-## SESSION HISTORY (most recent)
+## SESSION/DAY HISTORY (most recent)
 | Date | Session | Notes |
 |---|---|---|
-| 07-12 | Peralta Trail hike | Load 299, TR crashed to 1/POOR, trail blacklisted |
-| 07-13 | REST | HRV Unbalanced (54ms), TR 1/POOR — correct rest call |
-| 07-14 | Lower Body (planned) | TR 50 MODERATE, BB 68 peak — 3 sets, weights -15% |
-| 07-15 | Vigorous Walk (planned, 30 min) | No override flags fired using 07-14 carried-forward data; today's actual Garmin/O2Ring/Omada data not yet synced |
+| 07-12 | Peralta Trail hike | Load 299, TR crashed to 1/POOR, trail blacklisted (permanent) |
+| 07-13 | REST | HRV Unbalanced, TR 1/POOR |
+| 07-14 | Lower Body | TR 50 MODERATE, BB 68 peak |
+| 07-15 | Vigorous Walk | TR 67 MODERATE, BB 74 peak, HRV Balanced 61ms |
+| 07-16 | Upper Body (planned) | Real data not synced; call made using carried-forward 07-15 data, no overrides fired |
 
-## DECISIONS MADE TODAY (2026-07-15)
-- Wednesday standard split (vigorous walk) confirmed — no red flags in last-known data
-- Walk-only day treated as rest-day equivalent for protein (130-140g) and Beef Liver dosing (1 cap), consistent with 2026-07-04 precedent
-- Recovery Time field remains excluded from override logic pending pipeline fix
-- Flagged new pipeline anomaly: O2Ring not-found message dated 07-14 instead of 07-15
+## WEIGHT TREND (last confirmed entries)
+2026-07-09: 173.0 | 2026-07-10: 172.1 | 2026-07-11: 173.0 | 2026-07-14: 173.0 | 2026-07-15: 173.5 | 2026-07-16: not available yet
 
 ## SUPPLEMENT CYCLES
 - KSM-66: active, break starts 2026-09-07
 - Fisetin: last taken Jul 1-2, next Aug 1-2
-- Biotin: Tue/Thu/Sat only — SKIPPED today (Wednesday)
+- Biotin: Tue/Thu/Sat only — TAKEN today (Thursday)
 
 ## TRAIL BLACKLIST (permanent, unchanged)
 Peralta Trail + all Superstition Mountains trails — two rattlesnake encounters 07-11/07-12
+
+## DECISIONS MADE TODAY (2026-07-16)
+- Flagged MEMORY.md live-data duplication bug (07-15 data mislabeled as 07-16) — did not use it as authoritative, used GARMIN DATA source files instead
+- Thursday standard split (Upper Body) confirmed via carried-forward 07-15 data, no overrides fired
+- Applied conservative 3-sets/-10-20% weight modifier pending real-time BB confirmation
+- Pulmonologist flag restated (45 days) per standing rule
