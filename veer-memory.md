@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-16
-Generated: 2026-07-16 07:56
+Generated: 2026-07-16 16:57
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -267,6 +267,32 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 # Veer Conversation Log
 Summaries of all Claude chat sessions. Most recent first.
 Auto-appended after each session via /log-conversation endpoint.
+
+---
+
+## 2026-07-16 — Upper Body — Return After Peralta Recovery (Thu 7/16)
+
+First gym session since Sunday's Peralta hike (4 days off). BB 73 tier applied: 3 sets, weights cut 10-20% off last session. Lateral Raises kept locked at 25lb. Lat Pulldown subbed with Assisted Chin-up at 70lb assist. Note: brain GitHub sync was verified healthy on 7/16 - earlier 'stuck on Jul 11' reports were the chat fetch-tool cache, not the pipeline.
+
+**Sessions logged:** Upper Body - Rear Delt 75lb 3x10, Incline DB Press 40lb 3x8-10, Converging Chest Press 90lb 3x8-10, Assisted Chin-up 70lb assist 3x10, DB Curls 20lb 3x10-12, Tricep Pushdown 35lb 3x10-12, Push-ups bodyweight 3xfailure, Finisher incline10/3.0mph/20min
+
+**Decisions made:**
+- Upper Body approved despite HRV Unbalanced day 1 (does not override
+- needs 3+ consecutive days)
+- Rear Delt 75lb
+- Incline DB Press 40lb
+- Converging Chest Press 90lb
+- Assisted Chin-up sub for Lat Pulldown at 70lb
+- DB Curls 20lb
+- Tricep Pushdown 35lb
+- Push-ups 3x failure
+- Finisher incline 10 speed 3.0 20min
+
+**Open items:**
+- [ ] Pulmonologist referral still unscheduled (day 45)
+- [ ] watch HRV tomorrow - if Unbalanced again that's day 2 toward the 3-day override
+- [ ] RHR still drifting 47-52 post-Peralta watch for return to baseline
+- [ ] Get today's 7/16 Omada weight (login expired everywhere - pending fresh login)
 
 ---
 
