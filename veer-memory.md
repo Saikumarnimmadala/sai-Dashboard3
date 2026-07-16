@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-16
-Generated: 2026-07-16 07:05
+Generated: 2026-07-16 07:56
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -147,8 +147,6 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Active Calories | 2180 kcal |
 
 ### Weight Trend (last 14 entries)
-- 2026-06-26: 173.5 lb
-- 2026-06-27: 173.5 lb
 - 2026-06-28: 172.8 lb
 - 2026-06-29: 172.1 lb
 - 2026-06-30: 173.7 lb
@@ -159,6 +157,8 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 - 2026-07-09: 173.0 lb
 - 2026-07-10: 172.1 lb
 - 2026-07-11: 173.0 lb
+- 2026-07-12: 172.8 lb
+- 2026-07-13: 172.1 lb
 - 2026-07-14: 173.0 lb
 - 2026-07-15: 173.5 lb
 
