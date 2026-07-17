@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-16
-Generated: 2026-07-16 16:57
+Generated: 2026-07-16 17:18
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -267,6 +267,23 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 # Veer Conversation Log
 Summaries of all Claude chat sessions. Most recent first.
 Auto-appended after each session via /log-conversation endpoint.
+
+---
+
+## 2026-07-16 — Pipeline fixes - Recovery Time bug + security cleanup (7/16)
+
+Fixed the Recovery Time anomaly: Garmin API returns recoveryTime in MINUTES, pipeline was labeling it hours (646 hrs was really 10.8h, post-Peralta 4458 was 74h = 3 days, all plausible). sync_garmin.py now converts to real hours. Coaches can resume using Recovery Time in override logic from 7/17 onward. Also: GitHub token removed from refresh_server_runner.ps1 (now env var), OMADA_PASSWORD env var verified current (auto-login failures are Omada bot detection, not stale credentials).
+
+
+**Decisions made:**
+- Recovery Time field is trustworthy from 2026-07-17 data onward - re-include in override checklist
+- Omada strategy locked: robots reuse the user's Chrome session instead of logging in
+
+**Open items:**
+- [ ] Pulmonologist referral day 45
+- [ ] Tonight: log into Omada in Chrome then fully quit Chrome before bed - tomorrow 6:15am is first test of session-reuse weight pull
+- [ ] Resume wearing O2Ring
+- [ ] Get 7/16 weight when Omada login available
 
 ---
 
