@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-17
-Generated: 2026-07-17 07:31
+Generated: 2026-07-17 08:04
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -108,7 +108,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Fitness Age | not available |
 | Intensity Minutes — Moderate (today) | 0 min |
 | Intensity Minutes — Vigorous (today) | 0 min |
-| Steps Today | 175 |
+| Steps Today | 210 |
 | Active Calories Today | 1 kcal |
 | Floors Climbed Today | 0 |
 
