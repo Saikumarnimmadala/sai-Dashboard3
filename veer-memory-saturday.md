@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-18
-Generated: 2026-07-18 08:27
+Generated: 2026-07-18 08:52
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -533,3 +533,221 @@ Peralta Trail + all Superstition Mountains trails — two rattlesnake encounters
 - Manually recomputed HRV streak from raw daily files rather than trusting the auto-computed summary, which reported streak=0 incorrectly
 - Corrected 07-17 O2Ring lowest SpO2 in history table: 82% (PDF-verified), not 85% as previously recorded
 - Pulmonologist flag restated (47 days) per standing rule
+
+---
+
+
+# LOCKED PROTOCOLS — MEAL / SUPPLEMENT / WORKOUT
+
+_Permanent reference. This section is authoritative for all meal, supplement, and training decisions. Live biometrics at the top of the brain drive today's CALL; these protocols define the fixed rules, foods, weights, and schedules the call must follow._
+
+## MEAL PLAN PROTOCOL
+
+EATING ORDER — EVERY MEAL WITHOUT EXCEPTION:
+Vegetables first → Protein → Fats → Kimchi (cold, always last, never heated) → Microgreens (raw, on top, always last second, never cooked)
+
+ACV 1 tbsp in water BEFORE every meal.
+10-min walk AFTER every meal.
+Psyllium husk 5g in warm water BEFORE DINNER ONLY — drink within 60 seconds, never skip.
+Nothing after 8pm. Water finished by 7pm.
+Dark chocolate 3 bites after dinner, before 8pm.
+Mastic gum 20-30 min after each meal.
+
+PROTEIN TARGETS:
+Training day: 160-165g muscle protein
+Rest day: 130-140g muscle protein
+Collagen NEVER counts toward protein target.
+Legumes = fiber side only, never protein anchor.
+Egg whites = addition only, never primary protein.
+Rest days need same protein priority as training days.
+Always calculate protein total BEFORE planning meals.
+
+PROTEIN ANCHORS (approved):
+Chicken breast, turkey, salmon, shrimp, sardines, eggs (whole). Minimum 150g cooked per meal.
+
+BREAKFAST SEQUENCE (every day):
+1. ACV 1 tbsp in water
+2. Goat bone broth + lemon — 240ml warm
+3. Eggs: 3 whole (training) / 2 whole (rest)
+4. Breakfast bowl (below)
+5. Kefir 100ml
+6. 10-min walk
+
+BREAKFAST BOWL:
+Prep night before (overnight soak):
+Sprouted oats: 50g training / 35g rest
+Isopure whey: 1 scoop
+Collagen: 1-2 scoops (always with vitamin C = berries)
+Almond milk: 200ml
+Egg whites: 6 tbsp
+Frozen berries: 220g
+Dried cranberries: 20g
+Chia seeds: 10g
+Walnuts: 15g
+Pumpkin seeds: 10g
+
+Add FRESH morning only — NEVER night before:
+Brazil nut: 1 whole
+Bee pollen: 5g (refrigerate)
+Broccoli microgreens: 1 tbsp raw on top last second (sulforaphane destroyed by heat — never cook ever)
+
+LUNCH:
+ACV before.
+Vegetables generous — spinach 100g + broccoli 150g or mixed greens — eat FIRST.
+Protein anchor 150-180g cooked (see approved list).
+Fat: avocado half OR olive oil 1 tbsp — after protein.
+Turmeric + black pepper always together.
+Garlic 2 cloves.
+Kimchi 35g cold, eaten LAST.
+Microgreens 1 tbsp raw on top, absolute last.
+Siggi's plain yogurt 150g after lunch.
+10-min walk after.
+
+DINNER (weekly rotation):
+Mon: Salmon 180-200g
+Tue: Sardines 1 tin
+Wed: Turkey 180-200g
+Thu: Shrimp 200g
+Fri: Chicken 150g + sardines half tin
+Sat/Sun: Flexible
+
+Psyllium husk 5g in warm water before dinner.
+ACV before dinner.
+Vegetables first — spinach 80g + broccoli or zucchini or yellow squash 150g.
+Protein per rotation above.
+Avocado half after protein.
+Sesame oil finishing drizzle (off heat only).
+Olive oil + garlic + turmeric + black pepper.
+Kimchi 30g cold, LAST.
+Microgreens 1 tbsp raw, absolute last.
+10-min walk after.
+Dark chocolate 3 bites before 8pm.
+Mastic gum 20-30 min after.
+
+LEGUME DAYS:
+Tuesday: Black beans 150-200g cooked as fiber side (soak 100g dry Monday night — remind Sunday night)
+Friday: Garbanzo 150-200g cooked as fiber side (soak 100g dry Thursday night — remind Wednesday)
+Black chickpeas (kala chana) also approved.
+Canned black beans approved as backup — rinse well.
+
+MUSHROOMS (longevity protocol):
+Shiitake: 2x per week with dinner — sauté EVOO + garlic, medium heat, don't overcook.
+Crimini: daily rotation approved.
+
+SWEET POTATO RULE:
+Training day lunch: add rice 150g cooked OR sweet potato 200g when needed for carbs.
+If weight below 172 for 2+ consecutive days: add sweet potato 200g back to lunch.
+
+KEY FOOD RULES:
+- Turmeric ALWAYS with black pepper (absorption)
+- Kimchi ALWAYS cold, ALWAYS last (probiotics)
+- Microgreens ALWAYS raw, ALWAYS last second
+- Collagen always paired with vitamin C source
+- Sardines 2-3x per week for calcium
+- Celtic Sea Salt — add pinch post-finisher on training days
+- ACV before EVERY meal without exception
+- Post-meal 10-min walk EVERY meal without exception
+
+---
+
+## SUPPLEMENT PROTOCOL
+
+MORNING (with breakfast, every day):
+Creatine: 5g
+D3 + K2 (Solaray): 5000 IU
+Omega-3 (Nordic Naturals): 2 caps
+Beef Liver: 2 caps training / 1 cap rest
+B12 sublingual: 5000mcg — hold 30 sec under tongue
+CoQ10 Ubiquinol: 100mg
+Biotin 5000mcg: TAKE Tue/Thu/Sat ONLY — SKIP Mon/Wed/Fri/Sun — STATE EVERY MORNING
+Fisetin 100mg: 1st and 2nd of month ONLY — Next doses: August 1-2, 2026
+Probiotic (Garden of Life 50B): SEPARATE from all other supplements — empty stomach, not with hot food
+
+BEFORE DINNER:
+Psyllium husk: 5g in warm water — drink within 60 sec
+
+WITH DINNER:
+Zinc Picolinate (Solgar): 22mg
+Thorne Copper: 2mg — ALWAYS together with zinc
+
+9:30PM:
+Magnesium Glycinate (Jarrow): 240mg
+Tart Cherry Juice: 60ml (NOT 8oz — just 60ml)
+KSM-66 Ashwagandha: 600mg — Cycle started June 7, 2026 — Break September 7, 2026 (4 weeks off)
+
+SLEEP PROTOCOL (every night without exception):
+Nose strip (Breathe Right Extra Strength)
+Mouth tape
+O2Ring on THUMB — vibration OFF
+Earplugs
+Saline nasal rinse: every OTHER night only
+Back sleeping, thin pillow
+Screens off: 10pm
+Lights out: 10:30pm
+
+---
+
+## WORKOUT PROTOCOL
+
+WEEKLY SPLIT:
+Monday: Upper Body
+Tuesday: Lower Body
+Wednesday: 30-min vigorous walk (or rest if HRV flags)
+Thursday: Upper Body
+Friday: Lower Body
+Saturday: Hike or rest — check TR + BB first
+Sunday: Rest
+
+BODY BATTERY → INTENSITY:
+80-100: Full push, chase PRs, 4-5 sets
+75-79: Normal working weights, 3-4 sets
+60-74: 3 sets only, reduce weight 10-20%
+Below 60: Walk only, no gym
+Below 40: Full rest, no exercise
+
+OVERRIDE CHECKLIST (check ALL before training call — any one beats Body Battery):
+1. HRV Unbalanced 3+ consecutive days = NO training or hiking until Balanced for 1 full day minimum. "Feeling good" does NOT override this. Ever.
+2. Training Readiness Low + high Recovery Time = rest
+3. Acute Load above 450-500 = deload
+4. Recovery Time above 24h = rest
+5. Explicit Garmin scale-back warning = same as HRV
+
+PRE-HIKE RULE (Cholla lesson — non-negotiable):
+ALWAYS check TR + BB BEFORE leaving for any hike. Never check after. If TR Low or HRV Unbalanced = downgrade or cancel. No exceptions.
+
+WARMUP (before every session):
+Treadmill 5-7 min, incline 4-5, speed 2.8-3.0
+
+UPPER BODY ORDER (LOCKED — never reorder):
+1. Lateral Raises — ALWAYS FIRST — 25lb (11kg) × 12 × 5 sets. DO NOT recommend 30lb — multiple confident sessions at 25lb required first. Shoulders DOWN and away from ears throughout. Garmin labels as "Face Pull" — not a substitution.
+2. Rear Delt Machine — 90lb (41kg) × 4 × 10
+3. Incline DB Press — 50lb (23kg) × 4 × 10
+4. Converging Chest Press — 105lb (48kg) × 4 × 10. Garmin labels as "Bench Press" — not a substitution.
+5. Lat Pulldown — 145lb (66kg) × 4 × 10. Assisted Chin-up = valid substitute (same vertical pull).
+6. DB Curls — 25lb (11kg) × 4 × 12
+7. Tricep Pushdown — 42.5lb (19kg) × 4 × 10
+8. Push-ups — 2-3 sets to failure
+9. Incline Treadmill Finisher — 20 min, ALWAYS LAST. Incline 10 always. Speed 3.0 standard / 3.2-3.5 when BB 80+. NEVER skip the finisher.
+
+LOWER BODY ORDER (LOCKED):
+1. Leg Press — 250-260lb (115-120kg) × 4 × 8-10
+2. Hamstring Curl — 120-125lb (54-57kg) × 4 × 10
+3. Leg Extension — 105-110lb (48-50kg) × 4 × 10
+4. Calf Extension — 155-160lb (70-73kg) × 4 × 12
+5. CORRECTIVE BLOCK (always, right side priority): Deficit Calf Raise w/ DB 2 × 12-15 (8-10kg) + RDL from Flat Bench w/ DB 2 × 10 (10-12kg) + Rear Foot Elevated Stretch 2 × 30s/side. RIGHT SIDE always gets slightly more attention. Right knee valgus -20° flagged at VASA assessment.
+6. Plank — 2 × 80-85 sec
+7. Incline Treadmill Finisher — same as upper body
+
+GIVE WEIGHTS IN BOTH LBS AND KG ALWAYS.
+
+GARMIN LOGGING:
+Always log sessions as Strength Training on Forerunner 970. Auto Set Detection + Auto Rest Timer = ON.
+
+VIGOROUS MINUTES TARGET: 75+ per week. Track weekly and flag if falling short.
+
+TRAIL BLACKLIST (never suggest):
+- Peralta Trail / Superstition Mountains
+- Any remote, overgrown, jungle-like trail
+- Any trail with poor cell signal in snake country
+APPROVED: Piestewa Peak, Cholla, Mormon Loop, Lookout Mountain, North Mountain Trail 44
+PROFILE: Open desert, clear marked paths, maintained, good cell signal only.
