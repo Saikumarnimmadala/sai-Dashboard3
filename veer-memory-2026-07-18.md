@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-18
-Generated: 2026-07-18 08:17
+Generated: 2026-07-18 08:25
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -9,7 +9,7 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 ## QUICK DECISION SNAPSHOT (LIVE — 2026-07-18)
 | | |
 |---|---|
-| **Weight** | 173.5 lb (−42.9 lb from 216.4 peak) |
+| **Weight** | 174.1 lb (−42.3 lb from 216.4 peak) |
 | **Training Readiness** | 57 / 100 (MODERATE) — MOD_HRV_UNBALANCED |
 | **Body Battery** | 18 → 64 (end: 64) |
 | **Recovery Time** | 11.3 hrs |
@@ -115,8 +115,8 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### WEIGHT
 | Metric | Value |
 |--------|-------|
-| Current Weight | **173.5 lb** (as of 2026-07-15) |
-| Lost from Peak (216.4 lb) | 42.9 lb |
+| Current Weight | **174.1 lb** (as of 2026-07-18) |
+| Lost from Peak (216.4 lb) | 42.3 lb |
 
 ### LAST SESSION
 | Metric | Value |
@@ -147,9 +147,6 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Active Calories | 3768 kcal |
 
 ### Weight Trend (last 14 entries)
-- 2026-06-28: 172.8 lb
-- 2026-06-29: 172.1 lb
-- 2026-06-30: 173.7 lb
 - 2026-07-02: 173.2 lb
 - 2026-07-03: 174.1 lb
 - 2026-07-04: 173.7 lb
@@ -161,6 +158,9 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 - 2026-07-13: 172.1 lb
 - 2026-07-14: 173.0 lb
 - 2026-07-15: 173.5 lb
+- 2026-07-16: 173.2 lb
+- 2026-07-17: 173.5 lb
+- 2026-07-18: 174.1 lb
 
 ### Body Battery Trend (last 7 days)
 - 2026-07-12: peak 87
