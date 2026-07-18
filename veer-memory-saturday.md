@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-18
-Generated: 2026-07-18 08:25
+Generated: 2026-07-18 08:27
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -268,6 +268,26 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 # Veer Conversation Log
 Summaries of all Claude chat sessions. Most recent first.
 Auto-appended after each session via /log-conversation endpoint.
+
+---
+
+## 2026-07-17 — Full Day Record — Friday 7/17
+
+Complete day log. BIOMETRICS: TR 52 MODERATE (HRV Unbalanced), Body Battery 16->85 (huge +69 charge), Recovery Time 22.3h, Acute Load 470 (ACWR 1.4, high but optimal band, HiAero focus 926 slightly over target). HRV UNBALANCED day 10-streak marker (overnight 73ms, 7d 67ms). RHR 50 (overnight low 47). Sleep 7.9h score 90 - deep 103m REM 106m awake 16m, best structure of the week. SpO2 low 82% (no O2Ring worn). Weight 173.5 lb (confirmed from Omada). TRAINING: Lower Body full-push completed (Leg Press 260/Hamstring 125/Leg Ext 115/Calf 155, corrective block, plank, finisher) PLUS treadmill run - 45 mod + 21 vig intensity min, 162 max HR, 10577 steps, 678 active kcal. Two activities logged to Garmin correctly (lower + treadmill-running).
+
+**Weight confirmed:** 173.5 lb
+**Sessions logged:** Lower Body (Leg Press 260lb 4x, Hamstring Curl 125lb 4x, Leg Extension 115lb 4x, Calf Extension 155lb 4x, corrective block, plank 2x80-85s, incline finisher) + Treadmill Running (45 mod/21 vig intensity min, max HR 162, 10577 total steps, 678 active kcal)
+
+**Decisions made:**
+- Both Friday activities confirmed logged to Garmin as separate sessions
+- Weight 173.5 confirmed for 7/17
+- Acute Load 470 noted as high-normal - contributed to weekend HRV override
+
+**Open items:**
+- [ ] Pulmonologist referral day 47
+- [ ] O2Ring gap continues (SpO2 hit 82% again unmonitored)
+- [ ] HRV Unbalanced heading into weekend - became 3-day override by Sat 7/18
+- [ ] Legume days missed this week
 
 ---
 
