@@ -1,12 +1,12 @@
-# Veer Health Memory — 2026-07-17
-Generated: 2026-07-17 08:04
+# Veer Health Memory — 2026-07-18
+Generated: 2026-07-18 06:44
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
 
 ---
 
-## QUICK DECISION SNAPSHOT (LIVE — 2026-07-17)
+## QUICK DECISION SNAPSHOT (LIVE — 2026-07-18)
 | | |
 |---|---|
 | **Weight** | 173.5 lb (−42.9 lb from 216.4 peak) |
@@ -17,15 +17,15 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 | **HRV Status** | **UNBALANCED** — last night: 73 ms | 7-day: 67 ms | baseline: 69–93 ms (LOW<64) |
 | **Sleep** | 7.9h / score 90 — Deep:103m REM:106m |
 | **Resting HR** | 50 bpm (7-day avg: 51 bpm) |
-| **SpO2** | Garmin overnight avg: 95.0% low: 82% | O2Ring: 8.1 score low: 85% |
+| **SpO2** | Garmin overnight avg: 95.0% low: 82% | O2Ring: 7.5 score low: 85% |
 | **Stress** | avg 14 / peak 68 |
-| **Last Session** | Treadmill Running on 2026-07-16 | Load=87.58024597167969 | TEMPO |
+| **Last Session** | Treadmill Running on 2026-07-17 | Load=92.7862548828125 | TEMPO |
 | **Weekly** | 3 sessions | Mod:91m + Vig:158m |
 
 ---
 
 
-## TODAY'S LIVE DATA — 2026-07-17
+## TODAY'S LIVE DATA — 2026-07-18
 _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 **⚠️ THESE LIVE VALUES OVERRIDE ANY 'CURRENT STATUS' IN THE STATIC MEMORY BELOW**
 
@@ -93,7 +93,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 |--------|-------|
 | Avg Overnight SpO2 | 95% |
 | Lowest Overnight SpO2 | **82%** |
-| O2Ring Score | 8.1 |
+| O2Ring Score | 7.5 |
 | O2Ring Lowest SpO2 | 85% |
 | O2Ring Avg SpO2 | 95% |
 | O2Ring Drops/hr | 6.9 |
@@ -122,18 +122,18 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Metric | Value |
 |--------|-------|
 | Activity | Treadmill Running (treadmill_running) |
-| Date / Time | 2026-07-16 2026-07-16 10:47 |
-| Duration | 24m |
-| Distance | 1.72 km (1.07 mi) |
-| Avg HR / Max HR | 145.0 / 179.0 bpm |
-| Aerobic Training Effect | 3.0999999046325684 (TEMPO) — IMPACTING_TEMPO_22 |
-| Anaerobic Training Effect | 1.100000023841858 — MINOR_ANAEROBIC_BENEFIT_15 |
-| Exercise Load | 88 |
-| Calories | 263.0 kcal |
-| Sweat Loss | 184.0 ml |
+| Date / Time | 2026-07-17 2026-07-17 19:06 |
+| Duration | 23m |
+| Distance | 1.71 km (1.06 mi) |
+| Avg HR / Max HR | 149.0 / 173.0 bpm |
+| Aerobic Training Effect | 3.200000047683716 (TEMPO) — IMPACTING_TEMPO_22 |
+| Anaerobic Training Effect | 1.0 — MINOR_ANAEROBIC_BENEFIT_15 |
+| Exercise Load | 93 |
+| Calories | 270.0 kcal |
+| Sweat Loss | 140.0 ml |
 | Body Battery Impact | -5 |
-| Avg / Max Power | 93.0 / 311.0 W |
-| HR Zones | Z1:233s | Z2:40s | Z3:489s | Z4:656s | Z5:60s |
+| Avg / Max Power | 93.0 / 275.0 W |
+| HR Zones | Z1:127s | Z2:15s | Z3:252s | Z4:993s | Z5:25s |
 | Total Volume (strength) | not available |
 | Total Reps (strength) | not available |
 
@@ -163,19 +163,20 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 - 2026-07-15: 173.5 lb
 
 ### Body Battery Trend (last 7 days)
-- 2026-07-11: peak 91
 - 2026-07-12: peak 87
 - 2026-07-13: peak 48
 - 2026-07-14: peak 68
 - 2026-07-15: peak 74
 - 2026-07-16: peak 73
 - 2026-07-17: peak 85
+- 2026-07-18: peak 85
 
 ### O2Ring History (last 7 nights)
 | Night | Score | Lowest SpO2 | Avg SpO2 | Drops/hr |
 |-------|-------|-------------|----------|----------|
 | 2026-07-09 | 8.4 | 88% | 94% | 6.5 |
 | 2026-07-12 | 8.1 | 85% | 95% | 6.9 |
+| 2026-07-17 | 7.5 | 85% | 93% | 7.7 |
 
 
 ---
