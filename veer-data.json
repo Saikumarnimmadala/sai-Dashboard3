@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-17T08:04:18.967324-07:00",
+  "generated": "2026-07-18T06:44:29.467576-07:00",
   "today": {
     "training_readiness": 70,
     "readiness_level": "MODERATE",
@@ -71,7 +71,7 @@
     "weekly_intensity_mod": 91,
     "weekly_intensity_vig": 158,
     "weekly_active_calories": 2947,
-    "o2_score": 8.1,
+    "o2_score": 7.5,
     "o2_lowest": 85,
     "o2_avg": 95,
     "o2_drops_4pct": 41,
@@ -251,6 +251,10 @@
     {
       "date": "2026-07-17",
       "v": 85
+    },
+    {
+      "date": "2026-07-18",
+      "v": 85
     }
   ],
   "hrv": [],
@@ -271,6 +275,15 @@
       "drops_4pct": 41,
       "drops_hr": 6.9,
       "time_below_90m": 3.5
+    },
+    {
+      "date": "2026-07-17",
+      "s": 7.5,
+      "lowest": 85,
+      "avg": 93,
+      "drops_4pct": 58,
+      "drops_hr": 7.7,
+      "time_below_90m": 127.9
     }
   ],
   "coaches": {
@@ -371,29 +384,29 @@
   },
   "coaches_generated": "2026-07-04T07:47:22.420820-07:00",
   "last_session": {
-    "date": "2026-07-16",
-    "start_time": "2026-07-16 10:47",
+    "date": "2026-07-17",
+    "start_time": "2026-07-17 19:06",
     "name": "Treadmill Running",
     "type": "treadmill_running",
-    "duration_s": 1485.1739501953125,
-    "distance_m": 1720.6099853515625,
-    "avg_hr": 145.0,
-    "max_hr": 179.0,
-    "calories": 263.0,
-    "aerobic_te": 3.0999999046325684,
+    "duration_s": 1432.27294921875,
+    "distance_m": 1707.3800048828125,
+    "avg_hr": 149.0,
+    "max_hr": 173.0,
+    "calories": 270.0,
+    "aerobic_te": 3.200000047683716,
     "aerobic_te_msg": "IMPACTING_TEMPO_22",
     "te_label": "TEMPO",
-    "anaerobic_te": 1.100000023841858,
+    "anaerobic_te": 1.0,
     "anaerobic_te_msg": "MINOR_ANAEROBIC_BENEFIT_15",
-    "exercise_load": 87.58024597167969,
+    "exercise_load": 92.7862548828125,
     "avg_power": 93.0,
-    "max_power": 311.0,
-    "sweat_ml": 184.0,
+    "max_power": 275.0,
+    "sweat_ml": 140.0,
     "bb_delta": -5,
-    "hr_z1_s": 233.171,
-    "hr_z2_s": 40.003,
-    "hr_z3_s": 489.998,
-    "hr_z4_s": 656.986,
-    "hr_z5_s": 60.0
+    "hr_z1_s": 127.274,
+    "hr_z2_s": 15.0,
+    "hr_z3_s": 252.0,
+    "hr_z4_s": 993.981,
+    "hr_z5_s": 25.001
   }
 }
