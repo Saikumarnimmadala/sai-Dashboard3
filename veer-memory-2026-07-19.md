@@ -1,8 +1,17 @@
 # Veer Health Memory — 2026-07-19
-Generated: 2026-07-19 11:27
+Generated: 2026-07-19 11:30 (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
+
+## DATA FRESHNESS — check each source's age before citing it
+| Source | As of | Age |
+|--------|-------|-----|
+| Garmin biometrics | 2026-07-19 | today |
+| Weight (Omada) | 2026-07-19 | today |
+| O2Ring sleep | 2026-07-18 | yesterday |
+
+_Any source older than "today" = do not present as current; state its actual date._
 
 ---
 
