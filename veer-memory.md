@@ -1,98 +1,98 @@
-# Veer Health Memory — 2026-07-18
-Generated: 2026-07-18 08:52
+# Veer Health Memory — 2026-07-19
+Generated: 2026-07-19 06:30
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
 
 ---
 
-## QUICK DECISION SNAPSHOT (LIVE — 2026-07-18)
+## QUICK DECISION SNAPSHOT (LIVE — 2026-07-19)
 | | |
 |---|---|
 | **Weight** | 174.1 lb (−42.3 lb from 216.4 peak) |
-| **Training Readiness** | 57 / 100 (MODERATE) — MOD_HRV_UNBALANCED |
-| **Body Battery** | 18 → 64 (end: 64) |
-| **Recovery Time** | 11.3 hrs |
-| **Acute Load / Chronic / ACWR** | 392 / 314 / 1.20 (OPTIMAL) |
-| **HRV Status** | **UNBALANCED** — last night: 60 ms | 7-day: 65 ms | baseline: 69–93 ms (LOW<64) |
-| **Sleep** | 6.9h / score 77 — Deep:59m REM:76m |
-| **Resting HR** | 54 bpm (7-day avg: 51 bpm) |
-| **SpO2** | Garmin overnight avg: 94.0% low: 82% | O2Ring: 7.5 score low: 85% |
-| **Stress** | avg 24 / peak 77 |
+| **Training Readiness** | None / 100 (None) — None |
+| **Body Battery** | None → None (end: None) |
+| **Recovery Time** | None hrs |
+| **Acute Load / Chronic / ACWR** | None / None / not available |
+| **HRV Status** | **Balanced** — last night: None ms | 7-day: None ms | baseline: not available |
+| **Sleep** | 0.0h / score None — Deep:Nonem REM:Nonem |
+| **Resting HR** | None bpm (7-day avg: None bpm) |
+| **SpO2** | Garmin overnight avg: None% low: None% | O2Ring: 7.5 score low: 85% |
+| **Stress** | avg None / peak None |
 | **Last Session** | Treadmill Running on 2026-07-17 | Load=92.7862548828125 | TEMPO |
-| **Weekly** | 5 sessions | Mod:135m + Vig:178m |
+| **Weekly** | 4 sessions | Mod:74m + Vig:39m |
 
 ---
 
 
-## TODAY'S LIVE DATA — 2026-07-18
+## TODAY'S LIVE DATA — 2026-07-19
 _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 **⚠️ THESE LIVE VALUES OVERRIDE ANY 'CURRENT STATUS' IN THE STATIC MEMORY BELOW**
 
 ### READINESS & RECOVERY
 | Metric | Value |
 |--------|-------|
-| Training Readiness | **57** / 100 (MODERATE) |
-| Readiness Feedback | MOD_HRV_UNBALANCED |
-| Body Battery | 18 → 64 (end: 64) +46 / -1 |
+| Training Readiness | **not available** / 100 (not available) |
+| Readiness Feedback | not available |
+| Body Battery | not available → not available (end: not available) +not available / -not available |
 | Body Battery Feedback | not available |
-| Recovery Time | 11.3 hrs (NO_CHANGE_SLEEP) |
-| Acute Load | 392 |
-| Chronic Load | 314 |
-| Load Ratio (ACWR) | 1.20 (OPTIMAL) |
-| Load Focus — Low Aerobic | 348 (target 233–634, ✓ in range) |
-| Load Focus — High Aerobic | 661 (target 501–901, ✓ in range) |
-| Load Focus — Anaerobic | 101 (target 133–400, ⚠ out of range) |
-| Load Balance Phrase | ANAEROBIC_SHORTAGE |
-| Training Status | PRODUCTIVE_1 |
+| Recovery Time | not available hrs (not available) |
+| Acute Load | not available |
+| Chronic Load | not available |
+| Load Ratio (ACWR) | not available |
+| Load Focus — Low Aerobic | not available |
+| Load Focus — High Aerobic | not available |
+| Load Focus — Anaerobic | not available |
+| Load Balance Phrase | not available |
+| Training Status | not available |
 
 ### HRV
 | Metric | Value |
 |--------|-------|
-| HRV Status | **UNBALANCED** |
-| HRV Feedback | HRV_UNBALANCED_8 |
-| HRV Last Night Avg | **60 ms** |
-| HRV Highest 5-min | 104 ms |
-| HRV 7-day Avg | 65 ms |
-| HRV Balanced Baseline | 69–93 ms (LOW<64 ms) |
+| HRV Status | **Balanced** |
+| HRV Feedback | not available |
+| HRV Last Night Avg | **not available ms** |
+| HRV Highest 5-min | not available ms |
+| HRV 7-day Avg | not available ms |
+| HRV Balanced Baseline | not available |
 | HRV Streak (consec. LOW) | 0 days |
 | HRV Factor % (readiness) | not available% (not available) |
 
 ### HEART RATE
 | Metric | Value |
 |--------|-------|
-| Resting HR | 54 bpm |
-| RHR 7-day Avg | 51 bpm |
-| Overnight / Day Low HR | 48 bpm |
-| Max HR (today) | 77 bpm |
-| Stress Avg | 24 |
-| Stress Peak | 77 |
+| Resting HR | not available bpm |
+| RHR 7-day Avg | not available bpm |
+| Overnight / Day Low HR | not available bpm |
+| Max HR (today) | not available bpm |
+| Stress Avg | not available |
+| Stress Peak | not available |
 
 ### SLEEP
 | Metric | Value |
 |--------|-------|
-| Sleep Score | **77** / 100 |
-| Sleep Feedback | POSITIVE_CALM |
-| Total Sleep | **6.9 hrs** |
+| Sleep Score | **not available** / 100 |
+| Sleep Feedback | not available |
+| Total Sleep | **0 hrs** |
 | Sleep Need Tonight | 7.2 hrs |
-| Sleep Window | 16:12 → 23:22 |
-| Deep Sleep | 59 min |
-| REM Sleep | 76 min |
-| Light Sleep | 279 min |
-| Awake Time | 16 min |
-| Awake Count | 1 |
-| Restlessness | GOOD |
-| Sleep Stress | 22 |
-| Avg Respiration (sleep) | 15 brpm |
-| Lowest Respiration | 7 brpm |
-| Highest Respiration | 19 brpm |
-| Breathing Disruption | NONE |
+| Sleep Window | not available |
+| Deep Sleep | not available min |
+| REM Sleep | not available min |
+| Light Sleep | not available min |
+| Awake Time | not available min |
+| Awake Count | not available |
+| Restlessness | not available |
+| Sleep Stress | not available |
+| Avg Respiration (sleep) | not available brpm |
+| Lowest Respiration | not available brpm |
+| Highest Respiration | not available brpm |
+| Breathing Disruption | not available |
 
 ### SpO2 / PULSE OX
 | Metric | Value |
 |--------|-------|
-| Avg Overnight SpO2 | 94% |
-| Lowest Overnight SpO2 | **82%** |
+| Avg Overnight SpO2 | not available% |
+| Lowest Overnight SpO2 | **not available%** |
 | O2Ring Score | 7.5 |
 | O2Ring Lowest SpO2 | 85% |
 | O2Ring Avg SpO2 | 93% |
@@ -106,11 +106,11 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 |--------|-------|
 | VO2 Max | not available |
 | Fitness Age | not available |
-| Intensity Minutes — Moderate (today) | 0 min |
-| Intensity Minutes — Vigorous (today) | 0 min |
-| Steps Today | 43 |
-| Active Calories Today | 0 kcal |
-| Floors Climbed Today | 0 |
+| Intensity Minutes — Moderate (today) | not available min |
+| Intensity Minutes — Vigorous (today) | not available min |
+| Steps Today | not available |
+| Active Calories Today | not available kcal |
+| Floors Climbed Today | not available |
 
 ### WEIGHT
 | Metric | Value |
@@ -140,11 +140,11 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### WEEKLY SUMMARY (last 7 days)
 | Metric | Value |
 |--------|-------|
-| Sessions This Week | 5 |
-| Intensity — Moderate | 135 min |
-| Intensity — Vigorous | 178 min |
-| Total Intensity (mod+vig) | 313 min |
-| Active Calories | 3768 kcal |
+| Sessions This Week | 4 |
+| Intensity — Moderate | 74 min |
+| Intensity — Vigorous | 39 min |
+| Total Intensity (mod+vig) | 113 min |
+| Active Calories | 1588 kcal |
 
 ### Weight Trend (last 14 entries)
 - 2026-07-02: 173.2 lb
