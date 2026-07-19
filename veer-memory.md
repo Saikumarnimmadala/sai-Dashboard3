@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-19
-Generated: 2026-07-19 06:30
+Generated: 2026-07-19 11:12
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -9,7 +9,7 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 ## QUICK DECISION SNAPSHOT (LIVE — 2026-07-19)
 | | |
 |---|---|
-| **Weight** | 174.1 lb (−42.3 lb from 216.4 peak) |
+| **Weight** | 174.3 lb (−42.1 lb from 216.4 peak) |
 | **Training Readiness** | None / 100 (None) — None |
 | **Body Battery** | None → None (end: None) |
 | **Recovery Time** | None hrs |
@@ -115,8 +115,8 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### WEIGHT
 | Metric | Value |
 |--------|-------|
-| Current Weight | **174.1 lb** (as of 2026-07-18) |
-| Lost from Peak (216.4 lb) | 42.3 lb |
+| Current Weight | **174.3 lb** (as of 2026-07-19) |
+| Lost from Peak (216.4 lb) | 42.1 lb |
 
 ### LAST SESSION
 | Metric | Value |
@@ -147,7 +147,6 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Active Calories | 1588 kcal |
 
 ### Weight Trend (last 14 entries)
-- 2026-07-02: 173.2 lb
 - 2026-07-03: 174.1 lb
 - 2026-07-04: 173.7 lb
 - 2026-07-05: 173.5 lb
@@ -161,6 +160,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 - 2026-07-16: 173.2 lb
 - 2026-07-17: 173.5 lb
 - 2026-07-18: 174.1 lb
+- 2026-07-19: 174.3 lb
 
 ### Body Battery Trend (last 7 days)
 - 2026-07-12: peak 87
@@ -481,33 +481,35 @@ Expanded Garmin data pull to capture every available API metric. Fixed HRV statu
 # PERMANENT MEMORY (working weights, rules, history, protocols)
 
 
-# Veer Health Memory — 2026-07-18
+# Veer Health Memory — 2026-07-19
 
 ## WEIGHT LOG (most recent)
-2026-07-09: 173.0 | 2026-07-10: 172.1 | 2026-07-11: 173.0 | 2026-07-14: 173.0 | 2026-07-15: 173.5 | 2026-07-16: not available | 2026-07-17: not available | 2026-07-18: not available
-Band: 172-175 lb. 3 CONSECUTIVE DAYS without Omada reading (07-16, 07-17, 07-18) — pipeline check needed, this crosses the flag threshold.
+2026-07-09: 173.0 | 2026-07-10: 172.1 | 2026-07-11: 173.0 | 2026-07-14: 173.0 | 2026-07-15: 173.5 | 2026-07-16: not available | 2026-07-17: not available | 2026-07-18: 174.1 (RECONCILED — live snapshot confirms this; static log previously mislabeled "not available") | 2026-07-19: not available
+Band: 172-175 lb. Today (07-19) is a fresh miss — investigate whether this is a new gap or the same unresolved Omada pipeline issue from 07-16/17.
 
 ## LAST SESSION
-2026-07-17 (Friday): Lower Body (strength_training, 2h7m, load 9.6, -8 BB) + treadmill tempo finisher (23m52s, avg HR 149, load 92.8, -5 BB). No session on 07-18 — rest day called due to HRV override.
+2026-07-17 (Friday): Lower Body (strength_training, 2h7m, load 9.6, -8 BB) + treadmill tempo finisher (23m52s, avg HR 149, load 92.8, -5 BB). No session 07-18 (rest, HRV override) or 07-19 (Sunday rest day, HRV override still unconfirmed cleared).
 
 ## HRV STATUS
-2026-07-15: BALANCED (61ms) | 2026-07-16: UNBALANCED (66ms) | 2026-07-17: UNBALANCED (73ms) | 2026-07-18: UNBALANCED (60ms, now below LOW<64 baseline floor)
-Consecutive Unbalanced streak ending 07-18: **3 days** — HRV persistence override (Section 4D) FIRES as of today. Clears only after 1 full day back to Balanced.
-KNOWN BUG: auto-computed "HRV Persistence Summary" reported streak=0 on 07-18, contradicting the raw daily files. Do not trust that counter until fixed — recompute manually from garmin/daily/*.md HRV Status fields.
+2026-07-15: BALANCED (61ms) | 2026-07-16: UNBALANCED (66ms) | 2026-07-17: UNBALANCED (73ms) | 2026-07-18: UNBALANCED (60ms) | 2026-07-19: not available in today's data pull
+Consecutive Unbalanced streak confirmed through 07-18: **3 days** (07-16/17/18). Override remains ACTIVE/unconfirmed cleared as of 07-19 pending tonight's reading — clears only after 1 full day back to Balanced.
+KNOWN BUG (recurring, unresolved since 07-18): auto-computed "HRV Persistence Summary" reports streak=0, contradicting raw daily files. Do not trust that counter — recompute manually from garmin/daily/*.md HRV Status fields.
 
 ## O2RING
 | Night | Score | Lowest SpO2 | Avg SpO2 | Drops/hr |
 |---|---|---|---|---|
 | 2026-07-09 | 8.4 | 88% | 94% | 6.5 |
 | 2026-07-12 | 8.1 | 85% | 95% | 6.9 |
-| 2026-07-17 | 7.5 | **82%** (corrected — was mistakenly logged as 85%) | 93% | 7.7 |
-Source for correction: O2Ring _20260717225046.pdf (session 22:50 Jul17 → 06:23 Jul18). Time <90%: ~38 min (8% of session, 80-89% band).
+| 2026-07-17 | 7.5 | 82% (corrected) | 93% | 7.7 |
+No data 07-18 or 07-19 — ring not worn / no PDF found two nights running.
 
 ## OPEN ITEMS
-- [ ] CRITICAL: Pulmonologist appointment — referral Jun 1, 47 days unscheduled as of 2026-07-18. Weekend — try Monday if not resolved.
-- [ ] Weight pipeline: 3 consecutive days missing (07-16/17/18) — verify Omada/Chrome session-reuse fix from 7/16 is actually working
-- [ ] Fix HRV persistence streak counter — it reported 0 when raw data shows 3 consecutive Unbalanced days
-- [ ] MEMORY.md top-of-file "live snapshot" section was showing 07-17's numbers under a 07-18 label — verify the 6:10am fetch/write timing bug
+- [ ] CRITICAL: Pulmonologist appointment — referral Jun 1, 48 days unscheduled as of 2026-07-19. Call Monday 2026-07-20 first thing.
+- [ ] Weight pipeline: reconcile live-vs-static contradiction found today (07-18 was 174.1 lb, not "not available" as static log showed); today (07-19) is a fresh miss.
+- [ ] Fix HRV persistence streak counter — still reporting 0 against a confirmed 3-day Unbalanced streak; bug has now persisted across two briefs (07-18, 07-19).
+- [ ] MEMORY.md top-of-file "live snapshot" timing bug — recurred again, still unresolved.
+- [ ] O2Ring not worn 07-18 and 07-19 — resume tonight for OSA data continuity.
+- [ ] Vigorous intensity minutes this week: 39 min vs 75+/week target — behind pace with week past halfway.
 - [ ] Fisetin next doses: August 1-2, 2026
 - [ ] KSM-66 break begins: September 7, 2026
 - [ ] Ferritin recheck: September 2026
@@ -515,24 +517,24 @@ Source for correction: O2Ring _20260717225046.pdf (session 22:50 Jul17 → 06:23
 
 ## DATA PIPELINE STATUS
 - Recovery Time units bug: still resolved, no regression (07-18 reading 11.3 hrs plausible).
-- Omada weight: 3rd consecutive miss — escalate past "watch" into "investigate."
-- HRV streak counter: NEW bug identified 07-18, needs fix — see Open Items.
-- MEMORY.md live-snapshot mismatch: recurred on 07-18 (showed 07-17 data under today's label) — same pattern flagged 07-16, still unresolved.
+- Omada weight: gap continues, now including 07-19 — escalate to "investigate," pattern is not resolving on its own.
+- HRV streak counter: bug persists a second day running — needs an actual fix, not just manual workaround.
+- MEMORY.md live-snapshot mismatch: recurred again on 07-19 — same pattern flagged 07-16 and 07-18, still unresolved.
 
 ## SUPPLEMENT CYCLES
 - KSM-66: active, break starts 2026-09-07
 - Fisetin: last taken Jul 1-2, next Aug 1-2
-- Biotin: Tue/Thu/Sat only — TAKEN today (Saturday)
+- Biotin: Tue/Thu/Sat only — SKIPPED today (Sunday)
 
 ## TRAIL BLACKLIST (permanent, unchanged)
 Peralta Trail + all Superstition Mountains trails — two rattlesnake encounters 07-11/07-12
 
-## RECENT DECISIONS (2026-07-18)
-- Called REST DAY (no hike) due to HRV persistence override firing for the first time this streak (3 consecutive Unbalanced days, today's HRV 60ms below LOW threshold)
-- Used garmin/daily/2026-07-18.md as authoritative over the top-of-file "live snapshot" which was actually showing 07-17 data
-- Manually recomputed HRV streak from raw daily files rather than trusting the auto-computed summary, which reported streak=0 incorrectly
-- Corrected 07-17 O2Ring lowest SpO2 in history table: 82% (PDF-verified), not 85% as previously recorded
-- Pulmonologist flag restated (47 days) per standing rule
+## RECENT DECISIONS (2026-07-19)
+- Called REST DAY: standing Sunday rest day per weekly split, independently reinforced by HRV persistence override remaining unconfirmed cleared (no 07-19 HRV data yet against a confirmed 3-day Unbalanced streak through 07-18)
+- Reconciled weight contradiction: treated live snapshot (174.1 lb, 07-18) as authoritative over stale static WEIGHT LOG entry — static log needs correction at source
+- Flagged HRV streak auto-counter bug as recurring (second consecutive brief with wrong 0-count against raw data)
+- Flagged vigorous minutes shortfall (39 min vs 75+ target) with week past halfway
+- Pulmonologist flag restated (48 days) per standing rule — next call window Monday 07-20
 
 ---
 
