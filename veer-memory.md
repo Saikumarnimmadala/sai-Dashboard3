@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-20
-Generated: 2026-07-20 09:10 (America/Phoenix)
+Generated: 2026-07-20 09:12 (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -64,7 +64,8 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | HRV Highest 5-min | 102 ms |
 | HRV 7-day Avg | 67 ms |
 | HRV Balanced Baseline | 68–93 ms (LOW<63 ms) |
-| HRV Streak (consec. LOW) | 1 days |
+| HRV Streak (consec. UNBALANCED) | 1 days |
+| HRV OVERRIDE (rule D, latched) | 🔴 ACTIVE — no hard training/hiking until one full BALANCED day |
 | HRV Factor % (readiness) | not available% (not available) |
 
 ### HEART RATE
