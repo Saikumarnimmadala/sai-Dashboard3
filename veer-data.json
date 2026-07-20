@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-20T07:26:06.988846-07:00",
+  "generated": "2026-07-20T09:10:35.821264-07:00",
   "today": {
     "training_readiness": 73,
     "readiness_level": "MODERATE",
@@ -35,7 +35,7 @@
     "hrv_baseline_low": 68,
     "hrv_baseline_high": 93,
     "hrv_low_upper": 63,
-    "hrv_streak": 0,
+    "hrv_streak": 1,
     "rhr": 47,
     "rhr_7day_avg": 50,
     "hr_min_day": 47,
