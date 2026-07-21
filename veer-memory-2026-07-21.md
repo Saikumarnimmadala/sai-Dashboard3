@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-21
-Generated: 2026-07-21 07:36 (America/Phoenix)
+Generated: 2026-07-21 08:22 (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -764,3 +764,22 @@ TRAIL BLACKLIST (never suggest):
 - Any trail with poor cell signal in snake country
 APPROVED: Piestewa Peak, Cholla, Mormon Loop, Lookout Mountain, North Mountain Trail 44
 PROFILE: Open desert, clear marked paths, maintained, good cell signal only.
+
+---
+
+
+## PIPELINE HEALTHCHECK — 2026-07-21 08:22
+
+**9/9 checks passing**
+
+| Check | Status | Detail |
+|-------|--------|--------|
+| Today's Garmin data present | ✅ | all key fields present |
+| veer-data.json today block populated | ✅ | readiness fields filled |
+| Brain rebuilt today | ✅ | Generated 2026-07-21 |
+| Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-07-21 |
+| Recovery Time units sane | ✅ | 0.0 hrs |
+| HRV override logic live | ✅ | streak=0 override=clear |
+| Weight fresh (<=2 days) | ✅ | latest 173.9 lb on 2026-07-21 (0d old) |
+| Scheduled tasks healthy | ✅ | all ran within 24h |
+| No hardcoded secrets in runners | ✅ | clean |
