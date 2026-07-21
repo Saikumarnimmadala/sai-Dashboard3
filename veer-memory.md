@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-21
-Generated: 2026-07-21 16:17 (America/Phoenix)
+Generated: 2026-07-21 16:20 (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -1365,24 +1365,50 @@ whey" and it edits this file; changes flow into the brain on the next rebuild.
 
 ## COACH RULES FOR USING THIS FILE
 
-1. **Check before planning.** If a planned item is 🔴 OUT, substitute from the table
-   above and SAY SO in the plan: "Avocado out → olive oil 1 tbsp instead."
-2. **If status is ❔ UNKNOWN on a meal-critical item, ask rather than assume** —
-   one line, at the end of the brief: "Confirm: do you have salmon for tonight?"
-3. **Flag 🟡 LOW items in a SHOPPING LIST section** of the brief so a grocery run
-   is never a surprise.
-4. **Protect the anchor rule above all.** If no approved protein anchor is in
-   stock, that's a flag, not a silent downgrade — never let a meal fall back to
-   egg whites or legumes as the anchor.
-5. **Watch the dated ones:** fisetin before Aug 1-2, KSM-66 stop (not reorder) at
-   Sept 7, biotin pause 72h before any bloodwork.
-6. **Soak reminders are inventory-dependent:** only remind about Monday/Thursday
-   night soaking if dry legumes are actually in stock; otherwise flag canned backup.
+**THE MATERIALITY TEST — apply this before mentioning inventory at all.**
+Ask: _does this item's status change a decision today, or move a goal?_
+If yes → surface it in the plan. If no → add it silently to the shopping list and
+say nothing. A brief cluttered with "low on garlic" trains Veer to skim, and then
+he misses the line that mattered. **Signal over completeness, always.**
+
+### TIER 1 — always surface, these move goals
+- **Protein anchors out** → directly threatens the 160-165g/130-140g targets, which
+  is the muscle-building and Free-T goal. Never a silent downgrade.
+- **Dated supplement windows** → fisetin before Aug 1-2, KSM-66 **stop** (not
+  reorder) Sept 7, biotin pause 72h pre-bloodwork. Missing these loses a whole
+  cycle or corrupts a lab result.
+- **Sleep protocol consumables out** (nose strips, mouth tape, O2Ring uncharged) →
+  this is the OSA investigation, the #1 open medical item. Treat as urgent.
+- **Anything that would break a locked rule** if unavailable.
+
+### TIER 2 — surface only if it changes TODAY'S plan
+- A fast-depleting item that today's meals actually call for (avocado, spinach,
+  broccoli, microgreens, almond milk, eggs). Substitute, state the swap in one
+  clause, move on. If today's meals don't use it, it's Tier 3.
+- Training-day carb (rice/sweet potato) missing on a training day — that's real
+  fuel and glycogen refill, so it counts.
+
+### TIER 3 — silent; shopping list only
+Spices, garlic, onion, oils, condiments, tea, chocolate, mastic gum, and anything
+with weeks of runway. Never spend a line of the brief on these.
+
+### MECHANICS
+1. **Check before planning.** Planned item 🔴 OUT → substitute from the table above
+   and say it in one clause: "Avocado out → olive oil 1 tbsp instead."
+2. **Ask only about Tier 1-2 unknowns**, one line at the end, and only when it
+   actually blocks tomorrow: "Confirm: salmon for tonight?"
+3. **SHOPPING LIST section appears only when there is something Tier 1 or 2 on it**
+   — otherwise omit the section entirely rather than printing an empty heading.
+4. **Soak reminders are inventory-dependent:** only remind about Monday/Thursday
+   soaking if dry legumes are in stock; otherwise name the canned backup.
+5. **When inventory forces a compromise, say what it costs.** "No rice → sweet
+   potato 200g, same carb role" is fine. "No anchor protein in the house" is a
+   flag with a consequence: state the protein shortfall in grams.
 
 ---
 
 
-## PIPELINE HEALTHCHECK — 2026-07-21 09:23
+## PIPELINE HEALTHCHECK — 2026-07-21 16:17
 
 **9/9 checks passing**
 
