@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-21
-Generated: 2026-07-21 09:22 (America/Phoenix)
+Generated: 2026-07-21 16:11 (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -282,6 +282,28 @@ Auto-appended after each session via /log-conversation endpoint.
 
 ---
 
+## 2026-07-21 — Tuesday 7/21 — HRV override cleared, Upper Body re-entry day
+_logged: 2026-07-21 16:11_
+
+HRV returned BALANCED (82ms) after 5 days impaired (Unbalanced 07-16/17/18, Low 07-19, Unbalanced 07-20) — override rule D formally CLEARED. TR 84 HIGH, BB 39-100, sleep 8.4h score 92 (best of month), RHR 49, weight 173.9 back in band after yesterday's 175.4 water spike. Coaches corrected the calendar: last actual session was Lower on 07-17, so today is UPPER BODY re-entry (not Tuesday-calendar Lower), with lateral raises trimmed 5 to 4 sets per detraining/re-entry principle. Lunch logged: chicken 160g anchor + garbanzo 100g fiber side + Greek yogurt 150g, day tracking ~168g protein vs 160-165 target.
+
+**Weight confirmed:** 173.9 lb
+**New rules added:** Coaches must resume training by split SEQUENCE after any interruption never by weekday,After 3+ day layoff first session back is re-entry not PR day,KNOWLEDGE_BASE.md and MEASUREMENT_SCIENCE.md now embedded in brain for all specialists
+
+**Decisions made:**
+- Session selection now reasons from last actual session not calendar day
+- Upper Body re-entry chosen over calendar Lower
+- Lateral raises 4 sets not 5 for re-entry
+- Lunch anchored on chicken 160g with garbanzo as fiber side only
+
+**Open items:**
+- [ ] PULMONOLOGIST: Veer committed to scheduling the appointment - report the date when booked (day 50 as of today)
+- [ ] Verify the 07-17 O2Ring T90 figure (~128 min below 90%) in ViHealth app before appointment - strongest single data point
+- [ ] Confirm Upper Body session completed and log actual weights
+- [ ] Wear O2Ring tonight - 3 night gap
+
+---
+
 ## 2026-07-17 — Full Day Record — Friday 7/17
 
 Complete day log. BIOMETRICS: TR 52 MODERATE (HRV Unbalanced), Body Battery 16->85 (huge +69 charge), Recovery Time 22.3h, Acute Load 470 (ACWR 1.4, high but optimal band, HiAero focus 926 slightly over target). HRV UNBALANCED day 10-streak marker (overnight 73ms, 7d 67ms). RHR 50 (overnight low 47). Sleep 7.9h score 90 - deep 103m REM 106m awake 16m, best structure of the week. SpO2 low 82% (no O2Ring worn). Weight 173.5 lb (confirmed from Omada). TRAINING: Lower Body full-push completed (Leg Press 260/Hamstring 125/Leg Ext 115/Calf 155, corrective block, plank, finisher) PLUS treadmill run - 45 mod + 21 vig intensity min, 162 max HR, 10577 steps, 678 active kcal. Two activities logged to Garmin correctly (lower + treadmill-running).
@@ -492,44 +514,41 @@ Expanded Garmin data pull to capture every available API metric. Fixed HRV statu
 # PERMANENT MEMORY (working weights, rules, history, protocols)
 
 
-# Veer Health Memory — 2026-07-21 (post-brief)
+# Veer Health Memory — 2026-07-21 (post-morning-brief)
 
 ## WEIGHT LOG (most recent)
-2026-07-15: 173.5 | 2026-07-16: not available | 2026-07-17: not available | 2026-07-18: 174.1 | 2026-07-19: 174.3 (unresolved contradiction vs prior "not available" — flag for pipeline check) | 2026-07-20: not available | 2026-07-21: 173.9 (Omada scale, confirmed)
+2026-07-17: 173.5 | 2026-07-18: 174.1 | 2026-07-19: 173.9 (contradicts earlier "not available" — unresolved pipeline issue) | 2026-07-20: 175.4 | 2026-07-21: 173.9 (Omada, confirmed)
 Band: 172-175 lb. In-band today.
 
-## LAST SESSION
-2026-07-17 (Friday): Lower Body (strength_training) + treadmill tempo finisher (23m52s, avg HR 149, load 92.8). No session logged 07-18 through 07-21 yet (today's Lower Body Full Push planned, not yet logged).
+## LAST SESSION (as of this brief)
+2026-07-17 (Fri): Lower Body Full Push + treadmill tempo (23m52s, avg HR 149, load 92.8).
+**TODAY'S CALL: Upper Body, re-entry session (5-day layoff since 07-16 Upper), standard working weights, Lateral Raises trimmed to 4x12 instead of 5x12 for re-entry.** Awaiting confirmation this was logged.
 
 ## HRV STATUS
-07-16: UNBALANCED | 07-17: UNBALANCED | 07-18: UNBALANCED | 07-19: LOW (HRV_LOW_4) | 07-20: UNBALANCED (HRV_UNBALANCED_11) | 07-21: **BALANCED** (HRV_BALANCED_4, 82ms overnight)
-Override (3+ consecutive Unbalanced, latched 07-16→07-18, sustained through 07-19 Low and 07-20 Unbalanced) **CLEARS as of 07-21** — first full Balanced day/night after 6 days of impairment. Streak counter reads 0, consistent with real data this time.
+07-16 UNBALANCED | 07-17 UNBALANCED | 07-18 UNBALANCED | 07-19 LOW | 07-20 UNBALANCED | 07-21 **BALANCED** (82ms overnight)
+Override (latched 07-16→07-20, 5 days non-Balanced) **CLEARED as of 07-21** — first full Balanced day. Streak = 0, correct.
 
 ## O2RING
-| Night | Score | Lowest SpO2 | Avg SpO2 | Drops/hr |
-|---|---|---|---|---|
-| 07-09 | 8.4 | 88% | 94% | 6.5 |
-| 07-12 | 8.1 | 85% | 95% | 6.9 |
-| 07-17 | 7.5 | 85% | 93% | 7.7 |
-| 07-18 | 7.3 | 85% | 94% | 7.1 |
-No data 07-19, 07-20, or 07-21 (ring not worn / no PDF matched). Unresolved contradiction from prior memory (07-18 entry present live vs previously logged as missing) — still needs pipeline reconciliation, not re-derived here.
+Last data: 07-18 (score 7.3, low 85%, avg 94%, drops/hr 7.1). No data 07-19, 07-20, or 07-21 — ring not worn. Resume tonight.
+Historical contradiction (07-18 entry present live vs previously logged absent) — still unresolved, pipeline-level fix needed, not re-derived here.
 
 ## OPEN ITEMS
-- [ ] CRITICAL: Pulmonologist appointment — referral Jun 1, 50 days unscheduled as of 2026-07-21. Call today.
-- [ ] Weight pipeline contradiction: 07-19 reading (174.3 lb live vs "not available" previously saved) — reconcile at source.
-- [ ] O2Ring pipeline contradiction: 07-18 entry present in live history, previously logged as absent — reconcile at source.
-- [ ] NEW: Weekly rollup ("4 sessions | Mod 74m + Vig 39m | 1588 kcal") identical across 07-19, 07-20, 07-21 daily files — looks like a stale cached field, not recalculated daily. Needs pipeline check.
+- [ ] CRITICAL: Pulmonologist — referral Jun 1, 50 days unscheduled as of 07-21. Call today.
+- [ ] Weight pipeline contradiction: 07-19 (174.3 vs 173.9 vs "not available" across different pulls) — reconcile at source.
+- [ ] O2Ring pipeline contradiction: 07-18 entry present/absent inconsistency — reconcile at source.
+- [ ] Weekly rollup ("4 sessions | Mod 74m + Vig 39m | 1588 kcal") identical 3 days running (07-19, 07-20, 07-21) — looks like a stale cached field, needs code-level check.
 - [ ] Vigorous intensity minutes: 39 min vs 75+/week target — behind pace.
 - [ ] Confirm black beans soaked Monday night (07-20) for today's Tuesday legume day.
+- [ ] Resume wearing O2Ring tonight — 3-night clinical data gap right as wrist SpO2 dipped to 86%.
 - [ ] Fisetin next doses: August 1-2, 2026
 - [ ] KSM-66 break begins: September 7, 2026
 - [ ] Ferritin recheck: September 2026
 - [ ] Full bloodwork retest: December 2026
 
 ## DATA PIPELINE STATUS
-- Recovery Time units bug: resolved, no regression (0.0 hrs today, REACHED_ZERO, plausible).
-- HRV streak counter: reporting 0 today and it's actually correct — today is genuinely the first Balanced day after the streak, unlike prior false-zero incidents. Keep watching for recurrence of the bug on future Unbalanced runs.
-- Weekly rollup field: new suspicion of staleness (see Open Items) — needs code-level check, not just manual reconciliation.
+- Recovery Time units bug: resolved, no regression.
+- HRV streak counter: correct today (genuine first Balanced day).
+- Weekly rollup field: confirmed suspicious — 3 identical days, needs code-level check, not just manual reconciliation.
 - Weight and O2Ring historical contradictions: still open, unchanged from 07-20.
 
 ## SUPPLEMENT CYCLES
@@ -541,10 +560,10 @@ No data 07-19, 07-20, or 07-21 (ring not worn / no PDF matched). Unresolved cont
 Peralta Trail + all Superstition Mountains trails — two rattlesnake encounters 07-11/07-12
 
 ## RECENT DECISIONS (2026-07-21)
-- Training call: Lower Body Full Push, 5 sets, top-of-range weights — HRV override cleared today (first Balanced day after 07-16→07-20 impairment run), TR 84 HIGH, BB 100, Acute Load 185/ACWR 0.60 LOW all support pushing training.
-- HRV override formally cleared as of 07-21 per rule D (one full Balanced day achieved).
-- Weekly rollup flagged as a new suspected pipeline staleness issue (identical values 3 days running).
-- Pulmonologist flag restated (50 days) per standing rule.
+- Training call: Upper Body, re-entry session — sequence-based (Upper last trained 07-16, 5 days ago, vs Lower 07-17, 4 days ago), not calendar-based (calendar said Lower). All overrides clear (TR 84, Recovery Time 0, HRV Balanced today, Acute Load 185). Lateral Raises trimmed to 4 sets for re-entry despite green BB/TR.
+- HRV override formally cleared as of 07-21 (first Balanced day after 07-16→07-20 impairment run).
+- ACWR 0.6 flagged as detraining-risk (below 0.8 floor per Gabbett) — rebuild gradually, don't jump to peak volume even with high BB/TR.
+- Pulmonologist flag restated (50 days) per standing rule — escalating urgency.
 
 ---
 
@@ -1214,7 +1233,7 @@ Confounded by caffeine, illness, standing/movement, and emotion.
 ---
 
 
-## PIPELINE HEALTHCHECK — 2026-07-21 08:22
+## PIPELINE HEALTHCHECK — 2026-07-21 09:23
 
 **9/9 checks passing**
 
