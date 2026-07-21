@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-21
-Generated: 2026-07-21 16:11 (America/Phoenix)
+Generated: 2026-07-21 16:17 (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -1229,6 +1229,155 @@ Confounded by caffeine, illness, standing/movement, and emotion.
    ordered — not to grade the severity itself.
 6. **Explain the mechanism when citing a number.** "Body Battery hit 100 because deep
    sleep drove parasympathetic recovery" teaches; "BB is 100" doesn't.
+
+---
+
+
+# KITCHEN INVENTORY & SUPPLY STATUS
+
+_Coaches: read this BEFORE writing any meal plan. Plan from what's actually in
+the kitchen — never assume. When an item is OUT or LOW, substitute from the
+approved swap list rather than forcing the original plan, and say what you did._
+
+**Last updated:** 2026-07-21 (initial build — statuses need Veer's first count)
+**How to update:** tell Claude Code "out of avocado", "restocked salmon", "low on
+whey" and it edits this file; changes flow into the brain on the next rebuild.
+
+---
+
+## STATUS KEY
+✅ IN STOCK · 🟡 LOW (buy this week) · 🔴 OUT (substitute today) · ❔ UNKNOWN (ask Veer)
+
+---
+
+## PROTEIN ANCHORS (the meal-critical tier)
+
+| Item | Status | Typical hold | Notes |
+|------|--------|--------------|-------|
+| Chicken breast | ❔ | ~4 meals | Mon-ish lunches, Friday dinner |
+| Salmon (wild) | ❔ | 2 dinners | Mon + Sun rotation |
+| Sardines (tins) | ❔ | count tins | Tue dinner + Fri half tin — 2-3x/wk for calcium |
+| Shrimp (Costco Argentina red) | ❔ | freezer | **Portion into 200g freezer bags** — open KT item |
+| Turkey | ❔ | 1-2 dinners | Wed + Sat rotation |
+| Eggs (whole) | ❔ | ~2-3 days | 3/day training, 2/day rest — depletes FAST |
+| Liquid egg whites | ❔ | ~1 week | 6 tbsp in bowl daily + lunches |
+
+## FAST-DEPLETING PRODUCE (check these every single plan — KT-flagged)
+
+| Item | Status | Typical hold | Notes |
+|------|--------|--------------|-------|
+| Avocado | ❔ | 2-4 days | half at lunch + half at dinner = 1/day |
+| Baby spinach | ❔ | ~4 days | 100g lunch + 80g dinner daily |
+| Broccoli | ❔ | ~4 days | 150g lunch + dinner option |
+| Broccoli microgreens | ❔ | ~5 days | 1 tbsp raw × 3 meals — **never cook** |
+| Lemon | ❔ | ~1 week | bone broth daily |
+| Zucchini / yellow squash | ❔ | ~5 days | dinner veg rotation |
+| Crimini mushrooms | ❔ | ~5 days | daily rotation |
+| Shiitake mushrooms | ❔ | 2 dinners | 2×/week — **KT flagged as under-integrated** |
+| Purple cabbage | ❔ | ~2 weeks | **KT flagged: rotate in, not yet integrated** |
+| Pomegranate seeds | ❔ | ~1 week | **KT flagged: rotate in, urolithin A** |
+| Garlic | ❔ | weeks | 2 cloves/meal |
+| Onion | ❔ | weeks | 30g/meal |
+
+## PANTRY & DRY GOODS
+
+| Item | Status | Notes |
+|------|--------|-------|
+| Sprouted oats (One Degree) | ❔ | 50g training / 35g rest daily |
+| Isopure whey | ❔ | 1 scoop daily — watch scoop count |
+| Collagen | ❔ | 1-2 scoops daily, always with berries (vit C) |
+| Almond milk | ❔ | 200ml daily — depletes fast |
+| Kefir | ❔ | 100ml daily |
+| Siggi's / Greek yogurt | ❔ | 150g after lunch |
+| Frozen berries (straw/blue/cherry) | ❔ | 220g daily — big burn rate |
+| Dried cranberries | ❔ | 20g daily |
+| Chia seeds | ❔ | 10g daily |
+| Walnuts | ❔ | 15g daily |
+| Pumpkin seeds | ❔ | 10g daily |
+| Brazil nuts | ❔ | 1/day — selenium |
+| Bee pollen | ❔ | 5g/day, refrigerate |
+| Kimchi | ❔ | 30-35g × 2 meals daily — cold, always last |
+| Black beans (dry) | ❔ | Tue legume — soak 100g dry MONDAY night |
+| Garbanzo (dry) | ❔ | Fri legume — soak 100g dry THURSDAY night |
+| Black chickpeas (kala chana) | ❔ | approved alt, same fiber-side role |
+| Canned black beans (backup) | ❔ | rinse thoroughly if used |
+| Rice | ❔ | 150g cooked, training-day lunch carb |
+| Sweet potato | ❔ | 200g — training carb + below-172 weight-floor rule |
+| Goat bone broth | ❔ | 240ml daily before breakfast |
+| ACV | ❔ | 1 tbsp before every meal |
+| Psyllium husk | ❔ | 5g before dinner |
+| Olive oil (EVOO) | ❔ | cooking + drizzle |
+| Sesame oil | ❔ | finishing only, off heat |
+| Turmeric + black pepper | ❔ | always paired |
+| Celtic sea salt | ❔ | pinch post-finisher, training days |
+| Dark chocolate (Hu Salty Dark) | ❔ | 3 bites after dinner |
+| Mastic gum | ❔ | 20-30 min after meals |
+| Green tea | ❔ | evening |
+
+## SUPPLEMENTS — count remaining, reorder at ~2 weeks left
+
+| Supplement | Status | Daily dose | Reorder note |
+|------------|--------|-----------|--------------|
+| Creatine | ❔ | 5g | |
+| D3 + K2 (Solaray) | ❔ | 5000 IU | |
+| Omega-3 (Nordic Naturals) | ❔ | 2 caps | |
+| Beef Liver | ❔ | 2 training / 1 rest | |
+| B12 sublingual | ❔ | 5000mcg | |
+| CoQ10 Ubiquinol | ❔ | 100mg | |
+| Biotin | ❔ | Tue/Thu/Sat only | **stop 72h before bloodwork — assay interference** |
+| Fisetin | ❔ | 1st-2nd monthly | next: **Aug 1-2, 2026** — confirm stock before Aug 1 |
+| Probiotic (Garden of Life 50B) | ❔ | 1 cap empty stomach | |
+| Zinc Picolinate (Solgar) | ❔ | 22mg with dinner | always with copper |
+| Thorne Copper | ❔ | 2mg with dinner | always with zinc |
+| Magnesium Glycinate (Jarrow) | ❔ | 240mg 9:30pm | |
+| Tart Cherry Juice | ❔ | 60ml 9:30pm | not 8oz |
+| KSM-66 | ❔ | 600mg 9:30pm | **cycle ends Sept 7** — do NOT reorder before break |
+
+## SLEEP / EQUIPMENT CONSUMABLES
+
+| Item | Status | Notes |
+|------|--------|-------|
+| Nose strips (Breathe Right Extra) | ❔ | nightly |
+| Mouth tape | ❔ | nightly |
+| Earplugs | ❔ | nightly |
+| Saline rinse | ❔ | every OTHER night only |
+| O2Ring charged | ❔ | thumb, vibration OFF |
+
+---
+
+## APPROVED SUBSTITUTIONS (use these, never improvise outside the protocol)
+
+| If OUT of… | Substitute with | Never substitute with |
+|-----------|-----------------|----------------------|
+| Chicken | turkey, shrimp, salmon (any approved anchor ≥150g) | egg whites alone, legumes alone |
+| Salmon | sardines (1 tin + something) or shrimp 200g | protein powder as a meal |
+| Fresh spinach | any leafy green already in rotation | skipping the vegetable course |
+| Avocado | olive oil 1 tbsp | skipping fats entirely |
+| Broccoli | zucchini, yellow squash, cabbage | |
+| Microgreens | **nothing — omit and note it** | cooked greens (heat kills sulforaphane) |
+| Dry legumes (not soaked) | canned, rinsed thoroughly | doubling the protein anchor instead |
+| Rice (training carb) | sweet potato 200g | skipping the carb on a training day |
+| Siggi's | Greek yogurt (~2g protein difference) | flavored/sweetened yogurt |
+| Almond milk | water + extra whey scoop is acceptable | dairy milk (not in protocol) |
+| Kefir | skip and note it | |
+
+---
+
+## COACH RULES FOR USING THIS FILE
+
+1. **Check before planning.** If a planned item is 🔴 OUT, substitute from the table
+   above and SAY SO in the plan: "Avocado out → olive oil 1 tbsp instead."
+2. **If status is ❔ UNKNOWN on a meal-critical item, ask rather than assume** —
+   one line, at the end of the brief: "Confirm: do you have salmon for tonight?"
+3. **Flag 🟡 LOW items in a SHOPPING LIST section** of the brief so a grocery run
+   is never a surprise.
+4. **Protect the anchor rule above all.** If no approved protein anchor is in
+   stock, that's a flag, not a silent downgrade — never let a meal fall back to
+   egg whites or legumes as the anchor.
+5. **Watch the dated ones:** fisetin before Aug 1-2, KSM-66 stop (not reorder) at
+   Sept 7, biotin pause 72h before any bloodwork.
+6. **Soak reminders are inventory-dependent:** only remind about Monday/Thursday
+   night soaking if dry legumes are actually in stock; otherwise flag canned backup.
 
 ---
 
