@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-21T07:30:34.044994-07:00",
+  "generated": "2026-07-21T07:36:15.395320-07:00",
   "today": {
     "training_readiness": 84,
     "readiness_level": "HIGH",
@@ -186,6 +186,10 @@
     {
       "date": "2026-07-20",
       "lb": 175.4
+    },
+    {
+      "date": "2026-07-21",
+      "lb": 173.9
     }
   ],
   "body_battery": [
