@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-21
-Generated: 2026-07-21 09:14 (America/Phoenix)
+Generated: 2026-07-21 09:22 (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -1044,6 +1044,172 @@ values, and never let a device override how the athlete actually feels — or a 
 desaturation, chest symptoms, syncope, unexplained weight change, or abnormal labs go to
 a physician — and the coach's job is to make that handoff happen with good data, not to
 substitute for it.
+
+---
+
+
+# MEASUREMENT SCIENCE — what each device actually measures, and how much to trust it
+
+_A number is only as good as the method behind it. This is how Veer's devices compute
+what they report, where they're strong, where they lie, and how to read them against
+each other. Never compare a metric across brands without reading this first._
+
+---
+
+## GARMIN (Forerunner 970) — most metrics are Firstbeat Analytics algorithms
+
+Garmin licenses Firstbeat's physiological models. Almost everything below is derived
+from **beat-to-beat heart rate variability plus movement**, not directly measured.
+
+**HRV Status** — the one Veer's override rule keys on.
+- Measured from **RMSSD during sleep only** (not daytime), via wrist optical sensor.
+- Requires a **3-week baseline** before it reports anything.
+- "Balanced" = last 7-day average falls inside the personal baseline range.
+  "Unbalanced" = outside it. "Low" = below the low threshold. "Poor" = far below.
+- **Critical nuance: LOW is worse than UNBALANCED, not a step toward recovery.**
+  Unbalanced means "outside your normal range in either direction"; Low means
+  "distinctly beneath it." Only BALANCED clears an override.
+- Because it's a 7-day rolling average vs a 3-week baseline, it is **laggy** — a single
+  great night barely moves it, and it will not flip the day the athlete feels better.
+
+**Body Battery (0–100)** — Firstbeat's energy model.
+- Inputs: HRV, stress (also HRV-derived), sleep quality/duration, and activity.
+- Drains with stress and exertion, charges with rest and especially deep sleep.
+- **It is a state estimate, not a capacity measure.** BB 100 means "well charged
+  relative to your own patterns," NOT "cleared to train hard" — which is exactly why the
+  override checklist outranks it.
+- Overnight charge (start → peak) is the most useful signal: a big charge means genuine
+  parasympathetic recovery happened.
+
+**Training Readiness (0–100)** — a composite of: sleep score, recent sleep history,
+recovery time remaining, HRV status, acute load, and stress history. Because HRV Status
+is one of its inputs, TR and HRV can disagree — when they do, HRV Status is the more
+conservative signal and the override rule uses it directly.
+
+**Acute Load / Chronic Load / ACWR** — EPOC-based training load, exponentially weighted:
+acute ≈ 7 days, chronic ≈ 28 days. **Load only accrues from activities the watch records
+with heart rate** — this is precisely why unlogged strength sessions distort the picture
+and why "log as Strength Training" is a locked rule. A missed log understates acute load
+and can produce a falsely reassuring ACWR.
+
+**Recovery Time** — prescriptive, not descriptive: "hours until you'd be recovered enough
+for a hard session," issued after each activity. Reported by the API **in minutes** (the
+July 2026 units bug). It decays with rest and is reset by new activity.
+
+**Training Effect (Aerobic/Anaerobic 0–5)** and **Training Status** (Productive /
+Maintaining / Strained / Detraining etc.) both come from load + VO2max trend + HRV.
+"Strained" means acute load is high relative to fitness.
+
+**VO2max estimate** — derived from HR vs pace during outdoor runs/walks with GPS.
+**Treadmill and gym sessions don't update it** — which is why it can show "not available"
+for long stretches here. Accuracy vs lab testing is roughly ±5%, best for runners.
+
+**Fitness Age** — driven mainly by VO2max, RHR, and body composition/BMI. Improving it
+means aerobic capacity and lean mass, not diet tweaks.
+
+**Wrist Pulse Ox (SpO2)** — the weak link. Reflectance (not transmissive) optical
+measurement through the wrist, spot-sampled rather than continuous. **Wrist SpO2 is
+substantially less accurate than a finger/thumb oximeter**, is degraded by motion, poor
+perfusion, cold hands, tattoos, and loose fit, and tends to **over-read (miss desaturation
+depth)**. Treat Garmin SpO2 as a coarse screen only — it is not the OSA evidence.
+
+**Sleep staging** — accelerometer + HR/HRV inference. Consumer sleep staging agrees with
+polysomnography roughly 60–80% for total sleep time, and much worse for individual stages
+(REM vs deep confusion is common). **Total sleep duration is reasonably reliable; the
+stage breakdown is directional at best.** Sleep *score* is a proprietary composite.
+
+**Stress score (0–100)** — HRV-derived; low HRV during waking hours reads as high stress.
+Confounded by caffeine, illness, standing/movement, and emotion.
+
+---
+
+## WELLUE O2RING — the clinically meaningful device in this stack
+
+- **Transmissive pulse oximetry on the thumb/finger, sampled continuously all night**
+  (typically every 4 seconds), versus Garmin's periodic wrist spot-checks.
+- Reports: continuous SpO2 curve, **ODI (drops/hr ≥4%)**, lowest SpO2, average SpO2,
+  and **time below 90% (T90)** — the metrics sleep physicians actually use.
+- **This is why O2Ring and Garmin disagree, and why O2Ring wins.** When Garmin says
+  "avg 95%, low 86%" and the O2Ring says "avg 93%, low 85%, 7.7 drops/hr," the O2Ring is
+  the trustworthy record — different sensor geometry, continuous sampling, better site.
+  Always cite O2Ring numbers for anything clinical; use Garmin SpO2 only when no ring
+  data exists, and label it as wrist-derived.
+- ODI is the home analogue of AHI. It does not detect apneas without desaturation
+  (hypopneas, RERAs) — so **a normal ODI does not rule out OSA**, but an elevated one is
+  strong positive evidence.
+- Consumer oximeters carry roughly ±2% accuracy vs arterial blood gas, and accuracy
+  degrades at lower saturations and with darker skin pigmentation — a documented bias
+  worth naming to a physician rather than hiding.
+
+---
+
+## OMADA SCALE — bioelectrical impedance (BIA)
+
+- Weight itself is accurate. **Body-fat percentage from BIA is not** — it infers
+  composition from electrical resistance and is heavily confounded by hydration, recent
+  food, recent exercise, and skin temperature. Errors of ±5 percentage points are normal.
+- Consequence: **use the scale for weight trend only.** For composition, trust the mirror,
+  tape measurements, photos, and how clothes fit.
+- Same-conditions weighing (morning, post-void, pre-food) is what makes the trend usable.
+
+---
+
+## CROSS-PLATFORM CONTEXT — why numbers never match between brands
+
+**Apple Watch**
+- HRV is reported as **SDNN**, not RMSSD, and sampled irregularly during the day.
+  **SDNN and RMSSD are different metrics on different scales — never compare an Apple HRV
+  number to a Garmin/Oura/Whoop one.** Apple's typical values run higher.
+- Blood Oxygen: wrist reflectance, spot-check, same limitations as Garmin's.
+- "Cardio Fitness" = VO2max estimate from outdoor walk/run/hike.
+- Sleep stages added in watchOS 9; similar staging accuracy caveats.
+
+**Oura Ring**
+- **Finger-based, nighttime-focused** — generally better signal quality than wrist for
+  HRV and temperature because of finger perfusion.
+- Readiness score blends nocturnal RMSSD, resting HR, **body temperature deviation from
+  personal baseline** (its distinctive strength — early illness detection), sleep, and
+  prior activity.
+- Strong at sleep timing/duration; staging carries the usual consumer caveats.
+
+**Whoop**
+- No screen; recovery-centric. **Recovery % (0–100)** is computed from HRV measured during
+  **slow-wave sleep specifically**, plus RHR, respiratory rate, and sleep performance.
+- **Strain (0–21, logarithmic)** is a cardiovascular-load score from time in HR zones —
+  it is *not* comparable to Garmin's EPOC-based Training Load, and being logarithmic, the
+  top of the scale is far harder to reach than it appears.
+- Measures HRV in a narrower, cleaner window than Garmin's whole-night average, which
+  makes Whoop's HRV less noisy but also less representative of the full night.
+
+**Google Fit / Fitbit**
+- Fitbit's **Daily Readiness** blends recent activity, sleep, and HRV — conceptually
+  similar to Body Battery.
+- **Active Zone Minutes** double-count vigorous minutes (1 min vigorous = 2 AZM) — so
+  never compare AZM to Garmin's Intensity Minutes without dividing.
+- Google Fit's **Heart Points** use a similar double-weighting for vigorous activity.
+- Fitbit sleep scores and Garmin sleep scores use different formulas; a "good night" score
+  on one is not the same threshold on the other.
+
+---
+
+## HOW TO REASON WITH ALL OF THIS
+
+1. **Same device, same conditions, over time.** Every one of these metrics is far better
+   at detecting *change in one person* than at stating an absolute truth. Trends beat
+   readings; never benchmark Veer against another person's numbers.
+2. **When two devices disagree, pick by measurement quality, not by convenience.**
+   O2Ring (continuous, thumb, transmissive) beats Garmin wrist SpO2. Always.
+3. **Know which metrics are measured vs modeled.** Measured: heart rate, SpO2, movement,
+   weight, sleep duration. Modeled: Body Battery, Training Readiness, Training Effect,
+   VO2max, fitness age, sleep stages, stress, body-fat %. Modeled numbers inherit every
+   assumption in their model — and can be wrong in ways the raw signal isn't.
+4. **Garbage in, garbage out.** Unlogged strength work deflates acute load. A loose watch
+   corrupts HRV and SpO2. No ring worn = no clinical O2 data, and Garmin's wrist reading
+   is not a substitute. Say "not available" rather than promoting a weaker proxy.
+5. **A device flags; a physician diagnoses.** The O2Ring's job is to get a sleep study
+   ordered — not to grade the severity itself.
+6. **Explain the mechanism when citing a number.** "Body Battery hit 100 because deep
+   sleep drove parasympathetic recovery" teaches; "BB is 100" doesn't.
 
 ---
 
