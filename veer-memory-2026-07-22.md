@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-22
-Generated: 2026-07-22 09:18 (America/Phoenix)
+Generated: 2026-07-22 9:22 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -85,7 +85,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Sleep Feedback | POSITIVE_LONG_AND_CALM |
 | Total Sleep | **7.3 hrs** |
 | Sleep Need Tonight | 7.2 hrs |
-| Sleep Window | 22:29 → 05:59 |
+| Sleep Window | 10:29 PM → 5:59 AM |
 | Deep Sleep | 61 min |
 | REM Sleep | 84 min |
 | Light Sleep | 291 min |
@@ -106,7 +106,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | O2Ring Score | 6.9 |
 | O2Ring Lowest SpO2 | 85% |
 | O2Ring Avg SpO2 | 94% |
-| O2Ring Drops/hr | 7.1 |
+| O2Ring Drops/hr | 2.8 |
 | Pulse Ox Acclimation | not available |
 | Time SpO2 < 90% | not available |
 | Skin Temp Delta | not available |
@@ -1413,7 +1413,7 @@ with weeks of runway. Never spend a line of the brief on these.
 
 ## PIPELINE HEALTHCHECK — 2026-07-22 09:18
 
-**10/10 checks passing**
+**11/11 checks passing**
 
 | Check | Status | Detail |
 |-------|--------|--------|
@@ -1424,6 +1424,7 @@ with weeks of runway. Never spend a line of the brief on these.
 | Recovery Time units sane | ✅ | 13.2 hrs |
 | HRV override logic live | ✅ | streak=0 override=clear |
 | Brief matches today's data | ✅ | brief cites TR 69 |
+| Sleep window plausible | ✅ | bedtime 22:xx |
 | Weight fresh (<=2 days) | ✅ | latest 173.7 lb on 2026-07-22 (0d old) |
 | Scheduled tasks healthy | ✅ | all ran within 24h |
 | No hardcoded secrets in runners | ✅ | clean |
