@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-22
-Generated: 2026-07-22 9:23 AM (America/Phoenix)
+Generated: 2026-07-22 9:25 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -189,6 +189,27 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | 2026-07-17 | 7.5 | 85% | 93% | 7.7 |
 | 2026-07-18 | 7.3 | 85% | 94% | 7.1 |
 | 2026-07-21 | 6.9 | 85% | 94% | 2.8 |
+
+
+---
+
+
+## VEER OWN LOG - WHAT ACTUALLY HAPPENED
+_Logged by Veer via the dashboard note box, Claude Code, or chat.
+This is GROUND TRUTH about execution and OUTRANKS any planned value.
+COACHES: compare this against what was PRESCRIBED. Did the session happen
+as planned? Did meals match? Name deviations explicitly and adapt today to
+the real pattern (repeated missed legume soaks, swapped sessions, skipped
+training-day carbs). Never silently re-issue a plan reality has diverged
+from._
+
+- [Fri, Jul 3 06:49 PM] Monday morning Waves Utah hike. Today Friday rest day. Yesterday upper body done. Plan week accordingly.
+- [Fri, Jul 3 07:15 PM] Monday there is Waves Utha, hike. today is friday rest, yesterday is upper body. plan accordingly
+- [Fri, Jul 3 06:49 PM] Monday morning Waves Utah hike. Today Friday rest day. Yesterday upper body done. Plan week accordingly.
+- [Fri, Jul 3 07:20 PM] Monday there is Waves Utha, hike. today is friday rest, yesterday is upper body. plan accordingly
+- [Fri, Jul 3 07:30 PM] Monday morning Waves Utah hike. Today Friday rest day. Yesterday upper body done. Plan week accordingly.
+- [Fri, Jul 3 07:27 PM] Monday there is Waves Utha, hike. today is friday rest, yesterday is upper body. plan accordingly
+- [Fri, Jul 3 07:30 PM] Monday morning Waves Utah hike. Today Friday rest day. Yesterday upper body done. Plan week accordingly.
 
 
 ---
