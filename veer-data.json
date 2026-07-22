@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-22T07:37:34.610740-07:00",
+  "generated": "2026-07-22T09:18:02.147684-07:00",
   "today": {
     "training_readiness": 69,
     "readiness_level": "MODERATE",
@@ -46,8 +46,8 @@
     "sleep_h": 7.3,
     "sleep_score": 80,
     "sleep_feedback": "POSITIVE_LONG_AND_CALM",
-    "sleep_start": "15:29",
-    "sleep_end": "22:59",
+    "sleep_start": "22:29",
+    "sleep_end": "05:59",
     "sleep_need_min": 430,
     "deep_sleep_min": 61,
     "rem_sleep_min": 84,
@@ -72,7 +72,7 @@
     "weekly_intensity_mod": 123,
     "weekly_intensity_vig": 60,
     "weekly_active_calories": 2530,
-    "o2_score": 7.3,
+    "o2_score": 6.9,
     "o2_lowest": 85,
     "o2_avg": 94,
     "o2_drops_4pct": 56,
@@ -190,6 +190,10 @@
     {
       "date": "2026-07-21",
       "lb": 173.9
+    },
+    {
+      "date": "2026-07-22",
+      "lb": 173.7
     }
   ],
   "body_battery": [
@@ -333,6 +337,15 @@
       "avg": 94,
       "drops_4pct": 56,
       "drops_hr": 7.1
+    },
+    {
+      "date": "2026-07-21",
+      "s": 6.9,
+      "lowest": 85,
+      "avg": 94,
+      "drops_4pct": 21,
+      "drops_hr": 2.8,
+      "time_below_90m": 7.6
     }
   ],
   "coaches": {
