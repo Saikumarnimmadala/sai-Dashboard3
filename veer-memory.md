@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-22
-Generated: 2026-07-22 9:57 AM (America/Phoenix)
+Generated: 2026-07-22 9:58 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -855,6 +855,58 @@ TRAIL BLACKLIST (never suggest):
 - Any trail with poor cell signal in snake country
 APPROVED: Piestewa Peak, Cholla, Mormon Loop, Lookout Mountain, North Mountain Trail 44
 PROFILE: Open desert, clear marked paths, maintained, good cell signal only.
+
+---
+
+## PROTOCOL UPDATES — July 21-22, 2026
+
+SEAWEED SHEETS (nori/roasted seaweed) — APPROVED & LOCKED:
+2-3 sheets with lunch. Iodine, minerals, trace elements, thyroid support —
+relevant to the hormonal protocol given Free T 9.3 pg/mL.
+Eating order: counts as a VEGETABLE — eat with the first course.
+No prep, shelf stable.
+
+JOJO'S (dark chocolate blocks) — DEFINED:
+3 blocks after dinner, before 8pm. Locked evening ritual only, NOT a snack.
+NOT a protein source (~2g/block, negligible) — never count toward protein.
+Falls under the "nothing after 8pm" cutoff.
+
+PROTEIN SHAKE — GAP FILLER ONLY:
+Check FOOD protein total first, before writing a shake into any plan.
+- Food already at 160-165g target → NO shake. Do not add it.
+- Food 20-30g short → shake closes the gap. That is its only job.
+THE PROTEIN TARGET IS A CEILING, NOT A FLOOR TO EXCEED. Past ~2.2 g/kg,
+extra protein does not build more muscle — it gets burned for energy.
+A shake never substitutes for the carb when a carb is indicated.
+7/21 example: food hit ~206g without the shake; the shake pushed the day to
+~231g (~70g over) while the indicated carb went missing entirely.
+
+GREEK YOGURT vs SIGGI'S:
+Siggi's plain 150g = the locked post-lunch item. Regular Greek yogurt is an
+acceptable substitute when Siggi's is unavailable — same positioning, AFTER
+lunch, not with it. Does NOT count as a protein anchor; it is a probiotic/
+calcium addition and its ~15g protein is a bonus, not the point.
+
+WEEKLY ROTATION FLEXIBILITY:
+The dinner rotation exists for variety and micronutrient coverage — it is NOT
+a hard rule and must never become a source of stress. Tuesday = sardines
+(preferred, for calcium), but salmon is a fine swap when sardines aren't
+available; both are omega-3 anchors. Swap freely across the approved anchor
+list as stock dictates. ALWAYS LOG THE FOOD ACTUALLY EATEN, never the planned
+rotation.
+
+POST-TRAINING SOFT-NUMBERS DIAGNOSTIC (locked 7/22):
+When next-day numbers come in soft after a training day (HRV drop, BB drop,
+RHR rise), the Nutritionist and Recovery coach check these IN ORDER before
+concluding anything:
+1. Was a carb indicated and eaten? If indicated and skipped → likely the
+   biggest contributor (glycogen refill drives next-day recovery).
+2. Was protein significantly OVER target? Beyond ~165g the excess is burned,
+   not built — and it displaced the carb that was actually needed.
+3. Was this the first hard session after a layoff? If yes → a normal
+   adaptation response, NOT a nutrition failure. Say so plainly.
+All three applied on 2026-07-21→22 (HRV 82→57ms, BB 100→69, RHR 49→53):
+carb skipped, protein ~70g over, first session after a 5-day layoff.
 
 ---
 
