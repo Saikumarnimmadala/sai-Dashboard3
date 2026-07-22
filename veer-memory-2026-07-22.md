@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-22
-Generated: 2026-07-22 9:46 AM (America/Phoenix)
+Generated: 2026-07-22 9:49 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -1284,7 +1284,7 @@ _Coaches: read this BEFORE writing any meal plan. Plan from what's actually in
 the kitchen — never assume. When an item is OUT or LOW, substitute from the
 approved swap list rather than forcing the original plan, and say what you did._
 
-**Last updated:** 2026-07-21 (initial build — statuses need Veer's first count)
+**Last updated:** 2026-07-22 — sweet potato, seaweed, Jojo's confirmed IN STOCK; rest still need a first count
 **How to update:** tell Claude Code "out of avocado", "restocked salmon", "low on
 whey" and it edits this file; changes flow into the brain on the next rebuild.
 
@@ -1346,8 +1346,8 @@ whey" and it edits this file; changes flow into the brain on the next rebuild.
 | Garbanzo (dry) | ❔ | Fri legume — soak 100g dry THURSDAY night |
 | Black chickpeas (kala chana) | ❔ | approved alt, same fiber-side role |
 | Canned black beans (backup) | ❔ | rinse thoroughly if used |
-| Rice | ❔ | 150g cooked, training-day lunch carb |
-| Sweet potato | ❔ | 200g — training carb + below-172 weight-floor rule |
+| Rice | ❔ | 150g cooked, training-day lunch carb — **sweet potato is confirmed in stock, use it if rice is out** |
+| Sweet potato | ✅ | 200g — training carb + below-172 weight-floor rule (confirmed in stock 7/22) |
 | Goat bone broth | ❔ | 240ml daily before breakfast |
 | ACV | ❔ | 1 tbsp before every meal |
 | Psyllium husk | ❔ | 5g before dinner |
@@ -1358,6 +1358,8 @@ whey" and it edits this file; changes flow into the brain on the next rebuild.
 | Dark chocolate (Hu Salty Dark) | ❔ | 3 bites after dinner |
 | Mastic gum | ❔ | 20-30 min after meals |
 | Green tea | ❔ | evening |
+| Seaweed sheets (nori) | ✅ | iodine/minerals — confirmed 7/22, used at lunch |
+| Jojo's chocolate blocks | ✅ | confirmed 7/22 — dark-chocolate-category snack |
 
 ## SUPPLEMENTS — count remaining, reorder at ~2 weeks left
 
