@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-22
-Generated: 2026-07-22 9:25 AM (America/Phoenix)
+Generated: 2026-07-22 9:46 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -301,6 +301,27 @@ from._
 # Veer Conversation Log
 Summaries of all Claude chat sessions. Most recent first.
 Auto-appended after each session via /log-conversation endpoint.
+
+---
+
+## 2026-07-21 — Tue 7/21 — Upper Body completed + full day meals (actual)
+_logged: 2026-07-22 09:46_
+
+CONFIRMED: Upper Body session completed as prescribed — all given weights, sets, reps (lateral raises 25lb, rear delt 90lb, incline DB 50lb, converging chest 105lb, lat pulldown 145lb, DB curls 25lb, tricep pushdown 42.5lb, push-ups, incline finisher). Garmin logged 2h44m strength + 20m30s treadmill tempo (avg HR 155, load 88.6). MEALS ACTUAL: breakfast standard training-day bowl. Lunch chicken 160g + garbanzo 100g + broccoli 150g + spinach 100g + 3 seaweed sheets + Greek yogurt 150g + avocado + 3 blocks Jojos. Protein shake mid-day. Dinner salmon 160g + spinach 100g + 1 whole avocado. Estimated day protein ~230g vs 160-165g training-day target — roughly 70g over. Training-day carb (rice 150g) was SKIPPED while a protein shake was added.
+
+**Sessions logged:** Upper Body full session as prescribed (all locked-order exercises at standard working weights) + treadmill tempo finisher 20m30s avg HR 155 load 88.6
+
+**Decisions made:**
+- Upper Body executed exactly as planned - no deviations in weights/sets/reps
+- Dinner used salmon 160g instead of Tuesday sardines rotation
+- Protein shake added on top of already-high food protein
+- Training-day rice carb skipped
+
+**Open items:**
+- [ ] PATTERN TO WATCH: skipping training-day carb while adding protein shake - protein was already ~70g over target so the shake was redundant while glycogen refill was missed; next training day prioritize the rice/sweet potato over the shake
+- [ ] New foods seen not yet in protocol/inventory: seaweed sheets and Jojos chocolate blocks - decide whether to formalize into PROTOCOLS.md
+- [ ] Pulmonologist day 51
+- [ ] INVENTORY.md still all-unknown - needs first count
 
 ---
 
