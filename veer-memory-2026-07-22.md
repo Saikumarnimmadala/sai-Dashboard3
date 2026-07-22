@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-22
-Generated: 2026-07-22 9:58 AM (America/Phoenix)
+Generated: 2026-07-22 10:01 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -718,12 +718,14 @@ each time, in one line, and say why.
 **RICE IS NOT IN THIS ECOSYSTEM — Veer does not keep it. Never prescribe rice.**
 Sweet potato 200g is the only starch option when a carb IS indicated.
 
-ADD THE CARB when:
-- Weight at/below 172 for 2+ days (the weight-floor rule — non-negotiable), OR
-- Heavy session done or planned AND recovery markers are already soft (low BB,
-  suppressed HRV, elevated RHR) — glycogen is a recovery lever there, OR
-- Two or more consecutive hard training days, where refill genuinely compounds, OR
-- Veer reports feeling flat/underfuelled in a session.
+ADD THE CARB when any of these three triggers fire (state which one):
+1. Weight at/below 172 for 2+ consecutive days — the weight-floor rule.
+2. HIGH-OUTPUT SESSION: Acute Load 200+, or the first session back after a
+   5+ day layoff. (Note: Veer's acute load typically runs 140-490, so 200+
+   fires on genuinely moderate-to-hard days, not every session.)
+3. NEXT-DAY NUMBERS CAME IN SOFT after a training day (HRV drop, BB drop,
+   RHR rise) — add the carb on the following training day to correct it.
+Also add if Veer reports feeling flat or underfuelled in a session.
 
 SKIP THE CARB when:
 - Weight is at the top of the band (174-175+) or trending up — the goal is holding
@@ -1535,7 +1537,7 @@ with weeks of runway. Never spend a line of the brief on these.
 ---
 
 
-## PIPELINE HEALTHCHECK — 2026-07-22 09:23
+## PIPELINE HEALTHCHECK — 2026-07-22 09:58
 
 **11/11 checks passing**
 
