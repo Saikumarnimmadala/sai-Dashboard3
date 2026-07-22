@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-22
-Generated: 2026-07-22 9:49 AM (America/Phoenix)
+Generated: 2026-07-22 9:51 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -710,9 +710,15 @@ MUSHROOMS (longevity protocol):
 Shiitake: 2x per week with dinner — sauté EVOO + garlic, medium heat, don't overcook.
 Crimini: daily rotation approved.
 
-SWEET POTATO RULE:
-Training day lunch: add rice 150g cooked OR sweet potato 200g when needed for carbs.
-If weight below 172 for 2+ consecutive days: add sweet potato 200g back to lunch.
+TRAINING-DAY CARB RULE:
+Sweet potato 200g at lunch on EVERY training day — this is the default and it is
+NOT optional on lifting days (glycogen refill drives recovery and next-day readiness).
+**RICE IS NOT IN THIS ECOSYSTEM — Veer does not keep it. Never prescribe rice.**
+If weight below 172 for 2+ consecutive days: sweet potato 200g at lunch on rest days
+too, until back in band.
+
+SEAWEED (nori): 2-3 sheets with lunch — iodine, magnesium, trace minerals.
+Approved addition as of 2026-07-22.
 
 KEY FOOD RULES:
 - Turmeric ALWAYS with black pepper (absorption)
@@ -1346,7 +1352,7 @@ whey" and it edits this file; changes flow into the brain on the next rebuild.
 | Garbanzo (dry) | ❔ | Fri legume — soak 100g dry THURSDAY night |
 | Black chickpeas (kala chana) | ❔ | approved alt, same fiber-side role |
 | Canned black beans (backup) | ❔ | rinse thoroughly if used |
-| Rice | ❔ | 150g cooked, training-day lunch carb — **sweet potato is confirmed in stock, use it if rice is out** |
+| Rice | 🔴 NOT IN ECOSYSTEM | Veer does not keep rice (confirmed 7/22). **Never prescribe it.** Sweet potato is THE training-day carb. |
 | Sweet potato | ✅ | 200g — training carb + below-172 weight-floor rule (confirmed in stock 7/22) |
 | Goat bone broth | ❔ | 240ml daily before breakfast |
 | ACV | ❔ | 1 tbsp before every meal |
@@ -1403,7 +1409,7 @@ whey" and it edits this file; changes flow into the brain on the next rebuild.
 | Broccoli | zucchini, yellow squash, cabbage | |
 | Microgreens | **nothing — omit and note it** | cooked greens (heat kills sulforaphane) |
 | Dry legumes (not soaked) | canned, rinsed thoroughly | doubling the protein anchor instead |
-| Rice (training carb) | sweet potato 200g | skipping the carb on a training day |
+| Training-day carb | **sweet potato 200g — the default, rice is NOT in this ecosystem** | rice (not kept), skipping the carb entirely on a training day |
 | Siggi's | Greek yogurt (~2g protein difference) | flavored/sweetened yogurt |
 | Almond milk | water + extra whey scoop is acceptable | dairy milk (not in protocol) |
 | Kefir | skip and note it | |
@@ -1432,7 +1438,7 @@ he misses the line that mattered. **Signal over completeness, always.**
 - A fast-depleting item that today's meals actually call for (avocado, spinach,
   broccoli, microgreens, almond milk, eggs). Substitute, state the swap in one
   clause, move on. If today's meals don't use it, it's Tier 3.
-- Training-day carb (rice/sweet potato) missing on a training day — that's real
+- Training-day carb (sweet potato 200g) missing on a training day — that's real
   fuel and glycogen refill, so it counts.
 
 ### TIER 3 — silent; shopping list only
@@ -1448,8 +1454,8 @@ with weeks of runway. Never spend a line of the brief on these.
    — otherwise omit the section entirely rather than printing an empty heading.
 4. **Soak reminders are inventory-dependent:** only remind about Monday/Thursday
    soaking if dry legumes are in stock; otherwise name the canned backup.
-5. **When inventory forces a compromise, say what it costs.** "No rice → sweet
-   potato 200g, same carb role" is fine. "No anchor protein in the house" is a
+5. **When inventory forces a compromise, say what it costs.** "Sweet potato out →
+   flag it, the training-day carb has no in-ecosystem substitute" is the pattern. "No anchor protein in the house" is a
    flag with a consequence: state the protein shortfall in grams.
 
 ---
