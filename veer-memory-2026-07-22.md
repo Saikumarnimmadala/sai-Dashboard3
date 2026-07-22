@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-22
-Generated: 2026-07-22 9:51 AM (America/Phoenix)
+Generated: 2026-07-22 9:57 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -710,12 +710,34 @@ MUSHROOMS (longevity protocol):
 Shiitake: 2x per week with dinner — sauté EVOO + garlic, medium heat, don't overcook.
 Crimini: daily rotation approved.
 
-TRAINING-DAY CARB RULE:
-Sweet potato 200g at lunch on EVERY training day — this is the default and it is
-NOT optional on lifting days (glycogen refill drives recovery and next-day readiness).
+CARB DECISION — GOAL-DRIVEN, NEVER A DEFAULT:
+The starch carb (sweet potato 200g) is a TOOL, not a habit. Do not add it because
+it is a training day; add it when the data says it serves a goal. Reason it out
+each time, in one line, and say why.
+
 **RICE IS NOT IN THIS ECOSYSTEM — Veer does not keep it. Never prescribe rice.**
-If weight below 172 for 2+ consecutive days: sweet potato 200g at lunch on rest days
-too, until back in band.
+Sweet potato 200g is the only starch option when a carb IS indicated.
+
+ADD THE CARB when:
+- Weight at/below 172 for 2+ days (the weight-floor rule — non-negotiable), OR
+- Heavy session done or planned AND recovery markers are already soft (low BB,
+  suppressed HRV, elevated RHR) — glycogen is a recovery lever there, OR
+- Two or more consecutive hard training days, where refill genuinely compounds, OR
+- Veer reports feeling flat/underfuelled in a session.
+
+SKIP THE CARB when:
+- Weight is at the top of the band (174-175+) or trending up — the goal is holding
+  172-175 while recomposing, and a starch adds nothing the goal needs that day, OR
+- Rest day or light session with normal recovery markers, OR
+- Protein and vegetable volume already put the day well-fed.
+
+Fasting glucose is 101 (borderline) — that's a real reason not to add starch
+reflexively. When in doubt, ASK Veer rather than assume: "Weight's at 174 and
+recovery looks fine — I'd skip the sweet potato today unless you felt flat in the
+session. Want it in?"
+
+WHAT IS NOT OPTIONAL: hitting the protein target, and the eating order. The carb
+is negotiable; those are not.
 
 SEAWEED (nori): 2-3 sheets with lunch — iodine, magnesium, trace minerals.
 Approved addition as of 2026-07-22.
@@ -1353,7 +1375,7 @@ whey" and it edits this file; changes flow into the brain on the next rebuild.
 | Black chickpeas (kala chana) | ❔ | approved alt, same fiber-side role |
 | Canned black beans (backup) | ❔ | rinse thoroughly if used |
 | Rice | 🔴 NOT IN ECOSYSTEM | Veer does not keep rice (confirmed 7/22). **Never prescribe it.** Sweet potato is THE training-day carb. |
-| Sweet potato | ✅ | 200g — training carb + below-172 weight-floor rule (confirmed in stock 7/22) |
+| Sweet potato | ✅ | in stock 7/22. The ONLY starch option — but adding it is a GOAL-DRIVEN decision, never automatic (see PROTOCOLS carb rule) |
 | Goat bone broth | ❔ | 240ml daily before breakfast |
 | ACV | ❔ | 1 tbsp before every meal |
 | Psyllium husk | ❔ | 5g before dinner |
@@ -1438,7 +1460,7 @@ he misses the line that mattered. **Signal over completeness, always.**
 - A fast-depleting item that today's meals actually call for (avocado, spinach,
   broccoli, microgreens, almond milk, eggs). Substitute, state the swap in one
   clause, move on. If today's meals don't use it, it's Tier 3.
-- Training-day carb (sweet potato 200g) missing on a training day — that's real
+- Sweet potato missing on a day the carb IS indicated by the goal rules — that's real
   fuel and glycogen refill, so it counts.
 
 ### TIER 3 — silent; shopping list only
