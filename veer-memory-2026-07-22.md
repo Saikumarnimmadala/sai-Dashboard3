@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-22
-Generated: 2026-07-22 09:13 (America/Phoenix)
+Generated: 2026-07-22 09:18 (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -9,7 +9,7 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 |--------|-------|-----|
 | Garmin biometrics | 2026-07-22 | today |
 | Weight (Omada) | 2026-07-22 | today |
-| O2Ring sleep | 2026-07-18 | 4 days ago |
+| O2Ring sleep | 2026-07-21 | yesterday |
 
 _Any source older than "today" = do not present as current; state its actual date._
 
@@ -26,7 +26,7 @@ _Any source older than "today" = do not present as current; state its actual dat
 | **HRV Status** | **BALANCED** — last night: 57 ms | 7-day: 68 ms | baseline: 68–92 ms (LOW<62) |
 | **Sleep** | 7.3h / score 80 — Deep:61m REM:84m |
 | **Resting HR** | 53 bpm (7-day avg: 50 bpm) |
-| **SpO2** | Garmin overnight avg: 95.0% low: 83% | O2Ring: 7.3 score low: 85% |
+| **SpO2** | Garmin overnight avg: 95.0% low: 83% | O2Ring: 6.9 score low: 85% |
 | **Stress** | avg 21 / peak 91 |
 | **Last Session** | Treadmill Running on 2026-07-21 | Load=88.60482788085938 | TEMPO |
 | **Weekly** | 6 sessions | Mod:123m + Vig:60m |
@@ -85,7 +85,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Sleep Feedback | POSITIVE_LONG_AND_CALM |
 | Total Sleep | **7.3 hrs** |
 | Sleep Need Tonight | 7.2 hrs |
-| Sleep Window | 15:29 → 22:59 |
+| Sleep Window | 22:29 → 05:59 |
 | Deep Sleep | 61 min |
 | REM Sleep | 84 min |
 | Light Sleep | 291 min |
@@ -103,7 +103,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 |--------|-------|
 | Avg Overnight SpO2 | 95% |
 | Lowest Overnight SpO2 | **83%** |
-| O2Ring Score | 7.3 |
+| O2Ring Score | 6.9 |
 | O2Ring Lowest SpO2 | 85% |
 | O2Ring Avg SpO2 | 94% |
 | O2Ring Drops/hr | 7.1 |
@@ -188,6 +188,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | 2026-07-12 | 8.1 | 85% | 95% | 6.9 |
 | 2026-07-17 | 7.5 | 85% | 93% | 7.7 |
 | 2026-07-18 | 7.3 | 85% | 94% | 7.1 |
+| 2026-07-21 | 6.9 | 85% | 94% | 2.8 |
 
 
 ---
@@ -1410,7 +1411,7 @@ with weeks of runway. Never spend a line of the brief on these.
 ---
 
 
-## PIPELINE HEALTHCHECK — 2026-07-22 08:49
+## PIPELINE HEALTHCHECK — 2026-07-22 09:13
 
 **10/10 checks passing**
 
@@ -1423,6 +1424,6 @@ with weeks of runway. Never spend a line of the brief on these.
 | Recovery Time units sane | ✅ | 13.2 hrs |
 | HRV override logic live | ✅ | streak=0 override=clear |
 | Brief matches today's data | ✅ | brief cites TR 69 |
-| Weight fresh (<=2 days) | ✅ | latest 173.9 lb on 2026-07-21 (1d old) |
+| Weight fresh (<=2 days) | ✅ | latest 173.7 lb on 2026-07-22 (0d old) |
 | Scheduled tasks healthy | ✅ | all ran within 24h |
 | No hardcoded secrets in runners | ✅ | clean |
