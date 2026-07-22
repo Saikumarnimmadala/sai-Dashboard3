@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-22
-Generated: 2026-07-22 07:37 (America/Phoenix)
+Generated: 2026-07-22 09:13 (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -8,7 +8,7 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 | Source | As of | Age |
 |--------|-------|-----|
 | Garmin biometrics | 2026-07-22 | today |
-| Weight (Omada) | 2026-07-21 | yesterday |
+| Weight (Omada) | 2026-07-22 | today |
 | O2Ring sleep | 2026-07-18 | 4 days ago |
 
 _Any source older than "today" = do not present as current; state its actual date._
@@ -18,7 +18,7 @@ _Any source older than "today" = do not present as current; state its actual dat
 ## QUICK DECISION SNAPSHOT (LIVE — 2026-07-22)
 | | |
 |---|---|
-| **Weight** | 173.9 lb (−42.5 lb from 216.4 peak) |
+| **Weight** | 173.7 lb (−42.7 lb from 216.4 peak) |
 | **Training Readiness** | 69 / 100 (MODERATE) — MOD_RT_LOW_SS_GOOD |
 | **Body Battery** | 22 → 69 (end: 69) |
 | **Recovery Time** | 13.2 hrs |
@@ -125,8 +125,8 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### WEIGHT
 | Metric | Value |
 |--------|-------|
-| Current Weight | **173.9 lb** (as of 2026-07-21) |
-| Lost from Peak (216.4 lb) | 42.5 lb |
+| Current Weight | **173.7 lb** (as of 2026-07-22) |
+| Lost from Peak (216.4 lb) | 42.7 lb |
 
 ### LAST SESSION
 | Metric | Value |
@@ -157,7 +157,6 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Active Calories | 2530 kcal |
 
 ### Weight Trend (last 14 entries)
-- 2026-07-05: 173.5 lb
 - 2026-07-09: 173.0 lb
 - 2026-07-10: 172.1 lb
 - 2026-07-11: 173.0 lb
@@ -171,6 +170,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 - 2026-07-19: 173.9 lb
 - 2026-07-20: 175.4 lb
 - 2026-07-21: 173.9 lb
+- 2026-07-22: 173.7 lb
 
 ### Body Battery Trend (last 7 days)
 - 2026-07-16: peak 73
@@ -514,43 +514,43 @@ Expanded Garmin data pull to capture every available API metric. Fixed HRV statu
 # PERMANENT MEMORY (working weights, rules, history, protocols)
 
 
-# Veer Health Memory — 2026-07-22 (post-morning-brief)
+# Veer Health Memory — 2026-07-22 (evening update, post-brief)
 
 ## WEIGHT LOG (most recent)
-2026-07-17: 173.5 | 2026-07-18: 174.1 | 2026-07-19: 173.9 (contradicts earlier "not available" — unresolved) | 2026-07-20: 175.4 | 2026-07-21: 173.9 (Omada, confirmed) | 2026-07-22: not available in today's data pull
+2026-07-17: 173.5 | 2026-07-18: 174.1 | 2026-07-19: 173.9 | 2026-07-20: 175.4 | 2026-07-21: 173.9 (Omada, confirmed) | 2026-07-22: not available in today's data pull
 Band: 172-175 lb. Last confirmed reading in-band.
 
 ## LAST SESSION
-2026-07-21 (Tue): Upper Body Strength Workout (2h44m logged, avg HR 98) + Treadmill tempo run (20m30s, avg HR 155, load 88.6, TEMPO).
-**TODAY'S CALL (07-22): Lower Body, re-entry (5-day layoff since 07-17 Lower), sequence-based not calendar — Upper was just done yesterday, Lower is the overdue group.** Weights: Leg Press 260lb/118kg, Hamstring Curl 125lb/57kg, Leg Extension 115lb/52kg (confirmed — supersedes stale DAILY_RULES.md 105-110lb range), Calf Extension 155lb/70kg. Awaiting confirmation this was logged.
+2026-07-21 (Tue): Upper Body Strength Workout (2h44m, avg HR 98) + Treadmill tempo run (20m30s, avg HR 155, load 88.6, TEMPO).
+**TODAY'S CALL (07-22): Lower Body, re-entry (5-day layoff since 07-17 Lower).** BB peak 69 → 60-74 tier: 3 sets, weights cut ~15% (Leg Press 220lb/100kg, Hamstring Curl 105lb/48kg, Leg Extension 100lb/45kg, Calf Extension 130lb/59kg). Confirmed full-strength weights remain Leg Press 260lb/118kg, Hamstring 125lb/57kg, Leg Extension 115lb/52kg, Calf 155lb/70kg (07-17 session) — use these as the 100% baseline for next full-push Lower day. Awaiting confirmation session was completed.
 
 ## HRV STATUS
-07-18 UNBALANCED | 07-19 LOW | 07-20 UNBALANCED | 07-21 **BALANCED** (82ms, cleared) | 07-22 not available in today's data pull (sync gap)
-Override cleared as of 07-21, streak=0 confirmed by DAILY_RULES.md computation on 07-22.
+07-19 LOW | 07-20 UNBALANCED | 07-21 BALANCED (82ms, cleared) | 07-22 **BALANCED (57ms overnight, 68ms 7-day avg, baseline 68-92)** — streak=0, override clear.
+Note: 07-22 overnight avg (57ms) sits below the personal LOW threshold (62ms) even though status reads Balanced — 7-day average (68ms) is what the status keys on, and a single low night is noise per recovery science. Watch tomorrow's reading; if it stays suppressed 2+ more nights, treat as signal.
 
 ## O2RING
-Last data: 07-18 (score 7.3, low 85%, avg 94%, drops/hr 7.1). No data 07-19, 07-20, 07-21, or 07-22 — 4-night gap, ring not worn/not exported. Resume tonight — thumb, vibration off.
+**Fresh data 07-21→07-22 night** (O2Ring _20260721215857.pdf): Score 6.9, lowest SpO2 81%, avg SpO2 94%, drops/hr(>4%) 2.8, drops/hr(>3%) 6.8, T90 (time <90%) 7m36s (2% of a 7h37m recording). This is the most recent ring data — supersedes the prior 07-18 entry as "last known."
+Prior: 07-18 (score 7.3, low 85%, avg 94%, drops/hr 7.1).
 
 ## OPEN ITEMS
-- [ ] CRITICAL: Pulmonologist — referral Jun 1, **51 days** unscheduled as of 07-22. Call today. Standing #1 item.
-- [ ] Weight pipeline contradiction: 07-19 (174.3 vs 173.9 vs "not available" across pulls) — reconcile at source, not yet fixed.
-- [ ] O2Ring pipeline contradiction: 07-18 entry present/absent inconsistency across pulls — reconcile at source, not yet fixed.
-- [ ] Leg Extension weight: DAILY_RULES.md static doc still shows 105-110lb — needs updating to confirmed 115lb/52kg (07-17 session).
+- [ ] CRITICAL: Pulmonologist — referral Jun 1, **51 days** unscheduled as of 07-22. Call today. Standing #1 item. Feed it 07-22's fresh O2Ring numbers (81% low, T90 7m36s).
+- [ ] **NEW FLAG: Sleep-window shift.** Garmin sleep windows for 07-20, 07-21, 07-22 all run ~15:29-23:00 (afternoon-to-evening), not a standard night sleep — a repeated 3-day pattern, not a one-off. Confirm with Veer whether this reflects an actual shift-work schedule; if so, the static protocol's fixed "9:30pm" and "10:30pm lights out" clock times need to be redefined as "before actual bedtime" rather than literal clock times, since 9:30pm currently falls during his sleep, not before it.
+- [ ] Pipeline discrepancy: this morning's healthcheck flagged veer-data.json as blank for TR/BB-peak/RHR/sleep-score for 07-22, but garmin/daily/2026-07-22.md had all four populated and was used for this brief. Investigate why the two disagree.
+- [ ] Weight pipeline contradiction (07-19 multiple values across pulls) — still unresolved from prior days.
 - [ ] Vigorous intensity minutes: 60 min last week vs 75+/week target — behind pace.
-- [ ] Today's Garmin sync (07-22) had not landed as of this brief — recheck later in the day.
-- [ ] Recovery Time 23.3h issued 07-21 evening — confirm cleared before treating tonight as full-intensity.
-- [ ] Confirm chicken (160g lunch) and turkey (190g dinner) actually in stock — inventory shows both as ❔ unknown.
+- [ ] Confirm chicken (160g lunch) and turkey (190g dinner) in stock — inventory shows both ❔ unknown, never yet counted (INVENTORY.md still all-unknown as of 07-21 build).
+- [ ] Anaerobic load shortage (101 vs 133-400 target) — 3rd consecutive day; consider adding anaerobic-style work to the plan.
 - [ ] Fisetin next doses: August 1-2, 2026
 - [ ] KSM-66 break begins: September 7, 2026
 - [ ] Ferritin recheck: September 2026
 - [ ] Full bloodwork retest: December 2026
 
 ## DATA PIPELINE STATUS
-- Recovery Time units bug: resolved, no regression.
-- HRV streak counter: correct today (0, genuine cleared state).
-- Today's (07-22) Garmin daily file returned all N/A — sync gap, not a real reading; do not treat "Sleep 0.0h" as an actual all-nighter.
-- Weight and O2Ring historical contradictions: still open, unchanged from 07-21.
-- Weekly rollup field now differs day to day (07-20: 4 sessions/Mod74+Vig39; 07-21: 6 sessions/Mod123+Vig60) — prior "stale/identical" concern appears resolved, no action needed.
+- Recovery Time units bug: resolved, no regression (13.2h today, plausible).
+- HRV streak counter: correct (0, genuine cleared state as of 07-21).
+- veer-data.json vs daily markdown disagreement on 07-22 (see open items) — new, needs investigation.
+- Weight and O2Ring historical contradictions from 07-21: unchanged.
+- O2Ring pipeline delivered a fresh, complete PDF extraction today (07-21->22 night) — first real ring data since 07-18, a 4-night gap closed.
 
 ## SUPPLEMENT CYCLES
 - KSM-66: active, break starts 2026-09-07
@@ -561,10 +561,11 @@ Last data: 07-18 (score 7.3, low 85%, avg 94%, drops/hr 7.1). No data 07-19, 07-
 Peralta Trail + all Superstition Mountains trails — two rattlesnake encounters 07-11/07-12
 
 ## RECENT DECISIONS (2026-07-22)
-- Training call: Lower Body, re-entry — sequence-based (Lower last trained 07-17, 5 days ago, vs Upper 07-21, 1 day ago). Calendar said Wednesday-walk; overridden by rotation logic since Lower is the under-trained group (Upper 2 sessions vs Lower 1 in last 10 days).
-- No override checklist items fired using 07-21 data (most recent available); today's live data pending sync — treated as soft caution, not a block.
-- Leg Extension working weight flagged as a static-doc discrepancy: using confirmed 115lb/52kg (07-17 actual session) over DAILY_RULES.md's stale 105-110lb range.
-- Pulmonologist flag escalated to day 51, restated as standing #1 item.
+- Training call: Lower Body, re-entry — sequence-based (Lower last trained 07-17, 5 days ago, vs Upper 07-21, 1 day ago). BB tier 60-74 → 3 sets, weight cut ~15% off confirmed values.
+- No override checklist items fired (TR 69 moderate, Acute Load 242, Recovery Time 13.2h, HRV streak 0, no explicit scale-back warning).
+- Flagged the 3-day sleep-window shift (afternoon-to-evening sleep) as a genuine pattern requiring protocol timing translation, not a one-off data glitch.
+- Used fresh O2Ring PDF (07-21->22 night) as most current ring data, superseding the 07-18 entry.
+- Pulmonologist flag escalated to day 51, restated as standing #1 item with tonight's fresh desaturation numbers attached.
 
 ---
 
@@ -1409,18 +1410,19 @@ with weeks of runway. Never spend a line of the brief on these.
 ---
 
 
-## PIPELINE HEALTHCHECK — 2026-07-22 06:30
+## PIPELINE HEALTHCHECK — 2026-07-22 08:49
 
-**8/9 checks passing**  🔴 **REGRESSION DETECTED — see failures below**
+**10/10 checks passing**
 
 | Check | Status | Detail |
 |-------|--------|--------|
 | Today's Garmin data present | ✅ | all key fields present |
-| veer-data.json today block populated | 🔴 FAIL | blank: ['training_readiness', 'body_battery_peak', 'rhr', 'sleep_score'] |
+| veer-data.json today block populated | ✅ | readiness fields filled |
 | Brain rebuilt today | ✅ | Generated 2026-07-22 |
 | Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-07-22 |
-| Recovery Time units sane | ✅ | not available today (not a failure) |
+| Recovery Time units sane | ✅ | 13.2 hrs |
 | HRV override logic live | ✅ | streak=0 override=clear |
+| Brief matches today's data | ✅ | brief cites TR 69 |
 | Weight fresh (<=2 days) | ✅ | latest 173.9 lb on 2026-07-21 (1d old) |
 | Scheduled tasks healthy | ✅ | all ran within 24h |
 | No hardcoded secrets in runners | ✅ | clean |
