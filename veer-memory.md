@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-23
-Generated: 2026-07-23 8:39 AM (America/Phoenix)
+Generated: 2026-07-23 4:46 PM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
