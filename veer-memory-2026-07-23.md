@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-23
-Generated: 2026-07-23 7:58 AM (America/Phoenix)
+Generated: 2026-07-23 8:39 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -304,6 +304,25 @@ Auto-appended after each session via /log-conversation endpoint.
 
 ---
 
+## 2026-07-22 — Wed 7/22 — Lower Body completed + meals (actual)
+_logged: 2026-07-23 08:39_
+
+CONFIRMED: Lower Body session completed as prescribed — all given weights, sets, reps (Leg Press, Hamstring Curl, Leg Extension, Calf Extension, corrective block right-side priority, plank, incline finisher). Garmin logged 1h37m strength + 37m treadmill run (avg HR 123, load 72). MEALS: breakfast + lunch as planned. Dinner: ate CHICKEN instead of the Wednesday turkey rotation — everything else per plan. Weekly-rotation-flexibility rule applies: log actual food, swap is fine, both approved anchors.
+
+**Sessions logged:** Lower Body full session as prescribed (all locked-order exercises + corrective block) + treadmill run 37m avg HR 123 load 72
+
+**Decisions made:**
+- Lower Body executed as planned - no deviations in weights/sets/reps
+- Wednesday dinner: chicken substituted for turkey (approved anchor swap
+- logged as actual)
+
+**Open items:**
+- [ ] Pulmonologist day 52
+- [ ] Confirm chicken/shrimp stock for upcoming meals - inventory anchors still uncounted
+- [ ] Garbanzo soak tonight (Thu) for Friday legume day - use canned backup if dry not in stock
+
+---
+
 ## 2026-07-21 — Tue 7/21 — Upper Body completed + full day meals (actual)
 _logged: 2026-07-22 09:46_
 
@@ -557,62 +576,62 @@ Expanded Garmin data pull to capture every available API metric. Fixed HRV statu
 # PERMANENT MEMORY (working weights, rules, history, protocols)
 
 
-# Veer Health Memory — 2026-07-23 (evening update, post-brief)
+# Veer Health Memory — 2026-07-23 (morning brief)
 
 ## WEIGHT LOG (most recent)
-2026-07-17: 173.5 | 2026-07-18: 174.1 | 2026-07-19: 173.9 | 2026-07-20: 175.4 | 2026-07-21: 173.9 | 2026-07-22: 173.7 (Omada, confirmed) | 2026-07-23: not available in today's data pull
-Band: 172-175 lb. Last confirmed reading in-band.
+07-18: 174.1 | 07-19: 173.9 | 07-20: 175.4 | 07-21: 173.9 | 07-22: 173.7 (confirmed) | 07-23: not available in today's data pull
+Band: 172-175 lb. Last confirmed reading (173.7, 07-22) mid-band.
 
 ## LAST SESSION
-2026-07-22 (Wed): Lower Body re-entry (1h37m, avg HR 99) + Treadmill Running (37m, avg HR 123, load 72, AEROBIC_BASE).
-**TODAY'S CALL (07-23): Upper Body, normal working weights.** BB peak 79 → 75-79 tier: standard sets (lateral 5x12, others 4x10-12), no re-entry cut (only 2-day gap since last Upper on 07-21). No override fired (TR 70, Acute Load 293, Recovery Time 9.2h, HRV streak 0, HRV Balanced 68ms). Weekly balance: Upper 07-16/07-21/(07-23 planned), Lower 07-17/07-22 — balanced.
+2026-07-22 (Wed): Lower Body (1h37m, avg HR 99) + Treadmill Running (37m, avg HR 123, load 72).
+TODAY'S CALL (07-23, Thu): Upper Body, standard/current working weights — BB peak 79 (75-79 band = normal effort), no override checklist items fired (TR 70 moderate, Acute Load 293, Recovery Time 9.2h, HRV streak 0). Sequence-based: Upper last trained 07-21 (2 days ago) vs Lower 07-22 (1 day ago) — Upper next in rotation, also matches calendar default (Thu=Upper), no conflict to reason through.
 
 ## HRV STATUS
-07-21 BALANCED (82ms) | 07-22 BALANCED (57ms overnight — below personal LOW 62ms threshold but 7-day avg 68ms kept status Balanced, treated as single-night noise) | 07-23 **BALANCED (68ms overnight, 68ms 7-day avg, baseline 67-92)** — streak=0, override clear, and last night's suppression from 07-22 fully resolved.
+07-21 BALANCED (82ms) | 07-22 BALANCED (57ms overnight — below personal LOW threshold 62ms, but 7-day avg 68ms kept status Balanced; flagged as noise) | 07-23 BALANCED (68ms overnight, 68ms 7-day, baseline 67-92) — overnight value fully recovered, confirming 07-22 dip was a single-night blip. Streak=0, override clear.
 
 ## O2RING
-**STALE — last real reading 2026-07-21, now 2 days old.** No PDF found for 07-22 or 07-23 nights; ring apparently not worn or not exported. Rewear tonight without fail.
-**UNRESOLVED DATA CONTRADICTION (flagged 07-23, not yet fixed):** the live O2Ring history table logs 2026-07-21 as score 6.9 / lowest SpO2 **85%** / avg 94% / drops-hr 2.8. The permanent-memory O2Ring section logs what appears to be the same reading (identical score 6.9, identical drops/hr 2.8, labeled "07-21→07-22 night") with lowest SpO2 **81%** instead. Same PDF, two different lowest-SpO2 values recorded somewhere in the pipeline — needs a source-of-truth fix, do not average the two numbers.
-
-## SLEEP-WINDOW-SHIFT FLAG — LIKELY FALSE ALARM, RECOMMEND CLEARING
-Prior memory (added 07-22) claimed 07-20/21/22 sleep windows ran ~3:30 PM→11 PM (afternoon-to-evening, treated as a possible shift-work pattern). The raw daily files actually available for 07-21 (10:22 PM→6:52 AM), 07-22 (10:29 PM→5:59 AM), and 07-23 (10:13 PM→6:15 AM) all show normal nighttime windows. Flagged as a contradiction on 07-23 — did not silently resolve it. If Veer confirms no shift-work schedule, delete the old flag; if he confirms it did happen on those exact days, the daily files reviewed here disagree with what generated that flag and the pipeline needs checking.
+No new O2Ring PDF for the 07-22→07-23 night — gap continues, last known data now 2+ days old.
+Last known: 2026-07-21 night — Score 6.9, avg SpO2 94%, drops/hr(>4%) 2.8, drops/hr(>3%) 6.8, T90 7m36s.
+NOTE: lowest SpO2 for this same night is recorded two different ways elsewhere in memory (81% in one note, 85% in the summary table) — unresolved discrepancy, flagged for reverification against the source PDF, does not block today's call since no ring data exists for last night anyway.
 
 ## OPEN ITEMS
-- [ ] CRITICAL: Pulmonologist — referral Jun 1, **52 days** unscheduled as of 07-23. Call today. Standing #1 item.
-- [ ] O2Ring not worn/exported 2 nights running (07-22, 07-23 mornings) — rewear tonight.
-- [ ] O2Ring lowest-SpO2 contradiction for 07-21 (85% vs 81%) — pipeline fix needed, not just a note.
-- [ ] Sleep-window-shift flag — confirm with Veer whether real; current raw data doesn't support it (see above).
-- [ ] Weight pipeline gap 07-23 (Omada returned nothing) — watch for repeat.
-- [ ] Anaerobic load focus shortage — 3rd consecutive day out of range (07-21: 101, 07-22: 101, 07-23: 55, target 133-400). Consider deliberate anaerobic-style work soon.
-- [ ] Confirm chicken, shrimp (portioned), and eggs in stock for 07-23 meal plan — all show ❔ unknown in INVENTORY.md and are meal-critical today.
-- [ ] Fisetin next doses: August 1-2, 2026
-- [ ] KSM-66 break begins: September 7, 2026
-- [ ] Ferritin recheck: September 2026
-- [ ] Full bloodwork retest: December 2026
+- [ ] CRITICAL: Pulmonologist — referral Jun 1, 52 days unscheduled as of 07-23. Call today. Standing #1 item.
+- [ ] CORRECTION: removed the "sleep-window shift" flag carried from 07-22 memory — actual Garmin sleep windows for 07-21 (10:22pm-6:52am), 07-22 (10:29pm-5:59am), 07-23 (10:13pm-6:15am) are all normal overnight sleep, not the afternoon-to-evening pattern previously logged. That prior flag appears to have been an error; do not carry it forward.
+- [ ] O2Ring lowest-SpO2 discrepancy for 07-21 night (81% vs 85%, same score/avg/drops-per-hr) — needs source-PDF reverification.
+- [ ] Anaerobic load shortage — 3rd consecutive day (55 vs target 133-400 today, was 101/101 the two days prior) — consider adding anaerobic-style work.
+- [ ] Vigorous intensity minutes: 62 min this week vs 75+/week target — behind pace.
+- [ ] Inventory: all protein anchors (chicken/salmon/sardines/shrimp/turkey/eggs) still show unknown stock — never yet counted. Confirm chicken (today's lunch anchor) and shrimp (today's dinner anchor).
+- [ ] Garbanzo (dry) stock unknown — tonight (Thu) is the scheduled soak for Friday's legume day; use canned rinsed backup if not in stock.
+- [ ] Sleep consumables (nose strips, mouth tape, earplugs, O2Ring charge) status unknown — Tier 1, active OSA investigation.
+- [ ] Weight pipeline: Omada reading not available today (07-23) — confirm when available.
+- [ ] Fisetin next doses: August 1-2, 2026.
+- [ ] KSM-66 break begins: September 7, 2026.
+- [ ] Ferritin recheck: September 2026.
+- [ ] Full bloodwork retest: December 2026.
 
 ## DATA PIPELINE STATUS
 - Recovery Time units bug: resolved, no regression (9.2h today, plausible).
-- HRV streak counter: correct (0, genuine Balanced state).
-- O2Ring: 2-day gap as of 07-23 AND an unresolved lowest-SpO2 contradiction on the last available (07-21) reading — needs engineering attention, not just narration.
-- Weight: gap on 07-23 (Omada returned nothing), otherwise trend intact.
-- Sleep-window-shift claim in prior memory does not match the raw daily files reviewed today — likely a stale/incorrect note, flagged rather than silently trusted or silently deleted.
+- HRV streak counter: correct (0, genuine cleared state).
+- Sleep-window-shift flag from 07-22 memory: found inconsistent with actual data on review — removed (see Open Items correction).
+- O2Ring gap: no PDF for 07-22→07-23 night; last real data now 2 days old (07-21).
+- O2Ring historical low-SpO2 discrepancy (81% vs 85% for the same 07-21 night): unresolved, flagged.
+- Weight: Omada not available today, no regression, just a missed pull.
 
 ## SUPPLEMENT CYCLES
 - KSM-66: active, break starts 2026-09-07
 - Fisetin: last taken Jul 1-2, next Aug 1-2
-- Biotin: Tue/Thu/Sat only — TAKEN today (Thursday 07-23)
+- Biotin: Tue/Thu/Sat only — TAKE today (Thursday 07-23)
 
 ## TRAIL BLACKLIST (permanent, unchanged)
 Peralta Trail + all Superstition Mountains trails — two rattlesnake encounters 07-11/07-12
 
 ## RECENT DECISIONS (2026-07-23)
-- Training call: Upper Body, normal working weights (BB tier 75-79) — sequence-based, matches calendar default, no re-entry needed (2-day gap).
-- No override checklist items fired (TR 70 moderate, Acute Load 293, Recovery Time 9.2h, HRV streak 0, HRV Balanced).
-- Carb (sweet potato 200g) added at dinner — trigger #2 (Acute Load 293 ≥ 200 threshold) on a training day.
-- Flagged, did not silently resolve: O2Ring lowest-SpO2 contradiction for 07-21, and the sleep-window-shift note that doesn't match today's raw daily files.
+- Training call: Upper Body at standard/current working weights — BB peak 79 (75-79 band = normal effort), no override checklist items fired.
+- Session sequencing confirmed Upper is next (last trained 07-21, 2 days ago) vs Lower (07-22, 1 day ago) — matches calendar default (Thu=Upper).
+- Carb trigger 2 fired (Acute Load 293 ≥ 200) — added sweet potato 200g to dinner.
+- Corrected a stale "sleep-window shift" flag that didn't match actual data — removed from memory.
+- Flagged an internal O2Ring data discrepancy (81% vs 85% lowest SpO2 for the same night) for reverification rather than silently picking one value.
 - Pulmonologist flag escalated to day 52, restated as standing #1 item.
-
----
 
 ---
 
@@ -1541,9 +1560,9 @@ with weeks of runway. Never spend a line of the brief on these.
 ---
 
 
-## PIPELINE HEALTHCHECK — 2026-07-23 07:53
+## PIPELINE HEALTHCHECK — 2026-07-23 07:58
 
-**10/11 checks passing**  🔴 **REGRESSION DETECTED — see failures below**
+**11/11 checks passing**
 
 | Check | Status | Detail |
 |-------|--------|--------|
@@ -1553,7 +1572,7 @@ with weeks of runway. Never spend a line of the brief on these.
 | Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-07-23 |
 | Recovery Time units sane | ✅ | 9.2 hrs |
 | HRV override logic live | ✅ | streak=0 override=clear |
-| Brief matches today's data | 🔴 FAIL | no brief generated today |
+| Brief matches today's data | ✅ | brief cites TR 70 |
 | Sleep window plausible | ✅ | bedtime 10:13 PM |
 | Weight fresh (<=2 days) | ✅ | latest 173.7 lb on 2026-07-22 (1d old) |
 | Scheduled tasks healthy | ✅ | all ran within 24h |
