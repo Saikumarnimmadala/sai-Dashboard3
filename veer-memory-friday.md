@@ -1,102 +1,112 @@
-# Veer Health Memory — 2026-07-17
-Generated: 2026-07-17 08:04
+# Veer Health Memory — 2026-07-24
+Generated: 2026-07-24 6:30 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
 
+## DATA FRESHNESS — check each source's age before citing it
+| Source | As of | Age |
+|--------|-------|-----|
+| Garmin biometrics | 2026-07-24 | today |
+| Weight (Omada) | 2026-07-22 | 2 days ago |
+| O2Ring sleep | 2026-07-21 | 3 days ago |
+
+_Any source older than "today" = do not present as current; state its actual date._
+
 ---
 
-## QUICK DECISION SNAPSHOT (LIVE — 2026-07-17)
+## QUICK DECISION SNAPSHOT (LIVE — 2026-07-24)
 | | |
 |---|---|
-| **Weight** | 173.5 lb (−42.9 lb from 216.4 peak) |
-| **Training Readiness** | 70 / 100 (MODERATE) — MOD_HRV_UNBALANCED |
-| **Body Battery** | 16 → 85 (end: 85) |
-| **Recovery Time** | 2.5 hrs |
-| **Acute Load / Chronic / ACWR** | 340 / 302 / 1.10 (OPTIMAL) |
-| **HRV Status** | **UNBALANCED** — last night: 73 ms | 7-day: 67 ms | baseline: 69–93 ms (LOW<64) |
-| **Sleep** | 7.9h / score 90 — Deep:103m REM:106m |
-| **Resting HR** | 50 bpm (7-day avg: 51 bpm) |
-| **SpO2** | Garmin overnight avg: 95.0% low: 82% | O2Ring: 8.1 score low: 85% |
-| **Stress** | avg 14 / peak 68 |
-| **Last Session** | Treadmill Running on 2026-07-16 | Load=87.58024597167969 | TEMPO |
-| **Weekly** | 3 sessions | Mod:91m + Vig:158m |
+| **Weight** | 173.7 lb (−42.7 lb from 216.4 peak) |
+| **Training Readiness** | None / 100 (None) — None |
+| **Body Battery** | None → None (end: None) |
+| **Recovery Time** | None hrs |
+| **Acute Load / Chronic / ACWR** | None / None / not available |
+| **HRV Status** | **Balanced** — last night: None ms | 7-day: None ms | baseline: not available |
+| **Sleep** | 0.0h / score None — Deep:Nonem REM:Nonem |
+| **Resting HR** | None bpm (7-day avg: None bpm) |
+| **SpO2** | Garmin overnight avg: None% low: None% | O2Ring: 6.9 score low: 85% |
+| **Stress** | avg None / peak None |
+| **Last Session** | Coconino County Hiking on 2026-07-23 | Load=20.883056640625 | AEROBIC_BASE |
+| **Weekly** | 5 sessions | Mod:124m + Vig:49m |
 
 ---
 
 
-## TODAY'S LIVE DATA — 2026-07-17
+## TODAY'S LIVE DATA — 2026-07-24
 _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 **⚠️ THESE LIVE VALUES OVERRIDE ANY 'CURRENT STATUS' IN THE STATIC MEMORY BELOW**
 
 ### READINESS & RECOVERY
 | Metric | Value |
 |--------|-------|
-| Training Readiness | **70** / 100 (MODERATE) |
-| Readiness Feedback | MOD_HRV_UNBALANCED |
-| Body Battery | 16 → 85 (end: 85) +69 / -2 |
+| Training Readiness | **not available** / 100 (not available) |
+| Readiness Feedback | not available |
+| Body Battery | not available → not available (end: not available) +not available / -not available |
 | Body Battery Feedback | not available |
-| Recovery Time | 2.5 hrs (NO_CHANGE_SLEEP) |
-| Acute Load | 340 |
-| Chronic Load | 302 |
-| Load Ratio (ACWR) | 1.10 (OPTIMAL) |
-| Load Focus — Low Aerobic | 339 (target 233–634, ✓ in range) |
-| Load Focus — High Aerobic | 843 (target 501–901, ✓ in range) |
-| Load Focus — Anaerobic | 150 (target 133–400, ✓ in range) |
-| Load Balance Phrase | BALANCED |
-| Training Status | MAINTAINING_1 |
+| Recovery Time | not available hrs (not available) |
+| Acute Load | not available |
+| Chronic Load | not available |
+| Load Ratio (ACWR) | not available |
+| Load Focus — Low Aerobic | not available |
+| Load Focus — High Aerobic | not available |
+| Load Focus — Anaerobic | not available |
+| Load Balance Phrase | not available |
+| Training Status | not available |
 
 ### HRV
 | Metric | Value |
 |--------|-------|
-| HRV Status | **UNBALANCED** |
-| HRV Feedback | HRV_UNBALANCED_10 |
-| HRV Last Night Avg | **73 ms** |
-| HRV Highest 5-min | 103 ms |
-| HRV 7-day Avg | 67 ms |
-| HRV Balanced Baseline | 69–93 ms (LOW<64 ms) |
-| HRV Streak (consec. LOW) | 0 days |
+| HRV Status | **Balanced** |
+| HRV Feedback | not available |
+| HRV Last Night Avg | **not available ms** |
+| HRV Highest 5-min | not available ms |
+| HRV 7-day Avg | not available ms |
+| HRV Balanced Baseline | not available |
+| HRV Streak (consec. UNBALANCED) | 0 days |
+| HRV OVERRIDE (rule D, latched) | 🟢 clear |
 | HRV Factor % (readiness) | not available% (not available) |
 
 ### HEART RATE
 | Metric | Value |
 |--------|-------|
-| Resting HR | 50 bpm |
-| RHR 7-day Avg | 51 bpm |
-| Overnight / Day Low HR | 47 bpm |
-| Max HR (today) | 79 bpm |
-| Stress Avg | 14 |
-| Stress Peak | 68 |
+| Resting HR | not available bpm |
+| RHR 7-day Avg | not available bpm |
+| Overnight / Day Low HR | not available bpm |
+| Max HR (today) | not available bpm |
+| Stress Avg | not available |
+| Stress Peak | not available |
 
 ### SLEEP
 | Metric | Value |
 |--------|-------|
-| Sleep Score | **90** / 100 |
-| Sleep Feedback | POSITIVE_OPTIMAL_STRUCTURE |
-| Total Sleep | **7.9 hrs** |
+| Sleep Score | **not available** / 100 |
+| Sleep Feedback | not available |
+| Total Sleep | **0 hrs** |
 | Sleep Need Tonight | 7.2 hrs |
-| Sleep Window | 15:54 → 00:05 |
-| Deep Sleep | 103 min |
-| REM Sleep | 106 min |
-| Light Sleep | 266 min |
-| Awake Time | 16 min |
-| Awake Count | 1 |
-| Restlessness | GOOD |
-| Sleep Stress | 16 |
-| Avg Respiration (sleep) | 14 brpm |
-| Lowest Respiration | 9 brpm |
-| Highest Respiration | 18 brpm |
-| Breathing Disruption | NONE |
+| Sleep Window | not available |
+| Deep Sleep | not available min |
+| REM Sleep | not available min |
+| Light Sleep | not available min |
+| Awake Time | not available min |
+| Awake Count | not available |
+| Restlessness | not available |
+| Sleep Stress | not available |
+| Avg Respiration (sleep) | not available brpm |
+| Lowest Respiration | not available brpm |
+| Highest Respiration | not available brpm |
+| Breathing Disruption | not available |
 
 ### SpO2 / PULSE OX
 | Metric | Value |
 |--------|-------|
-| Avg Overnight SpO2 | 95% |
-| Lowest Overnight SpO2 | **82%** |
-| O2Ring Score | 8.1 |
+| Avg Overnight SpO2 | not available% |
+| Lowest Overnight SpO2 | **not available%** |
+| O2Ring Score | 6.9 |
 | O2Ring Lowest SpO2 | 85% |
-| O2Ring Avg SpO2 | 95% |
-| O2Ring Drops/hr | 6.9 |
+| O2Ring Avg SpO2 | 94% |
+| O2Ring Drops/hr | 2.8 |
 | Pulse Ox Acclimation | not available |
 | Time SpO2 < 90% | not available |
 | Skin Temp Delta | not available |
@@ -106,54 +116,47 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 |--------|-------|
 | VO2 Max | not available |
 | Fitness Age | not available |
-| Intensity Minutes — Moderate (today) | 0 min |
-| Intensity Minutes — Vigorous (today) | 0 min |
-| Steps Today | 210 |
-| Active Calories Today | 1 kcal |
-| Floors Climbed Today | 0 |
+| Intensity Minutes — Moderate (today) | not available min |
+| Intensity Minutes — Vigorous (today) | not available min |
+| Steps Today | not available |
+| Active Calories Today | not available kcal |
+| Floors Climbed Today | not available |
 
 ### WEIGHT
 | Metric | Value |
 |--------|-------|
-| Current Weight | **173.5 lb** (as of 2026-07-15) |
-| Lost from Peak (216.4 lb) | 42.9 lb |
+| Current Weight | **173.7 lb** (as of 2026-07-22) |
+| Lost from Peak (216.4 lb) | 42.7 lb |
 
 ### LAST SESSION
 | Metric | Value |
 |--------|-------|
-| Activity | Treadmill Running (treadmill_running) |
-| Date / Time | 2026-07-16 2026-07-16 10:47 |
-| Duration | 24m |
-| Distance | 1.72 km (1.07 mi) |
-| Avg HR / Max HR | 145.0 / 179.0 bpm |
-| Aerobic Training Effect | 3.0999999046325684 (TEMPO) — IMPACTING_TEMPO_22 |
-| Anaerobic Training Effect | 1.100000023841858 — MINOR_ANAEROBIC_BENEFIT_15 |
-| Exercise Load | 88 |
-| Calories | 263.0 kcal |
-| Sweat Loss | 184.0 ml |
+| Activity | Coconino County Hiking (hiking) |
+| Date / Time | 2026-07-23 2026-07-23 19:31 |
+| Duration | 90m |
+| Distance | 4.76 km (2.95 mi) |
+| Avg HR / Max HR | 114.0 / 164.0 bpm |
+| Aerobic Training Effect | 1.899999976158142 (AEROBIC_BASE) — MINOR_AEROBIC_BENEFIT_6 |
+| Anaerobic Training Effect | 0.0 — NO_ANAEROBIC_BENEFIT_0 |
+| Exercise Load | 21 |
+| Calories | 467.0 kcal |
+| Sweat Loss | 1079.0 ml |
 | Body Battery Impact | -5 |
-| Avg / Max Power | 93.0 / 311.0 W |
-| HR Zones | Z1:233s | Z2:40s | Z3:489s | Z4:656s | Z5:60s |
+| Avg / Max Power | None / None W |
+| HR Zones | Z1:2325s | Z2:1919s | Z3:541s | Z4:128s | Z5:0s |
 | Total Volume (strength) | not available |
 | Total Reps (strength) | not available |
 
 ### WEEKLY SUMMARY (last 7 days)
 | Metric | Value |
 |--------|-------|
-| Sessions This Week | 3 |
-| Intensity — Moderate | 91 min |
-| Intensity — Vigorous | 158 min |
-| Total Intensity (mod+vig) | 249 min |
-| Active Calories | 2947 kcal |
+| Sessions This Week | 5 |
+| Intensity — Moderate | 124 min |
+| Intensity — Vigorous | 49 min |
+| Total Intensity (mod+vig) | 173 min |
+| Active Calories | 2123 kcal |
 
 ### Weight Trend (last 14 entries)
-- 2026-06-28: 172.8 lb
-- 2026-06-29: 172.1 lb
-- 2026-06-30: 173.7 lb
-- 2026-07-02: 173.2 lb
-- 2026-07-03: 174.1 lb
-- 2026-07-04: 173.7 lb
-- 2026-07-05: 173.5 lb
 - 2026-07-09: 173.0 lb
 - 2026-07-10: 172.1 lb
 - 2026-07-11: 173.0 lb
@@ -161,21 +164,52 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 - 2026-07-13: 172.1 lb
 - 2026-07-14: 173.0 lb
 - 2026-07-15: 173.5 lb
+- 2026-07-16: 173.2 lb
+- 2026-07-17: 173.5 lb
+- 2026-07-18: 174.1 lb
+- 2026-07-19: 173.9 lb
+- 2026-07-20: 175.4 lb
+- 2026-07-21: 173.9 lb
+- 2026-07-22: 173.7 lb
 
 ### Body Battery Trend (last 7 days)
-- 2026-07-11: peak 91
-- 2026-07-12: peak 87
-- 2026-07-13: peak 48
-- 2026-07-14: peak 68
-- 2026-07-15: peak 74
-- 2026-07-16: peak 73
 - 2026-07-17: peak 85
+- 2026-07-18: peak 64
+- 2026-07-19: peak 77
+- 2026-07-20: peak 100
+- 2026-07-21: peak 100
+- 2026-07-22: peak 69
+- 2026-07-23: peak 79
 
 ### O2Ring History (last 7 nights)
 | Night | Score | Lowest SpO2 | Avg SpO2 | Drops/hr |
 |-------|-------|-------------|----------|----------|
 | 2026-07-09 | 8.4 | 88% | 94% | 6.5 |
 | 2026-07-12 | 8.1 | 85% | 95% | 6.9 |
+| 2026-07-17 | 7.5 | 85% | 93% | 7.7 |
+| 2026-07-18 | 7.3 | 85% | 94% | 7.1 |
+| 2026-07-21 | 6.9 | 85% | 94% | 2.8 |
+
+
+---
+
+
+## VEER OWN LOG - WHAT ACTUALLY HAPPENED
+_Logged by Veer via the dashboard note box, Claude Code, or chat.
+This is GROUND TRUTH about execution and OUTRANKS any planned value.
+COACHES: compare this against what was PRESCRIBED. Did the session happen
+as planned? Did meals match? Name deviations explicitly and adapt today to
+the real pattern (repeated missed legume soaks, swapped sessions, skipped
+training-day carbs). Never silently re-issue a plan reality has diverged
+from._
+
+- [Fri, Jul 3 06:49 PM] Monday morning Waves Utah hike. Today Friday rest day. Yesterday upper body done. Plan week accordingly.
+- [Fri, Jul 3 07:15 PM] Monday there is Waves Utha, hike. today is friday rest, yesterday is upper body. plan accordingly
+- [Fri, Jul 3 06:49 PM] Monday morning Waves Utah hike. Today Friday rest day. Yesterday upper body done. Plan week accordingly.
+- [Fri, Jul 3 07:20 PM] Monday there is Waves Utha, hike. today is friday rest, yesterday is upper body. plan accordingly
+- [Fri, Jul 3 07:30 PM] Monday morning Waves Utah hike. Today Friday rest day. Yesterday upper body done. Plan week accordingly.
+- [Fri, Jul 3 07:27 PM] Monday there is Waves Utha, hike. today is friday rest, yesterday is upper body. plan accordingly
+- [Fri, Jul 3 07:30 PM] Monday morning Waves Utah hike. Today Friday rest day. Yesterday upper body done. Plan week accordingly.
 
 
 ---
@@ -267,6 +301,112 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 # Veer Conversation Log
 Summaries of all Claude chat sessions. Most recent first.
 Auto-appended after each session via /log-conversation endpoint.
+
+---
+
+## 2026-07-22 — Wed 7/22 — Lower Body completed + meals (actual)
+_logged: 2026-07-23 08:39_
+
+CONFIRMED: Lower Body session completed as prescribed — all given weights, sets, reps (Leg Press, Hamstring Curl, Leg Extension, Calf Extension, corrective block right-side priority, plank, incline finisher). Garmin logged 1h37m strength + 37m treadmill run (avg HR 123, load 72). MEALS: breakfast + lunch as planned. Dinner: ate CHICKEN instead of the Wednesday turkey rotation — everything else per plan. Weekly-rotation-flexibility rule applies: log actual food, swap is fine, both approved anchors.
+
+**Sessions logged:** Lower Body full session as prescribed (all locked-order exercises + corrective block) + treadmill run 37m avg HR 123 load 72
+
+**Decisions made:**
+- Lower Body executed as planned - no deviations in weights/sets/reps
+- Wednesday dinner: chicken substituted for turkey (approved anchor swap
+- logged as actual)
+
+**Open items:**
+- [ ] Pulmonologist day 52
+- [ ] Confirm chicken/shrimp stock for upcoming meals - inventory anchors still uncounted
+- [ ] Garbanzo soak tonight (Thu) for Friday legume day - use canned backup if dry not in stock
+
+---
+
+## 2026-07-21 — Tue 7/21 — Upper Body completed + full day meals (actual)
+_logged: 2026-07-22 09:46_
+
+CONFIRMED: Upper Body session completed as prescribed — all given weights, sets, reps (lateral raises 25lb, rear delt 90lb, incline DB 50lb, converging chest 105lb, lat pulldown 145lb, DB curls 25lb, tricep pushdown 42.5lb, push-ups, incline finisher). Garmin logged 2h44m strength + 20m30s treadmill tempo (avg HR 155, load 88.6). MEALS ACTUAL: breakfast standard training-day bowl. Lunch chicken 160g + garbanzo 100g + broccoli 150g + spinach 100g + 3 seaweed sheets + Greek yogurt 150g + avocado + 3 blocks Jojos. Protein shake mid-day. Dinner salmon 160g + spinach 100g + 1 whole avocado. Estimated day protein ~230g vs 160-165g training-day target — roughly 70g over. Training-day carb (rice 150g) was SKIPPED while a protein shake was added.
+
+**Sessions logged:** Upper Body full session as prescribed (all locked-order exercises at standard working weights) + treadmill tempo finisher 20m30s avg HR 155 load 88.6
+
+**Decisions made:**
+- Upper Body executed exactly as planned - no deviations in weights/sets/reps
+- Dinner used salmon 160g instead of Tuesday sardines rotation
+- Protein shake added on top of already-high food protein
+- Training-day rice carb skipped
+
+**Open items:**
+- [ ] PATTERN TO WATCH: skipping training-day carb while adding protein shake - protein was already ~70g over target so the shake was redundant while glycogen refill was missed; next training day prioritize the rice/sweet potato over the shake
+- [ ] New foods seen not yet in protocol/inventory: seaweed sheets and Jojos chocolate blocks - decide whether to formalize into PROTOCOLS.md
+- [ ] Pulmonologist day 51
+- [ ] INVENTORY.md still all-unknown - needs first count
+
+---
+
+## 2026-07-21 — Tuesday 7/21 — HRV override cleared, Upper Body re-entry day
+_logged: 2026-07-21 16:11_
+
+HRV returned BALANCED (82ms) after 5 days impaired (Unbalanced 07-16/17/18, Low 07-19, Unbalanced 07-20) — override rule D formally CLEARED. TR 84 HIGH, BB 39-100, sleep 8.4h score 92 (best of month), RHR 49, weight 173.9 back in band after yesterday's 175.4 water spike. Coaches corrected the calendar: last actual session was Lower on 07-17, so today is UPPER BODY re-entry (not Tuesday-calendar Lower), with lateral raises trimmed 5 to 4 sets per detraining/re-entry principle. Lunch logged: chicken 160g anchor + garbanzo 100g fiber side + Greek yogurt 150g, day tracking ~168g protein vs 160-165 target.
+
+**Weight confirmed:** 173.9 lb
+**New rules added:** Coaches must resume training by split SEQUENCE after any interruption never by weekday,After 3+ day layoff first session back is re-entry not PR day,KNOWLEDGE_BASE.md and MEASUREMENT_SCIENCE.md now embedded in brain for all specialists
+
+**Decisions made:**
+- Session selection now reasons from last actual session not calendar day
+- Upper Body re-entry chosen over calendar Lower
+- Lateral raises 4 sets not 5 for re-entry
+- Lunch anchored on chicken 160g with garbanzo as fiber side only
+
+**Open items:**
+- [ ] PULMONOLOGIST: Veer committed to scheduling the appointment - report the date when booked (day 50 as of today)
+- [ ] Verify the 07-17 O2Ring T90 figure (~128 min below 90%) in ViHealth app before appointment - strongest single data point
+- [ ] Confirm Upper Body session completed and log actual weights
+- [ ] Wear O2Ring tonight - 3 night gap
+
+---
+
+## 2026-07-17 — Full Day Record — Friday 7/17
+
+Complete day log. BIOMETRICS: TR 52 MODERATE (HRV Unbalanced), Body Battery 16->85 (huge +69 charge), Recovery Time 22.3h, Acute Load 470 (ACWR 1.4, high but optimal band, HiAero focus 926 slightly over target). HRV UNBALANCED day 10-streak marker (overnight 73ms, 7d 67ms). RHR 50 (overnight low 47). Sleep 7.9h score 90 - deep 103m REM 106m awake 16m, best structure of the week. SpO2 low 82% (no O2Ring worn). Weight 173.5 lb (confirmed from Omada). TRAINING: Lower Body full-push completed (Leg Press 260/Hamstring 125/Leg Ext 115/Calf 155, corrective block, plank, finisher) PLUS treadmill run - 45 mod + 21 vig intensity min, 162 max HR, 10577 steps, 678 active kcal. Two activities logged to Garmin correctly (lower + treadmill-running).
+
+**Weight confirmed:** 173.5 lb
+**Sessions logged:** Lower Body (Leg Press 260lb 4x, Hamstring Curl 125lb 4x, Leg Extension 115lb 4x, Calf Extension 155lb 4x, corrective block, plank 2x80-85s, incline finisher) + Treadmill Running (45 mod/21 vig intensity min, max HR 162, 10577 total steps, 678 active kcal)
+
+**Decisions made:**
+- Both Friday activities confirmed logged to Garmin as separate sessions
+- Weight 173.5 confirmed for 7/17
+- Acute Load 470 noted as high-normal - contributed to weekend HRV override
+
+**Open items:**
+- [ ] Pulmonologist referral day 47
+- [ ] O2Ring gap continues (SpO2 hit 82% again unmonitored)
+- [ ] HRV Unbalanced heading into weekend - became 3-day override by Sat 7/18
+- [ ] Legume days missed this week
+
+---
+
+## 2026-07-17 — Lower Body — Full Push (Fri 7/17)
+
+BB 85 full-push tier, 4 sets each, top of range on all variable exercises. Leg Extension and Calf Extension weights confirmed for first time (previously estimated). No override flags fired. Garbanzo/legume day missed this week (no beans Tue or Fri).
+
+**Sessions logged:** Lower Body - Leg Press 260lb 4x10-12, Hamstring Curl 125lb 4x10-12, Leg Extension 115lb 4x10-12, Calf Extension 155lb 4x12-15, Corrective block 2 sets each, Plank 2x80-85s, Incline Finisher incline10/3.2-3.5mph/20min
+
+**Decisions made:**
+- Leg Press 260lb/118kg confirmed
+- Hamstring Curl 125lb/57kg confirmed
+- Leg Extension 115lb/52kg NEWLY CONFIRMED (was estimate)
+- Calf Extension 155lb/70kg NEWLY CONFIRMED (was estimate)
+- corrective block completed
+- plank 2x80-85s
+- incline finisher incline10/3.2-3.5mph/20min completed
+
+**Open items:**
+- [ ] Pulmonologist referral still unscheduled (day 47 as of Sat)
+- [ ] O2Ring still not worn - 5+ night gap continues
+- [ ] weight not logged 7/16 or 7/17 (Omada gap)
+- [ ] legume days missed this week - remind before next Tue soak
+- [ ] HRV Unbalanced day 3 on Sat 7/18 - override ACTIVE walk-only until Balanced 1 full day
 
 ---
 
@@ -436,51 +576,1016 @@ Expanded Garmin data pull to capture every available API metric. Fixed HRV statu
 # PERMANENT MEMORY (working weights, rules, history, protocols)
 
 
-# Veer Health Memory — 2026-07-17
+# Veer Health Memory — 2026-07-23 (evening update, post-brief)
+Generated: 2026-07-23 (morning brief cycle)
+Sources: Garmin Connect API (through 2026-07-23), O2Ring (last real data 2026-07-21), Omada scale (last confirmed 2026-07-22)
+
+## QUICK DECISION SNAPSHOT (LIVE — 2026-07-23)
+| | |
+|---|---|
+| **Weight** | not available today; last confirmed 173.7 lb (07-22), mid-band 172-175 |
+| **Training Readiness** | 70/100 (MODERATE) |
+| **Body Battery** | 24 → 79 (end 70) |
+| **Recovery Time** | 9.2 hrs |
+| **Acute/Chronic/ACWR** | 293 / 306 / 0.90 (OPTIMAL) |
+| **HRV** | BALANCED — 68ms overnight, 68ms 7-day, baseline 67-92, streak=0, override clear |
+| **Sleep** | 7.7h / score 83 — Deep 73m REM 80m |
+| **RHR** | 52 bpm (7-day avg 50) |
+| **SpO2 (Garmin wrist)** | avg 94% low 85% — O2Ring gap continues, last real ring data 07-21 |
+| **Stress** | avg 19 / peak 82 |
+| **Training call today** | Upper Body, standard weights, 4 sets — no override fired |
 
 ## WEIGHT LOG (most recent)
-2026-07-09: 173.0 | 2026-07-10: 172.1 | 2026-07-11: 173.0 | 2026-07-14: 173.0 | 2026-07-15: 173.5 | 2026-07-16: not available | 2026-07-17: not available
-Band: 172-175 lb. 2 consecutive days without Omada reading — flag if it extends to a 3rd.
+07-18: 174.1 | 07-19: 173.9 | 07-20: 175.4 | 07-21: 173.9 | 07-22: 173.7 (confirmed) | 07-23: not available
 
 ## LAST SESSION
-2026-07-16 (Thursday): Upper Body return-from-Peralta session. Two Garmin activities logged: strength_training (2h21m, avg HR 89, load 20.1, -10 BB) + treadmill_running (24m45s tempo finisher, avg HR 145, load 87.6, -5 BB). Matches conversation log entry "Upper Body — Return After Peralta Recovery."
+2026-07-22 (Wed): Lower Body (1h37m, avg HR 99) + Treadmill Running (37m, avg HR 123, load 72).
+2026-07-23 (Thu, today's call): Upper Body, standard working weights, 4 sets, incline finisher speed 3.0 (BB 79, under 80+ threshold). Rotation logic: Upper last trained 07-21 (48h+ recovered) vs Lower 07-22 (24h, still repairing) — also matches calendar default, no conflict.
 
 ## HRV STATUS
-2026-07-15: BALANCED (61ms) | 2026-07-16: UNBALANCED (66ms, MOD_HRV_UNBALANCED) | 2026-07-17: not available yet
-Consecutive Unbalanced streak ending 07-17: 0 days (resets — no data yet for today, only 1 day Unbalanced so far).
+07-21 BALANCED (82ms) | 07-22 BALANCED (57ms overnight — single-night dip below the 62ms low threshold, but 7-day avg 68ms held status; confirmed as noise by 07-23 rebound) | 07-23 BALANCED (68ms overnight, 68ms 7-day) — fully recovered, streak=0, override clear.
 
-## O2RING — 5 CONSECUTIVE NIGHTS MISSING (07-13 through 07-17)
-Ring not worn since 07-12. Last real data:
-| Night | Score | Lowest SpO2 | Avg SpO2 | Drops/hr |
-|---|---|---|---|---|
-| 2026-07-09 | 8.4 | 88% | 94% | 6.5 |
-| 2026-07-12 | 8.1 | 85% | 95% | 6.9 |
+## O2RING
+No new PDF for 07-22→07-23 night — gap now 2+ days.
+Last known: 2026-07-21 night — Score 6.9, avg SpO2 94%, drops/hr(>4%) 2.8, drops/hr(>3%) 6.8, T90 7m36s.
+UNRESOLVED: lowest SpO2 for that same 07-21 night recorded two ways in memory history (81% vs 85%) — needs source-PDF reverification, doesn't block any call since no ring data exists for the most recent night regardless.
 
 ## OPEN ITEMS
-- [ ] CRITICAL: Pulmonologist appointment — referral Jun 1, 46 days unscheduled as of 2026-07-17
-- [ ] Resume wearing O2Ring — 5-night gap now
-- [ ] Get 07-16 and 07-17 Omada weight (2 days missing)
-- [ ] Investigate MEMORY.md live-snapshot vs. end-of-day source-file mismatch (07-16 TR showed 78/HIGH in early snapshot vs 59/MODERATE in finalized daily file) — likely a timing issue (6:10am fetch vs. end-of-day), not a data-loss bug, but worth confirming which is used downstream
-- [ ] Fisetin next doses: August 1-2, 2026
-- [ ] KSM-66 break begins: September 7, 2026
-- [ ] Ferritin recheck: September 2026
-- [ ] Full bloodwork retest: December 2026
+- [ ] CRITICAL: Pulmonologist — referral Jun 1, 52 days unscheduled as of 07-23. Standing #1 item.
+- [ ] O2Ring lowest-SpO2 discrepancy for 07-21 night (81% vs 85%) — needs source-PDF reverification.
+- [ ] Anaerobic load shortage — 3rd consecutive day (55 today vs target 133-400; 101/101 prior two days).
+- [ ] Vigorous intensity minutes: 62 this week vs 75+/week target — behind pace.
+- [ ] Inventory: chicken breast (today's lunch anchor) and dry garbanzo (Thu-night soak for Fri legume day) still ❔ unconfirmed — confirm ASAP, canned garbanzo is backup.
+- [ ] Sleep consumables (nose strips, mouth tape, earplugs, O2Ring charge) status unknown — Tier 1, active OSA investigation.
+- [ ] Weight pipeline: Omada not available 07-23 — confirm when available.
+- [ ] Fisetin next doses: August 1-2, 2026 — confirm stock before then.
+- [ ] KSM-66 break begins: September 7, 2026 — stop, do not reorder.
+- [ ] Ferritin recheck: September 2026.
+- [ ] Full bloodwork retest: December 2026.
 
 ## DATA PIPELINE STATUS
-- Recovery Time units bug: RESOLVED as of 2026-07-17 per 7/16 fix (Garmin API minutes→hours conversion). 07-16 reading of 22.3 hrs is plausible and correctly converted — safe to use in override checklist again.
-- GitHub token / Omada session-reuse strategy: locked in as of 7/16, still pending full validation (first live test was scheduled for 7/17 6:15am — check result).
-- 2026-07-17 daily Garmin file present but all fields N/A at brief-generation time — normal for early-morning brief, expect real data later today.
+- Recovery Time units: resolved, no regression (9.2h today, plausible).
+- HRV streak counter: correct (0, genuine cleared state).
+- O2Ring gap: no PDF for 07-22→07-23 night; last real data now 2 days old (07-21).
+- O2Ring historical low-SpO2 discrepancy (81% vs 85% for 07-21 night): unresolved, flagged.
+- Weight: Omada not available 07-23, no regression, just a missed pull.
 
 ## SUPPLEMENT CYCLES
 - KSM-66: active, break starts 2026-09-07
 - Fisetin: last taken Jul 1-2, next Aug 1-2
-- Biotin: Tue/Thu/Sat only — SKIPPED today (Friday)
+- Biotin: Tue/Thu/Sat only — taken today (Thursday 07-23)
 
 ## TRAIL BLACKLIST (permanent, unchanged)
 Peralta Trail + all Superstition Mountains trails — two rattlesnake encounters 07-11/07-12
 
-## RECENT DECISIONS (2026-07-17)
-- Flagged MEMORY.md/source-file mismatch for 07-16 rather than silently resolving; used garmin/daily/2026-07-16.md as authoritative
-- Friday standard split (Lower Body) confirmed, no overrides fired, all 5 checks walked
-- Applied conservative 3-sets/-10-20% modifier pending live BB confirmation, consistent with 07-16 precedent
-- Pulmonologist flag restated (46 days) per standing rule
+## RECENT DECISIONS (2026-07-23)
+- Training call: Upper Body at standard working weights, 4 sets (BB peak 79, top of 75-79 tier). No override checklist items fired.
+- Session sequencing: Upper confirmed next (last trained 07-21, 48h+ recovered) vs Lower (07-22, still inside 48h MPS window) — matches calendar default, no conflict to reason through.
+- Carb trigger 2 fired (Acute Load 293 ≥ 200) — sweet potato 200g added to dinner.
+- Day protein total computed at ≈183g against the 160-165g target — over-target is expected when every locked meal item runs in full; no shake added, no trim needed per "ceiling not floor" rule.
+- Pulmonologist flag escalated to day 52, restated as standing #1 item.
+
+---
+
+
+# LOCKED PROTOCOLS — MEAL / SUPPLEMENT / WORKOUT
+
+_Permanent reference. This section is authoritative for all meal, supplement, and training decisions. Live biometrics at the top of the brain drive today's CALL; these protocols define the fixed rules, foods, weights, and schedules the call must follow._
+
+## MEAL PLAN PROTOCOL
+
+EATING ORDER — EVERY MEAL WITHOUT EXCEPTION:
+Vegetables first → Protein → Fats → Kimchi (cold, always last, never heated) → Microgreens (raw, on top, always last second, never cooked)
+
+ACV 1 tbsp in water BEFORE every meal.
+10-min walk AFTER every meal.
+Psyllium husk 5g in warm water BEFORE DINNER ONLY — drink within 60 seconds, never skip.
+Nothing after 8pm. Water finished by 7pm.
+Dark chocolate 3 bites after dinner, before 8pm.
+Mastic gum 20-30 min after each meal.
+
+PROTEIN TARGETS:
+Training day: 160-165g muscle protein
+Rest day: 130-140g muscle protein
+Collagen NEVER counts toward protein target.
+Legumes = fiber side only, never protein anchor.
+Egg whites = addition only, never primary protein.
+Rest days need same protein priority as training days.
+Always calculate protein total BEFORE planning meals.
+
+PROTEIN ANCHORS (approved):
+Chicken breast, turkey, salmon, shrimp, sardines, eggs (whole). Minimum 150g cooked per meal.
+
+BREAKFAST SEQUENCE (every day):
+1. ACV 1 tbsp in water
+2. Goat bone broth + lemon — 240ml warm
+3. Eggs: 3 whole (training) / 2 whole (rest)
+4. Breakfast bowl (below)
+5. Kefir 100ml
+6. 10-min walk
+
+BREAKFAST BOWL:
+Prep night before (overnight soak):
+Sprouted oats: 50g training / 35g rest
+Isopure whey: 1 scoop
+Collagen: 1-2 scoops (always with vitamin C = berries)
+Almond milk: 200ml
+Egg whites: 6 tbsp
+Frozen berries: 220g
+Dried cranberries: 20g
+Chia seeds: 10g
+Walnuts: 15g
+Pumpkin seeds: 10g
+
+Add FRESH morning only — NEVER night before:
+Brazil nut: 1 whole
+Bee pollen: 5g (refrigerate)
+Broccoli microgreens: 1 tbsp raw on top last second (sulforaphane destroyed by heat — never cook ever)
+
+LUNCH:
+ACV before.
+Vegetables generous — spinach 100g + broccoli 150g or mixed greens — eat FIRST.
+Protein anchor 150-180g cooked (see approved list).
+Fat: avocado half OR olive oil 1 tbsp — after protein.
+Turmeric + black pepper always together.
+Garlic 2 cloves.
+Kimchi 35g cold, eaten LAST.
+Microgreens 1 tbsp raw on top, absolute last.
+Siggi's plain yogurt 150g after lunch.
+10-min walk after.
+
+DINNER (weekly rotation):
+Mon: Salmon 180-200g
+Tue: Sardines 1 tin
+Wed: Turkey 180-200g
+Thu: Shrimp 200g
+Fri: Chicken 150g + sardines half tin
+Sat/Sun: Flexible
+
+Psyllium husk 5g in warm water before dinner.
+ACV before dinner.
+Vegetables first — spinach 80g + broccoli or zucchini or yellow squash 150g.
+Protein per rotation above.
+Avocado half after protein.
+Sesame oil finishing drizzle (off heat only).
+Olive oil + garlic + turmeric + black pepper.
+Kimchi 30g cold, LAST.
+Microgreens 1 tbsp raw, absolute last.
+10-min walk after.
+Dark chocolate 3 bites before 8pm.
+Mastic gum 20-30 min after.
+
+LEGUME DAYS:
+Tuesday: Black beans 150-200g cooked as fiber side (soak 100g dry Monday night — remind Sunday night)
+Friday: Garbanzo 150-200g cooked as fiber side (soak 100g dry Thursday night — remind Wednesday)
+Black chickpeas (kala chana) also approved.
+Canned black beans approved as backup — rinse well.
+
+MUSHROOMS (longevity protocol):
+Shiitake: 2x per week with dinner — sauté EVOO + garlic, medium heat, don't overcook.
+Crimini: daily rotation approved.
+
+CARB DECISION — GOAL-DRIVEN, NEVER A DEFAULT:
+The starch carb (sweet potato 200g) is a TOOL, not a habit. Do not add it because
+it is a training day; add it when the data says it serves a goal. Reason it out
+each time, in one line, and say why.
+
+**RICE IS NOT IN THIS ECOSYSTEM — Veer does not keep it. Never prescribe rice.**
+Sweet potato 200g is the only starch option when a carb IS indicated.
+
+ADD THE CARB when any of these three triggers fire (state which one):
+1. Weight at/below 172 for 2+ consecutive days — the weight-floor rule.
+2. HIGH-OUTPUT SESSION: Acute Load 200+, or the first session back after a
+   5+ day layoff. (Note: Veer's acute load typically runs 140-490, so 200+
+   fires on genuinely moderate-to-hard days, not every session.)
+3. NEXT-DAY NUMBERS CAME IN SOFT after a training day (HRV drop, BB drop,
+   RHR rise) — add the carb on the following training day to correct it.
+Also add if Veer reports feeling flat or underfuelled in a session.
+
+SKIP THE CARB when:
+- Weight is at the top of the band (174-175+) or trending up — the goal is holding
+  172-175 while recomposing, and a starch adds nothing the goal needs that day, OR
+- Rest day or light session with normal recovery markers, OR
+- Protein and vegetable volume already put the day well-fed.
+
+Fasting glucose is 101 (borderline) — that's a real reason not to add starch
+reflexively. When in doubt, ASK Veer rather than assume: "Weight's at 174 and
+recovery looks fine — I'd skip the sweet potato today unless you felt flat in the
+session. Want it in?"
+
+WHAT IS NOT OPTIONAL: hitting the protein target, and the eating order. The carb
+is negotiable; those are not.
+
+SEAWEED (nori): 2-3 sheets with lunch — iodine, magnesium, trace minerals.
+Approved addition as of 2026-07-22.
+
+KEY FOOD RULES:
+- Turmeric ALWAYS with black pepper (absorption)
+- Kimchi ALWAYS cold, ALWAYS last (probiotics)
+- Microgreens ALWAYS raw, ALWAYS last second
+- Collagen always paired with vitamin C source
+- Sardines 2-3x per week for calcium
+- Celtic Sea Salt — add pinch post-finisher on training days
+- ACV before EVERY meal without exception
+- Post-meal 10-min walk EVERY meal without exception
+
+---
+
+## SUPPLEMENT PROTOCOL
+
+MORNING (with breakfast, every day):
+Creatine: 5g
+D3 + K2 (Solaray): 5000 IU
+Omega-3 (Nordic Naturals): 2 caps
+Beef Liver: 2 caps training / 1 cap rest
+B12 sublingual: 5000mcg — hold 30 sec under tongue
+CoQ10 Ubiquinol: 100mg
+Biotin 5000mcg: TAKE Tue/Thu/Sat ONLY — SKIP Mon/Wed/Fri/Sun — STATE EVERY MORNING
+Fisetin 100mg: 1st and 2nd of month ONLY — Next doses: August 1-2, 2026
+Probiotic (Garden of Life 50B): SEPARATE from all other supplements — empty stomach, not with hot food
+
+BEFORE DINNER:
+Psyllium husk: 5g in warm water — drink within 60 sec
+
+WITH DINNER:
+Zinc Picolinate (Solgar): 22mg
+Thorne Copper: 2mg — ALWAYS together with zinc
+
+9:30PM:
+Magnesium Glycinate (Jarrow): 240mg
+Tart Cherry Juice: 60ml (NOT 8oz — just 60ml)
+KSM-66 Ashwagandha: 600mg — Cycle started June 7, 2026 — Break September 7, 2026 (4 weeks off)
+
+SLEEP PROTOCOL (every night without exception):
+Nose strip (Breathe Right Extra Strength)
+Mouth tape
+O2Ring on THUMB — vibration OFF
+Earplugs
+Saline nasal rinse: every OTHER night only
+Back sleeping, thin pillow
+Screens off: 10pm
+Lights out: 10:30pm
+
+---
+
+## WORKOUT PROTOCOL
+
+WEEKLY SPLIT:
+Monday: Upper Body
+Tuesday: Lower Body
+Wednesday: 30-min vigorous walk (or rest if HRV flags)
+Thursday: Upper Body
+Friday: Lower Body
+Saturday: Hike or rest — check TR + BB first
+Sunday: Rest
+
+BODY BATTERY → INTENSITY:
+80-100: Full push, chase PRs, 4-5 sets
+75-79: Normal working weights, 3-4 sets
+60-74: 3 sets only, reduce weight 10-20%
+Below 60: Walk only, no gym
+Below 40: Full rest, no exercise
+
+OVERRIDE CHECKLIST (check ALL before training call — any one beats Body Battery):
+1. HRV Unbalanced 3+ consecutive days = NO training or hiking until Balanced for 1 full day minimum. "Feeling good" does NOT override this. Ever.
+2. Training Readiness Low + high Recovery Time = rest
+3. Acute Load above 450-500 = deload
+4. Recovery Time above 24h = rest
+5. Explicit Garmin scale-back warning = same as HRV
+
+PRE-HIKE RULE (Cholla lesson — non-negotiable):
+ALWAYS check TR + BB BEFORE leaving for any hike. Never check after. If TR Low or HRV Unbalanced = downgrade or cancel. No exceptions.
+
+WARMUP (before every session):
+Treadmill 5-7 min, incline 4-5, speed 2.8-3.0
+
+UPPER BODY ORDER (LOCKED — never reorder):
+1. Lateral Raises — ALWAYS FIRST — 25lb (11kg) × 12 × 5 sets. DO NOT recommend 30lb — multiple confident sessions at 25lb required first. Shoulders DOWN and away from ears throughout. Garmin labels as "Face Pull" — not a substitution.
+2. Rear Delt Machine — 90lb (41kg) × 4 × 10
+3. Incline DB Press — 50lb (23kg) × 4 × 10
+4. Converging Chest Press — 105lb (48kg) × 4 × 10. Garmin labels as "Bench Press" — not a substitution.
+5. Lat Pulldown — 145lb (66kg) × 4 × 10. Assisted Chin-up = valid substitute (same vertical pull).
+6. DB Curls — 25lb (11kg) × 4 × 12
+7. Tricep Pushdown — 42.5lb (19kg) × 4 × 10
+8. Push-ups — 2-3 sets to failure
+9. Incline Treadmill Finisher — 20 min, ALWAYS LAST. Incline 10 always. Speed 3.0 standard / 3.2-3.5 when BB 80+. NEVER skip the finisher.
+
+LOWER BODY ORDER (LOCKED):
+1. Leg Press — 250-260lb (115-120kg) × 4 × 8-10
+2. Hamstring Curl — 120-125lb (54-57kg) × 4 × 10
+3. Leg Extension — 105-110lb (48-50kg) × 4 × 10
+4. Calf Extension — 155-160lb (70-73kg) × 4 × 12
+5. CORRECTIVE BLOCK (always, right side priority): Deficit Calf Raise w/ DB 2 × 12-15 (8-10kg) + RDL from Flat Bench w/ DB 2 × 10 (10-12kg) + Rear Foot Elevated Stretch 2 × 30s/side. RIGHT SIDE always gets slightly more attention. Right knee valgus -20° flagged at VASA assessment.
+6. Plank — 2 × 80-85 sec
+7. Incline Treadmill Finisher — same as upper body
+
+GIVE WEIGHTS IN BOTH LBS AND KG ALWAYS.
+
+GARMIN LOGGING:
+Always log sessions as Strength Training on Forerunner 970. Auto Set Detection + Auto Rest Timer = ON.
+
+VIGOROUS MINUTES TARGET: 75+ per week. Track weekly and flag if falling short.
+
+TRAIL BLACKLIST (never suggest):
+- Peralta Trail / Superstition Mountains
+- Any remote, overgrown, jungle-like trail
+- Any trail with poor cell signal in snake country
+APPROVED: Piestewa Peak, Cholla, Mormon Loop, Lookout Mountain, North Mountain Trail 44
+PROFILE: Open desert, clear marked paths, maintained, good cell signal only.
+
+---
+
+## PROTOCOL UPDATES — July 21-22, 2026
+
+SEAWEED SHEETS (nori/roasted seaweed) — APPROVED & LOCKED:
+2-3 sheets with lunch. Iodine, minerals, trace elements, thyroid support —
+relevant to the hormonal protocol given Free T 9.3 pg/mL.
+Eating order: counts as a VEGETABLE — eat with the first course.
+No prep, shelf stable.
+
+JOJO'S (dark chocolate blocks) — DEFINED:
+3 blocks after dinner, before 8pm. Locked evening ritual only, NOT a snack.
+NOT a protein source (~2g/block, negligible) — never count toward protein.
+Falls under the "nothing after 8pm" cutoff.
+
+PROTEIN SHAKE — GAP FILLER ONLY:
+Check FOOD protein total first, before writing a shake into any plan.
+- Food already at 160-165g target → NO shake. Do not add it.
+- Food 20-30g short → shake closes the gap. That is its only job.
+THE PROTEIN TARGET IS A CEILING, NOT A FLOOR TO EXCEED. Past ~2.2 g/kg,
+extra protein does not build more muscle — it gets burned for energy.
+A shake never substitutes for the carb when a carb is indicated.
+7/21 example: food hit ~206g without the shake; the shake pushed the day to
+~231g (~70g over) while the indicated carb went missing entirely.
+
+GREEK YOGURT vs SIGGI'S:
+Siggi's plain 150g = the locked post-lunch item. Regular Greek yogurt is an
+acceptable substitute when Siggi's is unavailable — same positioning, AFTER
+lunch, not with it. Does NOT count as a protein anchor; it is a probiotic/
+calcium addition and its ~15g protein is a bonus, not the point.
+
+WEEKLY ROTATION FLEXIBILITY:
+The dinner rotation exists for variety and micronutrient coverage — it is NOT
+a hard rule and must never become a source of stress. Tuesday = sardines
+(preferred, for calcium), but salmon is a fine swap when sardines aren't
+available; both are omega-3 anchors. Swap freely across the approved anchor
+list as stock dictates. ALWAYS LOG THE FOOD ACTUALLY EATEN, never the planned
+rotation.
+
+POST-TRAINING SOFT-NUMBERS DIAGNOSTIC (locked 7/22):
+When next-day numbers come in soft after a training day (HRV drop, BB drop,
+RHR rise), the Nutritionist and Recovery coach check these IN ORDER before
+concluding anything:
+1. Was a carb indicated and eaten? If indicated and skipped → likely the
+   biggest contributor (glycogen refill drives next-day recovery).
+2. Was protein significantly OVER target? Beyond ~165g the excess is burned,
+   not built — and it displaced the carb that was actually needed.
+3. Was this the first hard session after a layoff? If yes → a normal
+   adaptation response, NOT a nutrition failure. Say so plainly.
+All three applied on 2026-07-21→22 (HRV 82→57ms, BB 100→69, RHR 49→53):
+carb skipped, protein ~70g over, first session after a 5-day layoff.
+
+---
+
+
+# SPECIALIST KNOWLEDGE BASE — the science each coach reasons from
+
+_Established principles from exercise science, sports medicine, sleep medicine, and
+endocrinology. These are HOW to think when a situation isn't covered by a rule.
+Protocols (PROTOCOLS.md) say what to do; this says why, and how to adapt._
+
+---
+
+## 🏋️ HEAD COACH — strength & hypertrophy science
+
+**Volume landmarks (Israetel / renaissance-periodization framework).** Every muscle has
+a Minimum Effective Volume (MEV), Maximum Adaptive Volume (MAV), and Maximum Recoverable
+Volume (MRV), measured in hard sets per muscle per week. For a trained-but-not-advanced
+lifter: ~10 sets/week is around MEV, 12–20 is the productive MAV range, past ~22 recovery
+starts losing. More is not better past MAV — it just costs recovery.
+
+**Progressive overload is a rank order, not just "add weight."** Priority: (1) add reps
+at the same load, (2) add load once the top of the rep range is hit across all sets,
+(3) add sets, (4) improve tempo/ROM quality. Never add load and volume in the same week.
+This is exactly why the 25 lb lateral raise stays locked — full-range reps come first.
+
+**Proximity to failure drives hypertrophy.** Sets taken to 0–3 reps in reserve (RIR)
+produce most of the growth stimulus; sets stopped 5+ RIR are mostly junk volume. But
+training to true failure on compound lifts multiplies fatigue disproportionately —
+reserve failure for isolation work and the last set.
+
+**Detraining timelines (this matters for layoffs).** Strength is remarkably durable:
+measurable loss takes ~2–3 weeks of complete inactivity. Muscle size holds ~3+ weeks.
+What decays fast is *work capacity and neural efficiency* — a few days off leaves
+strength intact but the first session back feels harder and generates more soreness.
+**Practical rule: after a 3–7 day layoff, expect full strength but reduce volume ~1/3 for
+the re-entry session.** Repeated-bout effect means one re-entry session protects the next.
+
+**Fatigue vs fitness (Banister impulse-response).** Training creates both fitness (slow
+decay) and fatigue (fast decay). Performance = fitness − fatigue. This is why a taper or
+a few rest days *increases* performance — fatigue drains faster than fitness. After a
+layoff with green recovery markers, the body is often in a supercompensated state.
+
+**Specificity + the interference effect.** Concurrent heavy endurance work blunts strength
+adaptation when done in the same session or within ~6 hours, especially lower body. The
+incline finisher after lifting is fine (it's low-intensity, post-lift); a hard hike the
+day before legs is not.
+
+**Session sequencing after interruption:** train by rotation position, not calendar date.
+The muscle group with the longest time since last stimulus goes first.
+
+---
+
+## 🔋 RECOVERY SCIENTIST — autonomic & load science
+
+**HRV is a window on parasympathetic tone, not a fitness score.** Higher RMSSD generally
+means better vagal recovery. What matters is *the trend vs the individual's own baseline*,
+never absolute numbers or comparison to other people. A single low night is noise
+(alcohol, late meal, heat, poor sleep, stress). Multi-day suppression is signal.
+
+**Why HRV falls:** accumulated training load, sleep debt, psychological stress, illness
+onset (often the earliest sign), alcohol, dehydration, and — critically here — **sleep
+disordered breathing.** Nocturnal desaturation drives sympathetic surges; OSA is a
+classic cause of chronically suppressed HRV that no amount of training modification
+fixes. When HRV and SpO2 are both bad, treat them as one problem.
+
+**Acute:Chronic Workload Ratio (Gabbett).** ACWR = 7-day load ÷ 28-day load.
+0.8–1.3 is the "sweet spot"; >1.5 sharply raises injury risk; **<0.8 signals detraining
+and, counterintuitively, also raises injury risk** because tissue capacity has dropped
+while the athlete still feels ready. A low ACWR is a call to *rebuild load gradually*
+(~10%/week), not to jump straight back to peak volume.
+
+**Supercompensation.** After a stressor and adequate recovery, capacity temporarily
+exceeds baseline. Missing that window (staying rested too long) lets it decay. This is
+the argument for training promptly once markers clear.
+
+**Recovery is a hierarchy:** sleep > nutrition/hydration > stress management > everything
+else (cold plunges, massage, supplements). Never let an athlete optimize the bottom of
+the list while the top is broken.
+
+**RHR elevation of 5+ bpm above baseline** for 2+ days suggests incomplete recovery or
+illness. RHR *below* baseline with good HRV = well recovered.
+
+---
+
+## 😴 SLEEP & BREATHING SPECIALIST — sleep medicine
+
+**Sleep architecture.** Deep (N3) dominates the first half of the night and drives growth
+hormone release and physical repair; REM dominates the second half and drives motor
+learning and emotional regulation. Target roughly 13–23% deep, 20–25% REM. Short REM
+often means late alcohol, late eating, or truncated sleep.
+
+**OSA fundamentals.** Severity is graded by AHI (apnea-hypopnea index): 5–15 mild,
+15–30 moderate, >30 severe. The Oxygen Desaturation Index (ODI, drops/hr) is the O2Ring's
+closest analogue. **Time below 90% SpO2 (T90) is the strongest predictor of cardiovascular
+consequences** — more than AHI alone. A T90 of ~2 hours in one night is clinically
+significant and worth leading with at any consult.
+
+**Why it matters beyond tiredness:** untreated OSA drives hypertension, insulin
+resistance, atrial fibrillation, suppressed testosterone (via disrupted LH pulsatility),
+suppressed HRV, and impaired recovery from training. It is a *systemic* problem, which is
+why it sits upstream of nearly every other flag in this system.
+
+**Positional and weight effects.** Supine sleep worsens most OSA; ~10% body-weight loss
+can reduce AHI ~20–25%, but weight loss alone rarely resolves moderate+ OSA — many lean,
+fit people have significant OSA from craniofacial anatomy.
+
+**Exercise-OSA relationship.** Regular vigorous exercise reduces AHI modestly and
+independently of weight loss — consistent with the observed pattern that hard hike days
+produce better overnight O2 scores. That's a real physiological signal, not coincidence,
+and it's worth reporting to a specialist.
+
+**Diagnosis requires a sleep study** (home test or in-lab polysomnography). Consumer
+pulse-oximetry is screening evidence, never a diagnosis — but it is *exactly* the evidence
+that gets a study ordered.
+
+---
+
+## 🥗 NUTRITIONIST — nutrition science
+
+**Protein for hypertrophy.** ~1.6 g/kg/day covers most of the benefit; up to ~2.2 g/kg
+is useful in a deficit or for advanced trainees. Higher isn't harmful, just unnecessary.
+At 79 kg, 160–165 g ≈ 2.0 g/kg — appropriate for recomposition.
+
+**Distribution beats total.** 3–5 doses of 0.4 g/kg (~30–40 g) each, spaced 3–5 hours,
+maximally stimulates muscle protein synthesis. A single large dose doesn't compensate for
+a protein-poor meal earlier.
+
+**The leucine threshold (~2.5–3 g per meal)** is what triggers MPS. This is precisely why
+collagen doesn't count (no tryptophan, poor leucine, non-muscle amino profile) and why
+egg whites or legumes alone don't anchor a meal — they miss the threshold at realistic
+portions.
+
+**Body recomposition is real** but requires: adequate protein, resistance training,
+sufficient sleep, and only a small (or zero) energy deficit. Aggressive deficits during
+recomposition sacrifice muscle and suppress hormones — the wrong tool at 172–175 lb.
+
+**Energy availability.** Below ~30 kcal/kg fat-free mass/day, endocrine function
+degrades — testosterone, thyroid, and bone metabolism all suffer (RED-S in athletes).
+With Free T already at the bottom of range, under-eating is an active risk, not a
+neutral choice.
+
+**Scale weight is mostly water day to day.** Sources: glycogen (each gram binds ~3 g
+water), sodium, cortisol-driven retention, food volume in transit, menstrual cycle (n/a),
+and post-training inflammation. **A change over 1 lb overnight is essentially never fat.**
+Judge trends over 7–10 days, and preferentially on recovered days.
+
+**Fiber and the microbiome.** 30–40 g/day supports metabolic health; fermented foods
+(kimchi, kefir) add live cultures — but heat kills them, hence cold kimchi last.
+Polyphenol diversity ("30 plants a week") is a better target than any single superfood.
+
+**Glucose management.** Eating vegetables and protein before carbohydrate meaningfully
+blunts post-meal glucose spikes; a 10-minute walk after eating does the same. With
+fasting glucose at 101, these are not cosmetic habits — they're the intervention.
+
+---
+
+## 🧪 HORMONAL SPECIALIST — endocrinology
+
+**Testosterone axis.** Hypothalamus (GnRH) → pituitary (LH/FSH) → testes. **LH is
+released in pulses, predominantly during sleep** — which is why fragmented sleep and OSA
+suppress testosterone at the source. Total T is mostly bound to SHBG and albumin; free T
+(~1–2%) is bioactive. Low free T with normal-ish total T points to elevated SHBG.
+
+**Confirmed suppressors:** sleep deprivation (one week at 5 h/night drops T by 10–15%),
+OSA specifically, chronic energy deficit, excessive endurance volume, chronic stress and
+cortisol (direct HPG suppression), alcohol, cannabis, obesity (aromatization), and zinc
+or vitamin D deficiency.
+
+**Genuine levers, in order of leverage for this profile:** (1) fix the sleep-disordered
+breathing — the largest single lever; (2) sufficient sleep duration and continuity;
+(3) resistance training with adequate recovery, avoiding chronic overreach;
+(4) energy sufficiency; (5) micronutrient status (zinc, vitamin D, magnesium);
+(6) stress/cortisol management. Note what's absent: no supplement reliably raises T in a
+non-deficient person. Ashwagandha shows modest effects in stressed populations.
+
+**Glucose/A1c.** Fasting 100–125 = prediabetic range. Post-meal excursions matter as much
+as fasting values. Muscle is the primary glucose sink — resistance training improves
+insulin sensitivity for 24–48 h afterward, which makes consistent training a glycemic
+intervention, not just a physique one.
+
+**Ferritin** is an acute-phase reactant — it rises with inflammation, not just iron
+stores. Trending upward warrants watching; >300 in a male warrants investigation.
+
+---
+
+## 🦵 MOVEMENT COACH — biomechanics & injury prevention
+
+**Dynamic knee valgus** (knee collapsing inward under load) is associated with gluteus
+medius/maximus weakness, poor hip external rotation control, limited ankle dorsiflexion,
+and foot pronation. A −20° asymmetry is meaningful, not cosmetic: it is a well-documented
+risk factor for ACL injury and patellofemoral pain.
+
+**Correcting it:** strengthen hip abductors/external rotators (banded work, single-leg
+stance), improve ankle dorsiflexion range, and — most importantly — train **unilaterally**
+so the strong side can't compensate. Bilateral work masks asymmetry; split squats, RDLs,
+and single-leg calf work expose and correct it. Always start sets with the weaker side and
+match the stronger side to it.
+
+**Motor control before load.** Groove the pattern at light load with full attention, then
+add weight. Cueing "spread the floor"/"knee tracks over the second toe" works better than
+"don't let the knee cave."
+
+**Shoulder health in pressing/raising.** Scapular upward rotation with depression (not
+shrugging) protects the subacromial space. Lateral raises with the shoulder shrugged
+convert a delt exercise into an upper-trap exercise and compress the joint — hence the
+form cue and the conservative load.
+
+---
+
+## 🧬 LONGEVITY SCIENTIST — healthspan science
+
+**VO2max is among the strongest predictors of all-cause mortality** — the difference
+between "below average" and "above average" fitness is a larger hazard reduction than
+smoking, diabetes, or hypertension confer as risks. Improving cardiorespiratory fitness
+is the single highest-leverage longevity intervention available.
+
+**Zone 2 + high intensity, both.** Zone 2 (conversational, ~60–70% max HR) builds
+mitochondrial density and fat oxidation; VO2max intervals raise the ceiling. The classic
+polarized model is ~80% easy / 20% hard. Hard hikes are effectively VO2max work.
+
+**Muscle mass and strength are protective.** Grip strength and leg strength predict
+longevity and independence in later life. Sarcopenia begins in the 30s without resistance
+training — building now is deposits against a future withdrawal.
+
+**Autophagy** is stimulated by fasting, exercise, and certain compounds (spermidine in
+mushrooms/wheat germ; fisetin and quercetin as senolytics). Human senolytic evidence is
+still early — reasonable to include, unreasonable to rely on.
+
+**Established over speculative.** Sleep, VO2max, muscle mass, not smoking, metabolic
+health, and social connection have overwhelming evidence. Supplements are marginal by
+comparison. When a supplement conflicts with sleep or training, the supplement loses.
+
+**Fitness age** in Garmin's model is driven primarily by VO2max, RHR, and body
+composition — so improving it means aerobic training + lean mass, not diet tweaks.
+
+---
+
+## 💎 AESTHETICS COACH — physique development
+
+**The V-taper is shoulder width ÷ waist.** Lateral deltoid development and waist control
+drive the illusion more than overall size. Delts respond to frequency and volume more
+than heavy load — moderate weight, high reps, full ROM, 2–3x/week beats one heavy day.
+
+**Muscle group priorities for the classic look:** lateral delts, upper back width (lats),
+arms at the visual periphery, and a controlled waist. Legs matter for proportion and
+health even when hidden.
+
+**Body recomposition shows up in the mirror long before the scale.** Muscle is ~18%
+denser than fat; gaining 2 lb of muscle while losing 2 lb of fat is a visible
+transformation at identical body weight. **Track photos, tape measurements, and how
+clothes fit — not the scale.** Monthly front/side/back photos in the same light and pose
+are the honest record.
+
+**Skin.** Collagen synthesis requires vitamin C as a cofactor — pairing them is real
+biochemistry, not a marketing claim. Omega-3s support the skin barrier; sleep is when
+repair happens; sun exposure is the dominant modifiable ageing factor for skin.
+
+**Hair.** Biotin only helps if deficient; excess biotin also *interferes with lab assays*
+including thyroid and troponin tests — which is a real reason to cycle it rather than
+take it daily, and to stop it ~72 h before bloodwork.
+
+**Patience is a physique skill.** Realistic lean muscle gain for a trained lifter is
+~0.25–0.5 lb/month. Anything faster is water, glycogen, or fat.
+
+---
+
+## CROSS-CUTTING CLINICAL JUDGMENT
+
+**When multiple systems flag at once, look for the single upstream cause.** Suppressed
+HRV + low SpO2 + low free T + elevated glucose is not four problems — it is one
+(sleep-disordered breathing) with four downstream signatures. Treating the root beats
+managing the branches.
+
+**Consumer wearables are trend instruments, not diagnostic ones.** Optical HRV, sleep
+staging, and SpO2 all carry meaningful error. Trust direction and pattern over absolute
+values, and never let a device override how the athlete actually feels — or a doctor.
+
+**Know the referral line.** Coaching optimizes; it does not diagnose or treat. Persistent
+desaturation, chest symptoms, syncope, unexplained weight change, or abnormal labs go to
+a physician — and the coach's job is to make that handoff happen with good data, not to
+substitute for it.
+
+---
+
+
+# MEASUREMENT SCIENCE — what each device actually measures, and how much to trust it
+
+_A number is only as good as the method behind it. This is how Veer's devices compute
+what they report, where they're strong, where they lie, and how to read them against
+each other. Never compare a metric across brands without reading this first._
+
+---
+
+## GARMIN (Forerunner 970) — most metrics are Firstbeat Analytics algorithms
+
+Garmin licenses Firstbeat's physiological models. Almost everything below is derived
+from **beat-to-beat heart rate variability plus movement**, not directly measured.
+
+**HRV Status** — the one Veer's override rule keys on.
+- Measured from **RMSSD during sleep only** (not daytime), via wrist optical sensor.
+- Requires a **3-week baseline** before it reports anything.
+- "Balanced" = last 7-day average falls inside the personal baseline range.
+  "Unbalanced" = outside it. "Low" = below the low threshold. "Poor" = far below.
+- **Critical nuance: LOW is worse than UNBALANCED, not a step toward recovery.**
+  Unbalanced means "outside your normal range in either direction"; Low means
+  "distinctly beneath it." Only BALANCED clears an override.
+- Because it's a 7-day rolling average vs a 3-week baseline, it is **laggy** — a single
+  great night barely moves it, and it will not flip the day the athlete feels better.
+
+**Body Battery (0–100)** — Firstbeat's energy model.
+- Inputs: HRV, stress (also HRV-derived), sleep quality/duration, and activity.
+- Drains with stress and exertion, charges with rest and especially deep sleep.
+- **It is a state estimate, not a capacity measure.** BB 100 means "well charged
+  relative to your own patterns," NOT "cleared to train hard" — which is exactly why the
+  override checklist outranks it.
+- Overnight charge (start → peak) is the most useful signal: a big charge means genuine
+  parasympathetic recovery happened.
+
+**Training Readiness (0–100)** — a composite of: sleep score, recent sleep history,
+recovery time remaining, HRV status, acute load, and stress history. Because HRV Status
+is one of its inputs, TR and HRV can disagree — when they do, HRV Status is the more
+conservative signal and the override rule uses it directly.
+
+**Acute Load / Chronic Load / ACWR** — EPOC-based training load, exponentially weighted:
+acute ≈ 7 days, chronic ≈ 28 days. **Load only accrues from activities the watch records
+with heart rate** — this is precisely why unlogged strength sessions distort the picture
+and why "log as Strength Training" is a locked rule. A missed log understates acute load
+and can produce a falsely reassuring ACWR.
+
+**Recovery Time** — prescriptive, not descriptive: "hours until you'd be recovered enough
+for a hard session," issued after each activity. Reported by the API **in minutes** (the
+July 2026 units bug). It decays with rest and is reset by new activity.
+
+**Training Effect (Aerobic/Anaerobic 0–5)** and **Training Status** (Productive /
+Maintaining / Strained / Detraining etc.) both come from load + VO2max trend + HRV.
+"Strained" means acute load is high relative to fitness.
+
+**VO2max estimate** — derived from HR vs pace during outdoor runs/walks with GPS.
+**Treadmill and gym sessions don't update it** — which is why it can show "not available"
+for long stretches here. Accuracy vs lab testing is roughly ±5%, best for runners.
+
+**Fitness Age** — driven mainly by VO2max, RHR, and body composition/BMI. Improving it
+means aerobic capacity and lean mass, not diet tweaks.
+
+**Wrist Pulse Ox (SpO2)** — the weak link. Reflectance (not transmissive) optical
+measurement through the wrist, spot-sampled rather than continuous. **Wrist SpO2 is
+substantially less accurate than a finger/thumb oximeter**, is degraded by motion, poor
+perfusion, cold hands, tattoos, and loose fit, and tends to **over-read (miss desaturation
+depth)**. Treat Garmin SpO2 as a coarse screen only — it is not the OSA evidence.
+
+**Sleep staging** — accelerometer + HR/HRV inference. Consumer sleep staging agrees with
+polysomnography roughly 60–80% for total sleep time, and much worse for individual stages
+(REM vs deep confusion is common). **Total sleep duration is reasonably reliable; the
+stage breakdown is directional at best.** Sleep *score* is a proprietary composite.
+
+**Stress score (0–100)** — HRV-derived; low HRV during waking hours reads as high stress.
+Confounded by caffeine, illness, standing/movement, and emotion.
+
+---
+
+## WELLUE O2RING — the clinically meaningful device in this stack
+
+- **Transmissive pulse oximetry on the thumb/finger, sampled continuously all night**
+  (typically every 4 seconds), versus Garmin's periodic wrist spot-checks.
+- Reports: continuous SpO2 curve, **ODI (drops/hr ≥4%)**, lowest SpO2, average SpO2,
+  and **time below 90% (T90)** — the metrics sleep physicians actually use.
+- **This is why O2Ring and Garmin disagree, and why O2Ring wins.** When Garmin says
+  "avg 95%, low 86%" and the O2Ring says "avg 93%, low 85%, 7.7 drops/hr," the O2Ring is
+  the trustworthy record — different sensor geometry, continuous sampling, better site.
+  Always cite O2Ring numbers for anything clinical; use Garmin SpO2 only when no ring
+  data exists, and label it as wrist-derived.
+- ODI is the home analogue of AHI. It does not detect apneas without desaturation
+  (hypopneas, RERAs) — so **a normal ODI does not rule out OSA**, but an elevated one is
+  strong positive evidence.
+- Consumer oximeters carry roughly ±2% accuracy vs arterial blood gas, and accuracy
+  degrades at lower saturations and with darker skin pigmentation — a documented bias
+  worth naming to a physician rather than hiding.
+
+---
+
+## OMADA SCALE — bioelectrical impedance (BIA)
+
+- Weight itself is accurate. **Body-fat percentage from BIA is not** — it infers
+  composition from electrical resistance and is heavily confounded by hydration, recent
+  food, recent exercise, and skin temperature. Errors of ±5 percentage points are normal.
+- Consequence: **use the scale for weight trend only.** For composition, trust the mirror,
+  tape measurements, photos, and how clothes fit.
+- Same-conditions weighing (morning, post-void, pre-food) is what makes the trend usable.
+
+---
+
+## CROSS-PLATFORM CONTEXT — why numbers never match between brands
+
+**Apple Watch**
+- HRV is reported as **SDNN**, not RMSSD, and sampled irregularly during the day.
+  **SDNN and RMSSD are different metrics on different scales — never compare an Apple HRV
+  number to a Garmin/Oura/Whoop one.** Apple's typical values run higher.
+- Blood Oxygen: wrist reflectance, spot-check, same limitations as Garmin's.
+- "Cardio Fitness" = VO2max estimate from outdoor walk/run/hike.
+- Sleep stages added in watchOS 9; similar staging accuracy caveats.
+
+**Oura Ring**
+- **Finger-based, nighttime-focused** — generally better signal quality than wrist for
+  HRV and temperature because of finger perfusion.
+- Readiness score blends nocturnal RMSSD, resting HR, **body temperature deviation from
+  personal baseline** (its distinctive strength — early illness detection), sleep, and
+  prior activity.
+- Strong at sleep timing/duration; staging carries the usual consumer caveats.
+
+**Whoop**
+- No screen; recovery-centric. **Recovery % (0–100)** is computed from HRV measured during
+  **slow-wave sleep specifically**, plus RHR, respiratory rate, and sleep performance.
+- **Strain (0–21, logarithmic)** is a cardiovascular-load score from time in HR zones —
+  it is *not* comparable to Garmin's EPOC-based Training Load, and being logarithmic, the
+  top of the scale is far harder to reach than it appears.
+- Measures HRV in a narrower, cleaner window than Garmin's whole-night average, which
+  makes Whoop's HRV less noisy but also less representative of the full night.
+
+**Google Fit / Fitbit**
+- Fitbit's **Daily Readiness** blends recent activity, sleep, and HRV — conceptually
+  similar to Body Battery.
+- **Active Zone Minutes** double-count vigorous minutes (1 min vigorous = 2 AZM) — so
+  never compare AZM to Garmin's Intensity Minutes without dividing.
+- Google Fit's **Heart Points** use a similar double-weighting for vigorous activity.
+- Fitbit sleep scores and Garmin sleep scores use different formulas; a "good night" score
+  on one is not the same threshold on the other.
+
+---
+
+## HOW TO REASON WITH ALL OF THIS
+
+1. **Same device, same conditions, over time.** Every one of these metrics is far better
+   at detecting *change in one person* than at stating an absolute truth. Trends beat
+   readings; never benchmark Veer against another person's numbers.
+2. **When two devices disagree, pick by measurement quality, not by convenience.**
+   O2Ring (continuous, thumb, transmissive) beats Garmin wrist SpO2. Always.
+3. **Know which metrics are measured vs modeled.** Measured: heart rate, SpO2, movement,
+   weight, sleep duration. Modeled: Body Battery, Training Readiness, Training Effect,
+   VO2max, fitness age, sleep stages, stress, body-fat %. Modeled numbers inherit every
+   assumption in their model — and can be wrong in ways the raw signal isn't.
+4. **Garbage in, garbage out.** Unlogged strength work deflates acute load. A loose watch
+   corrupts HRV and SpO2. No ring worn = no clinical O2 data, and Garmin's wrist reading
+   is not a substitute. Say "not available" rather than promoting a weaker proxy.
+5. **A device flags; a physician diagnoses.** The O2Ring's job is to get a sleep study
+   ordered — not to grade the severity itself.
+6. **Explain the mechanism when citing a number.** "Body Battery hit 100 because deep
+   sleep drove parasympathetic recovery" teaches; "BB is 100" doesn't.
+
+---
+
+
+# KITCHEN INVENTORY & SUPPLY STATUS
+
+_Coaches: read this BEFORE writing any meal plan. Plan from what's actually in
+the kitchen — never assume. When an item is OUT or LOW, substitute from the
+approved swap list rather than forcing the original plan, and say what you did._
+
+**Last updated:** 2026-07-22 — sweet potato, seaweed, Jojo's confirmed IN STOCK; rest still need a first count
+**How to update:** tell Claude Code "out of avocado", "restocked salmon", "low on
+whey" and it edits this file; changes flow into the brain on the next rebuild.
+
+---
+
+## STATUS KEY
+✅ IN STOCK · 🟡 LOW (buy this week) · 🔴 OUT (substitute today) · ❔ UNKNOWN (ask Veer)
+
+---
+
+## PROTEIN ANCHORS (the meal-critical tier)
+
+| Item | Status | Typical hold | Notes |
+|------|--------|--------------|-------|
+| Chicken breast | ❔ | ~4 meals | Mon-ish lunches, Friday dinner |
+| Salmon (wild) | ❔ | 2 dinners | Mon + Sun rotation |
+| Sardines (tins) | ❔ | count tins | Tue dinner + Fri half tin — 2-3x/wk for calcium |
+| Shrimp (Costco Argentina red) | ❔ | freezer | **Portion into 200g freezer bags** — open KT item |
+| Turkey | ❔ | 1-2 dinners | Wed + Sat rotation |
+| Eggs (whole) | ❔ | ~2-3 days | 3/day training, 2/day rest — depletes FAST |
+| Liquid egg whites | ❔ | ~1 week | 6 tbsp in bowl daily + lunches |
+
+## FAST-DEPLETING PRODUCE (check these every single plan — KT-flagged)
+
+| Item | Status | Typical hold | Notes |
+|------|--------|--------------|-------|
+| Avocado | ❔ | 2-4 days | half at lunch + half at dinner = 1/day |
+| Baby spinach | ❔ | ~4 days | 100g lunch + 80g dinner daily |
+| Broccoli | ❔ | ~4 days | 150g lunch + dinner option |
+| Broccoli microgreens | ❔ | ~5 days | 1 tbsp raw × 3 meals — **never cook** |
+| Lemon | ❔ | ~1 week | bone broth daily |
+| Zucchini / yellow squash | ❔ | ~5 days | dinner veg rotation |
+| Crimini mushrooms | ❔ | ~5 days | daily rotation |
+| Shiitake mushrooms | ❔ | 2 dinners | 2×/week — **KT flagged as under-integrated** |
+| Purple cabbage | ❔ | ~2 weeks | **KT flagged: rotate in, not yet integrated** |
+| Pomegranate seeds | ❔ | ~1 week | **KT flagged: rotate in, urolithin A** |
+| Garlic | ❔ | weeks | 2 cloves/meal |
+| Onion | ❔ | weeks | 30g/meal |
+
+## PANTRY & DRY GOODS
+
+| Item | Status | Notes |
+|------|--------|-------|
+| Sprouted oats (One Degree) | ❔ | 50g training / 35g rest daily |
+| Isopure whey | ❔ | 1 scoop daily — watch scoop count |
+| Collagen | ❔ | 1-2 scoops daily, always with berries (vit C) |
+| Almond milk | ❔ | 200ml daily — depletes fast |
+| Kefir | ❔ | 100ml daily |
+| Siggi's / Greek yogurt | ❔ | 150g after lunch |
+| Frozen berries (straw/blue/cherry) | ❔ | 220g daily — big burn rate |
+| Dried cranberries | ❔ | 20g daily |
+| Chia seeds | ❔ | 10g daily |
+| Walnuts | ❔ | 15g daily |
+| Pumpkin seeds | ❔ | 10g daily |
+| Brazil nuts | ❔ | 1/day — selenium |
+| Bee pollen | ❔ | 5g/day, refrigerate |
+| Kimchi | ❔ | 30-35g × 2 meals daily — cold, always last |
+| Black beans (dry) | ❔ | Tue legume — soak 100g dry MONDAY night |
+| Garbanzo (dry) | ❔ | Fri legume — soak 100g dry THURSDAY night |
+| Black chickpeas (kala chana) | ❔ | approved alt, same fiber-side role |
+| Canned black beans (backup) | ❔ | rinse thoroughly if used |
+| Rice | 🔴 NOT IN ECOSYSTEM | Veer does not keep rice (confirmed 7/22). **Never prescribe it.** Sweet potato is THE training-day carb. |
+| Sweet potato | ✅ | in stock 7/22. The ONLY starch option — but adding it is a GOAL-DRIVEN decision, never automatic (see PROTOCOLS carb rule) |
+| Goat bone broth | ❔ | 240ml daily before breakfast |
+| ACV | ❔ | 1 tbsp before every meal |
+| Psyllium husk | ❔ | 5g before dinner |
+| Olive oil (EVOO) | ❔ | cooking + drizzle |
+| Sesame oil | ❔ | finishing only, off heat |
+| Turmeric + black pepper | ❔ | always paired |
+| Celtic sea salt | ❔ | pinch post-finisher, training days |
+| Dark chocolate (Hu Salty Dark) | ❔ | 3 bites after dinner |
+| Mastic gum | ❔ | 20-30 min after meals |
+| Green tea | ❔ | evening |
+| Seaweed sheets (nori) | ✅ | iodine/minerals — confirmed 7/22, used at lunch |
+| Jojo's chocolate blocks | ✅ | confirmed 7/22 — dark-chocolate-category snack |
+
+## SUPPLEMENTS — count remaining, reorder at ~2 weeks left
+
+| Supplement | Status | Daily dose | Reorder note |
+|------------|--------|-----------|--------------|
+| Creatine | ❔ | 5g | |
+| D3 + K2 (Solaray) | ❔ | 5000 IU | |
+| Omega-3 (Nordic Naturals) | ❔ | 2 caps | |
+| Beef Liver | ❔ | 2 training / 1 rest | |
+| B12 sublingual | ❔ | 5000mcg | |
+| CoQ10 Ubiquinol | ❔ | 100mg | |
+| Biotin | ❔ | Tue/Thu/Sat only | **stop 72h before bloodwork — assay interference** |
+| Fisetin | ❔ | 1st-2nd monthly | next: **Aug 1-2, 2026** — confirm stock before Aug 1 |
+| Probiotic (Garden of Life 50B) | ❔ | 1 cap empty stomach | |
+| Zinc Picolinate (Solgar) | ❔ | 22mg with dinner | always with copper |
+| Thorne Copper | ❔ | 2mg with dinner | always with zinc |
+| Magnesium Glycinate (Jarrow) | ❔ | 240mg 9:30pm | |
+| Tart Cherry Juice | ❔ | 60ml 9:30pm | not 8oz |
+| KSM-66 | ❔ | 600mg 9:30pm | **cycle ends Sept 7** — do NOT reorder before break |
+
+## SLEEP / EQUIPMENT CONSUMABLES
+
+| Item | Status | Notes |
+|------|--------|-------|
+| Nose strips (Breathe Right Extra) | ❔ | nightly |
+| Mouth tape | ❔ | nightly |
+| Earplugs | ❔ | nightly |
+| Saline rinse | ❔ | every OTHER night only |
+| O2Ring charged | ❔ | thumb, vibration OFF |
+
+---
+
+## APPROVED SUBSTITUTIONS (use these, never improvise outside the protocol)
+
+| If OUT of… | Substitute with | Never substitute with |
+|-----------|-----------------|----------------------|
+| Chicken | turkey, shrimp, salmon (any approved anchor ≥150g) | egg whites alone, legumes alone |
+| Salmon | sardines (1 tin + something) or shrimp 200g | protein powder as a meal |
+| Fresh spinach | any leafy green already in rotation | skipping the vegetable course |
+| Avocado | olive oil 1 tbsp | skipping fats entirely |
+| Broccoli | zucchini, yellow squash, cabbage | |
+| Microgreens | **nothing — omit and note it** | cooked greens (heat kills sulforaphane) |
+| Dry legumes (not soaked) | canned, rinsed thoroughly | doubling the protein anchor instead |
+| Training-day carb | **sweet potato 200g — the default, rice is NOT in this ecosystem** | rice (not kept), skipping the carb entirely on a training day |
+| Siggi's | Greek yogurt (~2g protein difference) | flavored/sweetened yogurt |
+| Almond milk | water + extra whey scoop is acceptable | dairy milk (not in protocol) |
+| Kefir | skip and note it | |
+
+---
+
+## COACH RULES FOR USING THIS FILE
+
+**THE MATERIALITY TEST — apply this before mentioning inventory at all.**
+Ask: _does this item's status change a decision today, or move a goal?_
+If yes → surface it in the plan. If no → add it silently to the shopping list and
+say nothing. A brief cluttered with "low on garlic" trains Veer to skim, and then
+he misses the line that mattered. **Signal over completeness, always.**
+
+### TIER 1 — always surface, these move goals
+- **Protein anchors out** → directly threatens the 160-165g/130-140g targets, which
+  is the muscle-building and Free-T goal. Never a silent downgrade.
+- **Dated supplement windows** → fisetin before Aug 1-2, KSM-66 **stop** (not
+  reorder) Sept 7, biotin pause 72h pre-bloodwork. Missing these loses a whole
+  cycle or corrupts a lab result.
+- **Sleep protocol consumables out** (nose strips, mouth tape, O2Ring uncharged) →
+  this is the OSA investigation, the #1 open medical item. Treat as urgent.
+- **Anything that would break a locked rule** if unavailable.
+
+### TIER 2 — surface only if it changes TODAY'S plan
+- A fast-depleting item that today's meals actually call for (avocado, spinach,
+  broccoli, microgreens, almond milk, eggs). Substitute, state the swap in one
+  clause, move on. If today's meals don't use it, it's Tier 3.
+- Sweet potato missing on a day the carb IS indicated by the goal rules — that's real
+  fuel and glycogen refill, so it counts.
+
+### TIER 3 — silent; shopping list only
+Spices, garlic, onion, oils, condiments, tea, chocolate, mastic gum, and anything
+with weeks of runway. Never spend a line of the brief on these.
+
+### MECHANICS
+1. **Check before planning.** Planned item 🔴 OUT → substitute from the table above
+   and say it in one clause: "Avocado out → olive oil 1 tbsp instead."
+2. **Ask only about Tier 1-2 unknowns**, one line at the end, and only when it
+   actually blocks tomorrow: "Confirm: salmon for tonight?"
+3. **SHOPPING LIST section appears only when there is something Tier 1 or 2 on it**
+   — otherwise omit the section entirely rather than printing an empty heading.
+4. **Soak reminders are inventory-dependent:** only remind about Monday/Thursday
+   soaking if dry legumes are in stock; otherwise name the canned backup.
+5. **When inventory forces a compromise, say what it costs.** "Sweet potato out →
+   flag it, the training-day carb has no in-ecosystem substitute" is the pattern. "No anchor protein in the house" is a
+   flag with a consequence: state the protein shortfall in grams.
+
+---
+
+
+## PIPELINE HEALTHCHECK — 2026-07-23 16:46
+
+**11/11 checks passing**
+
+| Check | Status | Detail |
+|-------|--------|--------|
+| Today's Garmin data present | ✅ | all key fields present |
+| veer-data.json today block populated | ✅ | readiness fields filled |
+| Brain rebuilt today | ✅ | Generated 2026-07-23 |
+| Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-07-23 |
+| Recovery Time units sane | ✅ | 9.2 hrs |
+| HRV override logic live | ✅ | streak=0 override=clear |
+| Brief matches today's data | ✅ | brief cites TR 70 |
+| Sleep window plausible | ✅ | bedtime 10:13 PM |
+| Weight fresh (<=2 days) | ✅ | latest 173.7 lb on 2026-07-22 (1d old) |
+| Scheduled tasks healthy | ✅ | all ran within 24h |
+| No hardcoded secrets in runners | ✅ | clean |
