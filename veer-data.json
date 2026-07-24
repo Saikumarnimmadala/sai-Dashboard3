@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-24T07:54:59.831238-07:00",
+  "generated": "2026-07-24T15:30:20.557679-07:00",
   "today": {
     "training_readiness": 66,
     "readiness_level": "MODERATE",
@@ -478,5 +478,52 @@
     "hr_z3_s": 541.0,
     "hr_z4_s": 128.998,
     "hr_z5_s": 0.0
-  }
+  },
+  "recent_sessions": [
+    {
+      "date": "2026-07-21",
+      "day": "Tue",
+      "type": "Upper Body",
+      "name": "Strength Workout — 2026-07-21 2026-07-21 16:59",
+      "duration": "2h 44m",
+      "avg_hr": "98.0",
+      "load": "17.510009765625"
+    },
+    {
+      "date": "2026-07-21",
+      "day": "Tue",
+      "type": "Run/Treadmill",
+      "name": "Treadmill Running — 2026-07-21 2026-07-21 19:45",
+      "duration": "20m 30s",
+      "avg_hr": "155.0",
+      "load": "88.60482788085938"
+    },
+    {
+      "date": "2026-07-22",
+      "day": "Wed",
+      "type": "Lower Body",
+      "name": "Lower — 2026-07-22 2026-07-22 17:35",
+      "duration": "1h 37m",
+      "avg_hr": "99.0",
+      "load": "8.286605834960938"
+    },
+    {
+      "date": "2026-07-22",
+      "day": "Wed",
+      "type": "Run/Treadmill",
+      "name": "Treadmill Running — 2026-07-22 2026-07-22 19:13",
+      "duration": "37m 4s",
+      "avg_hr": "123.0",
+      "load": "71.99253845214844"
+    },
+    {
+      "date": "2026-07-23",
+      "day": "Thu",
+      "type": "Hike",
+      "name": "Coconino County Hiking — 2026-07-23 2026-07-23 19:31",
+      "duration": "1h 30m",
+      "avg_hr": "114.0",
+      "load": "20.883056640625"
+    }
+  ]
 }
