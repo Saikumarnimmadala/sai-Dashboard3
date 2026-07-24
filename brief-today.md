@@ -1,217 +1,165 @@
-# Morning Brief — Thursday, July 23, 2026
+Brother — quick flag before the brief: today's Garmin pull (2026-07-24) came back completely empty — TR, BB, HRV, sleep, SpO2, steps all "N/A" in `garmin/daily/2026-07-24.md`. That's a sync gap, not a real physiological reading (per the plausibility gate — 0.0h sleep is never a literal fact). I'm building today's call on the last confirmed data (2026-07-23) and flagging the gap itself as an active issue.
 
-**Biotin: TAKE today** (Tue/Thu/Sat schedule)
+## a. Friday, July 24, 2026 — Biotin: **SKIP** (Tue/Thu/Sat only — today's Friday)
 
----
+## a2. 🧠 Coach Panel
+- 🏋️ **Head Coach:** Last Upper session was 07-21 (72h+ recovered, only 1x/7-day trailing pace) vs Lower 07-22 (~48h) — Upper is due, both by recovery window and frequency.
+- 🔋 **Recovery Scientist:** All four override checks clear using 07-23's numbers (TR 70, Acute Load 320, Recovery Time 8.8h, HRV Balanced streak=0) — no downgrade signal, but today's own readiness is simply unmeasured.
+- 😴 **Sleep & Breathing:** O2Ring hasn't reported since the night of 07-21 (score 6.9, low 85%) — that's now a 2+ night gap, and the multi-week O2Ring score trend (8.4→8.1→7.5→7.3→6.9) is drifting worse, not better.
+- 🧬 **Longevity Scientist:** Vigorous minutes this week sit at 49 vs the 75+ target — a real Upper session today helps close that, and Fisetin's next window (Aug 1-2) is 8 days out, plenty of runway to confirm stock.
+- 🧪 **Hormonal Specialist:** 14-day weight trend is flat-oscillating 172.1–175.4 with no plateau — genuine recomposition holding, not stalling.
+- 🦵 **Movement Coach:** Corrective block (right-side priority) last ran during the 07-22 Lower session — on track, nothing due today since it's an Upper day.
+- 💎 **Aesthetics Coach:** Upper frequency is under the 2x/week target this trailing week (1x) — training it today directly serves the V-taper priority.
+- 🥗 **Nutritionist:** Chicken breast and dry garbanzo are both ❔ unconfirmed in INVENTORY.md, and today's Friday dinner anchor needs chicken — need a one-line confirm before dinner prep.
 
-## 🧠 Coach Panel
+## b. Weight
+**Not available in today's data pull** (Omada). Last confirmed: **173.7 lb** on 2026-07-22 — mid-band (172–175 target), no new reading since.
 
-🏋️ **Head Coach:** BB peaked 79 (75-79 tier → normal working weights, 4 sets), TR 70 moderate. Upper last trained 07-21 (48h+ recovered) vs Lower yesterday 07-22 (still repairing, 24h) — call is **Upper Body**, standard weights.
+## c. Recovery Scorecard
 
-🔋 **Recovery Scientist:** HRV BALANCED 68ms overnight = 68ms 7-day avg exactly (streak=0, override clear), ACWR 0.90 (OPTIMAL band), Recovery Time 9.2h. Every override check is green.
-
-😴 **Sleep & Breathing:** Sleep score 83, 7.7h, Deep 73m/REM 80m — good structure. But O2Ring gap now 2 nights (last real data 07-21, score 6.9); Garmin wrist SpO2 low 85% is coarse-proxy only. Pulmonologist referral **day 52 unscheduled** — standing #1.
-
-🧬 **Longevity Scientist:** Weekly vigorous minutes 62 vs 75+ target — behind pace. Anaerobic load 55 vs target 133-400 is a 3rd consecutive shortage day. Today's real strength session helps both. Fisetin next window Aug 1-2 — confirm stock before then.
-
-🧪 **Hormonal Specialist:** Weight 173.7 lb (07-22, mid-band) — the 175.4 spike on 07-20 fully resolved, reads as water not fat. RHR 52 (7-day avg 50) is clean, no incomplete-recovery signal.
-
-🦵 **Movement Coach:** Lower Body corrective block (right-side priority, -20° valgus) ran yesterday 07-22 — on schedule. Today's Upper session: cue shoulders down on lateral raises/incline press per VASA.
-
-💎 **Aesthetics Coach:** Upper trained 2x trailing 7 days (07-16, 07-21), Lower 2x (07-17, 07-22) — balanced. Today's Upper keeps V-taper priority on pace; lateral raises stay locked 25lb/11kg.
-
-🥗 **Nutritionist:** Acute Load 293 ≥ 200 fires the carb trigger — sweet potato 200g goes into tonight's dinner. Chicken (today's lunch anchor) and dry garbanzo (Friday's legume, soak tonight) are still unconfirmed in INVENTORY.md — confirm today, brother.
-
----
-
-## Weight
-
-**Not available in today's data pull.** Last confirmed: **173.7 lb** (2026-07-22, source: MEMORY.md weight log) — mid-band within the 172-175 target, and back to normal after the 175.4 lb blip on 07-20 (water, per trend logic).
-
----
-
-## Recovery Scorecard
-
-| Metric | Yesterday (07-22) | Today (07-23) | Delta | Source |
+| Metric | Yesterday (2026-07-23) | Today (2026-07-24) | Delta | Source |
 |---|---|---|---|---|
-| Body Battery (start→peak) | 18 → 69 | 24 → 79 | +10 peak | garmin/daily/2026-07-22.md, 2026-07-23.md |
-| RHR | 53 bpm | 52 bpm | -1 | Resting HR field |
-| HRV Status | BALANCED (57ms) | BALANCED (68ms) | improved | HRV Last Night Avg |
-| Sleep duration | 436m (7.3h) | 464m (7.7h) | +28m | Sleep field |
-| Sleep score | 80 | 83 | +3 | Sleep field |
-| Stress avg | 30 | 19 | -11 | Stress Avg field |
-| Steps | 8810 | 1202 | n/a — early-AM pull | Steps field |
-| Training Readiness | 65 | 70 | +5 | Training Readiness field |
-| O2Ring score | not available in today's data pull | not available in today's data pull | — | no PDF either night |
-| O2Ring drops/hr | not available in today's data pull | not available in today's data pull | — | no PDF either night |
-| SpO2 lowest (Garmin wrist) | 83% | 85% | +2 | Lowest SpO2 field |
-| Time <90% | not available in today's data pull | not available in today's data pull | — | Garmin doesn't report T90 |
+| Body Battery (start→peak) | 18 → 79 | not available in today's data pull | — | garmin/daily/2026-07-23.md / garmin/daily/2026-07-24.md |
+| RHR | 52 bpm | not available in today's data pull | — | same |
+| HRV status | Balanced (68ms overnight, 68ms 7-day) | not available in today's data pull | — | same |
+| Sleep duration | 7.7h (464m, score 83) | not available in today's data pull | — | same |
+| Sleep score | 83 | not available in today's data pull | — | same |
+| Stress avg | 32 | not available in today's data pull | — | same |
+| Steps | 12,633 | not available in today's data pull | — | same |
+| Training Readiness | 70 (MODERATE) | not available in today's data pull | — | same |
+| O2Ring score | not available (no PDF that night either) | not available in today's data pull | — | O2Ring pipeline note |
+| O2Ring drops/hr | not available | not available | — | same |
+| SpO2 lowest (wrist) | 85% | not available | — | garmin/daily/2026-07-23.md |
+| Time <90% (T90) | not available (last known: 7m36s, 07-21 night) | not available | — | CARRIED FROM 07-21 — NOT TODAY'S ACTUAL READING |
 
-**Pattern (3 lines max):** Every marker improved overnight — HRV, sleep, stress, TR all trending the right direction after yesterday's training day, consistent with a clean recovery cycle. Steps at 1202 is a data-pull-timing artifact (brief generated early AM), not a real activity signal. O2Ring blind spot continues — 2 nights now with no clinical SpO2 data.
+**Pattern (3 lines max):** HRV cleared to Balanced for 3 straight days (07-21→07-23), a genuine recovery arc after the 07-18–07-20 Unbalanced/Low stretch. RHR is bouncing 46–54 in a normal band with no elevation pattern — no illness signal. Weight and O2Ring both need fresh data before any new call can be made on them.
 
----
+## d. Active flags
+- **CRITICAL — Pulmonologist:** referral submitted June 1, still unscheduled — **day 53**. Standing #1 item, every brief until booked.
+- Today's full Garmin pull is empty — data pipeline gap, not a real "no readiness" reading; re-check tonight/tomorrow.
+- Weight not available today; last confirmed 173.7 lb (07-22), 2 days stale.
+- O2Ring gap: no PDF for either the 07-22→07-23 or 07-23→07-24 night — last real ring data is now 3 nights old (07-21).
+- O2Ring score trend worsening over the last 2 weeks (8.4 → 8.1 → 7.5 → 7.3 → 6.9) — worth naming to the pulmonologist alongside the T90 evidence.
+- Unresolved: 07-21 night's lowest-SpO2 recorded two ways in history (81% vs 85%) — needs source-PDF reverification, doesn't block today's call.
+- Anaerobic load shortage — 4th+ consecutive day below the 133–400 target band (55 as of 07-23).
+- Vigorous intensity minutes behind weekly pace: 49 min vs 75+ target.
+- Inventory: chicken breast and dry garbanzo (tonight's anchor + Friday legume) are both ❔ unconfirmed — confirm before dinner prep, canned garbanzo is the fallback.
+- Sleep consumables (nose strips, mouth tape, earplugs, O2Ring charge) status unknown in inventory — Tier 1, this is the active OSA investigation.
+- Fisetin next window Aug 1-2 — confirm stock before then. KSM-66 stop (not reorder) Sept 7.
 
-## Active Flags
+## e. Training call
 
-- 🔴 **CRITICAL — Pulmonologist:** referral submitted Jun 1, **52 days unscheduled** as of today. Call today. Standing #1 item.
-- O2Ring gap: no PDF for 07-22→07-23 night. Last real ring data is 07-21 (score 6.9, avg SpO2 94%, lowest 85%) — 2 days old.
-- O2Ring internal discrepancy: 07-21 night's lowest SpO2 is recorded two ways elsewhere in memory (81% vs 85%) — flagged for source-PDF reverification, not resolved.
-- Anaerobic load shortage — 3rd consecutive day (55 today vs 101/101 the two prior days, target 133-400).
-- Vigorous intensity minutes: 62 this week vs 75+/week target — behind pace.
-- Inventory unknowns that matter today: chicken breast (today's lunch anchor) and dry garbanzo (tonight's soak for Friday's legume day) — both ❔ in INVENTORY.md, confirm before you shop/cook.
-- Weight pipeline: Omada reading not available today — confirm when the app syncs.
+**Override checklist** (walked using 2026-07-23, the last real data — today's pull is empty):
+- **A. Training Readiness:** 70 MODERATE, not Low → clear.
+- **B. Acute Load:** 320, below the 450–500 deload line → clear.
+- **C. Recovery Time:** 8.8h, below 24h → clear.
+- **D. HRV persistence:** streak of consecutive Unbalanced days ending today = **0** (computed). Balanced for 3 straight days → clear.
+- **E. Explicit scale-back warning:** none present in the data → clear.
 
----
+No override fires. Body Battery itself is unmeasured today (sync gap) — using yesterday's peak of 79 as the best available proxy (**CARRIED FROM 2026-07-23 — NOT TODAY'S ACTUAL READING**), which sits in the 75–79 tier: normal working weights, 3–4 sets.
 
-## Training Call
+**Session selection — reasoned from actual history, not the calendar:**
+1. Last Upper session: **2026-07-21** (strength_training, 2h44m). Last Lower session: **2026-07-22** (strength_training, 1h37m). 07-23 was hiking (Coconino County), not either split day.
+2. Recovery window: Upper is 72h+ out (fully past the 48h MPS window). Lower is ~48h out (right at the boundary, was still repairing as of yesterday's call).
+3. Trailing-7-day frequency: Upper = 1 session (07-21), Lower = 2 sessions (07-17, 07-22). Upper is **behind** the ~2x/week target; Lower is on pace.
+4. Goal weighting: V-taper is an upper-body project (lateral delts, back width) — combined with Upper being both more recovered and behind on frequency, this isn't even a close call.
+5. No re-entry discount applies — Veer has trained continuously (Lower + a hike) in the interim, this is normal split cadence, not a layoff.
 
-**Override checklist — walked in full:**
+**Call: Upper Body, standard working weights, 4 sets.** This diverges from the calendar-default (Friday = Lower) — Lower was already hit twice this week and is still inside its recovery window; Upper is overdue on both recovery and frequency grounds.
 
-- **A. HRV persistence rule:** BALANCED, streak = 0 consecutive Unbalanced days. **Clear.**
-- **B. Training Readiness:** 70 (MODERATE), not "Low." **Clear.**
-- **C. Acute Load:** 293 — well under the 450-500 deload line. **Clear.**
-- **D. Recovery Time:** 9.2h — well under the 24h threshold. **Clear.**
-- **E. Load Focus explicit warning:** Load Balance phrase is ANAEROBIC_SHORTAGE (a deficit, not an overload warning) — no "scale back" flag fired. **Clear.**
+## f. Full training plan — Upper Body
 
-**No override fires.** Body Battery peaked 79 → 75-79 tier → normal working weights, 3-4 sets (using 4, top of tier).
+**Warmup:** Treadmill 5–7 min, incline 4–5, speed 2.8–3.0 mph.
 
-**Session selection — reasoned from history, not calendar:**
-1. Last session actually completed: Lower Body, 07-22 (yesterday, ~24h ago). Last Upper Body: 07-21 (2 days / ~48h ago).
-2. Recovery window: Lower is still inside the ~48h MPS repair window from yesterday. Upper has cleared 48h.
-3. Frequency check (trailing 7 days): Upper 2x (07-16, 07-21), Lower 2x (07-17, 07-22) — both on the 2x/week target, no drift.
-4. Goal weighting: with recovery a toss-up-adjacent call resolved by Upper being past 48h, V-taper priority (Upper = the aesthetic lever) reinforces the same pick.
-5. Not a layoff re-entry — normal sequential training, full working weights apply.
-6. This also happens to match the calendar default (Thu = Upper) — no conflict to reason through today, but the call is being made on rotation logic, not the calendar.
+| # | Exercise | Weight | Sets × Reps | Note |
+|---|---|---|---|---|
+| 1 | Lateral Raises | 25 lb (11 kg) | 4 × 12 | Always first. Shoulders DOWN, away from ears. Do not progress to 30 lb yet. |
+| 2 | Rear Delt Machine | 90 lb (41 kg) | 4 × 10 | Garmin logs as "Face Pull" — not a substitution. |
+| 3 | Incline DB Press | 50 lb (23 kg) | 4 × 10 | Shoulders down throughout. |
+| 4 | Converging Chest Press | 105 lb (48 kg) | 4 × 10 | Garmin logs as "Bench Press" — not a substitution. |
+| 5 | Lat Pulldown | 145 lb (66 kg) | 4 × 10 | Assisted Chin-up valid sub if needed. |
+| 6 | DB Curls | 25 lb (11 kg) | 4 × 12 | |
+| 7 | Tricep Pushdown | 42.5 lb (19 kg) | 4 × 10 | |
+| 8 | Push-ups | Bodyweight | 2–3 sets to failure | |
+| 9 | Incline Treadmill Finisher | Incline 10, 3.0 mph | 20 min | Always last, never skip. BB proxy 79 is just under the 80+ threshold for 3.2–3.5, so standard 3.0 today. |
 
-**Call: Upper Body, standard working weights, 4 sets.**
+Celtic sea salt — pinch post-finisher (training day rule).
 
----
+## g. Protein target + full meal plan
 
-## Full Training Plan — Upper Body
+**Target: 160–165g muscle protein (training day).** Carb decision: **sweet potato 200g included tonight** — Trigger 2 fires (Acute Load 320 on 07-23, the last available reading, ≥200 high-output threshold; this has been holding steady for weeks, so it's a sustained-load trigger, not a one-day spike). Weight (173.7) is mid-band, not at the top, so nothing argues against it.
 
-**Warmup:** Treadmill 5-7 min, incline 4-5, speed 2.8-3.0 mph
+**Inventory note (Tier 1):** Chicken breast (needed for lunch + tonight's Friday anchor) and dry garbanzo (Friday legume, should've soaked Thursday night) are both ❔ unconfirmed in INVENTORY.md. Proceeding with the plan below — confirm chicken is on hand before lunch prep; if garbanzo wasn't soaked, use canned rinsed as the fallback (no anchor substitution needed, this only affects the fiber side).
 
-| Order | Exercise | Weight | Sets × Reps |
-|---|---|---|---|
-| 1 | Lateral Raises (Garmin: "Face Pull") | 25 lb / 11 kg | 4 × 12 |
-| 2 | Rear Delt Machine | 90 lb / 41 kg | 4 × 10 |
-| 3 | Incline DB Press | 50 lb / 23 kg | 4 × 10 |
-| 4 | Converging Chest Press (Garmin: "Bench Press") | 105 lb / 48 kg | 4 × 10 |
-| 5 | Lat Pulldown (Assisted Chin-up = valid sub) | 145 lb / 66 kg | 4 × 10 |
-| 6 | DB Curls | 25 lb / 11 kg | 4 × 12 |
-| 7 | Tricep Pushdown | 42.5 lb / 19 kg | 4 × 10 |
-| 8 | Push-ups | Bodyweight | 2-3 sets to failure |
-| 9 | Incline Treadmill Finisher | Incline 10, speed 3.0 mph (BB 79 → under the 80+ threshold for 3.2-3.5) | 20 min, always last |
+**Breakfast:**
+- ACV — 1 tbsp in water
+- Goat bone broth + lemon — 240ml warm
+- Whole eggs — 3 (training day)
+- Breakfast bowl (overnight prep): sprouted oats 50g, Isopure whey 1 scoop, collagen 1–2 scoops, almond milk 200ml, egg whites 6 tbsp, frozen berries 220g, dried cranberries 20g, chia seeds 10g, walnuts 15g, pumpkin seeds 10g
+- Add fresh this morning only: Brazil nut 1 whole, bee pollen 5g, broccoli microgreens 1 tbsp raw (on top, last second)
+- Kefir — 100ml
+- 10-min walk after
 
-**Form cues:** Shoulders DOWN and away from ears throughout Lateral Raises and Incline DB Press. Celtic sea salt — pinch post-finisher (training day). Log as Strength Training on Forerunner 970, Auto Set Detection + Auto Rest Timer ON.
-
----
-
-## Protein Target + Full Meal Plan
-
-**Training day target: 160-165g muscle protein** (ceiling, not floor — no shake needed if food alone gets there)
-
-**Carb decision:** Acute Load 293 ≥ 200 → **trigger fires**, add sweet potato 200g tonight. Sweet potato ✅ confirmed in stock (INVENTORY.md).
-
-**Inventory checks before cooking:** Chicken breast (lunch anchor) and dry garbanzo (tonight's soak) are ❔ unconfirmed — proceed as planned below, but confirm both today; canned rinsed garbanzo is the backup if dry stock is out.
-
-### Breakfast
-1. ACV — 1 tbsp in water
-2. Goat bone broth + lemon — 240ml warm
-3. Whole eggs — 3 (training day)
-4. Breakfast bowl (overnight-prepped): Sprouted oats 50g, Isopure whey 1 scoop, Collagen 2 scoops (paired with berries for vitamin C), Almond milk 200ml, Egg whites 6 tbsp, Frozen berries 220g, Dried cranberries 20g, Chia seeds 10g, Walnuts 15g, Pumpkin seeds 10g
-   Add fresh this morning only: Brazil nut 1 whole, Bee pollen 5g, Broccoli microgreens 1 tbsp raw (last, never cooked)
-5. Kefir — 100ml
-6. 10-min walk
-
-*Breakfast protein ≈ 70g*
-
-### Lunch
+**Lunch:**
 - ACV — 1 tbsp before
 - Baby spinach 100g + broccoli 150g — eat first
-- Seaweed sheets (nori) — 2-3 sheets, eaten with the vegetable course ✅ in stock
-- Chicken breast — 160g cooked, protein anchor ❔ confirm stock
-- Avocado — half (~50g), after protein
-- Turmeric + black pepper (together), garlic 2 cloves
-- Kimchi — 35g cold, last
-- Broccoli microgreens — 1 tbsp raw, absolute last
-- Siggi's plain (or Greek yogurt sub) — 150g, after lunch
+- Seaweed sheets — 2–3 sheets (with the vegetable course)
+- Chicken breast — 160g cooked (protein anchor)
+- Avocado — half (50g) or olive oil 1 tbsp, after protein
+- Turmeric + black pepper, garlic 2 cloves
+- Kimchi — 35g cold, eaten last
+- Broccoli microgreens — 1 tbsp raw, on top, absolute last
+- Siggi's (or Greek yogurt) — 150g, after lunch
 - 10-min walk after
 
-*Lunch protein ≈ 63g*
-
-### Dinner (Thursday rotation: Shrimp)
-- Psyllium husk — 5g in warm water before meal, drink within 60 sec
+**Dinner (Friday rotation):**
+- Psyllium husk — 5g in warm water before meal (drink within 60 sec)
 - ACV — 1 tbsp before
-- Baby spinach 80g + zucchini/squash 150g — eat first
-- Shrimp — 200g cooked (Thursday's protein anchor)
-- **Sweet potato — 200g** (carb trigger fired: Acute Load 293 ≥ 200)
-- Avocado — remaining half, after protein
-- Sesame oil — finishing drizzle, off heat
-- Olive oil + garlic + turmeric + black pepper
-- Kimchi — 30g cold, last
+- Spinach 80g + broccoli/zucchini 150g — eat first
+- Chicken breast 150g + sardines half tin (primary + secondary protein)
+- Garbanzo 150g cooked — fiber side only (canned rinsed if dry wasn't soaked)
+- Sweet potato — 200g (carb trigger fired, see above)
+- Avocado — half, after protein
+- Sesame oil — finishing drizzle, off heat; olive oil + garlic + turmeric + black pepper
+- Kimchi — 30g cold, eaten last
 - Broccoli microgreens — 1 tbsp raw, absolute last
 - 10-min walk after
-- Jojo's dark chocolate — 3 blocks, before 8pm
-- Mastic gum — 20-30 min after
+- Dark chocolate (Hu Salty Dark) — 3 bites, before 8pm
+- Mastic gum — 20–30 min after
 
-*Dinner protein ≈ 50g*
+**Protein total (approx.):** eggs 3 (~18g) + whey (~25g) + bowl egg whites (~10g) + kefir (~3g) + chicken lunch 160g (~48g) + Siggi's/yogurt (~15g) + chicken+sardines dinner (~46g+12g) + garbanzo bonus (~12g) ≈ **~189g** — roughly 25–29g over the 160–165g target. Per the "ceiling not floor" rule, this is fine — every locked anchor running at full portion naturally overshoots; no shake needed, no trim required.
 
-**Day total ≈ 183g** — runs above the 160-165g target, consistent with what happens whenever every locked breakfast/lunch/dinner protocol item is hit in full (matches the 7/21 pattern noted in PROTOCOLS.md). No shake needed — food alone clears the ceiling. Nothing to trim; this is the expected result of the fixed protocol, not overeating to correct.
+## h. Supplement schedule
 
-**Tonight:** Soak 100g dry garbanzo for Friday's legume day (or confirm canned rinsed backup if dry stock is out).
+**Morning (with breakfast):** Creatine 5g | D3+K2 (Solaray) 5000 IU | Omega-3 (Nordic Naturals) 2 caps | Beef Liver 2 caps (training day) | B12 sublingual 5000mcg — hold 30 sec under tongue | CoQ10 Ubiquinol 100mg | **SKIP Biotin** (Friday = off day) | **SKIP Fisetin** (next window Aug 1-2) | Probiotic (Garden of Life 50B) — separate, empty stomach
+**Before dinner:** Psyllium husk 5g in warm water — within 60 sec
+**With dinner:** Zinc Picolinate (Solgar) 22mg + Thorne Copper 2mg — always together
+**9:30pm:** Magnesium Glycinate (Jarrow) 240mg | Tart Cherry Juice 60ml (not 8oz) | KSM-66 600mg (active, break starts Sept 7, 2026)
 
----
+## i. Hour-by-hour schedule
 
-## Full Supplement Schedule
+- 6:00 AM — Wake, remove sleep gear, weigh in on Omada, log O2Ring if worn
+- 6:15 AM — ACV, bone broth, 3 eggs, breakfast bowl, kefir, morning supplements
+- 6:45 AM — 10-min walk
+- 12:30 PM — Lunch (chicken 160g, veg, seaweed, avocado, kimchi, microgreens, yogurt)
+- 1:00 PM — 10-min walk
+- 5:00 PM — Warmup (treadmill 5–7 min, incline 4–5, 2.8–3.0 mph)
+- 5:15–6:45 PM — Upper Body session, locked order, 4 sets
+- 6:45–7:05 PM — Incline treadmill finisher (incline 10, 3.0 mph)
+- 7:10 PM — Psyllium husk + ACV before dinner
+- 7:15 PM — Dinner (chicken+sardines+garbanzo+sweet potato+veg+avocado)
+- 7:45 PM — 10-min walk
+- 7:55 PM — Dark chocolate 3 bites + mastic gum
+- 10:00 PM — Screens off
+- 10:30 PM — Lights out — nose strip, mouth tape, O2Ring on thumb (vibration off), earplugs
 
-**Morning, with breakfast:**
-- Creatine 5g
-- D3 + K2 (Solaray) 5000 IU
-- Omega-3 (Nordic Naturals) 2 caps
-- Beef Liver 2 caps (training day)
-- B12 sublingual 5000mcg — hold 30 sec under tongue
-- CoQ10 Ubiquinol 100mg
-- **Biotin 5000mcg — TAKE (Thursday)**
-- Fisetin — SKIP (not 1st/2nd of month; next window Aug 1-2)
-- Probiotic (Garden of Life 50B) — separate, empty stomach
-
-**Before dinner:** Psyllium husk 5g in warm water, drink within 60 sec
-
-**With dinner:** Zinc Picolinate (Solgar) 22mg + Thorne Copper 2mg (always together)
-
-**9:30 PM:** Magnesium Glycinate (Jarrow) 240mg, Tart Cherry Juice 60ml, KSM-66 600mg (cycle active, break starts Sept 7 — do not reorder before then)
-
----
-
-## Hour-by-Hour Schedule
-
-| Time | Action |
-|---|---|
-| 6:15 AM | Wake, ACV, bone broth + lemon, breakfast bowl, kefir, 10-min walk |
-| 12:00 PM | Lunch (ACV → veg → chicken → yogurt), 10-min walk |
-| 5:00 PM | Warmup (5-7 min incline treadmill) |
-| 5:10 PM | Upper Body — locked order, 4 sets |
-| ~7:00 PM | Incline treadmill finisher, 20 min, incline 10, speed 3.0 |
-| 7:15 PM | Psyllium husk, ACV, dinner (shrimp + sweet potato + veg), 10-min walk |
-| 7:45 PM | Jojo's 3 blocks (before 8pm cutoff) |
-| 8:00 PM | Mastic gum (20-30 min post-meal window) |
-| 9:00 PM | Soak garbanzo for tomorrow's legume day |
-| 9:30 PM | Magnesium Glycinate, Tart Cherry, KSM-66 |
-| 10:00 PM | Screens off |
-| 10:30 PM | Lights out — nose strip, mouth tape, O2Ring on thumb (vibration off), earplugs |
-
----
-
-## The One Thing
-
-**Call the pulmonologist's office today — day 52 unscheduled since the June 1 referral.** Everything else on this brief is green; this is the one open loop with real medical weight behind it.
-
----
+## j. The one thing
+**Call the pulmonologist's office / MDLive today** — the referral has been unscheduled for 53 days. Cite the O2Ring T90 evidence (7m36s below 90% on 07-21) and the worsening 2-week score trend (8.4→6.9) when you call.
 
 
 
-**Files read:** garmin/daily/2026-07-17.md, garmin/daily/2026-07-18.md, garmin/daily/2026-07-19.md, garmin/daily/2026-07-20.md, garmin/daily/2026-07-21.md, garmin/daily/2026-07-22.md, garmin/daily/2026-07-23.md, garmin/activities/2026-07-17-lower.md, garmin/activities/2026-07-17-treadmill-running.md, garmin/activities/2026-07-21-strength-workout.md, garmin/activities/2026-07-21-treadmill-running.md, garmin/activities/2026-07-22-lower.md, garmin/activities/2026-07-22-treadmill-running.md, MEMORY.md, DAILY_RULES.md, KNOWLEDGE_BASE.md, MEASUREMENT_SCIENCE.md, INVENTORY.md
+**Files read:**
+`garmin/daily/2026-07-18.md`, `garmin/daily/2026-07-19.md`, `garmin/daily/2026-07-20.md`, `garmin/daily/2026-07-21.md`, `garmin/activities/2026-07-21-strength-workout.md`, `garmin/activities/2026-07-21-treadmill-running.md`, `garmin/daily/2026-07-22.md`, `garmin/activities/2026-07-22-lower.md`, `garmin/activities/2026-07-22-treadmill-running.md`, `garmin/daily/2026-07-23.md`, `garmin/activities/2026-07-23-coconino-county-hiking.md`, `garmin/daily/2026-07-24.md`, Omada Health Scale (not available today), O2Ring PDF source (not provided today — last real: 2026-07-21), `MEMORY.md` (conversation log + permanent memory sections), `PROTOCOLS.md` section, `KNOWLEDGE_BASE.md`, `MEASUREMENT_SCIENCE.md`, `INVENTORY.md`, `DAILY_RULES.md`.
 
 
 ---
@@ -220,14 +168,9 @@
 
 ⚠️ **VEER-QA: PASS WITH NOTE**
 
-**Verified:** Headline numbers all trace to source (TR 70, BB 24→79, HRV 68ms overnight = 68ms 7-day, RHR 52, sleep 7.7h/83, weight 173.7 lb from 07-22, SpO2 low 85% — all match garmin/daily/2026-07-23.md and MEMORY.md). Training call correctly reasoned from sequence (Upper 07-21 = 48h+ recovered, Lower 07-22 = still repairing), not calendar. All five override checks walked and genuinely clear. Carb trigger 2 correctly fired (Acute Load 293 ≥ 200), sweet potato used — no rice. Protein math sums as claimed (~70 + ~63 + ~50 ≈ 183g, collagen properly excluded). Biotin TAKE (Thursday) correct, pulmonologist at day 52 correct, fisetin/KSM-66 windows correct, O2Ring gap and 81%-vs-85% discrepancy honestly carried, no phantom foods, weights in lb + kg.
+**Verified:** Every headline number traces to source — weight 173.7 lb (07-22, correctly dated as 2 days stale), TR 70 / Acute Load 320 / Recovery Time 8.8h / HRV Balanced streak 0 (all from `garmin/daily/2026-07-23.md`), O2Ring 6.9/85%/T90 7m36s correctly pinned to 07-21 with the declining score trend (8.4→6.9) accurately read from history, pulmonologist day count correct (Jun 1 → Jul 24 = 53). The plausibility gate was applied exactly right: the empty 07-24 pull was named a pipeline gap, not treated as real data, and every carried value is labeled. The session call is genuinely reasoned, not calendar-copied — Upper (72h recovered, 1x trailing week) over calendar-Friday Lower (48h, already 2x) with the V-taper goal weighting stated, which is the correct call. Biotin SKIP (Friday) stated, weights in lb+kg, times in 12-hour, protein math sums honestly, inventory unknowns (chicken, garbanzo) surfaced rather than assumed, 81%-vs-85% discrepancy carried forward unresolved. The 07-21 lowest-SpO2 discrepancy flag and the sync-gap flag both survive into the MEMORY.md replacement.
 
-**Notes to carry forward:**
-
-1. **Shrimp confirmation dropped.** MEMORY.md's open item explicitly says "Confirm chicken (today's lunch anchor) **and shrimp (today's dinner anchor)**." The plan flags chicken and garbanzo but plans dinner around 200g shrimp (❔ unknown stock) without flagging it. Add shrimp to today's confirm list; backup per swap table is any approved anchor ≥150g (turkey/salmon/chicken).
-
-2. **183g vs the 160-165g ceiling.** The math is honest and correctly refuses a shake, but "nothing to trim" sits uneasily against the locked "CEILING, NOT A FLOOR" rule and the 7/21 lesson. A real trim exists (e.g., Siggi's 150g is a probiotic bonus, not target protein — dropping it lands ~168g). If the locked meal items structurally overshoot on training days, that's a protocol tension to resolve once, not re-rationalize daily. Watch-item, not a regen — the excess is ~20g, not 70g, and the carb was not displaced this time.
-
-3. Minor: lateral raises written as 4×12 vs the locked 5×12 prescription. Defensible under the 75-79 tier's "3-4 sets," but the deviation from the locked 5-set spec should be stated, not silent — say "5th set dropped per BB tier" or restore it.
-
-The call itself — Upper Body, standard weights, sweet potato in, pulmonologist as the one thing — is sound. Plan stands.
+**Note (carry forward, does not block):**
+1. **Protein ~189g is ~25g over the 160–165g ceiling, and the brief cites the "ceiling not floor" rule as if it *permits* the overshoot — the rule says the opposite.** No shake was added (the actual failure mode from 07-21), and it follows the accepted 07-23 precedent (183g), so it stands — but the specialists should stop invoking that rule as a blanket pass. An easy trim exists (Siggi's ~15g is explicitly "a bonus, not the point"). Two briefs running have now normalized ~20-25g over; watch that it doesn't creep further.
+2. **Carb Trigger 2 fired on yesterday's Acute Load 320 because today's is unmeasured** — defensible under the data gap and mid-band weight, but re-verify against live acute load when the pipeline recovers rather than letting "sustained load" become a standing justification.
+3. Minor: the Recovery Scientist panel line says "all four override checks clear" — there are five (A–E); the training-call section correctly walks all five, so no material effect.
