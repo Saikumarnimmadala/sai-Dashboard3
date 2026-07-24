@@ -1,5 +1,5 @@
-# Veer Health Memory — 2026-07-23
-Generated: 2026-07-23 4:46 PM (America/Phoenix)
+# Veer Health Memory — 2026-07-24
+Generated: 2026-07-24 6:30 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -7,63 +7,63 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 ## DATA FRESHNESS — check each source's age before citing it
 | Source | As of | Age |
 |--------|-------|-----|
-| Garmin biometrics | 2026-07-23 | today |
-| Weight (Omada) | 2026-07-22 | yesterday |
-| O2Ring sleep | 2026-07-21 | 2 days ago |
+| Garmin biometrics | 2026-07-24 | today |
+| Weight (Omada) | 2026-07-22 | 2 days ago |
+| O2Ring sleep | 2026-07-21 | 3 days ago |
 
 _Any source older than "today" = do not present as current; state its actual date._
 
 ---
 
-## QUICK DECISION SNAPSHOT (LIVE — 2026-07-23)
+## QUICK DECISION SNAPSHOT (LIVE — 2026-07-24)
 | | |
 |---|---|
 | **Weight** | 173.7 lb (−42.7 lb from 216.4 peak) |
-| **Training Readiness** | 70 / 100 (MODERATE) — MOD_RT_LOW_SS_GOOD |
-| **Body Battery** | 24 → 79 (end: 70) |
-| **Recovery Time** | 9.2 hrs |
-| **Acute Load / Chronic / ACWR** | 293 / 306 / 0.90 (OPTIMAL) |
-| **HRV Status** | **BALANCED** — last night: 68 ms | 7-day: 68 ms | baseline: 67–92 ms (LOW<62) |
-| **Sleep** | 7.7h / score 83 — Deep:73m REM:80m |
-| **Resting HR** | 52 bpm (7-day avg: 50 bpm) |
-| **SpO2** | Garmin overnight avg: 94.0% low: 85% | O2Ring: 6.9 score low: 85% |
-| **Stress** | avg 19 / peak 82 |
-| **Last Session** | Treadmill Running on 2026-07-22 | Load=71.99253845214844 | AEROBIC_BASE |
-| **Weekly** | 6 sessions | Mod:129m + Vig:62m |
+| **Training Readiness** | None / 100 (None) — None |
+| **Body Battery** | None → None (end: None) |
+| **Recovery Time** | None hrs |
+| **Acute Load / Chronic / ACWR** | None / None / not available |
+| **HRV Status** | **Balanced** — last night: None ms | 7-day: None ms | baseline: not available |
+| **Sleep** | 0.0h / score None — Deep:Nonem REM:Nonem |
+| **Resting HR** | None bpm (7-day avg: None bpm) |
+| **SpO2** | Garmin overnight avg: None% low: None% | O2Ring: 6.9 score low: 85% |
+| **Stress** | avg None / peak None |
+| **Last Session** | Coconino County Hiking on 2026-07-23 | Load=20.883056640625 | AEROBIC_BASE |
+| **Weekly** | 5 sessions | Mod:124m + Vig:49m |
 
 ---
 
 
-## TODAY'S LIVE DATA — 2026-07-23
+## TODAY'S LIVE DATA — 2026-07-24
 _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 **⚠️ THESE LIVE VALUES OVERRIDE ANY 'CURRENT STATUS' IN THE STATIC MEMORY BELOW**
 
 ### READINESS & RECOVERY
 | Metric | Value |
 |--------|-------|
-| Training Readiness | **70** / 100 (MODERATE) |
-| Readiness Feedback | MOD_RT_LOW_SS_GOOD |
-| Body Battery | 24 → 79 (end: 70) +55 / -9 |
+| Training Readiness | **not available** / 100 (not available) |
+| Readiness Feedback | not available |
+| Body Battery | not available → not available (end: not available) +not available / -not available |
 | Body Battery Feedback | not available |
-| Recovery Time | 9.2 hrs (NO_CHANGE_SLEEP) |
-| Acute Load | 293 |
-| Chronic Load | 306 |
-| Load Ratio (ACWR) | 0.90 (OPTIMAL) |
-| Load Focus — Low Aerobic | 380 (target 233–634, ✓ in range) |
-| Load Focus — High Aerobic | 596 (target 501–901, ✓ in range) |
-| Load Focus — Anaerobic | 55 (target 133–400, ⚠ out of range) |
-| Load Balance Phrase | ANAEROBIC_SHORTAGE |
-| Training Status | MAINTAINING_1 |
+| Recovery Time | not available hrs (not available) |
+| Acute Load | not available |
+| Chronic Load | not available |
+| Load Ratio (ACWR) | not available |
+| Load Focus — Low Aerobic | not available |
+| Load Focus — High Aerobic | not available |
+| Load Focus — Anaerobic | not available |
+| Load Balance Phrase | not available |
+| Training Status | not available |
 
 ### HRV
 | Metric | Value |
 |--------|-------|
-| HRV Status | **BALANCED** |
-| HRV Feedback | HRV_BALANCED_6 |
-| HRV Last Night Avg | **68 ms** |
-| HRV Highest 5-min | 101 ms |
-| HRV 7-day Avg | 68 ms |
-| HRV Balanced Baseline | 67–92 ms (LOW<62 ms) |
+| HRV Status | **Balanced** |
+| HRV Feedback | not available |
+| HRV Last Night Avg | **not available ms** |
+| HRV Highest 5-min | not available ms |
+| HRV 7-day Avg | not available ms |
+| HRV Balanced Baseline | not available |
 | HRV Streak (consec. UNBALANCED) | 0 days |
 | HRV OVERRIDE (rule D, latched) | 🟢 clear |
 | HRV Factor % (readiness) | not available% (not available) |
@@ -71,38 +71,38 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### HEART RATE
 | Metric | Value |
 |--------|-------|
-| Resting HR | 52 bpm |
-| RHR 7-day Avg | 50 bpm |
-| Overnight / Day Low HR | 49 bpm |
-| Max HR (today) | 89 bpm |
-| Stress Avg | 19 |
-| Stress Peak | 82 |
+| Resting HR | not available bpm |
+| RHR 7-day Avg | not available bpm |
+| Overnight / Day Low HR | not available bpm |
+| Max HR (today) | not available bpm |
+| Stress Avg | not available |
+| Stress Peak | not available |
 
 ### SLEEP
 | Metric | Value |
 |--------|-------|
-| Sleep Score | **83** / 100 |
-| Sleep Feedback | POSITIVE_LONG_AND_CONTINUOUS |
-| Total Sleep | **7.7 hrs** |
+| Sleep Score | **not available** / 100 |
+| Sleep Feedback | not available |
+| Total Sleep | **0 hrs** |
 | Sleep Need Tonight | 7.2 hrs |
-| Sleep Window | 10:13 PM → 6:15 AM |
-| Deep Sleep | 73 min |
-| REM Sleep | 80 min |
-| Light Sleep | 311 min |
-| Awake Time | 18 min |
-| Awake Count | 1 |
-| Restlessness | GOOD |
-| Sleep Stress | 20 |
-| Avg Respiration (sleep) | 15 brpm |
-| Lowest Respiration | 8 brpm |
-| Highest Respiration | 19 brpm |
-| Breathing Disruption | NONE |
+| Sleep Window | not available |
+| Deep Sleep | not available min |
+| REM Sleep | not available min |
+| Light Sleep | not available min |
+| Awake Time | not available min |
+| Awake Count | not available |
+| Restlessness | not available |
+| Sleep Stress | not available |
+| Avg Respiration (sleep) | not available brpm |
+| Lowest Respiration | not available brpm |
+| Highest Respiration | not available brpm |
+| Breathing Disruption | not available |
 
 ### SpO2 / PULSE OX
 | Metric | Value |
 |--------|-------|
-| Avg Overnight SpO2 | 94% |
-| Lowest Overnight SpO2 | **85%** |
+| Avg Overnight SpO2 | not available% |
+| Lowest Overnight SpO2 | **not available%** |
 | O2Ring Score | 6.9 |
 | O2Ring Lowest SpO2 | 85% |
 | O2Ring Avg SpO2 | 94% |
@@ -116,11 +116,11 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 |--------|-------|
 | VO2 Max | not available |
 | Fitness Age | not available |
-| Intensity Minutes — Moderate (today) | 0 min |
-| Intensity Minutes — Vigorous (today) | 0 min |
-| Steps Today | 1202 |
-| Active Calories Today | 8 kcal |
-| Floors Climbed Today | 0 |
+| Intensity Minutes — Moderate (today) | not available min |
+| Intensity Minutes — Vigorous (today) | not available min |
+| Steps Today | not available |
+| Active Calories Today | not available kcal |
+| Floors Climbed Today | not available |
 
 ### WEIGHT
 | Metric | Value |
@@ -131,30 +131,30 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### LAST SESSION
 | Metric | Value |
 |--------|-------|
-| Activity | Treadmill Running (treadmill_running) |
-| Date / Time | 2026-07-22 2026-07-22 19:13 |
-| Duration | 37m |
-| Distance | 1.64 km (1.02 mi) |
-| Avg HR / Max HR | 123.0 / 172.0 bpm |
-| Aerobic Training Effect | 3.0 (AEROBIC_BASE) — IMPROVING_AEROBIC_BASE_8 |
-| Anaerobic Training Effect | 0.5 — NO_ANAEROBIC_BENEFIT_0 |
-| Exercise Load | 72 |
-| Calories | 280.0 kcal |
-| Sweat Loss | 128.0 ml |
+| Activity | Coconino County Hiking (hiking) |
+| Date / Time | 2026-07-23 2026-07-23 19:31 |
+| Duration | 90m |
+| Distance | 4.76 km (2.95 mi) |
+| Avg HR / Max HR | 114.0 / 164.0 bpm |
+| Aerobic Training Effect | 1.899999976158142 (AEROBIC_BASE) — MINOR_AEROBIC_BENEFIT_6 |
+| Anaerobic Training Effect | 0.0 — NO_ANAEROBIC_BENEFIT_0 |
+| Exercise Load | 21 |
+| Calories | 467.0 kcal |
+| Sweat Loss | 1079.0 ml |
 | Body Battery Impact | -5 |
-| Avg / Max Power | 58.0 / 293.0 W |
-| HR Zones | Z1:205s | Z2:40s | Z3:995s | Z4:255s | Z5:7s |
+| Avg / Max Power | None / None W |
+| HR Zones | Z1:2325s | Z2:1919s | Z3:541s | Z4:128s | Z5:0s |
 | Total Volume (strength) | not available |
 | Total Reps (strength) | not available |
 
 ### WEEKLY SUMMARY (last 7 days)
 | Metric | Value |
 |--------|-------|
-| Sessions This Week | 6 |
-| Intensity — Moderate | 129 min |
-| Intensity — Vigorous | 62 min |
-| Total Intensity (mod+vig) | 191 min |
-| Active Calories | 2477 kcal |
+| Sessions This Week | 5 |
+| Intensity — Moderate | 124 min |
+| Intensity — Vigorous | 49 min |
+| Total Intensity (mod+vig) | 173 min |
+| Active Calories | 2123 kcal |
 
 ### Weight Trend (last 14 entries)
 - 2026-07-09: 173.0 lb
@@ -576,61 +576,73 @@ Expanded Garmin data pull to capture every available API metric. Fixed HRV statu
 # PERMANENT MEMORY (working weights, rules, history, protocols)
 
 
-# Veer Health Memory — 2026-07-23 (morning brief)
+# Veer Health Memory — 2026-07-23 (evening update, post-brief)
+Generated: 2026-07-23 (morning brief cycle)
+Sources: Garmin Connect API (through 2026-07-23), O2Ring (last real data 2026-07-21), Omada scale (last confirmed 2026-07-22)
+
+## QUICK DECISION SNAPSHOT (LIVE — 2026-07-23)
+| | |
+|---|---|
+| **Weight** | not available today; last confirmed 173.7 lb (07-22), mid-band 172-175 |
+| **Training Readiness** | 70/100 (MODERATE) |
+| **Body Battery** | 24 → 79 (end 70) |
+| **Recovery Time** | 9.2 hrs |
+| **Acute/Chronic/ACWR** | 293 / 306 / 0.90 (OPTIMAL) |
+| **HRV** | BALANCED — 68ms overnight, 68ms 7-day, baseline 67-92, streak=0, override clear |
+| **Sleep** | 7.7h / score 83 — Deep 73m REM 80m |
+| **RHR** | 52 bpm (7-day avg 50) |
+| **SpO2 (Garmin wrist)** | avg 94% low 85% — O2Ring gap continues, last real ring data 07-21 |
+| **Stress** | avg 19 / peak 82 |
+| **Training call today** | Upper Body, standard weights, 4 sets — no override fired |
 
 ## WEIGHT LOG (most recent)
-07-18: 174.1 | 07-19: 173.9 | 07-20: 175.4 | 07-21: 173.9 | 07-22: 173.7 (confirmed) | 07-23: not available in today's data pull
-Band: 172-175 lb. Last confirmed reading (173.7, 07-22) mid-band.
+07-18: 174.1 | 07-19: 173.9 | 07-20: 175.4 | 07-21: 173.9 | 07-22: 173.7 (confirmed) | 07-23: not available
 
 ## LAST SESSION
 2026-07-22 (Wed): Lower Body (1h37m, avg HR 99) + Treadmill Running (37m, avg HR 123, load 72).
-TODAY'S CALL (07-23, Thu): Upper Body, standard/current working weights — BB peak 79 (75-79 band = normal effort), no override checklist items fired (TR 70 moderate, Acute Load 293, Recovery Time 9.2h, HRV streak 0). Sequence-based: Upper last trained 07-21 (2 days ago) vs Lower 07-22 (1 day ago) — Upper next in rotation, also matches calendar default (Thu=Upper), no conflict to reason through.
+2026-07-23 (Thu, today's call): Upper Body, standard working weights, 4 sets, incline finisher speed 3.0 (BB 79, under 80+ threshold). Rotation logic: Upper last trained 07-21 (48h+ recovered) vs Lower 07-22 (24h, still repairing) — also matches calendar default, no conflict.
 
 ## HRV STATUS
-07-21 BALANCED (82ms) | 07-22 BALANCED (57ms overnight — below personal LOW threshold 62ms, but 7-day avg 68ms kept status Balanced; flagged as noise) | 07-23 BALANCED (68ms overnight, 68ms 7-day, baseline 67-92) — overnight value fully recovered, confirming 07-22 dip was a single-night blip. Streak=0, override clear.
+07-21 BALANCED (82ms) | 07-22 BALANCED (57ms overnight — single-night dip below the 62ms low threshold, but 7-day avg 68ms held status; confirmed as noise by 07-23 rebound) | 07-23 BALANCED (68ms overnight, 68ms 7-day) — fully recovered, streak=0, override clear.
 
 ## O2RING
-No new O2Ring PDF for the 07-22→07-23 night — gap continues, last known data now 2+ days old.
+No new PDF for 07-22→07-23 night — gap now 2+ days.
 Last known: 2026-07-21 night — Score 6.9, avg SpO2 94%, drops/hr(>4%) 2.8, drops/hr(>3%) 6.8, T90 7m36s.
-NOTE: lowest SpO2 for this same night is recorded two different ways elsewhere in memory (81% in one note, 85% in the summary table) — unresolved discrepancy, flagged for reverification against the source PDF, does not block today's call since no ring data exists for last night anyway.
+UNRESOLVED: lowest SpO2 for that same 07-21 night recorded two ways in memory history (81% vs 85%) — needs source-PDF reverification, doesn't block any call since no ring data exists for the most recent night regardless.
 
 ## OPEN ITEMS
-- [ ] CRITICAL: Pulmonologist — referral Jun 1, 52 days unscheduled as of 07-23. Call today. Standing #1 item.
-- [ ] CORRECTION: removed the "sleep-window shift" flag carried from 07-22 memory — actual Garmin sleep windows for 07-21 (10:22pm-6:52am), 07-22 (10:29pm-5:59am), 07-23 (10:13pm-6:15am) are all normal overnight sleep, not the afternoon-to-evening pattern previously logged. That prior flag appears to have been an error; do not carry it forward.
-- [ ] O2Ring lowest-SpO2 discrepancy for 07-21 night (81% vs 85%, same score/avg/drops-per-hr) — needs source-PDF reverification.
-- [ ] Anaerobic load shortage — 3rd consecutive day (55 vs target 133-400 today, was 101/101 the two days prior) — consider adding anaerobic-style work.
-- [ ] Vigorous intensity minutes: 62 min this week vs 75+/week target — behind pace.
-- [ ] Inventory: all protein anchors (chicken/salmon/sardines/shrimp/turkey/eggs) still show unknown stock — never yet counted. Confirm chicken (today's lunch anchor) and shrimp (today's dinner anchor).
-- [ ] Garbanzo (dry) stock unknown — tonight (Thu) is the scheduled soak for Friday's legume day; use canned rinsed backup if not in stock.
+- [ ] CRITICAL: Pulmonologist — referral Jun 1, 52 days unscheduled as of 07-23. Standing #1 item.
+- [ ] O2Ring lowest-SpO2 discrepancy for 07-21 night (81% vs 85%) — needs source-PDF reverification.
+- [ ] Anaerobic load shortage — 3rd consecutive day (55 today vs target 133-400; 101/101 prior two days).
+- [ ] Vigorous intensity minutes: 62 this week vs 75+/week target — behind pace.
+- [ ] Inventory: chicken breast (today's lunch anchor) and dry garbanzo (Thu-night soak for Fri legume day) still ❔ unconfirmed — confirm ASAP, canned garbanzo is backup.
 - [ ] Sleep consumables (nose strips, mouth tape, earplugs, O2Ring charge) status unknown — Tier 1, active OSA investigation.
-- [ ] Weight pipeline: Omada reading not available today (07-23) — confirm when available.
-- [ ] Fisetin next doses: August 1-2, 2026.
-- [ ] KSM-66 break begins: September 7, 2026.
+- [ ] Weight pipeline: Omada not available 07-23 — confirm when available.
+- [ ] Fisetin next doses: August 1-2, 2026 — confirm stock before then.
+- [ ] KSM-66 break begins: September 7, 2026 — stop, do not reorder.
 - [ ] Ferritin recheck: September 2026.
 - [ ] Full bloodwork retest: December 2026.
 
 ## DATA PIPELINE STATUS
-- Recovery Time units bug: resolved, no regression (9.2h today, plausible).
+- Recovery Time units: resolved, no regression (9.2h today, plausible).
 - HRV streak counter: correct (0, genuine cleared state).
-- Sleep-window-shift flag from 07-22 memory: found inconsistent with actual data on review — removed (see Open Items correction).
 - O2Ring gap: no PDF for 07-22→07-23 night; last real data now 2 days old (07-21).
-- O2Ring historical low-SpO2 discrepancy (81% vs 85% for the same 07-21 night): unresolved, flagged.
-- Weight: Omada not available today, no regression, just a missed pull.
+- O2Ring historical low-SpO2 discrepancy (81% vs 85% for 07-21 night): unresolved, flagged.
+- Weight: Omada not available 07-23, no regression, just a missed pull.
 
 ## SUPPLEMENT CYCLES
 - KSM-66: active, break starts 2026-09-07
 - Fisetin: last taken Jul 1-2, next Aug 1-2
-- Biotin: Tue/Thu/Sat only — TAKE today (Thursday 07-23)
+- Biotin: Tue/Thu/Sat only — taken today (Thursday 07-23)
 
 ## TRAIL BLACKLIST (permanent, unchanged)
 Peralta Trail + all Superstition Mountains trails — two rattlesnake encounters 07-11/07-12
 
 ## RECENT DECISIONS (2026-07-23)
-- Training call: Upper Body at standard/current working weights — BB peak 79 (75-79 band = normal effort), no override checklist items fired.
-- Session sequencing confirmed Upper is next (last trained 07-21, 2 days ago) vs Lower (07-22, 1 day ago) — matches calendar default (Thu=Upper).
-- Carb trigger 2 fired (Acute Load 293 ≥ 200) — added sweet potato 200g to dinner.
-- Corrected a stale "sleep-window shift" flag that didn't match actual data — removed from memory.
-- Flagged an internal O2Ring data discrepancy (81% vs 85% lowest SpO2 for the same night) for reverification rather than silently picking one value.
+- Training call: Upper Body at standard working weights, 4 sets (BB peak 79, top of 75-79 tier). No override checklist items fired.
+- Session sequencing: Upper confirmed next (last trained 07-21, 48h+ recovered) vs Lower (07-22, still inside 48h MPS window) — matches calendar default, no conflict to reason through.
+- Carb trigger 2 fired (Acute Load 293 ≥ 200) — sweet potato 200g added to dinner.
+- Day protein total computed at ≈183g against the 160-165g target — over-target is expected when every locked meal item runs in full; no shake added, no trim needed per "ceiling not floor" rule.
 - Pulmonologist flag escalated to day 52, restated as standing #1 item.
 
 ---
@@ -1560,7 +1572,7 @@ with weeks of runway. Never spend a line of the brief on these.
 ---
 
 
-## PIPELINE HEALTHCHECK — 2026-07-23 07:58
+## PIPELINE HEALTHCHECK — 2026-07-23 16:46
 
 **11/11 checks passing**
 
