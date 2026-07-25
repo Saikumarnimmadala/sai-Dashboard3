@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-25
-Generated: 2026-07-25 6:07 AM (America/Phoenix)
+Generated: 2026-07-25 6:30 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -600,51 +600,53 @@ Expanded Garmin data pull to capture every available API metric. Fixed HRV statu
 # PERMANENT MEMORY (working weights, rules, history, protocols)
 
 
-# Veer Health Memory — 2026-07-24 (post-brief update)
+# Veer Health Memory — 2026-07-25 (post-brief update)
 
 ## QUICK DECISION SNAPSHOT
 | | |
 |---|---|
-| Weight | 173.7 lb (78.8 kg) — confirmed 07-22, mid-band 172-175; Omada gap 07-23/07-24 |
+| Weight | 173.7 lb — last confirmed 07-22, Omada gap now 07-23/07-24/07-25 (3 days stale) |
 | Training Readiness | 66 MODERATE |
-| Body Battery | 6 → 68 (end 68) |
+| Body Battery | 16 → 79 (end 79) |
 | Recovery Time | 0.0 hrs |
-| Acute/Chronic/ACWR | 267 / 297 / 0.80 OPTIMAL (low edge) |
-| HRV | UNBALANCED (65ms last night, 67ms 7-day) — flipped from Balanced 07-23. Streak = 1 (pipeline counter bug shows 0). Override clear (needs 3+). |
-| Sleep | 6.7h / score 84 |
-| RHR | 52 bpm, 7-day avg 50 |
-| Today's training call | Upper Body, 3 sets, weights cut 10-20%, lateral raises locked 25lb/11kg — BB 60-74 tier |
+| Acute/Chronic/ACWR | 214 / 285 / 0.70 LOW (first sub-0.8 reading this window) |
+| HRV | BALANCED (84ms last night, 71ms 7-day) — rebounded from a single Unbalanced night (07-24, 65ms). Streak of consecutive Unbalanced ending today = 0. Override clear. |
+| Sleep | 4.9h / score 72 — short again, deep held (100m), REM compressed (46m) |
+| RHR | 48 bpm, 7-day avg 50 |
+| Today's training call | Upper Body, standard weights/sets, RE-ENTRY (4 days since last confirmed Upper on 07-21; Friday 07-24 session unconfirmed) |
 
 ## WEIGHT LOG (most recent)
-07-18: 174.1 | 07-19: 173.9 | 07-20: 175.4 | 07-21: 173.9 | 07-22: 173.7 (last confirmed) | 07-23: not available | 07-24: not available
+07-18: 174.1 | 07-19: 173.9 | 07-20: 175.4 | 07-21: 173.9 | 07-22: 173.7 (last confirmed) | 07-23: n/a | 07-24: n/a | 07-25: n/a
 
 ## LAST SESSIONS
-07-21 (Tue): Upper Body + treadmill tempo 20m30s.
-07-22 (Wed): Lower Body + treadmill run 37m.
+07-21 (Tue): Upper Body + treadmill tempo 20m30s, Load 88.6.
+07-22 (Wed): Lower Body + treadmill run 37m, Load 72.0.
 07-23 (Thu): Coconino County Hiking, 90 min, Load 20.9, AEROBIC_BASE.
-07-24 (Fri): Upper Body called — 3 sets, weights cut 10-20%, lateral raises locked 25lb. Reasoning: Upper last 07-21 (3d, recovered, only 1x/7-day pace); Lower last 07-22 (2d, already 2x/7-day pace); Upper wins on recovery, frequency, and V-taper priority.
+07-24 (Fri): UNCONFIRMED — plan called Upper Body (3 sets, re-entry) but Garmin shows zero intensity minutes and no activity file. Flagged as open item — ask Veer directly what happened.
+07-25 (Sat, today): Upper Body called — standard weights/sets, re-entry mindset. Reasoning: Upper last confirmed 07-21 (4d, recovered, tied on frequency with Lower at 1x/week each); V-taper priority + anaerobic-load shortage broke the tie toward Upper. Overrides all checked clear.
 
 ## HRV STATUS
-07-18 Unbalanced → 07-19 Low → 07-20 Unbalanced → 07-21 Balanced → 07-22 Balanced → 07-23 Balanced → 07-24 Unbalanced. Streak of consecutive Unbalanced ending 07-24: actual = 1 (pipeline counter bug shows 0 — flag until fixed, doesn't affect override).
+07-19 Low → 07-20 Unbalanced → 07-21 Balanced → 07-22 Balanced → 07-23 Balanced → 07-24 Unbalanced → 07-25 Balanced. The 07-24 Unbalanced day was isolated (1 day), fully cleared by 07-25 — no override risk.
 
 ## O2RING
-No PDF for 07-22, 07-23, or 07-24 nights — gap now 3+ nights.
+No PDF for 07-22, 07-23, 07-24, or 07-25 nights — gap now 4+ nights.
 Last known: 2026-07-21 — Score 6.9, avg SpO2 94%, lowest 85%, drops/hr 2.8, T90 7m36s.
-Trend concern: score declining ~2 weeks (07-09: 8.4 → 07-12: 8.1 → 07-17: 7.5 → 07-18: 7.3 → 07-21: 6.9).
-UNRESOLVED: 07-21 night's lowest SpO2 recorded two ways historically (81% vs 85%) — needs source-PDF reverification before citing to a pulmonologist.
+Trend concern: score declining ~2 weeks (07-09: 8.4 → 07-12: 8.1 → 07-17: 7.5 → 07-18: 7.3 → 07-21: 6.9). Still unresolved: 07-21 lowest SpO2 recorded two ways historically (81% vs 85%) — needs source-PDF reverification.
 
 ## OPEN ITEMS
-- [ ] CRITICAL: Pulmonologist — referral Jun 1, 53 days unscheduled as of 07-24. Standing #1 item.
+- [ ] CRITICAL: Pulmonologist — referral Jun 1, 54 days unscheduled as of 07-25. Standing #1 item.
+- [ ] Friday 07-24 session status unresolved — plan called Upper Body, nothing logged in Garmin. Ask Veer what actually happened; correct the training-history record once known.
 - [ ] O2Ring lowest-SpO2 discrepancy for 07-21 night (81% vs 85%) — needs source-PDF reverification.
 - [ ] O2Ring score trend worsening over 2 weeks — raise with pulmonologist alongside T90 evidence.
-- [ ] Pipeline bug: HRV persistence streak counter reads 0, should read 1 given 07-24's flip — fix counter logic, no override impact.
-- [ ] Protein pattern: 07-21 and 07-24 both projected ~200g against a 165g training-day ceiling — recurring. Default to the trim (reduce one anchor portion, skip Siggi's) rather than accepting the overage.
-- [ ] Anaerobic load shortage — 4th+ consecutive day below target (55 vs 133-400 as of 07-24).
+- [ ] O2Ring not worn 4+ nights running (07-22 through 07-25) — resume wearing it, this is the clinical-grade OSA data source.
+- [ ] ACWR fell to 0.70 LOW (below the 0.8 floor) for the first time this window — rebuild load ~10%/week, don't taper further.
+- [ ] Protein pattern: 07-21 and 07-24 both projected ~200g against a 165g training-day ceiling — recurring. Today (07-25) trimmed lunch/dinner anchors to 150g floor + skipped Siggi's to land at ≈165g; keep applying this trim as default going forward.
+- [ ] Anaerobic load shortage — 5th+ consecutive day below target (55 vs 133-400 as of 07-25).
 - [ ] Vigorous intensity minutes: 49 this week vs 75+/week target — behind pace.
-- [ ] Inventory: chicken breast (lunch + Friday dinner anchor) and dry garbanzo (Thu-night soak for Fri legume) still ❔ unconfirmed — canned garbanzo is backup.
+- [ ] Inventory: chicken breast, turkey, salmon, sardines, eggs — ALL still ❔ unconfirmed. Only sweet potato, seaweed, and Jojo's confirmed in stock (07-22). Needs a real first count.
 - [ ] Sleep consumables (nose strips, mouth tape, earplugs, O2Ring charge) status unknown — Tier 1, active OSA investigation.
-- [ ] Weight pipeline: Omada not available 07-23 or 07-24 — confirm when available.
-- [ ] Fisetin next doses: August 1-2, 2026 — confirm stock before then.
+- [ ] Weight pipeline: Omada not available 07-23, 07-24, or 07-25 — confirm when available, 3-day gap now.
+- [ ] Fisetin next doses: August 1-2, 2026 — confirm stock before then (about a week out).
 - [ ] KSM-66 break begins: September 7, 2026 — stop, do not reorder.
 - [ ] Ferritin recheck: September 2026.
 - [ ] Full bloodwork retest: December 2026.
@@ -652,17 +654,18 @@ UNRESOLVED: 07-21 night's lowest SpO2 recorded two ways historically (81% vs 85%
 ## SUPPLEMENT CYCLES
 - KSM-66: active, break starts 2026-09-07
 - Fisetin: last taken Jul 1-2, next Aug 1-2
-- Biotin: Tue/Thu/Sat only — SKIP 07-24 (Friday)
+- Biotin: Tue/Thu/Sat only — TAKE 07-25 (Saturday)
 
 ## TRAIL BLACKLIST (permanent)
 Peralta Trail + all Superstition Mountains trails — two rattlesnake encounters 07-11/07-12
 
-## RECENT DECISIONS (2026-07-24)
-- Training call: Upper Body, 3 sets, weights cut 10-20%. Lateral raises locked 25lb. All five override checks walked and clear.
-- Session sequencing reasoned from actual training history (Upper 07-21, Lower 07-22+07-17, hike 07-23), not the Friday-Lower calendar default.
-- Carb trigger 2 fired (Acute Load 267 ≥ 200) — sweet potato 200g added to dinner.
-- Protein overage named as a repeat of the 07-21 pattern — trim applied (lunch chicken 160g→150g, skip Siggi's), bringing the day to ≈180-185g.
-- Pulmonologist flag restated at day 53, standing #1 item.
+## RECENT DECISIONS (2026-07-25)
+- Training call: Upper Body, standard weights/sets, treated as re-entry given the 4-day gap since last confirmed Upper (07-21) and the unresolved Friday session. All five override checks walked and clear.
+- Session sequencing reasoned from confirmed training history (Upper 07-21, Lower 07-22, hike 07-23), explicitly discounting the unconfirmed Friday 07-24 session rather than assuming it happened.
+- Carb trigger 2 fired (Acute Load 214 ≥ 200) — sweet potato 200g added to dinner.
+- Protein overage pattern named again — proactively trimmed lunch/dinner anchors to 150g floor and skipped Siggi's, landing the day at ≈165g instead of repeating the ~200g overage from 07-21/07-24.
+- Pulmonologist flag restated at day 54, standing #1 item.
+- New open item added: Friday 07-24's session status is unresolved and needs a direct answer from Veer.
 
 ---
 
@@ -1591,20 +1594,20 @@ with weeks of runway. Never spend a line of the brief on these.
 ---
 
 
-## PIPELINE HEALTHCHECK — 2026-07-24 18:28
+## PIPELINE HEALTHCHECK — 2026-07-25 06:07
 
-**11/11 checks passing**
+**9/11 checks passing**  🔴 **REGRESSION DETECTED — see failures below**
 
 | Check | Status | Detail |
 |-------|--------|--------|
 | Today's Garmin data present | ✅ | all key fields present |
 | veer-data.json today block populated | ✅ | readiness fields filled |
-| Brain rebuilt today | ✅ | Generated 2026-07-24 |
-| Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-07-24 |
+| Brain rebuilt today | ✅ | Generated 2026-07-25 |
+| Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-07-25 |
 | Recovery Time units sane | ✅ | 0.0 hrs |
-| HRV override logic live | ✅ | streak=1 override=clear |
-| Brief matches today's data | ✅ | brief cites TR 66 |
-| Sleep window plausible | ✅ | bedtime 12:35 AM |
-| Weight fresh (<=2 days) | ✅ | latest 173.7 lb on 2026-07-22 (2d old) |
+| HRV override logic live | ✅ | streak=0 override=clear |
+| Brief matches today's data | 🔴 FAIL | no brief generated today |
+| Sleep window plausible | ✅ | bedtime 12:48 AM |
+| Weight fresh (<=2 days) | 🔴 FAIL | latest 173.7 lb on 2026-07-22 (3d old) |
 | Scheduled tasks healthy | ✅ | all ran within 24h |
 | No hardcoded secrets in runners | ✅ | clean |
