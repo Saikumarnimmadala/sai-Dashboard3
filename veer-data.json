@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-26T08:15:27.517544-07:00",
+  "generated": "2026-07-26T09:07:06.425206-07:00",
   "today": {
     "training_readiness": 23,
     "readiness_level": "POOR",
@@ -63,7 +63,7 @@
     "highest_breathing_rate": 20.0,
     "breathing_disruption": "NONE",
     "vo2max": null,
-    "steps": 49,
+    "steps": 76,
     "active_calories": 0.0,
     "floors_ascended": 0.0,
     "intensity_moderate": 0,
