@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-26
-Generated: 2026-07-26 9:07 AM (America/Phoenix)
+Generated: 2026-07-26 9:08 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -1601,9 +1601,9 @@ with weeks of runway. Never spend a line of the brief on these.
 ---
 
 
-## PIPELINE HEALTHCHECK — 2026-07-26 08:15
+## PIPELINE HEALTHCHECK — 2026-07-26 09:07
 
-**9/11 checks passing**  🔴 **REGRESSION DETECTED — see failures below**
+**10/11 checks passing**  🔴 **REGRESSION DETECTED — see failures below**
 
 | Check | Status | Detail |
 |-------|--------|--------|
@@ -1613,7 +1613,7 @@ with weeks of runway. Never spend a line of the brief on these.
 | Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-07-26 |
 | Recovery Time units sane | ✅ | 47.4 hrs |
 | HRV override logic live | ✅ | streak=0 override=clear |
-| Brief matches today's data | 🔴 FAIL | brief does NOT cite today's TR 23 - likely generated before data landed |
+| Brief matches today's data | ✅ | brief cites TR 23 |
 | Sleep window plausible | ✅ | bedtime 10:54 PM |
 | Weight fresh (<=2 days) | 🔴 FAIL | latest 173.7 lb on 2026-07-22 (4d old) |
 | Scheduled tasks healthy | ✅ | all ran within 24h |
