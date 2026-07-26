@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-25T06:30:02.369718-07:00",
+  "generated": "2026-07-26T08:14:04.339177-07:00",
   "today": {
     "training_readiness": 66,
     "readiness_level": "MODERATE",
@@ -72,7 +72,7 @@
     "weekly_intensity_mod": 124,
     "weekly_intensity_vig": 49,
     "weekly_active_calories": 2123,
-    "o2_score": 6.9,
+    "o2_score": 8.4,
     "o2_lowest": 85,
     "o2_avg": 94,
     "o2_drops_4pct": 21,
@@ -312,6 +312,10 @@
     {
       "date": "2026-07-25",
       "v": 79
+    },
+    {
+      "date": "2026-07-26",
+      "v": 79
     }
   ],
   "hrv": [],
@@ -358,6 +362,14 @@
       "drops_4pct": 21,
       "drops_hr": 2.8,
       "time_below_90m": 7.6
+    },
+    {
+      "date": "2026-07-25",
+      "s": 8.4,
+      "lowest": 85,
+      "avg": 94,
+      "drops_4pct": 24,
+      "drops_hr": 3.3
     }
   ],
   "coaches": {
@@ -458,30 +470,30 @@
   },
   "coaches_generated": "2026-07-04T07:47:22.420820-07:00",
   "last_session": {
-    "date": "2026-07-23",
-    "start_time": "2026-07-23 19:31",
-    "name": "Coconino County Hiking",
+    "date": "2026-07-25",
+    "start_time": "2026-07-25 07:05",
+    "name": "Phoenix Hiking",
     "type": "hiking",
-    "duration_s": 5406.48583984375,
-    "distance_m": 4758.10009765625,
-    "avg_hr": 114.0,
-    "max_hr": 164.0,
-    "calories": 467.0,
-    "aerobic_te": 1.899999976158142,
-    "aerobic_te_msg": "MINOR_AEROBIC_BENEFIT_6",
-    "te_label": "AEROBIC_BASE",
-    "anaerobic_te": 0.0,
-    "anaerobic_te_msg": "NO_ANAEROBIC_BENEFIT_0",
-    "exercise_load": 20.883056640625,
+    "duration_s": 6006.56298828125,
+    "distance_m": 4428.5400390625,
+    "avg_hr": 155.0,
+    "max_hr": 183.0,
+    "calories": 1051.0,
+    "aerobic_te": 4.900000095367432,
+    "aerobic_te_msg": "HIGHLY_IMPROVING_VO2_MAX_16",
+    "te_label": "VO2MAX",
+    "anaerobic_te": 2.200000047683716,
+    "anaerobic_te_msg": "MAINTAINING_ANAEROBIC_BASE_1",
+    "exercise_load": 245.23707580566406,
     "avg_power": null,
     "max_power": null,
-    "sweat_ml": 1079.0,
-    "bb_delta": -5,
-    "hr_z1_s": 2325.802,
-    "hr_z2_s": 1919.681,
-    "hr_z3_s": 541.0,
-    "hr_z4_s": 128.998,
-    "hr_z5_s": 0.0
+    "sweat_ml": 1668.0,
+    "bb_delta": -26,
+    "hr_z1_s": 27.92,
+    "hr_z2_s": 325.097,
+    "hr_z3_s": 1228.128,
+    "hr_z4_s": 3558.973,
+    "hr_z5_s": 742.029
   },
   "recent_sessions": [
     {
