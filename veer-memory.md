@@ -1,5 +1,5 @@
-# Veer Health Memory — 2026-07-26
-Generated: 2026-07-26 9:08 AM (America/Phoenix)
+# Veer Health Memory — 2026-07-27
+Generated: 2026-07-27 8:31 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -7,15 +7,15 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 ## DATA FRESHNESS — check each source's age before citing it
 | Source | As of | Age |
 |--------|-------|-----|
-| Garmin biometrics | 2026-07-26 | today |
-| Weight (Omada) | 2026-07-22 | 4 days ago |
-| O2Ring sleep | 2026-07-25 | yesterday |
+| Garmin biometrics | 2026-07-27 | today |
+| Weight (Omada) | 2026-07-22 | 5 days ago |
+| O2Ring sleep | 2026-07-25 | 2 days ago |
 
 _Any source older than "today" = do not present as current; state its actual date._
 
 ---
 
-## QUICK DECISION SNAPSHOT (LIVE — 2026-07-26)
+## QUICK DECISION SNAPSHOT (LIVE — 2026-07-27)
 | | |
 |---|---|
 | **Weight** | 173.7 lb (−42.7 lb from 216.4 peak) |
@@ -34,7 +34,7 @@ _Any source older than "today" = do not present as current; state its actual dat
 ---
 
 
-## TODAY'S LIVE DATA — 2026-07-26
+## TODAY'S LIVE DATA — 2026-07-27
 _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 **⚠️ THESE LIVE VALUES OVERRIDE ANY 'CURRENT STATUS' IN THE STATIC MEMORY BELOW**
 
@@ -173,13 +173,13 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 - 2026-07-22: 173.7 lb
 
 ### Body Battery Trend (last 7 days)
-- 2026-07-20: peak 100
 - 2026-07-21: peak 100
 - 2026-07-22: peak 69
 - 2026-07-23: peak 79
 - 2026-07-24: peak 68
 - 2026-07-25: peak 79
 - 2026-07-26: peak 82
+- 2026-07-27: peak 82
 
 ### O2Ring History (last 7 nights)
 | Night | Score | Lowest SpO2 | Avg SpO2 | Drops/hr |
@@ -222,7 +222,7 @@ _Muscle protein synthesis stays elevated ~48h post-session; a group trained
 GAPS below before naming today's session — pick the group that is both
 recovered AND most serves the goal (V-taper = upper is highest aesthetic ROI)._
 
-**Days since each group:** UPPER: last 2026-07-21 (5d ago) | LOWER: last 2026-07-22 (4d ago) | HIKE: last 2026-07-25 (1d ago)
+**Days since each group:** UPPER: last 2026-07-21 (6d ago) | LOWER: last 2026-07-22 (5d ago) | HIKE: last 2026-07-25 (2d ago)
 
 | Date | Sessions |
 |------|----------|
