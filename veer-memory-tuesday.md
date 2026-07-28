@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-28
-Generated: 2026-07-28 2:22 PM (America/Phoenix)
+Generated: 2026-07-28 2:23 PM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -329,6 +329,28 @@ recovered AND most serves the goal (V-taper = upper is highest aesthetic ROI)._
 # Veer Conversation Log
 Summaries of all Claude chat sessions. Most recent first.
 Auto-appended after each session via /log-conversation endpoint.
+
+---
+
+## 2026-07-26 — Sun 7/26 — post-Piestewa recovery, training clarified
+_logged: 2026-07-28 14:23_
+
+CLARIFIED by Veer: last activity was Piestewa Peak hike (Sat 7/25, logged as Phoenix Hiking, Load 245, VO2max TE 4.9). Friday 7/24 was REST (no Upper Body). No gym/training since the hike. Today 7/26 data shows the hike's cost: TR crashed to 25 LOW, Acute Load spiked 214->441 (ACWR 1.3), but HRV held BALANCED 81ms and sleep was excellent (8.5h score 86 long-and-deep). O2Ring post-Piestewa 8.4 (best since 07-09) — the hard-hike-improves-breathing pattern confirmed. Today lunch: chicken + garbanzo 100g boiled.
+
+**Sessions logged:** none today (rest). Corrected record: 07-24 rest, 07-25 Piestewa Peak hike Load 245 VO2max, 07-26 rest
+
+**Decisions made:**
+- 07-24 confirmed REST not Upper Body
+- No training since Piestewa hike
+- Today REST - TR 25 LOW and Acute Load 441 mandate recovery
+- Carb (sweet potato) justified today for glycogen refill after Load-245 hike
+
+**Open items:**
+- [ ] Pulmonologist day 55 - lead with the VERIFIED 07-25/26 O2Ring (8.4 score
+- [ ] T90 5m20s) post-Piestewa
+- [ ] Monday 7/27 Upper Body re-entry ONLY if TR recovers from 25
+- [ ] O2Ring 07-21 SpO2 discrepancy still needs PDF reverification
+- [ ] Omada weight gap 4 days
 
 ---
 
@@ -1604,7 +1626,7 @@ with weeks of runway. Never spend a line of the brief on these.
 ---
 
 
-## PIPELINE HEALTHCHECK — 2026-07-27 08:33
+## PIPELINE HEALTHCHECK — 2026-07-28 14:22
 
 **9/11 checks passing**  🔴 **REGRESSION DETECTED — see failures below**
 
@@ -1612,12 +1634,12 @@ with weeks of runway. Never spend a line of the brief on these.
 |-------|--------|--------|
 | Today's Garmin data present | ✅ | all key fields present |
 | veer-data.json today block populated | ✅ | readiness fields filled |
-| Brain rebuilt today | ✅ | Generated 2026-07-27 |
-| Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-07-27 |
-| Recovery Time units sane | ✅ | 23.6 hrs |
+| Brain rebuilt today | ✅ | Generated 2026-07-28 |
+| Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-07-28 |
+| Recovery Time units sane | ✅ | 0.0 hrs |
 | HRV override logic live | ✅ | streak=0 override=clear |
-| Brief matches today's data | 🔴 FAIL | brief does NOT cite today's TR 54 - likely generated before data landed |
-| Sleep window plausible | ✅ | bedtime 12:25 AM |
-| Weight fresh (<=2 days) | 🔴 FAIL | latest 173.7 lb on 2026-07-22 (5d old) |
+| Brief matches today's data | 🔴 FAIL | no brief generated today |
+| Sleep window plausible | ✅ | bedtime 10:12 PM |
+| Weight fresh (<=2 days) | 🔴 FAIL | latest 173.7 lb on 2026-07-22 (6d old) |
 | Scheduled tasks healthy | ✅ | all ran within 24h |
 | No hardcoded secrets in runners | ✅ | clean |
