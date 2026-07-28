@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-28T14:21:57.565934-07:00",
+  "generated": "2026-07-28T14:27:24.833307-07:00",
   "today": {
     "training_readiness": 83,
     "readiness_level": "HIGH",
@@ -75,8 +75,8 @@
     "o2_score": 8.4,
     "o2_lowest": 85,
     "o2_avg": 94,
-    "o2_drops_4pct": 24,
-    "o2_drops_per_hr": 3.3
+    "o2_drops_4pct": 25,
+    "o2_drops_per_hr": 3.8
   },
   "weight": [
     {
