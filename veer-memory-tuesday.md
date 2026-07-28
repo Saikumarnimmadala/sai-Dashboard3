@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-28
-Generated: 2026-07-28 2:23 PM (America/Phoenix)
+Generated: 2026-07-28 2:28 PM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -106,7 +106,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | O2Ring Score | 8.4 |
 | O2Ring Lowest SpO2 | 85% |
 | O2Ring Avg SpO2 | 94% |
-| O2Ring Drops/hr | 3.3 |
+| O2Ring Drops/hr | 3.8 |
 | Pulse Ox Acclimation | not available |
 | Time SpO2 < 90% | not available |
 | Skin Temp Delta | not available |
