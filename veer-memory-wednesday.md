@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-07-29
-Generated: 2026-07-29 8:22 AM (America/Phoenix)
+Generated: 2026-07-29 11:26 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -28,7 +28,7 @@ _Any source older than "today" = do not present as current; state its actual dat
 | **Resting HR** | 51 bpm (7-day avg: 50 bpm) |
 | **SpO2** | Garmin overnight avg: 96.0% low: 86% | O2Ring: 8.4 score low: 85% |
 | **Stress** | avg 15 / peak 60 |
-| **Last Session** | Treadmill Running on 2026-07-28 | Load=85.56838989257812 | TEMPO |
+| **Last Session** | Phoenix Walking on 2026-07-29 | Load=0.3810882568359375 | UNKNOWN |
 | **Weekly** | 6 sessions | Mod:91m + Vig:104m |
 
 ---
@@ -131,19 +131,19 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### LAST SESSION
 | Metric | Value |
 |--------|-------|
-| Activity | Treadmill Running (treadmill_running) |
-| Date / Time | 2026-07-28 2026-07-28 18:43 |
-| Duration | 25m |
-| Distance | 1.71 km (1.06 mi) |
-| Avg HR / Max HR | 145.0 / 176.0 bpm |
-| Aerobic Training Effect | 3.0999999046325684 (TEMPO) — IMPROVING_AEROBIC_FITNESS_2 |
-| Anaerobic Training Effect | 0.8999999761581421 — NO_ANAEROBIC_BENEFIT_0 |
-| Exercise Load | 86 |
-| Calories | 269.0 kcal |
-| Sweat Loss | 158.0 ml |
-| Body Battery Impact | -6 |
-| Avg / Max Power | 88.0 / 274.0 W |
-| HR Zones | Z1:220s | Z2:32s | Z3:597s | Z4:636s | Z5:34s |
+| Activity | Phoenix Walking (walking) |
+| Date / Time | 2026-07-29 2026-07-29 07:04 |
+| Duration | 101m |
+| Distance | 0.72 km (0.45 mi) |
+| Avg HR / Max HR | 65.0 / 88.0 bpm |
+| Aerobic Training Effect | 0.0 (UNKNOWN) — NO_AEROBIC_BENEFIT_18 |
+| Anaerobic Training Effect | 0.0 — NO_ANAEROBIC_BENEFIT_0 |
+| Exercise Load | 0 |
+| Calories | 156.0 kcal |
+| Sweat Loss | 728.0 ml |
+| Body Battery Impact | -4 |
+| Avg / Max Power | None / None W |
+| HR Zones | Z1:0s | Z2:0s | Z3:0s | Z4:0s | Z5:0s |
 | Total Volume (strength) | not available |
 | Total Reps (strength) | not available |
 
@@ -644,37 +644,40 @@ Expanded Garmin data pull to capture every available API metric. Fixed HRV statu
 # PERMANENT MEMORY (working weights, rules, history, protocols)
 
 
-# Veer Health Memory — 2026-07-28
+# Veer Health Memory — 2026-07-29
+Generated: 2026-07-29 (morning brief)
+Sources: Garmin Connect API (last synced 2026-07-28 — no file for 07-29) + O2Ring (last PDF 2026-07-26→27) + Omada scale (last reading 2026-07-22)
 
 ## QUICK DECISION SNAPSHOT
 | | |
 |---|---|
-| Weight | 173.7 lb — last confirmed 07-22, Omada gap now 6 days (07-23 through 07-28) |
-| Training Readiness | 83 HIGH (07-28) |
-| Body Battery | 42 → 100 (peak), end 96 (07-28) |
-| Recovery Time | 0.0 hrs (07-28) |
-| Acute/Chronic/ACWR | 319 / 318 / 1.00 OPTIMAL (07-28) |
-| HRV | BALANCED (89ms last night, 07-28). Streak of consecutive Unbalanced ending 07-28 = 0. Override clear. |
-| Today's training call | UPPER BODY re-entry — 7 days since last Upper (07-21), 6 since last Lower (07-22); Upper picked on frequency + V-taper tie-break. No overrides fired. Weights held (re-entry, not PR day), lateral raises trimmed to 4 sets. |
+| Weight | 173.7 lb — last confirmed 07-22, Omada gap now 7 days (07-23 through 07-29) |
+| Training Readiness | 83 HIGH (last confirmed 07-28) — no 07-29 reading, pipeline gap |
+| Body Battery | 42 → 100 (peak), end 96 (07-28, last confirmed) |
+| Recovery Time | 0.0 hrs (07-28, last confirmed) |
+| Acute/Chronic/ACWR | 319 / 318 / 1.00 OPTIMAL (07-28, last confirmed) |
+| HRV | BALANCED (89ms, 07-28). Streak of consecutive Unbalanced ending 07-29 = 0. Override clear. |
+| Today's training call | LOWER BODY — 7 days since last Lower (07-22), Upper still repairing (trained 07-28, 1 day ago). Frequency trailing 7d: Upper 1x, Lower 0x. Corrective block restored. Standard locked working weights (not a full re-entry — Piestewa hike 07-25 provided incidental leg load). |
 
 ## WEIGHT LOG (most recent)
-07-20: 175.4 | 07-21: 173.9 | 07-22: 173.7 (last confirmed) | 07-23 to 07-28: not available — 6-day Omada gap
+07-20: 175.4 | 07-21: 173.9 | 07-22: 173.7 (last confirmed) | 07-23 to 07-29: not available — 7-day Omada gap
 
 ## LAST SESSIONS
 07-21 (Tue): Upper Body + treadmill tempo, Load 88.6
 07-22 (Wed): Lower Body + treadmill run, Load 72.0
 07-23 (Thu): Coconino County Hiking, 90 min, Load 20.9, AEROBIC_BASE
-07-24 (Fri): Unconfirmed — 0 intensity minutes, 3929 steps, HRV Unbalanced that day
-07-25 (Sat): Phoenix Hiking, 1h40m, Load 245.2, avg HR 155, VO2MAX effect
-07-26 (Sun): Full rest — 4371 steps (corrects a prior stale "76 steps" entry), 0 intensity minutes
-07-27 (Mon): Phoenix Walking logged — activity file shows 9h10m duration, avg HR 66, load 4.49; flagged as a likely tracking artifact (watch left running), not a genuine 9-hour walk. Day steps 12,751.
-07-28 (Tue, today): Upper Body re-entry called. AM Phoenix Walking logged 1h42m, avg HR 62, load 0.36 (light).
+07-24 (Fri): Unconfirmed — 0 intensity minutes, HRV Unbalanced that day (isolated)
+07-25 (Sat): Phoenix Hiking (Piestewa Peak), 1h40m, Load 245.2, avg HR 155, VO2MAX effect
+07-26 (Sun): Full rest — 4371 steps
+07-27 (Mon): Phoenix Walking logged — 9h10m duration flagged as tracking artifact (watch left running), not genuine training load
+07-28 (Tue): Upper Body re-entry (7-day layoff) — standard weights, no PRs, lateral raises 4 sets. AM Phoenix Walking 1h42m light (Load 0.36)
+07-29 (Wed, today): Lower Body called — no Garmin file yet for today's actual execution
 
 ## HRV STATUS
-07-22 Balanced → 07-23 Balanced → 07-24 Unbalanced (isolated) → 07-25 Balanced → 07-26 Balanced → 07-27 Balanced (65ms) → 07-28 Balanced (89ms, near top of 67-91 baseline). Streak=0, override clear.
+07-23 Balanced → 07-24 Unbalanced (isolated) → 07-25 Balanced → 07-26 Balanced → 07-27 Balanced (65ms) → 07-28 Balanced (89ms) → 07-29 no new reading, streak=0 carried. Override clear.
 
 ## O2RING
-Last available data: night of 07-26→07-27 (O2Ring_20260727001028.pdf) — score 8.4, lowest SpO2 84%, avg 93%, drops>4%/hr 3.8, T90 5m20s. No PDF for night of 07-27→07-28 — ring not worn or not exported; only Garmin wrist SpO2 available for 07-28 (avg 94%, low 78% — coarse screen only, not a substitute for O2Ring).
+Last available data: night of 07-26→07-27 — score 8.4, lowest SpO2 84%, avg 93%, drops>4%/hr 3.8, T90 5m20s. No PDF for 07-27→28 or 07-28→29 — 2 consecutive nights without ring data.
 
 | Night | Score | Lowest SpO2 | Avg SpO2 | Drops/hr | T90 |
 |-------|-------|-------------|----------|----------|-----|
@@ -682,36 +685,36 @@ Last available data: night of 07-26→07-27 (O2Ring_20260727001028.pdf) — scor
 | 07-26→27 | 8.4 | 84% | 93% | 3.8 | 5m20s |
 
 ## OPEN ITEMS
-- [ ] CRITICAL: Pulmonologist — referral Jun 1, 57 days unscheduled as of 07-28. Standing #1 item. Cite 07-26→27 O2Ring numbers (score 8.4/lowest 84%/3.8 drops-hr/T90 5m20s).
-- [ ] Weight pipeline: Omada gap now 6 days (07-23 to 07-28) — confirm ASAP.
+- [ ] CRITICAL: Pulmonologist — referral Jun 1, 58 days unscheduled as of 07-29. Standing #1 item. Cite 07-26→27 O2Ring (score 8.4/lowest 84%/3.8 drops-hr/T90 5m20s).
+- [ ] Garmin pipeline: no daily file for 07-29 — investigate sync gap.
+- [ ] Weight: Omada gap now 7 days (07-23 to 07-29) — get a reading ASAP.
+- [ ] O2Ring: 2-night gap (07-27→28, 07-28→29) — resume wearing ring tonight.
 - [ ] Anaerobic load shortage — 8th+ consecutive day below target (87 vs 133-400 as of 07-28).
-- [ ] Upper now trained today (07-28) after 7d gap; Lower still stale since 07-22 (7 days as of 07-29) — schedule Lower this week, Friday is the natural slot.
+- [ ] Lower Body trained today (07-29, called) — restores corrective block, stale since 07-22.
 - [ ] Inventory: chicken, turkey, salmon, sardines, shrimp, eggs — ALL still unconfirmed since 07-22. Needs a real recount.
 - [ ] Sleep consumables (nose strips, mouth tape, earplugs, O2Ring charge) status unknown — Tier 1, active OSA investigation.
-- [ ] Fisetin next doses: August 1-2, 2026 — 4 days out, confirm stock now.
+- [ ] Fisetin next doses: August 1-2, 2026 — 3 days out, confirm stock now.
 - [ ] KSM-66 break begins: September 7, 2026 — stop, do not reorder.
 - [ ] Ferritin recheck: September 2026. Full bloodwork retest: December 2026.
-- [ ] Corrective block (right-side knee valgus work) hasn't run since 07-22 (Lower Body only) — don't let it slip further once Lower is scheduled.
 
 ## SUPPLEMENT CYCLES
 - KSM-66: active, break starts 2026-09-07
-- Fisetin: last taken Jul 1-2, next Aug 1-2 (4 days out)
-- Biotin: Tue/Thu/Sat only — TAKE 07-28 (Tuesday)
+- Fisetin: last taken Jul 1-2, next Aug 1-2 (3 days out)
+- Biotin: Tue/Thu/Sat only — SKIP 07-29 (Wednesday)
 
 ## TRAIL BLACKLIST (permanent)
 Peralta Trail + all Superstition Mountains trails — two rattlesnake encounters 07-11/07-12
 
-## RECENT DECISIONS (2026-07-28)
-- Training call: UPPER BODY, re-entry protocol (7-day layoff), weights held at locked values, lateral raises trimmed to 4 sets. No overrides fired (TR 83 HIGH, Acute Load 319, Recovery Time 0h, HRV Balanced streak 0).
-- Carb decision: sweet potato 200g added to dinner — two triggers fired: Acute Load 319 (>200) AND first Upper session after a 5+ day layoff.
-- Session selection reasoned from actual history (Upper 7d stale, Lower 6d stale, both >48h recovered) — Upper chosen on trailing-week frequency (0x vs Lower's 1x) plus V-taper goal-weighting tie-break.
-- Data-quality flag: 07-27's Garmin-logged "Phoenix Walking" activity shows an implausible 9h10m duration — treated as a tracking artifact, excluded from training-load reasoning.
-- Corrected a stale memory error: 07-26 steps were 4,371 per source file, not "76" as a prior entry stated.
+## RECENT DECISIONS (2026-07-29)
+- Training call: LOWER BODY — reasoned from actual history (Upper 1 day ago still repairing, Lower 7 days stale and under-frequency), not the calendar default. Standard locked working weights, not a cut-back re-entry (Piestewa hike 4 days prior gave legs incidental load).
+- Carb decision: sweet potato 200g added to dinner — trigger #2 fired (first Lower session after 7-day layoff for that group).
+- Protein shake: skipped — food alone (breakfast + chicken 160g lunch + turkey 200g dinner) lands ~160-168g, already at target.
+- Data-quality flag: no Garmin daily file exists for 07-29 — brief built on 07-28 as most recent confirmed reference; flagged explicitly rather than presented as live.
 
-## PIPELINE STATUS (2026-07-28)
-- Garmin daily file present for 07-28 — all key fields populated.
-- O2Ring PDF not provided for night of 07-27→07-28 — last available ring data is from 07-26→07-27.
-- Omada weight not available — 6-day gap (last reading 07-22).
+## PIPELINE STATUS (2026-07-29)
+- Garmin daily file MISSING for 07-29 — regression, needs investigation.
+- O2Ring PDF not provided for 2 consecutive nights (07-27→28, 07-28→29).
+- Omada weight not available — 7-day gap (last reading 07-22).
 
 ---
 
@@ -1640,7 +1643,7 @@ with weeks of runway. Never spend a line of the brief on these.
 ---
 
 
-## PIPELINE HEALTHCHECK — 2026-07-29 08:20
+## PIPELINE HEALTHCHECK — 2026-07-29 08:22
 
 **9/11 checks passing**  🔴 **REGRESSION DETECTED — see failures below**
 
@@ -1650,9 +1653,9 @@ with weeks of runway. Never spend a line of the brief on these.
 | veer-data.json today block populated | ✅ | readiness fields filled |
 | Brain rebuilt today | ✅ | Generated 2026-07-29 |
 | Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-07-29 |
-| Recovery Time units sane | ✅ | 0.0 hrs |
+| Recovery Time units sane | ✅ | 10.4 hrs |
 | HRV override logic live | ✅ | streak=0 override=clear |
-| Brief matches today's data | 🔴 FAIL | no brief generated today |
+| Brief matches today's data | 🔴 FAIL | brief does NOT cite today's TR 70 - likely generated before data landed |
 | Sleep window plausible | ✅ | bedtime 12:26 AM |
 | Weight fresh (<=2 days) | 🔴 FAIL | latest 173.7 lb on 2026-07-22 (7d old) |
 | Scheduled tasks healthy | ✅ | all ran within 24h |
