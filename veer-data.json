@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-29T11:26:16.369934-07:00",
+  "generated": "2026-07-31T07:46:48.411615-07:00",
   "today": {
     "training_readiness": 70,
     "readiness_level": "MODERATE",
@@ -328,6 +328,10 @@
     {
       "date": "2026-07-29",
       "v": 87
+    },
+    {
+      "date": "2026-07-31",
+      "v": 87
     }
   ],
   "hrv": [],
@@ -490,41 +494,32 @@
   },
   "coaches_generated": "2026-07-04T07:47:22.420820-07:00",
   "last_session": {
-    "date": "2026-07-29",
-    "start_time": "2026-07-29 07:04",
-    "name": "Phoenix Walking",
-    "type": "walking",
-    "duration_s": 6094.3828125,
-    "distance_m": 721.989990234375,
-    "avg_hr": 65.0,
-    "max_hr": 88.0,
-    "calories": 156.0,
-    "aerobic_te": 0.0,
-    "aerobic_te_msg": "NO_AEROBIC_BENEFIT_18",
-    "te_label": "UNKNOWN",
-    "anaerobic_te": 0.0,
-    "anaerobic_te_msg": "NO_ANAEROBIC_BENEFIT_0",
-    "exercise_load": 0.3810882568359375,
+    "date": "2026-07-30",
+    "start_time": "2026-07-30 17:35",
+    "name": "Yavapai County Hiking",
+    "type": "hiking",
+    "duration_s": 9002.6015625,
+    "distance_m": 6034.93017578125,
+    "avg_hr": 129.0,
+    "max_hr": 184.0,
+    "calories": 1015.0,
+    "aerobic_te": 3.700000047683716,
+    "aerobic_te_msg": "IMPROVING_AEROBIC_FITNESS_2",
+    "te_label": "TEMPO",
+    "anaerobic_te": 2.0999999046325684,
+    "anaerobic_te_msg": "MAINTAINING_ANAEROBIC_BASE_1",
+    "exercise_load": 150.19029235839844,
     "avg_power": null,
     "max_power": null,
-    "sweat_ml": 728.0,
-    "bb_delta": -4,
-    "hr_z1_s": 0.0,
-    "hr_z2_s": 0.0,
-    "hr_z3_s": 0.0,
-    "hr_z4_s": 0.0,
-    "hr_z5_s": 0.0
+    "sweat_ml": 2281.0,
+    "bb_delta": -15,
+    "hr_z1_s": 1975.846,
+    "hr_z2_s": 2446.133,
+    "hr_z3_s": 1862.129,
+    "hr_z4_s": 1496.009,
+    "hr_z5_s": 489.036
   },
   "recent_sessions": [
-    {
-      "date": "2026-07-23",
-      "day": "Thu",
-      "type": "Hike",
-      "name": "Coconino County Hiking — 2026-07-23 2026-07-23 19:31",
-      "duration": "1h 30m",
-      "avg_hr": "114.0",
-      "load": "20.883056640625"
-    },
     {
       "date": "2026-07-25",
       "day": "Sat",
