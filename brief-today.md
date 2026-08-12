@@ -37,7 +37,7 @@ Full week, brother:
 
 🧬 **Longevity Scientist:** Fisetin's Aug 1-2 window already passed — skip until next month. KSM-66 stays active until the Sept 7 stop date. Weekly vigorous minutes are well above the 75+/wk floor thanks to Saturday's hike.
 
-🧪 **Hormonal Specialist:** Weight is frozen at **173.7 lb (07-22) — 21 days stale**, the worst this gap has been. Cannot read the recomposition trend at all right now; this needs a fresh Omada reading more urgently than it did a week ago.
+🧪 **Hormonal Specialist:** Weight gap closed — you pulled the full Omada history back to 06-20. Today's 174.3 lb sits mid-band (172-175). No sustained trend either direction over the last 3 weeks; it's been oscillating 171.5-176.1 day to day, which is normal water-weight/hydration noise, not a recomposition signal in either direction.
 
 🦵 **Movement Coach:** Corrective block (right knee valgus -20°, VASA assessment) hasn't run since 08-02 either — it only fires on Lower days, so it's equally 10 days overdue. Today restores it, right-side priority.
 
@@ -47,7 +47,7 @@ Full week, brother:
 
 ## ⚖️ Weight
 
-**173.7 lb — CARRIED FROM 2026-07-22, NOT TODAY'S ACTUAL READING.** Omada gap is now **21 days**. That's inside the 172–175 band as of the last known reading, but a gap this long means the recomposition trend is completely unreadable — this is now the most stale it has ever been. Get a weigh-in today if at all possible.
+**174.3 lb — confirmed today (Wed 08-12, 9:03 AM).** Gap closed: you pulled the full Omada weigh-in history from the app (06-20 through today), so the pipeline now has real daily data instead of a single 21-day-old point. In-band (172-175). Last 2 weeks: 173.7 (7/22) → dipped to 171.5 (7/31) → back up through 175.4 (8/11) → 174.3 today — normal oscillation, no clear trend either way.
 
 ---
 
@@ -73,7 +73,7 @@ Full week, brother:
 
 - **CRITICAL — Pulmonologist:** referral submitted June 1, 2026 — **72 days unscheduled today.** Lead with the 07-26→27 O2Ring: score 8.4, lowest SpO2 84%, avg 93%, 3.8 drops/hr, T90 5m20s — still your strongest evidence, but it's now 16 days old.
 - **O2Ring 16-day gap** (last PDF 07-27) — resume wearing it tonight, thumb, vibration OFF.
-- **Weight gap 21 days** (last reading 07-22) — the longest this gap has ever been. Get an Omada reading today.
+- ~~Weight gap~~ **CLOSED** — full Omada history backfilled 06-20 through today. Today: 174.3 lb, in-band.
 - **Anaerobic load shortage** — persistent, still below target (129 vs 133-400 target band); today's Lower session helps close it.
 - **Inventory unconfirmed since 07-22** (21 days) — chicken, turkey, salmon, sardines, shrimp, eggs all ❔. Today's plan assumes turkey (dinner) is on hand — confirm.
 - **Pipeline:** `claude` CLI OAuth expired 07-31, unfixed for 13 days — see note at top. `GITHUB_TOKEN` was separately expired and has just been rotated/fixed today.
@@ -225,6 +225,6 @@ Right side gets slightly more attention throughout the corrective block — righ
 - `garmin/PROTOCOLS.md`
 - `garmin/INVENTORY.md`
 - O2Ring dir (`OneDrive\Documents\GarminBriefs\O2Ring`) — no file newer than 07-27
-- Omada — no reading newer than 07-22
+- Omada app history — manually pulled and backfilled, 06-20 through 08-12
 
 **NOTE:** Written manually by Claude Code (not the automated 8-specialist pipeline) because the `claude` CLI's OAuth session has been expired since 07-31. No Veer-QA review pass this time — recommend a quick gut-check against yesterday's actual felt recovery before training.
