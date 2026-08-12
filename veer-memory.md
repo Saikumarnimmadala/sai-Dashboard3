@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-08-12
-Generated: 2026-08-12 11:30 AM (America/Phoenix)
+Generated: 2026-08-12 12:23 PM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -8,7 +8,7 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 | Source | As of | Age |
 |--------|-------|-----|
 | Garmin biometrics | 2026-08-12 | today |
-| Weight (Omada) | 2026-07-22 | 21 days ago |
+| Weight (Omada) | 2026-08-12 | today |
 | O2Ring sleep | 2026-07-27 | 16 days ago |
 
 _Any source older than "today" = do not present as current; state its actual date._
@@ -18,7 +18,7 @@ _Any source older than "today" = do not present as current; state its actual dat
 ## QUICK DECISION SNAPSHOT (LIVE — 2026-08-12)
 | | |
 |---|---|
-| **Weight** | 173.7 lb (−42.7 lb from 216.4 peak) |
+| **Weight** | 174.3 lb (−42.1 lb from 216.4 peak) |
 | **Training Readiness** | 80 / 100 (HIGH) — HIGH_RT_AVAILABLE_SS_HIGHEST |
 | **Body Battery** | 26 → 97 (end: 97) |
 | **Recovery Time** | 6.8 hrs |
@@ -125,8 +125,8 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### WEIGHT
 | Metric | Value |
 |--------|-------|
-| Current Weight | **173.7 lb** (as of 2026-07-22) |
-| Lost from Peak (216.4 lb) | 42.7 lb |
+| Current Weight | **174.3 lb** (as of 2026-08-12) |
+| Lost from Peak (216.4 lb) | 42.1 lb |
 
 ### LAST SESSION
 | Metric | Value |
@@ -157,20 +157,20 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Active Calories | 6094 kcal |
 
 ### Weight Trend (last 14 entries)
-- 2026-07-09: 173.0 lb
-- 2026-07-10: 172.1 lb
-- 2026-07-11: 173.0 lb
-- 2026-07-12: 172.8 lb
-- 2026-07-13: 172.1 lb
-- 2026-07-14: 173.0 lb
-- 2026-07-15: 173.5 lb
-- 2026-07-16: 173.2 lb
-- 2026-07-17: 173.5 lb
-- 2026-07-18: 174.1 lb
-- 2026-07-19: 173.9 lb
-- 2026-07-20: 175.4 lb
-- 2026-07-21: 173.9 lb
-- 2026-07-22: 173.7 lb
+- 2026-07-25: 174.3 lb
+- 2026-07-26: 176.1 lb
+- 2026-07-27: 175.7 lb
+- 2026-07-28: 175.0 lb
+- 2026-07-29: 173.9 lb
+- 2026-07-31: 171.5 lb
+- 2026-08-01: 173.2 lb
+- 2026-08-02: 175.4 lb
+- 2026-08-04: 173.7 lb
+- 2026-08-07: 173.0 lb
+- 2026-08-09: 172.3 lb
+- 2026-08-10: 174.3 lb
+- 2026-08-11: 175.4 lb
+- 2026-08-12: 174.3 lb
 
 ### Body Battery Trend (last 7 days)
 - 2026-07-31: peak 63
