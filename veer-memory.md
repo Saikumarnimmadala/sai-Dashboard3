@@ -1,5 +1,5 @@
-# Veer Health Memory — 2026-08-12
-Generated: 2026-08-12 12:23 PM (America/Phoenix)
+# Veer Health Memory — 2026-08-13
+Generated: 2026-08-13 10:26 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -7,15 +7,15 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 ## DATA FRESHNESS — check each source's age before citing it
 | Source | As of | Age |
 |--------|-------|-----|
-| Garmin biometrics | 2026-08-12 | today |
-| Weight (Omada) | 2026-08-12 | today |
-| O2Ring sleep | 2026-07-27 | 16 days ago |
+| Garmin biometrics | 2026-08-13 | today |
+| Weight (Omada) | 2026-08-12 | yesterday |
+| O2Ring sleep | 2026-07-27 | 17 days ago |
 
 _Any source older than "today" = do not present as current; state its actual date._
 
 ---
 
-## QUICK DECISION SNAPSHOT (LIVE — 2026-08-12)
+## QUICK DECISION SNAPSHOT (LIVE — 2026-08-13)
 | | |
 |---|---|
 | **Weight** | 174.3 lb (−42.1 lb from 216.4 peak) |
@@ -28,13 +28,13 @@ _Any source older than "today" = do not present as current; state its actual dat
 | **Resting HR** | 48 bpm (7-day avg: 49 bpm) |
 | **SpO2** | Garmin overnight avg: 95.0% low: 86% | O2Ring: 8.4 score low: 85% |
 | **Stress** | avg 11 / peak 65 |
-| **Last Session** | Treadmill Running on 2026-08-10 | Load=96.00181579589844 | AEROBIC_BASE |
+| **Last Session** | Phoenix Hiking on 2026-08-13 | Load=96.93998718261719 | AEROBIC_BASE |
 | **Weekly** | 11 sessions | Mod:177m + Vig:226m |
 
 ---
 
 
-## TODAY'S LIVE DATA — 2026-08-12
+## TODAY'S LIVE DATA — 2026-08-13
 _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 **⚠️ THESE LIVE VALUES OVERRIDE ANY 'CURRENT STATUS' IN THE STATIC MEMORY BELOW**
 
@@ -131,19 +131,19 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### LAST SESSION
 | Metric | Value |
 |--------|-------|
-| Activity | Treadmill Running (treadmill_running) |
-| Date / Time | 2026-08-10 2026-08-10 18:06 |
-| Duration | 31m |
-| Distance | 2.47 km (1.53 mi) |
-| Avg HR / Max HR | 143.0 / 173.0 bpm |
-| Aerobic Training Effect | 3.0999999046325684 (AEROBIC_BASE) — IMPROVING_AEROBIC_BASE_8 |
-| Anaerobic Training Effect | 1.2999999523162842 — MINOR_ANAEROBIC_BENEFIT_15 |
-| Exercise Load | 96 |
-| Calories | 339.0 kcal |
-| Sweat Loss | 220.0 ml |
-| Body Battery Impact | -6 |
-| Avg / Max Power | 102.0 / 282.0 W |
-| HR Zones | Z1:66s | Z2:66s | Z3:1296s | Z4:413s | Z5:35s |
+| Activity | Phoenix Hiking (hiking) |
+| Date / Time | 2026-08-13 2026-08-13 07:21 |
+| Duration | 80m |
+| Distance | 3.76 km (2.33 mi) |
+| Avg HR / Max HR | 135.0 / 181.0 bpm |
+| Aerobic Training Effect | 3.200000047683716 (AEROBIC_BASE) — IMPROVING_AEROBIC_BASE_8 |
+| Anaerobic Training Effect | 0.30000001192092896 — NO_ANAEROBIC_BENEFIT_0 |
+| Exercise Load | 97 |
+| Calories | 681.0 kcal |
+| Sweat Loss | 1146.0 ml |
+| Body Battery Impact | -14 |
+| Avg / Max Power | None / None W |
+| HR Zones | Z1:739s | Z2:504s | Z3:1931s | Z4:1273s | Z5:36s |
 | Total Volume (strength) | not available |
 | Total Reps (strength) | not available |
 
@@ -173,13 +173,13 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 - 2026-08-12: 174.3 lb
 
 ### Body Battery Trend (last 7 days)
-- 2026-07-31: peak 63
 - 2026-08-03: peak 80
 - 2026-08-04: peak 97
 - 2026-08-07: peak 100
 - 2026-08-09: peak 66
 - 2026-08-11: peak 70
 - 2026-08-12: peak 97
+- 2026-08-13: peak 97
 
 ### O2Ring History (last 7 nights)
 | Night | Score | Lowest SpO2 | Avg SpO2 | Drops/hr |
@@ -223,11 +223,10 @@ _Muscle protein synthesis stays elevated ~48h post-session; a group trained
 GAPS below before naming today's session — pick the group that is both
 recovered AND most serves the goal (V-taper = upper is highest aesthetic ROI)._
 
-**Days since each group:** UPPER: last 2026-08-10 (2d ago) | LOWER: last 2026-08-02 (10d ago) | HIKE: last 2026-08-08 (4d ago)
+**Days since each group:** UPPER: last 2026-08-10 (3d ago) | LOWER: last 2026-08-02 (11d ago) | HIKE: last 2026-08-08 (5d ago)
 
 | Date | Sessions |
 |------|----------|
-| 2026-07-22 (Wed) | LOWER, CARDIO |
 | 2026-07-23 (Thu) | HIKE |
 | 2026-07-25 (Sat) | HIKE |
 | 2026-07-28 (Tue) | UPPER, CARDIO |
