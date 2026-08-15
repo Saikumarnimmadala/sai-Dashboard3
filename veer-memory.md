@@ -1,5 +1,5 @@
-# Veer Health Memory — 2026-08-14
-Generated: 2026-08-14 6:30 AM (America/Phoenix)
+# Veer Health Memory — 2026-08-15
+Generated: 2026-08-15 6:30 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -7,15 +7,15 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 ## DATA FRESHNESS — check each source's age before citing it
 | Source | As of | Age |
 |--------|-------|-----|
-| Garmin biometrics | 2026-08-14 | today |
-| Weight (Omada) | 2026-08-12 | 2 days ago |
-| O2Ring sleep | 2026-07-27 | 18 days ago |
+| Garmin biometrics | 2026-08-15 | today |
+| Weight (Omada) | 2026-08-12 | 3 days ago |
+| O2Ring sleep | 2026-07-27 | 19 days ago |
 
 _Any source older than "today" = do not present as current; state its actual date._
 
 ---
 
-## QUICK DECISION SNAPSHOT (LIVE — 2026-08-14)
+## QUICK DECISION SNAPSHOT (LIVE — 2026-08-15)
 | | |
 |---|---|
 | **Weight** | 174.3 lb (−42.1 lb from 216.4 peak) |
@@ -28,13 +28,13 @@ _Any source older than "today" = do not present as current; state its actual dat
 | **Resting HR** | None bpm (7-day avg: None bpm) |
 | **SpO2** | Garmin overnight avg: None% low: None% | O2Ring: 8.4 score low: 85% |
 | **Stress** | avg None / peak None |
-| **Last Session** | Phoenix Hiking on 2026-08-13 | Load=96.93998718261719 | AEROBIC_BASE |
-| **Weekly** | 8 sessions | Mod:176m + Vig:235m |
+| **Last Session** | Phoenix Walking on 2026-08-14 | Load=1.2449951171875 | RECOVERY |
+| **Weekly** | 8 sessions | Mod:95m + Vig:99m |
 
 ---
 
 
-## TODAY'S LIVE DATA — 2026-08-14
+## TODAY'S LIVE DATA — 2026-08-15
 _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 **⚠️ THESE LIVE VALUES OVERRIDE ANY 'CURRENT STATUS' IN THE STATIC MEMORY BELOW**
 
@@ -131,19 +131,19 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### LAST SESSION
 | Metric | Value |
 |--------|-------|
-| Activity | Phoenix Hiking (hiking) |
-| Date / Time | 2026-08-13 2026-08-13 07:21 |
-| Duration | 80m |
-| Distance | 3.76 km (2.33 mi) |
-| Avg HR / Max HR | 135.0 / 181.0 bpm |
-| Aerobic Training Effect | 3.200000047683716 (AEROBIC_BASE) — IMPROVING_AEROBIC_BASE_8 |
-| Anaerobic Training Effect | 0.30000001192092896 — NO_ANAEROBIC_BENEFIT_0 |
-| Exercise Load | 97 |
-| Calories | 681.0 kcal |
-| Sweat Loss | 1146.0 ml |
-| Body Battery Impact | -14 |
+| Activity | Phoenix Walking (walking) |
+| Date / Time | 2026-08-14 2026-08-14 07:28 |
+| Duration | 340m |
+| Distance | 2.57 km (1.60 mi) |
+| Avg HR / Max HR | 66.0 / 101.0 bpm |
+| Aerobic Training Effect | 0.10000000149011612 (RECOVERY) — RECOVERY_5 |
+| Anaerobic Training Effect | 0.0 — NO_ANAEROBIC_BENEFIT_0 |
+| Exercise Load | 1 |
+| Calories | 558.0 kcal |
+| Sweat Loss | 2767.0 ml |
+| Body Battery Impact | -11 |
 | Avg / Max Power | None / None W |
-| HR Zones | Z1:739s | Z2:504s | Z3:1931s | Z4:1273s | Z5:36s |
+| HR Zones | Z1:41s | Z2:0s | Z3:0s | Z4:0s | Z5:0s |
 | Total Volume (strength) | not available |
 | Total Reps (strength) | not available |
 
@@ -151,10 +151,10 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Metric | Value |
 |--------|-------|
 | Sessions This Week | 8 |
-| Intensity — Moderate | 176 min |
-| Intensity — Vigorous | 235 min |
-| Total Intensity (mod+vig) | 411 min |
-| Active Calories | 5421 kcal |
+| Intensity — Moderate | 95 min |
+| Intensity — Vigorous | 99 min |
+| Total Intensity (mod+vig) | 194 min |
+| Active Calories | 3823 kcal |
 
 ### Weight Trend (last 14 entries)
 - 2026-07-25: 174.3 lb
@@ -223,7 +223,7 @@ _Muscle protein synthesis stays elevated ~48h post-session; a group trained
 GAPS below before naming today's session — pick the group that is both
 recovered AND most serves the goal (V-taper = upper is highest aesthetic ROI)._
 
-**Days since each group:** UPPER: last 2026-08-10 (4d ago) | LOWER: last 2026-08-12 (2d ago) | HIKE: last 2026-08-13 (1d ago)
+**Days since each group:** UPPER: last 2026-08-10 (5d ago) | LOWER: last 2026-08-12 (3d ago) | HIKE: last 2026-08-13 (2d ago)
 
 | Date | Sessions |
 |------|----------|
@@ -1640,20 +1640,20 @@ with weeks of runway. Never spend a line of the brief on these.
 ---
 
 
-## PIPELINE HEALTHCHECK — 2026-08-13 10:27
+## PIPELINE HEALTHCHECK — 2026-08-14 06:30
 
-**10/11 checks passing**  🔴 **REGRESSION DETECTED — see failures below**
+**8/11 checks passing**  🔴 **REGRESSION DETECTED — see failures below**
 
 | Check | Status | Detail |
 |-------|--------|--------|
 | Today's Garmin data present | ✅ | all key fields present |
-| veer-data.json today block populated | ✅ | readiness fields filled |
-| Brain rebuilt today | ✅ | Generated 2026-08-13 |
-| Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-08-13 |
-| Recovery Time units sane | ✅ | 6.8 hrs |
+| veer-data.json today block populated | 🔴 FAIL | blank: ['training_readiness', 'body_battery_peak', 'rhr', 'sleep_score'] |
+| Brain rebuilt today | ✅ | Generated 2026-08-14 |
+| Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-08-14 |
+| Recovery Time units sane | ✅ | not available today (not a failure) |
 | HRV override logic live | ✅ | streak=0 override=clear |
 | Brief matches today's data | 🔴 FAIL | no brief generated today |
-| Sleep window plausible | ✅ | bedtime 10:25 PM |
-| Weight fresh (<=2 days) | ✅ | latest 174.3 lb on 2026-08-12 (1d old) |
-| Scheduled tasks healthy | ✅ | all ran within 24h |
+| Sleep window plausible | ✅ | no sleep window recorded |
+| Weight fresh (<=2 days) | ✅ | latest 174.3 lb on 2026-08-12 (2d old) |
+| Scheduled tasks healthy | 🔴 FAIL | stale: ['GarminSync2-OnUnlock=2026-08-12'] |
 | No hardcoded secrets in runners | ✅ | clean |
