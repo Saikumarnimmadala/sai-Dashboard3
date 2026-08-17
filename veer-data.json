@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-16T10:01:49.850104-07:00",
+  "generated": "2026-08-17T06:30:03.005084-07:00",
   "today": {
     "training_readiness": null,
     "readiness_level": null,
@@ -68,10 +68,10 @@
     "floors_ascended": null,
     "intensity_moderate": null,
     "intensity_vigorous": null,
-    "weekly_sessions": 8,
-    "weekly_intensity_mod": 95,
-    "weekly_intensity_vig": 99,
-    "weekly_active_calories": 3823,
+    "weekly_sessions": 7,
+    "weekly_intensity_mod": 86,
+    "weekly_intensity_vig": 159,
+    "weekly_active_calories": 3828,
     "o2_score": 8.4,
     "o2_lowest": 85,
     "o2_avg": 94,
@@ -613,24 +613,6 @@
   },
   "recent_sessions": [
     {
-      "date": "2026-08-10",
-      "day": "Mon",
-      "type": "Upper Body",
-      "name": "Strength Workout — 2026-08-10 2026-08-10 15:20",
-      "duration": "2h 45m",
-      "avg_hr": "82.0",
-      "load": "6.630279541015625"
-    },
-    {
-      "date": "2026-08-10",
-      "day": "Mon",
-      "type": "Run/Treadmill",
-      "name": "Treadmill Running — 2026-08-10 2026-08-10 18:06",
-      "duration": "31m 46s",
-      "avg_hr": "143.0",
-      "load": "96.00181579589844"
-    },
-    {
       "date": "2026-08-12",
       "day": "Wed",
       "type": "Lower Body",
@@ -656,6 +638,33 @@
       "duration": "1h 20m",
       "avg_hr": "135.0",
       "load": "96.93998718261719"
+    },
+    {
+      "date": "2026-08-15",
+      "day": "Sat",
+      "type": "Upper Body",
+      "name": "Strength Workout — 2026-08-15 2026-08-15 08:59",
+      "duration": "2h 59m",
+      "avg_hr": "85.0",
+      "load": "9.495437622070312"
+    },
+    {
+      "date": "2026-08-15",
+      "day": "Sat",
+      "type": "Run/Treadmill",
+      "name": "Treadmill Running — 2026-08-15 2026-08-15 11:59",
+      "duration": "1h 31m",
+      "avg_hr": "117.0",
+      "load": "132.04722595214844"
+    },
+    {
+      "date": "2026-08-16",
+      "day": "Sun",
+      "type": "Hike",
+      "name": "Piestawa peak — 2026-08-16 2026-08-16 07:03",
+      "duration": "1h 3m",
+      "avg_hr": "156.0",
+      "load": "247.55735778808594"
     }
   ]
 }
