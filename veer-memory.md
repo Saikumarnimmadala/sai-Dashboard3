@@ -1,5 +1,5 @@
-# Veer Health Memory — 2026-08-16
-Generated: 2026-08-16 10:01 AM (America/Phoenix)
+# Veer Health Memory — 2026-08-17
+Generated: 2026-08-17 6:30 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -7,15 +7,15 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 ## DATA FRESHNESS — check each source's age before citing it
 | Source | As of | Age |
 |--------|-------|-----|
-| Garmin biometrics | 2026-08-16 | today |
-| Weight (Omada) | 2026-08-12 | 4 days ago |
-| O2Ring sleep | 2026-07-27 | 20 days ago |
+| Garmin biometrics | 2026-08-17 | today |
+| Weight (Omada) | 2026-08-12 | 5 days ago |
+| O2Ring sleep | 2026-07-27 | 21 days ago |
 
 _Any source older than "today" = do not present as current; state its actual date._
 
 ---
 
-## QUICK DECISION SNAPSHOT (LIVE — 2026-08-16)
+## QUICK DECISION SNAPSHOT (LIVE — 2026-08-17)
 | | |
 |---|---|
 | **Weight** | 174.3 lb (−42.1 lb from 216.4 peak) |
@@ -29,12 +29,12 @@ _Any source older than "today" = do not present as current; state its actual dat
 | **SpO2** | Garmin overnight avg: None% low: None% | O2Ring: 8.4 score low: 85% |
 | **Stress** | avg None / peak None |
 | **Last Session** | Piestawa peak on 2026-08-16 | Load=247.55735778808594 | VO2MAX |
-| **Weekly** | 8 sessions | Mod:95m + Vig:99m |
+| **Weekly** | 7 sessions | Mod:86m + Vig:159m |
 
 ---
 
 
-## TODAY'S LIVE DATA — 2026-08-16
+## TODAY'S LIVE DATA — 2026-08-17
 _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 **⚠️ THESE LIVE VALUES OVERRIDE ANY 'CURRENT STATUS' IN THE STATIC MEMORY BELOW**
 
@@ -150,11 +150,11 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### WEEKLY SUMMARY (last 7 days)
 | Metric | Value |
 |--------|-------|
-| Sessions This Week | 8 |
-| Intensity — Moderate | 95 min |
-| Intensity — Vigorous | 99 min |
-| Total Intensity (mod+vig) | 194 min |
-| Active Calories | 3823 kcal |
+| Sessions This Week | 7 |
+| Intensity — Moderate | 86 min |
+| Intensity — Vigorous | 159 min |
+| Total Intensity (mod+vig) | 245 min |
+| Active Calories | 3828 kcal |
 
 ### Weight Trend (last 14 entries)
 - 2026-07-25: 174.3 lb
@@ -223,7 +223,7 @@ _Muscle protein synthesis stays elevated ~48h post-session; a group trained
 GAPS below before naming today's session — pick the group that is both
 recovered AND most serves the goal (V-taper = upper is highest aesthetic ROI)._
 
-**Days since each group:** UPPER: last 2026-08-10 (6d ago) | LOWER: last 2026-08-12 (4d ago) | HIKE: last 2026-08-13 (3d ago)
+**Days since each group:** UPPER: last 2026-08-15 (2d ago) | LOWER: last 2026-08-12 (5d ago) | HIKE: last 2026-08-16 (1d ago)
 
 | Date | Sessions |
 |------|----------|
@@ -236,6 +236,8 @@ recovered AND most serves the goal (V-taper = upper is highest aesthetic ROI)._
 | 2026-08-10 (Mon) | UPPER, CARDIO |
 | 2026-08-12 (Wed) | LOWER, CARDIO |
 | 2026-08-13 (Thu) | HIKE |
+| 2026-08-15 (Sat) | UPPER, CARDIO |
+| 2026-08-16 (Sun) | HIKE |
 
 
 ---
@@ -1639,7 +1641,7 @@ with weeks of runway. Never spend a line of the brief on these.
 ---
 
 
-## PIPELINE HEALTHCHECK — 2026-08-15 06:30
+## PIPELINE HEALTHCHECK — 2026-08-16 10:02
 
 **7/11 checks passing**  🔴 **REGRESSION DETECTED — see failures below**
 
@@ -1647,12 +1649,12 @@ with weeks of runway. Never spend a line of the brief on these.
 |-------|--------|--------|
 | Today's Garmin data present | ✅ | all key fields present |
 | veer-data.json today block populated | 🔴 FAIL | blank: ['training_readiness', 'body_battery_peak', 'rhr', 'sleep_score'] |
-| Brain rebuilt today | ✅ | Generated 2026-08-15 |
-| Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-08-15 |
+| Brain rebuilt today | ✅ | Generated 2026-08-16 |
+| Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-08-16 |
 | Recovery Time units sane | ✅ | not available today (not a failure) |
 | HRV override logic live | ✅ | streak=0 override=clear |
 | Brief matches today's data | 🔴 FAIL | no brief generated today |
-| Sleep window plausible | ✅ | no sleep window recorded |
-| Weight fresh (<=2 days) | 🔴 FAIL | latest 174.3 lb on 2026-08-12 (3d old) |
+| Sleep window plausible | ✅ | bedtime 10:59 PM |
+| Weight fresh (<=2 days) | 🔴 FAIL | latest 174.3 lb on 2026-08-12 (4d old) |
 | Scheduled tasks healthy | 🔴 FAIL | stale: ['GarminSync2-OnUnlock=2026-08-12'] |
 | No hardcoded secrets in runners | ✅ | clean |
