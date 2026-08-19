@@ -1,5 +1,5 @@
-# Veer Health Memory — 2026-08-17
-Generated: 2026-08-17 6:30 AM (America/Phoenix)
+# Veer Health Memory — 2026-08-19
+Generated: 2026-08-19 4:02 PM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -7,15 +7,15 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 ## DATA FRESHNESS — check each source's age before citing it
 | Source | As of | Age |
 |--------|-------|-----|
-| Garmin biometrics | 2026-08-17 | today |
-| Weight (Omada) | 2026-08-12 | 5 days ago |
-| O2Ring sleep | 2026-07-27 | 21 days ago |
+| Garmin biometrics | 2026-08-19 | today |
+| Weight (Omada) | 2026-08-12 | 7 days ago |
+| O2Ring sleep | 2026-07-27 | 23 days ago |
 
 _Any source older than "today" = do not present as current; state its actual date._
 
 ---
 
-## QUICK DECISION SNAPSHOT (LIVE — 2026-08-17)
+## QUICK DECISION SNAPSHOT (LIVE — 2026-08-19)
 | | |
 |---|---|
 | **Weight** | 174.3 lb (−42.1 lb from 216.4 peak) |
@@ -34,7 +34,7 @@ _Any source older than "today" = do not present as current; state its actual dat
 ---
 
 
-## TODAY'S LIVE DATA — 2026-08-17
+## TODAY'S LIVE DATA — 2026-08-19
 _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 **⚠️ THESE LIVE VALUES OVERRIDE ANY 'CURRENT STATUS' IN THE STATIC MEMORY BELOW**
 
@@ -223,11 +223,10 @@ _Muscle protein synthesis stays elevated ~48h post-session; a group trained
 GAPS below before naming today's session — pick the group that is both
 recovered AND most serves the goal (V-taper = upper is highest aesthetic ROI)._
 
-**Days since each group:** UPPER: last 2026-08-15 (2d ago) | LOWER: last 2026-08-12 (5d ago) | HIKE: last 2026-08-16 (1d ago)
+**Days since each group:** UPPER: last 2026-08-15 (4d ago) | LOWER: last 2026-08-12 (7d ago) | HIKE: last 2026-08-16 (3d ago)
 
 | Date | Sessions |
 |------|----------|
-| 2026-07-28 (Tue) | UPPER, CARDIO |
 | 2026-07-30 (Thu) | HIKE |
 | 2026-08-02 (Sun) | LOWER, CARDIO |
 | 2026-08-03 (Mon) | OTHER |
@@ -1641,7 +1640,7 @@ with weeks of runway. Never spend a line of the brief on these.
 ---
 
 
-## PIPELINE HEALTHCHECK — 2026-08-16 10:02
+## PIPELINE HEALTHCHECK — 2026-08-17 06:30
 
 **7/11 checks passing**  🔴 **REGRESSION DETECTED — see failures below**
 
@@ -1649,12 +1648,12 @@ with weeks of runway. Never spend a line of the brief on these.
 |-------|--------|--------|
 | Today's Garmin data present | ✅ | all key fields present |
 | veer-data.json today block populated | 🔴 FAIL | blank: ['training_readiness', 'body_battery_peak', 'rhr', 'sleep_score'] |
-| Brain rebuilt today | ✅ | Generated 2026-08-16 |
-| Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-08-16 |
+| Brain rebuilt today | ✅ | Generated 2026-08-17 |
+| Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-08-17 |
 | Recovery Time units sane | ✅ | not available today (not a failure) |
 | HRV override logic live | ✅ | streak=0 override=clear |
 | Brief matches today's data | 🔴 FAIL | no brief generated today |
-| Sleep window plausible | ✅ | bedtime 10:59 PM |
-| Weight fresh (<=2 days) | 🔴 FAIL | latest 174.3 lb on 2026-08-12 (4d old) |
+| Sleep window plausible | ✅ | no sleep window recorded |
+| Weight fresh (<=2 days) | 🔴 FAIL | latest 174.3 lb on 2026-08-12 (5d old) |
 | Scheduled tasks healthy | 🔴 FAIL | stale: ['GarminSync2-OnUnlock=2026-08-12'] |
 | No hardcoded secrets in runners | ✅ | clean |
