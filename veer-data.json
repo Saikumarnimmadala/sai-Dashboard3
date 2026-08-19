@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-17T06:30:03.005084-07:00",
+  "generated": "2026-08-19T16:02:22.292574-07:00",
   "today": {
     "training_readiness": null,
     "readiness_level": null,
@@ -612,24 +612,6 @@
     "hr_z5_s": 1161.2
   },
   "recent_sessions": [
-    {
-      "date": "2026-08-12",
-      "day": "Wed",
-      "type": "Lower Body",
-      "name": "Lower — 2026-08-12 2026-08-12 16:17",
-      "duration": "1h 52m",
-      "avg_hr": "88.0",
-      "load": "4.2328948974609375"
-    },
-    {
-      "date": "2026-08-12",
-      "day": "Wed",
-      "type": "Run/Treadmill",
-      "name": "Treadmill Running — 2026-08-12 2026-08-12 18:11",
-      "duration": "1h 2m",
-      "avg_hr": "106.0",
-      "load": "47.08723449707031"
-    },
     {
       "date": "2026-08-13",
       "day": "Thu",
