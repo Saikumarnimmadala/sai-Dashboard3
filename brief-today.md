@@ -1,4 +1,4 @@
-# 🩺 VEER HEALTH OS — Morning Brief, Wednesday 2026-08-12
+# 🩺 VEER HEALTH OS — Morning Brief, Wednesday 2026-08-19
 
 **Biotin today: SKIP** (Tue/Thu/Sat only — today is Wednesday)
 
@@ -6,225 +6,130 @@
 
 ## ⚠️ PIPELINE NOTE
 
-The automated brief generator (`claude` CLI) has been failing with an expired OAuth session since **2026-07-31** — every dated brief since then is a 73-byte auth error, and the publish guard correctly refused to overwrite the last good page with garbage. This brief was written manually by Claude Code, reading the same live data/brain/protocol files the automated pipeline uses, to catch the page up while that gets fixed. Re-run `claude` in a terminal to restore full automation.
+`claude` CLI OAuth is still expired (I tested the actual binary directly today — same error as 07-31, now 19+ days broken). Data pipeline (Garmin/GitHub) is healthy and was refreshed today. This brief was written manually by Claude Code reading the same live files. Re-run `claude` in a terminal to restore automated generation + Veer-QA review.
 
 ---
 
-## 🏃 RECENT ACTIVITY (last 7 days)
+## 🏃 RECENT ACTIVITY (last 7 days) — the real story of this week
 
-Last session (Mon 08-10): **Upper Body** (`garmin/activities/2026-08-10-strength-workout.md`) plus a treadmill tempo finisher — avg HR 143, max 173, Load 96.0 (`garmin/activities/2026-08-10-treadmill-running.md`). That stacked on top of Saturday's big hike, and Tuesday's crash (TR 25 LOW) shows the body absorbing both.
-
-Full week, brother:
-- **Thu 08-06:** Upper Body (`garmin/activities/2026-08-06-strength-workout.md`) + treadmill tempo, avg HR 144, Load 84.8 (`garmin/activities/2026-08-06-treadmill-running.md`)
-- **Fri 08-07:** Rest — no activity logged
-- **Sat 08-08:** **Phoenix Hiking**, 4h4m, avg HR 150, Load 286.6 — the week's hardest effort (`garmin/activities/2026-08-08-phoenix-hiking.md`)
-- **Sun 08-09:** Phoenix Walking logged — excluded from load/planning per your standing rule (watch-artifact-prone, NEAT not training)
-- **Mon 08-10:** Upper Body + treadmill tempo (see above)
-- **Tue 08-11:** Rest/absorption — TR crashed to **25 LOW**, BB 12→70, sleep 6.9h/78 — body clearly digesting Sat's hike + Mon's session
-- **Wed 08-12 (today):** TR bounced back to **80 HIGH** — recovered
+- **Wed 08-13:** Phoenix Hiking — TR 75 HIGH, HRV Balanced (`garmin/activities/2026-08-13-phoenix-hiking.md`)
+- **Thu 08-14:** Phoenix Walking — excluded per your standing rule (NEAT, not training)
+- **Fri 08-15:** Upper Body (strength) + treadmill run, 2h59m session — TR 50 MODERATE, HRV Balanced (`garmin/activities/2026-08-15-strength-workout.md`, `2026-08-15-treadmill-running.md`)
+- **Sat 08-16:** **Piestawa Peak — the week's real event.** 1h3m, only 2.29mi but brutal: avg HR **156**, max HR **195**, 49 of 63 minutes in Zone 4-5, Exercise Load 247.6 (`garmin/activities/2026-08-16-piestawa-peak.md`). Training Readiness crashed to **1 (POOR)** the very next reading, HRV flipped **UNBALANCED**.
+- **Sun 08-17:** No Garmin data synced — a real gap, not a rest-day choice.
+- **Mon 08-18:** Still recovering — TR 54 MODERATE, HRV still UNBALANCED.
+- **Tue 08-19 (today):** TR climbing back to 62 MODERATE, HRV improved to **LOW** (60ms, 7-day avg 59ms) — better than Unbalanced, not yet Balanced.
 
 ---
 
 ## 🧠 COACH PANEL
 
-🏋️ **Head Coach:** Lower hasn't been trained since **08-02 — 10 days** — the longest gap on a single group in weeks. Upper cleared its 48h repair window yesterday (trained 08-10, 2 days ago). Today is Lower, standard locked weights — not a blank-slate re-entry, since Saturday's hike (Load 286.6, avg HR 150) put real eccentric/concentric load through the legs 4 days ago.
+🏋️ **Head Coach:** Lower hasn't been trained since **08-12 — 7 days**, right at the weekly cadence target, not urgently overdue like last week. Upper trained 4 days ago (08-15), fully clear of the 48h window.
 
-🔋 **Recovery Scientist:** Textbook absorption arc — TR crashed to 25 LOW on Tuesday after stacking Saturday's hike and Monday's Upper session, then rebounded to 80 HIGH today. HRV held Balanced both days (63ms → 84ms), Acute Load eased 538→442 (ACWR 1.0 OPTIMAL), Recovery Time is 6.8h (well clear of the 24h flag). The system took a real hit and came back clean.
+🔋 **Recovery Scientist:** This is a clean, real absorption arc, not a mystery — **Piestawa Peak on Saturday was genuinely hard** (avg HR 156, 49 min in Zone 4-5), and the body is still climbing back: TR 1→54→62 over three days, HRV Unbalanced→Unbalanced→Low. Acute Load dropped 741→494→411 (now comfortably under the 450-500 deload line), and Recovery Time is 0.0h today — the trend is genuinely upward, just not finished. You also mentioned skipping the post-hike carb refuel and eating late that night — real compounding factors, but the hike itself, at that intensity, would have produced this dip on its own.
 
-😴 **Sleep & Breathing:** O2Ring hasn't produced a PDF in **16 days** — last real transmissive data is 07-26→27 (score 8.4, lowest SpO2 84%, avg 93%, 3.8 drops/hr, T90 5m20s). Garmin's wrist sensor (screening-grade only) shows last night's low at 86% — not a substitute for the ring. Pulmonologist referral is now **72 days unscheduled**.
+😴 **Sleep & Breathing:** O2Ring still hasn't produced a PDF since **07-27 — 23 days now**. No transmissive SpO2 data to work with; today's Garmin wrist estimate is screening-grade only.
 
-🥗 **Nutritionist:** Training-day target 160-165g. Wednesday's turkey rotation stays. **Carb Trigger #2 fires** — today is the first Lower Body session after a 10-day layoff for that group — so sweet potato 200g goes in at dinner.
+🥗 **Nutritionist:** Training-day target 160-165g if you train, 130-140g if not. Wednesday's turkey rotation stays either way. Given the post-hike under-fueling you flagged, prioritize hitting the carb window cleanly the next time you hike hard — prep it before you leave, per what you and the other chat already worked out.
 
-🧬 **Longevity Scientist:** Fisetin's Aug 1-2 window already passed — skip until next month. KSM-66 stays active until the Sept 7 stop date. Weekly vigorous minutes are well above the 75+/wk floor thanks to Saturday's hike.
+🧬 **Longevity Scientist:** Fisetin's Aug 1-2 window has passed — confirm you took both doses. KSM-66 stays active until Sept 7 (on deck, ~3 weeks out).
 
-🧪 **Hormonal Specialist:** Weight gap closed — you pulled the full Omada history back to 06-20. Today's 174.3 lb sits mid-band (172-175). No sustained trend either direction over the last 3 weeks; it's been oscillating 171.5-176.1 day to day, which is normal water-weight/hydration noise, not a recomposition signal in either direction.
+🧪 **Hormonal Specialist:** Weight is cached at **174.3 lb (08-12) — 7 days stale again.** In-band as of that reading, but the trend needs a fresh pull — screenshot the Omada app again if you get a chance, same as last week.
 
-🦵 **Movement Coach:** Corrective block (right knee valgus -20°, VASA assessment) hasn't run since 08-02 either — it only fires on Lower days, so it's equally 10 days overdue. Today restores it, right-side priority.
+🦵 **Movement Coach:** Corrective block (right knee valgus) hasn't run since 08-12 either — tied to Lower Body days.
 
-💎 **Aesthetics Coach:** Upper has trained 2x, Lower 0x in the trailing 10 days — the split has drifted hard toward Upper. Today's Lower session is overdue on cadence grounds alone, independent of the recovery-window argument.
+🏔️ **Race Prep:** If R2R Grand Canyon is really Sep 26 with taper starting Sep 15 (per what you told the other chat — I haven't seen this in the pipeline's own files, so treat it as your own note, not verified data), the build phase is live right now. That raises the stakes on *not* piling more hard aerobic load on top of an already-loaded week — see Load Focus below.
 
 ---
 
 ## ⚖️ Weight
 
-**174.3 lb — confirmed today (Wed 08-12, 9:03 AM).** Gap closed: you pulled the full Omada weigh-in history from the app (06-20 through today), so the pipeline now has real daily data instead of a single 21-day-old point. In-band (172-175). Last 2 weeks: 173.7 (7/22) → dipped to 171.5 (7/31) → back up through 175.4 (8/11) → 174.3 today — normal oscillation, no clear trend either way.
+**174.3 lb — carried from 2026-08-12, 7 days stale.** In-band (172-175) as of that reading. Get a fresh Omada screenshot when you can — the manual pull worked well last week.
 
 ---
 
 ## 📊 Recovery Scorecard
 
-| Metric | Yesterday (08-11) | Today (08-12) | Delta | Source |
+| Metric | Mon (08-18) | Today (08-19) | Delta | Source |
 |---|---|---|---|---|
-| Body Battery (start→peak) | 12 → 70 | 26 → 97 | +27 peak | `garmin/daily/2026-08-11.md`, `garmin/daily/2026-08-12.md` |
-| RHR | 49 bpm | 48 bpm | −1 | same |
-| HRV Status | BALANCED (63 ms) | BALANCED (84 ms) | +21 ms | same |
-| Sleep duration | 6.9h (413 min) | 8.35h (501 min) | +1.45h | same |
-| Sleep score | 78 | 88 | +10 | same |
-| Training Readiness | 25 LOW | 80 HIGH | +55 | same |
-| Acute Load / ACWR | 538 / 1.2 | 442 / 1.0 OPTIMAL | −96 | same |
-| O2Ring score | not available — no PDF since 07-27 | not available — no PDF since 07-27 | — | O2Ring dir: last file `O2Ring _20260727001028.pdf` |
-| SpO2 lowest (Garmin wrist, screening only) | 83% | 86% | +3 | `garmin/daily/2026-08-11.md`, `garmin/daily/2026-08-12.md` |
+| Training Readiness | 54 MODERATE | 62 MODERATE | +8 | `garmin/daily/2026-08-18.md`, `08-19.md` |
+| Body Battery (start→peak) | 5 → 58 | 8 → 66 | +8 peak | same |
+| HRV Status | UNBALANCED (?) | **LOW (60ms, 7d avg 59ms)** | improving | same |
+| RHR | 54 bpm | 53 bpm | −1 | same |
+| Acute Load / ACWR | 494 / 1.0 | 411 / 0.8 | −83, easing | same |
+| Recovery Time | — | 0.0 hrs | clear | `garmin/daily/2026-08-19.md` |
+| Sleep | 6.7h / 78 | 7.1h / 79 (NEGATIVE_LONG_BUT_NOT_RESTORATIVE) | +0.4h | same |
+| Load Focus | — | LoAero 726 (target 233-634) — **over target** | — | same |
 
-**Pattern (3 lines max):** Yesterday's crash (TR 25 LOW) was the body absorbing Saturday's hike plus Monday's Upper session — today's full rebound to TR 80 HIGH confirms it was fatigue, not a red flag. HRV held Balanced through the whole arc (63ms→84ms), which is the real tell that recovery capacity was never actually compromised. Two stale-data problems are compounding though: weight (21 days) and O2Ring (16 days) — both need attention independent of today's training call.
+**Pattern (3 lines max):** Saturday's Piestawa hike (avg HR 156, 49 min Zone 4-5) was hard enough to crash TR to 1/POOR — three days later the numbers are climbing back cleanly (Acute Load easing, Recovery Time clear, HRV Low not Unbalanced) but aren't fully recovered yet. Load Focus now flags low-aerobic volume as *over* target (726 vs 634 max) — this week has been hiking-heavy, so today's programming need leans toward strength, not more aerobic/hiking load. Sleep last night was long but scored as "not restorative," consistent with a body still processing Saturday's effort.
 
 ---
 
 ## 🚩 Active Flags
 
-- **CRITICAL — Pulmonologist:** referral submitted June 1, 2026 — **72 days unscheduled today.** Lead with the 07-26→27 O2Ring: score 8.4, lowest SpO2 84%, avg 93%, 3.8 drops/hr, T90 5m20s — still your strongest evidence, but it's now 16 days old.
-- **O2Ring 16-day gap** (last PDF 07-27) — resume wearing it tonight, thumb, vibration OFF.
-- ~~Weight gap~~ **CLOSED** — full Omada history backfilled 06-20 through today. Today: 174.3 lb, in-band.
-- **Anaerobic load shortage** — persistent, still below target (129 vs 133-400 target band); today's Lower session helps close it.
-- **Inventory unconfirmed since 07-22** (21 days) — chicken, turkey, salmon, sardines, shrimp, eggs all ❔. Today's plan assumes turkey (dinner) is on hand — confirm.
-- **Pipeline:** `claude` CLI OAuth expired 07-31, unfixed for 13 days — see note at top. `GITHUB_TOKEN` was separately expired and has just been rotated/fixed today.
+- **CRITICAL — Pulmonologist:** referral submitted June 1, 2026 — **80 days unscheduled today.** Still the O2Ring 8.4 night (07-26→27) as your strongest evidence, though it's now 23 days old.
+- **O2Ring 23-day gap** (last PDF 07-27) — resume wearing it.
+- **Weight 7-day gap** (last reading 08-12) — screenshot Omada again when convenient.
+- **Load Focus: aerobic volume over target** (LoAero 726 vs 233-634 target) — this week's hiking has been heavy; favor strength over more hiking/cardio for a few days.
+- **HRV recovering, not clear** — Low today after two Unbalanced mornings post-Piestawa. Per the coded override rule this does NOT latch a mandatory rest day (today isn't a 3rd consecutive Unbalanced day — it's Low, which breaks that specific count), but it's also not a green light for a hard/aerobic day.
+- **GCE wellness screening** — you told the other chat it's Aug 25 (6 days out). Not in the pipeline's own files — confirm it's actually on your calendar.
+- **R2R Grand Canyon** — you told the other chat Sep 26, taper starts Sep 15. Also not in pipeline files — worth adding to `garmin/DAILY_RULES.md` or a notes file if it's real, so future briefs account for the taper automatically instead of you re-explaining it each time.
 
 ---
 
-## 🎯 Training Call — LOWER BODY
+## 🎯 Training Call — LOWER BODY, REDUCED
 
 **Override checklist walked (DAILY_RULES.md §4):**
-- **A. Training Readiness:** 80 HIGH → clear
-- **B. Acute Load:** 442, approaching but still below the 450-500 deload line → clear, worth naming
-- **C. Recovery Time:** 6.8 hrs, well under 24h → clear
-- **D. HRV persistence:** streak of consecutive Unbalanced days = **0** — Balanced, override clear
-- **E. Explicit Garmin scale-back warning:** none present; Load Focus shows ANAEROBIC_SHORTAGE (Ana=129 vs 133-400 target), an ongoing pattern flag, not the specific duration/frequency warning → clear
+- **A. Training Readiness:** 62 MODERATE, not Low → clear
+- **B. Acute Load:** 411, well under 450-500 → clear
+- **C. Recovery Time:** 0.0 hrs → clear
+- **D. HRV persistence:** today reads LOW, not a 3rd consecutive UNBALANCED day (the code's override rule specifically requires consecutive UNBALANCED; LOW breaks that count) → **not latched**, but this is a real gray zone — 2 of the last 4 mornings were Unbalanced and the recovery isn't finished
+- **E. Explicit Garmin scale-back warning:** none present; Load Focus shows AEROBIC_LOW_FOCUS (LoAero over target) — a programming signal pointing away from more aerobic load, not a hard stop → clear
 
-All clear. Body Battery peaked at 97 (80-100 tier = full push per §3) — **locked working weights, full sets, no reduction.**
+**No hard override fires, but this isn't a full-send day either.** Body Battery peaked 66 → **60-74 tier per §3: 3 sets, cut weight 10-20%.**
 
-**Session selection — reasoned from history, not the calendar:**
-1. Last actual sessions: UPPER 08-10 (2 days ago), LOWER 08-02 (10 days ago).
-2. Recovery window: Upper is 2 days post-session — clear of the ~48h MPS repair window by today.
-3. Frequency (trailing 10 days): Upper 2x, Lower 0x — Lower is significantly behind the ~2x/week target.
-4. Goal weighting: not a tie — Lower is the clear pick on both recovery and frequency grounds.
-5. Layoff check: 10 days since last Lower stimulus is a real gap, but Saturday's hike (Load 286.6, avg HR 150) loaded the legs incidentally 4 days ago — this isn't a blank-slate re-entry. Standard locked weights apply, full sets, corrective block restored (also 10 days overdue).
+**Session selection:**
+1. Lower hasn't trained since 08-12 (7 days) — due on cadence, not desperately overdue.
+2. Upper trained 4 days ago (08-15) — still within its own weekly rhythm, doesn't need to repeat today.
+3. Load Focus argues *against* another hike/cardio session (already over aerobic target) and *for* strength work, which keeps Anaerobic load (currently 142, back in the 133-400 target band) from slipping again.
+4. Given the still-recovering HRV pattern, this is not the day to chase anything — reduced weights, standard sets trimmed to 3, no PRs.
 
-**Today = Lower Body, standard weights, full session — no PR chasing given the layoff length, reconfirm the groove first.**
+**Today = Lower Body, reduced (3 sets, 10-20% off locked weights), corrective block included.** If it's already late in your day or you'd rather bank the recovery given the HRV pattern, an easy walk instead is also defensible — the rule doesn't mandate training today, it just doesn't forbid it either. Your call given how you actually feel.
 
 ---
 
-## 💪 Full Training Plan — Lower Body
+## 💪 Training Plan — Lower Body (Reduced)
 
 **Warmup:** Treadmill 5-7 min, incline 4-5, speed 2.8-3.0 mph
 
-| # | Exercise | Weight | Sets × Reps |
+| # | Exercise | Reduced Weight (from locked) | Sets × Reps |
 |---|---|---|---|
-| 1 | Leg Press | 250-260 lb (115-120 kg) | 4 × 8-10 |
-| 2 | Hamstring Curl | 120-125 lb (54-57 kg) | 4 × 10 |
-| 3 | Leg Extension | 105-110 lb (48-50 kg) | 4 × 10 |
-| 4 | Calf Extension | 155-160 lb (70-73 kg) | 4 × 12 |
-| 5a | Deficit Calf Raise w/ DB (corrective, right-side priority) | 8-10 kg | 2 × 12-15 |
-| 5b | RDL from Flat Bench w/ DB (corrective, right-side priority) | 10-12 kg | 2 × 10 |
-| 5c | Rear Foot Elevated Quad-Hip Flexor Stretch (right-side priority) | bodyweight | 2 × 30s/side |
+| 1 | Leg Press | 200-235 lb (from 250-260) | 3 × 8-10 |
+| 2 | Hamstring Curl | 96-112 lb (from 120-125) | 3 × 10 |
+| 3 | Leg Extension | 84-99 lb (from 105-110) | 3 × 10 |
+| 4 | Calf Extension | 124-144 lb (from 155-160) | 3 × 12 |
+| 5a | Deficit Calf Raise (corrective, right-side priority) | 8-10 kg | 2 × 12-15 |
+| 5b | RDL from Flat Bench (corrective, right-side priority) | 10-12 kg | 2 × 10 |
+| 5c | Rear Foot Elevated Stretch (right-side priority) | bodyweight | 2 × 30s/side |
 | 6 | Plank | bodyweight | 2 × 80-85 sec |
-| 7 | Incline Treadmill Finisher | incline 10, speed 3.2-3.5 mph (BB 97 ≥ 80) | 20 min — never skip |
-
-Right side gets slightly more attention throughout the corrective block — right knee valgus -20° flagged at VASA assessment. Log to Garmin as **Strength Training**, Auto Set Detection + Auto Rest Timer ON.
+| 7 | Incline Finisher | incline 10, speed 3.0 (standard — not the 80+ BB tier) | 20 min |
 
 ---
 
-## 🥗 Protein Target + Full Meal Plan
+## 💊 Supplement Schedule
 
-**Training-day target: 160-165g muscle protein.**
+**Morning:** Creatine 5g, D3+K2 5000 IU, Omega-3 2 caps, Beef Liver 2 caps (training) or 1 cap (rest — your call today), B12 sublingual 5000mcg, CoQ10 100mg, **Biotin SKIP**, **Fisetin SKIP** (window passed — confirm you took both Aug 1-2 doses), Probiotic separate.
 
-**Carb decision:** Sweet potato 200g added to dinner — **Trigger #2 fires** (first Lower Body session after a 10-day layoff for that group). Confirmed ✅ IN STOCK as of `garmin/INVENTORY.md`'s last count (07-22) — reconfirm if possible given the 21-day gap.
-
-**Inventory check:** Turkey is ❔ UNKNOWN in inventory (unconfirmed since 07-22) — plan assumes it's on hand; confirm before dinner prep. If out, swap salmon or sardines per the approved-substitution table.
-
-### Breakfast
-1. ACV — 1 tbsp in water
-2. Goat bone broth + lemon — 240ml warm
-3. Whole eggs — 3 (training day)
-4. Breakfast bowl (prepped night before): sprouted oats 50g, Isopure whey 1 scoop, collagen 1-2 scoops, almond milk 200ml, egg whites 6 tbsp, frozen berries 220g, dried cranberries 20g, chia seeds 10g, walnuts 15g, pumpkin seeds 10g
-   - **Fresh this morning only:** Brazil nut 1 whole, bee pollen 5g, broccoli microgreens 1 tbsp raw on top, last second
-5. Kefir — 100ml
-6. 10-min walk
-
-### Lunch
-- ACV — 1 tbsp before
-- Spinach 100g + broccoli 150g — eat first
-- Seaweed sheets — 2-3 sheets (with first course)
-- **Protein anchor 150-180g cooked** (chicken/salmon/shrimp — confirm stock)
-- Avocado half OR olive oil 1 tbsp — after protein
-- Turmeric + black pepper (always paired)
-- Garlic — 2 cloves
-- Kimchi — 35g, cold, eaten last
-- Broccoli microgreens — 1 tbsp raw, on top, absolute last
-- 10-min walk after
-
-### Dinner (Wednesday rotation = Turkey)
-- Psyllium husk — 5g in warm water before dinner, drink within 60 sec
-- ACV — 1 tbsp before
-- Spinach 80g + zucchini/yellow squash 150g — eat first
-- **Turkey — 180-200g cooked (protein anchor)** — confirm stock
-- **Sweet potato — 200g** (carb Trigger #2)
-- Avocado half — after protein
-- Sesame oil — finishing drizzle, off heat only
-- Olive oil + garlic + turmeric + black pepper
-- Kimchi — 30g, cold, eaten last
-- Broccoli microgreens — 1 tbsp raw, absolute last
-- 10-min walk after
-- Dark chocolate — 3 bites, before 8 PM
-- Mastic gum — 20-30 min after
-
-**Protein math:** eggs 3 whole (~18g) + egg whites 6 tbsp (~10g) + whey 1 scoop (~24g) + kefir (~4g) + lunch anchor 160g (~48g) + turkey 200g (~50g) ≈ **154g.** Slightly under the 160-165g floor — add a Siggi's/Greek yogurt 150g (~15g) after lunch or dinner to close the gap. Collagen never counts.
-
----
-
-## 💊 Full Supplement Schedule
-
-**Morning (with breakfast):**
-- Creatine — 5g
-- D3 + K2 (Solaray) — 5000 IU
-- Omega-3 (Nordic Naturals) — 2 caps
-- Beef Liver — 2 caps (training day dose)
-- B12 sublingual — 5000mcg, hold 30 sec under tongue
-- CoQ10 Ubiquinol — 100mg
-- **Biotin — SKIP (Wednesday)**
-- **Fisetin — SKIP (window was Aug 1-2, already passed)**
-- Probiotic (Garden of Life 50B) — separate, empty stomach
-
-**Before dinner:** Psyllium husk — 5g in warm water, within 60 sec
-
-**With dinner:** Zinc Picolinate (Solgar) 22mg + Thorne Copper 2mg — always together
-
-**9:30 PM:** Magnesium Glycinate (Jarrow) 240mg + Tart Cherry Juice 60ml (not 8oz) + KSM-66 600mg (active cycle, stop Sept 7 — do not reorder)
-
----
-
-## 🕐 Hour-by-Hour Schedule
-
-- **6:00 AM** — Wake, ACV + goat bone broth
-- **6:15 AM** — Breakfast bowl + 3 eggs + kefir + morning supplements
-- **6:30 AM** — 10-min walk
-- **Midday** — Lunch (protein anchor) + 10-min walk
-- **~4:00-4:15 PM** — Warmup (treadmill 5-7 min, incline 4-5, speed 2.8-3.0)
-- **~4:15-6:30 PM** — Lower Body session, locked order, corrective block, finisher
-- **~7:00 PM** — Psyllium husk, then dinner (turkey + sweet potato) + 10-min walk
-- **~7:45 PM** — Dark chocolate, before 8 PM cutoff
-- **8:00 PM** — Mastic gum; water finished by 7 PM, nothing after 8 PM
-- **9:30 PM** — Magnesium + tart cherry + KSM-66
-- **10:00 PM** — Screens off
-- **10:30 PM** — Lights out — full sleep protocol: nose strip, mouth tape, O2Ring on thumb (vibration OFF), earplugs — resume the ring tonight, it's been 16 days
+**Before dinner:** Psyllium husk 5g. **With dinner:** Zinc 22mg + Copper 2mg. **9:30 PM:** Magnesium Glycinate 240mg + Tart Cherry 60ml + KSM-66 600mg (active until Sept 7).
 
 ---
 
 ## ⭐ The One Thing
 
-**Call the pulmonologist's office today — 72 days unscheduled since the June 1 referral.** This is now the longest this has gone. Lead with the strongest verified data point: the 07-26→27 O2Ring (score 8.4, lowest SpO2 84%, avg 93%, 3.8 drops/hr, T90 5m20s) — real, transmissive data, not the coarser wrist estimate.
+**Call the pulmonologist's office today — 80 days unscheduled since the June 1 referral.** Lead with the 07-26→27 O2Ring (score 8.4, lowest SpO2 84%, 3.8 drops/hr, T90 5m20s) — still your best evidence, even 23 days old now.
 
 ---
 
-**FILES READ:**
-- `deploy/veer-data.json` (live Garmin data, generated 2026-08-12T11:30)
-- `deploy/veer-memory.md` (brain — rebuilt today with the walking-exclusion fix)
-- `garmin/daily/2026-08-06.md` through `garmin/daily/2026-08-12.md`
-- `garmin/activities/2026-08-06-strength-workout.md`, `2026-08-06-treadmill-running.md`
-- `garmin/activities/2026-08-08-phoenix-hiking.md`
-- `garmin/activities/2026-08-10-strength-workout.md`, `2026-08-10-treadmill-running.md`
-- `garmin/DAILY_RULES.md`
-- `garmin/PROTOCOLS.md`
-- `garmin/INVENTORY.md`
-- O2Ring dir (`OneDrive\Documents\GarminBriefs\O2Ring`) — no file newer than 07-27
-- Omada app history — manually pulled and backfilled, 06-20 through 08-12
+**FILES READ:** `deploy/veer-data.json`, `deploy/veer-memory.md`, `garmin/daily/2026-08-13.md` through `08-19.md`, `garmin/activities/2026-08-13-phoenix-hiking.md`, `2026-08-15-strength-workout.md`, `2026-08-16-piestawa-peak.md`, `garmin/DAILY_RULES.md`, `garmin/PROTOCOLS.md`, `garmin/user-notes.md`. O2Ring dir — no file newer than 07-27. Omada — no reading newer than 08-12.
 
-**NOTE:** Written manually by Claude Code (not the automated 8-specialist pipeline) because the `claude` CLI's OAuth session has been expired since 07-31. No Veer-QA review pass this time — recommend a quick gut-check against yesterday's actual felt recovery before training.
+**NOTE:** Written manually by Claude Code — `claude` CLI OAuth still expired. No Veer-QA pass this time.
