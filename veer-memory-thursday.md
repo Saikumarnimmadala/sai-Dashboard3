@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-08-27
-Generated: 2026-08-27 8:17 AM (America/Phoenix)
+Generated: 2026-08-27 8:44 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -1638,20 +1638,20 @@ with weeks of runway. Never spend a line of the brief on these.
 ---
 
 
-## PIPELINE HEALTHCHECK — 2026-08-20 06:30
+## PIPELINE HEALTHCHECK — 2026-08-27 08:17
 
 **8/11 checks passing**  🔴 **REGRESSION DETECTED — see failures below**
 
 | Check | Status | Detail |
 |-------|--------|--------|
 | Today's Garmin data present | ✅ | all key fields present |
-| veer-data.json today block populated | 🔴 FAIL | blank: ['training_readiness', 'body_battery_peak', 'rhr', 'sleep_score'] |
-| Brain rebuilt today | ✅ | Generated 2026-08-20 |
-| Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-08-20 |
-| Recovery Time units sane | ✅ | not available today (not a failure) |
+| veer-data.json today block populated | ✅ | readiness fields filled |
+| Brain rebuilt today | ✅ | Generated 2026-08-27 |
+| Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-08-27 |
+| Recovery Time units sane | ✅ | 8.8 hrs |
 | HRV override logic live | ✅ | streak=0 override=clear |
 | Brief matches today's data | 🔴 FAIL | no brief generated today |
-| Sleep window plausible | ✅ | no sleep window recorded |
-| Weight fresh (<=2 days) | 🔴 FAIL | latest 174.3 lb on 2026-08-12 (8d old) |
-| Scheduled tasks healthy | ✅ | all ran within 24h |
+| Sleep window plausible | ✅ | bedtime 10:41 PM |
+| Weight fresh (<=2 days) | 🔴 FAIL | latest 174.3 lb on 2026-08-12 (15d old) |
+| Scheduled tasks healthy | 🔴 FAIL | stale: ['GarminDailySync=2026-08-20'] |
 | No hardcoded secrets in runners | ✅ | clean |
