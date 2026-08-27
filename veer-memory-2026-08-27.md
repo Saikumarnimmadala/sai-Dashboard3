@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-08-27
-Generated: 2026-08-27 8:44 AM (America/Phoenix)
+Generated: 2026-08-27 8:51 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -223,7 +223,7 @@ _Muscle protein synthesis stays elevated ~48h post-session; a group trained
 GAPS below before naming today's session — pick the group that is both
 recovered AND most serves the goal (V-taper = upper is highest aesthetic ROI)._
 
-**Days since each group:** UPPER: last 2026-08-15 (12d ago) | LOWER: last 2026-08-12 (15d ago) | HIKE: last 2026-08-26 (1d ago)
+**Days since each group:** UPPER: last 2026-08-20 (7d ago) | LOWER: last 2026-08-22 (5d ago) | HIKE: last 2026-08-26 (1d ago)
 
 | Date | Sessions |
 |------|----------|
@@ -234,6 +234,8 @@ recovered AND most serves the goal (V-taper = upper is highest aesthetic ROI)._
 | 2026-08-13 (Thu) | HIKE |
 | 2026-08-15 (Sat) | UPPER, CARDIO |
 | 2026-08-16 (Sun) | HIKE |
+| 2026-08-20 (Thu) | UPPER, CARDIO |
+| 2026-08-22 (Sat) | LOWER, CARDIO |
 | 2026-08-26 (Wed) | HIKE |
 
 
