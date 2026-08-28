@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-08-28
-Generated: 2026-08-28 7:45 AM (America/Phoenix)
+Generated: 2026-08-28 1:04 PM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -28,7 +28,7 @@ _Any source older than "today" = do not present as current; state its actual dat
 | **Resting HR** | 54 bpm (7-day avg: 54 bpm) |
 | **SpO2** | Garmin overnight avg: 95.0% low: 85% | O2Ring: 8.4 score low: 85% |
 | **Stress** | avg 19 / peak 78 |
-| **Last Session** | Phoenix Walking on 2026-08-27 | Load=1.78692626953125 | RECOVERY |
+| **Last Session** | Treadmill Running on 2026-08-28 | Load=64.12413024902344 | AEROBIC_BASE |
 | **Weekly** | 8 sessions | Mod:73m + Vig:62m |
 
 ---
@@ -131,19 +131,19 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### LAST SESSION
 | Metric | Value |
 |--------|-------|
-| Activity | Phoenix Walking (walking) |
-| Date / Time | 2026-08-27 2026-08-27 13:14 |
-| Duration | 91m |
-| Distance | 2.24 km (1.39 mi) |
-| Avg HR / Max HR | 71.0 / 93.0 bpm |
-| Aerobic Training Effect | 0.10000000149011612 (RECOVERY) — RECOVERY_5 |
-| Anaerobic Training Effect | 0.0 — NO_ANAEROBIC_BENEFIT_0 |
-| Exercise Load | 2 |
-| Calories | 183.0 kcal |
-| Sweat Loss | 791.0 ml |
-| Body Battery Impact | -4 |
-| Avg / Max Power | None / None W |
-| HR Zones | Z1:0s | Z2:0s | Z3:0s | Z4:0s | Z5:0s |
+| Activity | Treadmill Running (treadmill_running) |
+| Date / Time | 2026-08-28 2026-08-28 10:49 |
+| Duration | 37m |
+| Distance | 1.80 km (1.11 mi) |
+| Avg HR / Max HR | 122.0 / 168.0 bpm |
+| Aerobic Training Effect | 2.799999952316284 (AEROBIC_BASE) — MAINTAINING_AEROBIC_FITNESS_1 |
+| Anaerobic Training Effect | 0.20000000298023224 — NO_ANAEROBIC_BENEFIT_0 |
+| Exercise Load | 64 |
+| Calories | 269.0 kcal |
+| Sweat Loss | 178.0 ml |
+| Body Battery Impact | -5 |
+| Avg / Max Power | 63.0 / 257.0 W |
+| HR Zones | Z1:328s | Z2:133s | Z3:1008s | Z4:128s | Z5:0s |
 | Total Volume (strength) | not available |
 | Total Reps (strength) | not available |
 
@@ -1639,7 +1639,7 @@ with weeks of runway. Never spend a line of the brief on these.
 ---
 
 
-## PIPELINE HEALTHCHECK — 2026-08-28 07:45
+## PIPELINE HEALTHCHECK — 2026-08-28 07:46
 
 **9/11 checks passing**  🔴 **REGRESSION DETECTED — see failures below**
 
@@ -1651,7 +1651,7 @@ with weeks of runway. Never spend a line of the brief on these.
 | Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-08-28 |
 | Recovery Time units sane | ✅ | 8.8 hrs |
 | HRV override logic live | ✅ | streak=0 override=clear |
-| Brief matches today's data | 🔴 FAIL | no brief generated today |
+| Brief matches today's data | 🔴 FAIL | brief does NOT cite today's TR 77 - likely generated before data landed |
 | Sleep window plausible | ✅ | bedtime 12:04 AM |
 | Weight fresh (<=2 days) | 🔴 FAIL | latest 174.3 lb on 2026-08-12 (16d old) |
 | Scheduled tasks healthy | ✅ | all ran within 24h |
