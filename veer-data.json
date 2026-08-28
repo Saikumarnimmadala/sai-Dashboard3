@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-27T08:43:58.528651-07:00",
+  "generated": "2026-08-28T07:44:52.394197-07:00",
   "today": {
     "training_readiness": 68,
     "readiness_level": "MODERATE",
@@ -439,6 +439,10 @@
     {
       "date": "2026-08-27",
       "v": 70
+    },
+    {
+      "date": "2026-08-28",
+      "v": 70
     }
   ],
   "hrv": [],
@@ -601,32 +605,50 @@
   },
   "coaches_generated": "2026-07-04T07:47:22.420820-07:00",
   "last_session": {
-    "date": "2026-08-26",
-    "start_time": "2026-08-26 17:14",
-    "name": "Phoenix Hiking",
-    "type": "hiking",
-    "duration_s": 7799.998046875,
-    "distance_m": 5653.2998046875,
-    "avg_hr": 127.0,
-    "max_hr": 173.0,
-    "calories": 779.0,
-    "aerobic_te": 3.0,
-    "aerobic_te_msg": "IMPROVING_AEROBIC_BASE_8",
-    "te_label": "AEROBIC_BASE",
+    "date": "2026-08-27",
+    "start_time": "2026-08-27 13:14",
+    "name": "Phoenix Walking",
+    "type": "walking",
+    "duration_s": 5469.31689453125,
+    "distance_m": 2240.780029296875,
+    "avg_hr": 71.0,
+    "max_hr": 93.0,
+    "calories": 183.0,
+    "aerobic_te": 0.10000000149011612,
+    "aerobic_te_msg": "RECOVERY_5",
+    "te_label": "RECOVERY",
     "anaerobic_te": 0.0,
     "anaerobic_te_msg": "NO_ANAEROBIC_BENEFIT_0",
-    "exercise_load": 68.88336181640625,
+    "exercise_load": 1.78692626953125,
     "avg_power": null,
     "max_power": null,
-    "sweat_ml": 2134.0,
-    "bb_delta": -11,
-    "hr_z1_s": 1942.866,
-    "hr_z2_s": 3144.128,
-    "hr_z3_s": 1342.989,
-    "hr_z4_s": 1167.003,
-    "hr_z5_s": 53.999
+    "sweat_ml": 791.0,
+    "bb_delta": -4,
+    "hr_z1_s": 0.0,
+    "hr_z2_s": 0.0,
+    "hr_z3_s": 0.0,
+    "hr_z4_s": 0.0,
+    "hr_z5_s": 0.0
   },
   "recent_sessions": [
+    {
+      "date": "2026-08-22",
+      "day": "Sat",
+      "type": "Lower Body",
+      "name": "Lower — 2026-08-22 2026-08-22 09:12",
+      "duration": "1h 33m",
+      "avg_hr": "87.0",
+      "load": "6.3900146484375"
+    },
+    {
+      "date": "2026-08-22",
+      "day": "Sat",
+      "type": "Run/Treadmill",
+      "name": "Treadmill Running — 2026-08-22 2026-08-22 10:45",
+      "duration": "1h 19m",
+      "avg_hr": "100.0",
+      "load": "75.5576171875"
+    },
     {
       "date": "2026-08-26",
       "day": "Wed",
