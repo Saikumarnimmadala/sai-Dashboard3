@@ -1,5 +1,5 @@
-# Veer Health Memory — 2026-08-27
-Generated: 2026-08-27 8:51 AM (America/Phoenix)
+# Veer Health Memory — 2026-08-28
+Generated: 2026-08-28 7:44 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -7,15 +7,15 @@ Sources: Garmin Connect API + O2Ring PDF + Omada scale
 ## DATA FRESHNESS — check each source's age before citing it
 | Source | As of | Age |
 |--------|-------|-----|
-| Garmin biometrics | 2026-08-27 | today |
-| Weight (Omada) | 2026-08-12 | 15 days ago |
-| O2Ring sleep | 2026-07-27 | 31 days ago |
+| Garmin biometrics | 2026-08-28 | today |
+| Weight (Omada) | 2026-08-12 | 16 days ago |
+| O2Ring sleep | 2026-07-27 | 32 days ago |
 
 _Any source older than "today" = do not present as current; state its actual date._
 
 ---
 
-## QUICK DECISION SNAPSHOT (LIVE — 2026-08-27)
+## QUICK DECISION SNAPSHOT (LIVE — 2026-08-28)
 | | |
 |---|---|
 | **Weight** | 174.3 lb (−42.1 lb from 216.4 peak) |
@@ -28,13 +28,13 @@ _Any source older than "today" = do not present as current; state its actual dat
 | **Resting HR** | 55 bpm (7-day avg: 54 bpm) |
 | **SpO2** | Garmin overnight avg: 96.0% low: 88% | O2Ring: 8.4 score low: 85% |
 | **Stress** | avg 20 / peak 69 |
-| **Last Session** | Phoenix Hiking on 2026-08-26 | Load=68.88336181640625 | AEROBIC_BASE |
+| **Last Session** | Phoenix Walking on 2026-08-27 | Load=1.78692626953125 | RECOVERY |
 | **Weekly** | 7 sessions | Mod:70m + Vig:62m |
 
 ---
 
 
-## TODAY'S LIVE DATA — 2026-08-27
+## TODAY'S LIVE DATA — 2026-08-28
 _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 **⚠️ THESE LIVE VALUES OVERRIDE ANY 'CURRENT STATUS' IN THE STATIC MEMORY BELOW**
 
@@ -131,19 +131,19 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### LAST SESSION
 | Metric | Value |
 |--------|-------|
-| Activity | Phoenix Hiking (hiking) |
-| Date / Time | 2026-08-26 2026-08-26 17:14 |
-| Duration | 129m |
-| Distance | 5.65 km (3.51 mi) |
-| Avg HR / Max HR | 127.0 / 173.0 bpm |
-| Aerobic Training Effect | 3.0 (AEROBIC_BASE) — IMPROVING_AEROBIC_BASE_8 |
+| Activity | Phoenix Walking (walking) |
+| Date / Time | 2026-08-27 2026-08-27 13:14 |
+| Duration | 91m |
+| Distance | 2.24 km (1.39 mi) |
+| Avg HR / Max HR | 71.0 / 93.0 bpm |
+| Aerobic Training Effect | 0.10000000149011612 (RECOVERY) — RECOVERY_5 |
 | Anaerobic Training Effect | 0.0 — NO_ANAEROBIC_BENEFIT_0 |
-| Exercise Load | 69 |
-| Calories | 779.0 kcal |
-| Sweat Loss | 2134.0 ml |
-| Body Battery Impact | -11 |
+| Exercise Load | 2 |
+| Calories | 183.0 kcal |
+| Sweat Loss | 791.0 ml |
+| Body Battery Impact | -4 |
 | Avg / Max Power | None / None W |
-| HR Zones | Z1:1942s | Z2:3144s | Z3:1342s | Z4:1167s | Z5:53s |
+| HR Zones | Z1:0s | Z2:0s | Z3:0s | Z4:0s | Z5:0s |
 | Total Volume (strength) | not available |
 | Total Reps (strength) | not available |
 
@@ -173,13 +173,13 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 - 2026-08-12: 174.3 lb
 
 ### Body Battery Trend (last 7 days)
-- 2026-08-07: peak 100
 - 2026-08-09: peak 66
 - 2026-08-11: peak 70
 - 2026-08-12: peak 97
 - 2026-08-13: peak 97
 - 2026-08-19: peak 66
 - 2026-08-27: peak 70
+- 2026-08-28: peak 70
 
 ### O2Ring History (last 7 nights)
 | Night | Score | Lowest SpO2 | Avg SpO2 | Drops/hr |
@@ -223,11 +223,10 @@ _Muscle protein synthesis stays elevated ~48h post-session; a group trained
 GAPS below before naming today's session — pick the group that is both
 recovered AND most serves the goal (V-taper = upper is highest aesthetic ROI)._
 
-**Days since each group:** UPPER: last 2026-08-20 (7d ago) | LOWER: last 2026-08-22 (5d ago) | HIKE: last 2026-08-26 (1d ago)
+**Days since each group:** UPPER: last 2026-08-20 (8d ago) | LOWER: last 2026-08-22 (6d ago) | HIKE: last 2026-08-26 (2d ago)
 
 | Date | Sessions |
 |------|----------|
-| 2026-08-06 (Thu) | UPPER, CARDIO |
 | 2026-08-08 (Sat) | HIKE |
 | 2026-08-10 (Mon) | UPPER, CARDIO |
 | 2026-08-12 (Wed) | LOWER, CARDIO |
