@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f1115">
+<!-- Force revalidation every load — brief-today.html is overwritten daily at this
+     same URL, and browsers/CDNs must never serve yesterday's cached copy once
+     today's has been pushed. -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Veer Health OS — 2026-08-28</title>
+<style>
+:root{--bg:#0f1115;--card:#171a21;--line:#262b36;--txt:#e6e8ee;--dim:#9aa3b2;
+--accent:#f0883e;--green:#3fb950;--yellow:#d29922;--red:#f85149;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);
+font:16px/1.65 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+padding:16px 14px 60px;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto}
+header{border-bottom:2px solid var(--accent);padding-bottom:12px;margin-bottom:22px}
+header h1{margin:0;font-size:20px;letter-spacing:.3px}
+header .sub{color:var(--dim);font-size:13px;margin-top:4px}
+h2{font-size:17px;margin:30px 0 12px;padding:10px 12px;background:var(--card);
+border-left:3px solid var(--accent);border-radius:6px}
+h3{font-size:15px;margin:22px 0 8px;color:var(--accent)}
+p{margin:10px 0}
+ul,ol{padding-left:20px;margin:10px 0}
+li{margin:7px 0}
+strong{color:#fff}
+code{background:var(--card);padding:2px 6px;border-radius:4px;font-size:13px}
+hr{border:0;border-top:1px solid var(--line);margin:26px 0}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:12px 0;
+border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;min-width:460px;font-size:14px}
+th{background:var(--card);text-align:left;padding:10px;font-weight:600;
+color:var(--dim);text-transform:uppercase;font-size:11px;letter-spacing:.5px;
+border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+blockquote{margin:12px 0;padding:10px 14px;background:var(--card);
+border-left:3px solid var(--dim);border-radius:6px;color:var(--dim)}
+a{color:var(--accent)}
+.foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);
+color:var(--dim);font-size:12px;text-align:center}
+@media(max-width:480px){body{font-size:15px;padding:12px 10px 50px}
+h2{font-size:16px}table{font-size:13px}}
+</style>
+</head><body><div class="wrap">
+<header>
+  <h1>VEER HEALTH OS</h1>
+  <div class="sub">Friday, August 28, 2026 &nbsp;·&nbsp; morning brief</div>
+</header>
+<h1>🩺 VEER HEALTH OS — Morning Brief, Friday 2026-08-28</h1>
+<p><strong>Biotin today: SKIP</strong> (Tue/Thu/Sat only — today is Friday)</p>
+<hr />
+<h2>⚠️ PIPELINE NOTE</h2>
+<p><code>claude</code> CLI OAuth still expired (tested the current binary, v2.1.246, directly this morning — same error, now nearly a month since 07-31). Garmin data + brain are current and pushed as of today. This brief was written manually by Claude Code. Also fixed: <code>brief-today.html</code> now ships no-cache headers so it can't be served stale from browser/CDN cache once a fresh version is pushed — that was causing repeated false "stale pipeline" alarms.</p>
+<hr />
+<h2>🔴 THE HEADLINE — 10 STRAIGHT DAYS OF HRV LOW</h2>
+<p>This is bigger than today's training call. HRV has read <strong>LOW every single morning for 10 consecutive days:</strong></p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Date</th>
+<th>HRV (last night / 7-day avg)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>08-19</td>
+<td>60ms / 59ms</td>
+</tr>
+<tr>
+<td>08-20</td>
+<td>64ms / 59ms</td>
+</tr>
+<tr>
+<td>08-21</td>
+<td>57ms / 58ms</td>
+</tr>
+<tr>
+<td>08-22</td>
+<td>59ms / 59ms</td>
+</tr>
+<tr>
+<td>08-23</td>
+<td>40ms / 56ms</td>
+</tr>
+<tr>
+<td>08-24</td>
+<td>39ms / 53ms</td>
+</tr>
+<tr>
+<td>08-25</td>
+<td>45ms / 51ms</td>
+</tr>
+<tr>
+<td>08-26</td>
+<td>59ms / 51ms</td>
+</tr>
+<tr>
+<td>08-27</td>
+<td>58ms / 50ms</td>
+</tr>
+<tr>
+<td><strong>08-28 (today)</strong></td>
+<td><strong>59ms / 51ms</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>The 7-day average has drifted from <strong>~78ms three weeks ago down to 51ms today</strong> — that's not one bad night, it's a sustained multi-week decline.</p>
+<p><strong>Important system bug I found while pulling this:</strong> your coded override rule (<code>DAILY_RULES.md</code> §4-D) only tracks consecutive <strong>"Unbalanced"</strong> days. Garmin is reporting a separate status called <strong>"Low"</strong> — distinct from Unbalanced — and the code explicitly does not count Low days toward the 3-day override streak (<code>hrv_streak</code> resets on any non-Unbalanced day, including Low). So even though you've had 10 straight abnormal mornings, <code>hrv_override_active</code> reads <strong>False</strong> and no alarm has fired this whole time. That's a real gap in the rule, not a sign everything's fine — I'd treat this pattern as seriously as the Unbalanced rule was designed to, regardless of what the code currently outputs. Worth updating the override logic to also latch on sustained Low streaks — say the word and I'll make that change.</p>
+<hr />
+<h2>🏃 Recent Activity</h2>
+<p><strong>This morning already:</strong> Treadmill Running, 37min, avg HR 122, easy aerobic base, Load 64.1 (10:49 AM).</p>
+<ul>
+<li><strong>Sat 08-22:</strong> Lower Body + treadmill run</li>
+<li><strong>Wed 08-26:</strong> Phoenix Hiking, Load 68.9</li>
+<li><strong>Days since each group:</strong> UPPER last 08-20 (<strong>8 days</strong>) | LOWER last 08-22 (6 days) | HIKE last 08-26 (2 days)</li>
+</ul>
+<hr />
+<h2>📊 Today's Numbers</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Reading</th>
+<th>Read</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Training Readiness</td>
+<td>77 HIGH</td>
+<td>🟢</td>
+</tr>
+<tr>
+<td>Body Battery</td>
+<td>17 → 69</td>
+<td>🟡 60-74 tier</td>
+</tr>
+<tr>
+<td>Recovery Time</td>
+<td>8.8 hrs</td>
+<td>🟢 clear</td>
+</tr>
+<tr>
+<td>Acute Load / Chronic</td>
+<td>147 / 375</td>
+<td>🟢 very low</td>
+</tr>
+<tr>
+<td>ACWR</td>
+<td><strong>0.3 — LOW (undertrained)</strong></td>
+<td>🟡 detraining risk, not overtraining</td>
+</tr>
+<tr>
+<td>HRV</td>
+<td><strong>LOW, 59ms</strong> (7-day avg 51ms)</td>
+<td>🔴 10-day pattern, see above</td>
+</tr>
+<tr>
+<td>RHR</td>
+<td>54 (7-day avg 54)</td>
+<td>🟡 slightly above ~50 baseline</td>
+</tr>
+<tr>
+<td>Sleep</td>
+<td>6.9h / score 86</td>
+<td>🟢</td>
+</tr>
+<tr>
+<td>Load Focus</td>
+<td>Anaerobic 97 (target 133-400) — still short</td>
+<td>🟡 persistent multi-week gap</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The tension worth naming plainly:</strong> every acute-fatigue signal says you're recovered (TR High, Recovery Time clear, Acute Load very low, ACWR actually flags <em>undertraining</em>) — but HRV has been quietly abnormal for 10 straight days underneath all of that. Those two pictures don't usually diverge this long without a reason: worth considering sleep quality (not just duration), stress, or something outside training load entirely. This isn't a "just push through it" situation given the duration.</p>
+<hr />
+<h2>🚩 Active Flags</h2>
+<ul>
+<li><strong>CRITICAL — Pulmonologist:</strong> referral submitted June 1 — <strong>89 days unscheduled today.</strong></li>
+<li><strong>O2Ring gap:</strong> still nothing since 07-27 — <strong>32 days</strong> dark.</li>
+<li><strong>Weight gap:</strong> still 174.3 lb from 08-12 — <strong>16 days</strong> stale.</li>
+<li><strong>HRV — 10-day Low streak</strong> not caught by the current override rule (see headline above).</li>
+<li><strong>Anaerobic load shortage</strong> — persistent for weeks (97 vs 133-400 target).</li>
+</ul>
+<hr />
+<h2>🎯 Training Call — UPPER BODY, REDUCED</h2>
+<p><strong>Override checklist (DAILY_RULES.md §4):</strong><br />
+- A. TR 77 HIGH → clear<br />
+- B. Acute Load 147 → clear, nowhere near the 450-500 line<br />
+- C. Recovery Time 8.8h → clear<br />
+- D. HRV persistence → <strong>not latched per the literal rule</strong> (see the bug flagged above) — treat as a caution flag regardless<br />
+- E. No explicit scale-back warning → clear</p>
+<p><strong>Call:</strong> Upper hasn't trained in 8 days — most overdue, and V-taper priority breaks any tie with Lower (6 days). Body Battery 69 → <strong>60-74 tier: 3 sets, cut weight 10-20%.</strong> This morning's treadmill run was easy aerobic base, not a substitute for strength work, so a same-day gym session is consistent with how you've trained before (08-06, 08-10, 08-20 all combined cardio + strength).</p>
+<p>Given the 10-day HRV pattern, I'd lean toward this being the right day for the <em>reduced</em> end of that tier, not the top of it — locked weights minus 15-20%, not 10%.</p>
+<p><strong>Lateral Raises stay locked at 25lb/11kg</strong> — do not progress to 30lb regardless of how today feels.</p>
+<hr />
+<h2>⭐ The One Thing</h2>
+<p><strong>Pulmonologist — 89 days unscheduled.</strong> Still the single longest-standing item in this whole system. The O2Ring evidence (score 8.4, 07-26→27) is now over a month old, which is itself a reason to get the referral moving rather than wait for a fresher data point.</p>
+<hr />
+<p><strong>FILES READ:</strong> <code>deploy/veer-data.json</code>, <code>deploy/veer-memory.md</code>, <code>garmin/daily/2026-08-19.md</code> through <code>08-28.md</code>, <code>garmin/DAILY_RULES.md</code>. O2Ring — no file newer than 07-27. Omada — no reading newer than 08-12.</p>
+<p><strong>NOTE:</strong> Written manually by Claude Code — <code>claude</code> CLI OAuth still expired. No Veer-QA pass.</p>
+<div class="foot">Generated from the brain · veer-memory · Phoenix AZ &nbsp;·&nbsp; generated 2026-08-28 — if this date looks old, hard-refresh (Ctrl/Cmd+Shift+R) or add ?v=2026-08-28 to the URL</div>
+</div></body></html>
