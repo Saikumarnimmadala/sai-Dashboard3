@@ -1,5 +1,5 @@
 # Veer Health Memory — 2026-08-28
-Generated: 2026-08-28 7:44 AM (America/Phoenix)
+Generated: 2026-08-28 7:45 AM (America/Phoenix)
 Sources: Garmin Connect API + O2Ring PDF + Omada scale
 
 ⚠️ LIVE DATA IS AUTHORITATIVE. Ignore any "Current Status" in the static section — that data is stale.
@@ -19,17 +19,17 @@ _Any source older than "today" = do not present as current; state its actual dat
 | | |
 |---|---|
 | **Weight** | 174.3 lb (−42.1 lb from 216.4 peak) |
-| **Training Readiness** | 68 / 100 (MODERATE) — MOD_HRV_LOW |
-| **Body Battery** | 17 → 70 (end: 70) |
+| **Training Readiness** | 77 / 100 (HIGH) — HIGH_HRV_LOW |
+| **Body Battery** | 17 → 69 (end: 69) |
 | **Recovery Time** | 8.8 hrs |
-| **Acute Load / Chronic / ACWR** | 175 / 396 / 0.40 (LOW) |
-| **HRV Status** | **LOW** — last night: 58 ms | 7-day: 50 ms | baseline: 63–89 ms (LOW<58) |
-| **Sleep** | 8.1h / score 80 — Deep:79m REM:54m |
-| **Resting HR** | 55 bpm (7-day avg: 54 bpm) |
-| **SpO2** | Garmin overnight avg: 96.0% low: 88% | O2Ring: 8.4 score low: 85% |
-| **Stress** | avg 20 / peak 69 |
+| **Acute Load / Chronic / ACWR** | 147 / 375 / 0.30 (LOW) |
+| **HRV Status** | **LOW** — last night: 59 ms | 7-day: 51 ms | baseline: 63–89 ms (LOW<57) |
+| **Sleep** | 6.9h / score 86 — Deep:93m REM:94m |
+| **Resting HR** | 54 bpm (7-day avg: 54 bpm) |
+| **SpO2** | Garmin overnight avg: 95.0% low: 85% | O2Ring: 8.4 score low: 85% |
+| **Stress** | avg 19 / peak 78 |
 | **Last Session** | Phoenix Walking on 2026-08-27 | Load=1.78692626953125 | RECOVERY |
-| **Weekly** | 7 sessions | Mod:70m + Vig:62m |
+| **Weekly** | 8 sessions | Mod:73m + Vig:62m |
 
 ---
 
@@ -41,15 +41,15 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### READINESS & RECOVERY
 | Metric | Value |
 |--------|-------|
-| Training Readiness | **68** / 100 (MODERATE) |
-| Readiness Feedback | MOD_HRV_LOW |
-| Body Battery | 17 → 70 (end: 70) +53 / -0 |
+| Training Readiness | **77** / 100 (HIGH) |
+| Readiness Feedback | HIGH_HRV_LOW |
+| Body Battery | 17 → 69 (end: 69) +52 / -1 |
 | Body Battery Feedback | not available |
 | Recovery Time | 8.8 hrs (NO_CHANGE_SLEEP) |
-| Acute Load | 175 |
-| Chronic Load | 396 |
-| Load Ratio (ACWR) | 0.40 (LOW) |
-| Load Focus — Low Aerobic | 898 (target 233–634, ⚠ out of range) |
+| Acute Load | 147 |
+| Chronic Load | 375 |
+| Load Ratio (ACWR) | 0.30 (LOW) |
+| Load Focus — Low Aerobic | 896 (target 233–634, ⚠ out of range) |
 | Load Focus — High Aerobic | 483 (target 501–901, ⚠ out of range) |
 | Load Focus — Anaerobic | 97 (target 133–400, ⚠ out of range) |
 | Load Balance Phrase | AEROBIC_HIGH_SHORTAGE |
@@ -59,11 +59,11 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Metric | Value |
 |--------|-------|
 | HRV Status | **LOW** |
-| HRV Feedback | HRV_LOW_7 |
-| HRV Last Night Avg | **58 ms** |
-| HRV Highest 5-min | 96 ms |
-| HRV 7-day Avg | 50 ms |
-| HRV Balanced Baseline | 63–89 ms (LOW<58 ms) |
+| HRV Feedback | HRV_LOW_6 |
+| HRV Last Night Avg | **59 ms** |
+| HRV Highest 5-min | 83 ms |
+| HRV 7-day Avg | 51 ms |
+| HRV Balanced Baseline | 63–89 ms (LOW<57 ms) |
 | HRV Streak (consec. UNBALANCED) | 0 days |
 | HRV OVERRIDE (rule D, latched) | 🟢 clear |
 | HRV Factor % (readiness) | not available% (not available) |
@@ -71,38 +71,38 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### HEART RATE
 | Metric | Value |
 |--------|-------|
-| Resting HR | 55 bpm |
+| Resting HR | 54 bpm |
 | RHR 7-day Avg | 54 bpm |
 | Overnight / Day Low HR | 51 bpm |
-| Max HR (today) | 76 bpm |
-| Stress Avg | 20 |
-| Stress Peak | 69 |
+| Max HR (today) | 81 bpm |
+| Stress Avg | 19 |
+| Stress Peak | 78 |
 
 ### SLEEP
 | Metric | Value |
 |--------|-------|
-| Sleep Score | **80** / 100 |
+| Sleep Score | **86** / 100 |
 | Sleep Feedback | POSITIVE_LONG_AND_CONTINUOUS |
-| Total Sleep | **8.1 hrs** |
+| Total Sleep | **6.9 hrs** |
 | Sleep Need Tonight | 7.2 hrs |
-| Sleep Window | 10:41 PM → 6:50 AM |
-| Deep Sleep | 79 min |
-| REM Sleep | 54 min |
-| Light Sleep | 355 min |
-| Awake Time | 1 min |
+| Sleep Window | 12:04 AM → 6:59 AM |
+| Deep Sleep | 93 min |
+| REM Sleep | 94 min |
+| Light Sleep | 228 min |
+| Awake Time | not available min |
 | Awake Count | 0 |
 | Restlessness | EXCELLENT |
-| Sleep Stress | 23 |
-| Avg Respiration (sleep) | 16 brpm |
-| Lowest Respiration | 8 brpm |
-| Highest Respiration | 24 brpm |
-| Breathing Disruption | LOW |
+| Sleep Stress | 20 |
+| Avg Respiration (sleep) | 15 brpm |
+| Lowest Respiration | 7 brpm |
+| Highest Respiration | 20 brpm |
+| Breathing Disruption | NONE |
 
 ### SpO2 / PULSE OX
 | Metric | Value |
 |--------|-------|
-| Avg Overnight SpO2 | 96% |
-| Lowest Overnight SpO2 | **88%** |
+| Avg Overnight SpO2 | 95% |
+| Lowest Overnight SpO2 | **85%** |
 | O2Ring Score | 8.4 |
 | O2Ring Lowest SpO2 | 85% |
 | O2Ring Avg SpO2 | 94% |
@@ -118,7 +118,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 | Fitness Age | not available |
 | Intensity Minutes — Moderate (today) | 0 min |
 | Intensity Minutes — Vigorous (today) | 0 min |
-| Steps Today | 91 |
+| Steps Today | 63 |
 | Active Calories Today | 1 kcal |
 | Floors Climbed Today | 0 |
 
@@ -150,11 +150,11 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 ### WEEKLY SUMMARY (last 7 days)
 | Metric | Value |
 |--------|-------|
-| Sessions This Week | 7 |
-| Intensity — Moderate | 70 min |
+| Sessions This Week | 8 |
+| Intensity — Moderate | 73 min |
 | Intensity — Vigorous | 62 min |
-| Total Intensity (mod+vig) | 132 min |
-| Active Calories | 3312 kcal |
+| Total Intensity (mod+vig) | 135 min |
+| Active Calories | 3495 kcal |
 
 ### Weight Trend (last 14 entries)
 - 2026-07-25: 174.3 lb
@@ -179,7 +179,7 @@ _(auto-fetched from Garmin Connect + O2Ring + Omada at 6:10am)_
 - 2026-08-13: peak 97
 - 2026-08-19: peak 66
 - 2026-08-27: peak 70
-- 2026-08-28: peak 70
+- 2026-08-28: peak 69
 
 ### O2Ring History (last 7 nights)
 | Night | Score | Lowest SpO2 | Avg SpO2 | Drops/hr |
@@ -1639,20 +1639,20 @@ with weeks of runway. Never spend a line of the brief on these.
 ---
 
 
-## PIPELINE HEALTHCHECK — 2026-08-27 08:17
+## PIPELINE HEALTHCHECK — 2026-08-28 07:45
 
-**8/11 checks passing**  🔴 **REGRESSION DETECTED — see failures below**
+**9/11 checks passing**  🔴 **REGRESSION DETECTED — see failures below**
 
 | Check | Status | Detail |
 |-------|--------|--------|
 | Today's Garmin data present | ✅ | all key fields present |
 | veer-data.json today block populated | ✅ | readiness fields filled |
-| Brain rebuilt today | ✅ | Generated 2026-08-27 |
-| Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-08-27 |
+| Brain rebuilt today | ✅ | Generated 2026-08-28 |
+| Brain live on GitHub (dated URL) | ✅ | live, Generated 2026-08-28 |
 | Recovery Time units sane | ✅ | 8.8 hrs |
 | HRV override logic live | ✅ | streak=0 override=clear |
 | Brief matches today's data | 🔴 FAIL | no brief generated today |
-| Sleep window plausible | ✅ | bedtime 10:41 PM |
-| Weight fresh (<=2 days) | 🔴 FAIL | latest 174.3 lb on 2026-08-12 (15d old) |
-| Scheduled tasks healthy | 🔴 FAIL | stale: ['GarminDailySync=2026-08-20'] |
+| Sleep window plausible | ✅ | bedtime 12:04 AM |
+| Weight fresh (<=2 days) | 🔴 FAIL | latest 174.3 lb on 2026-08-12 (16d old) |
+| Scheduled tasks healthy | ✅ | all ran within 24h |
 | No hardcoded secrets in runners | ✅ | clean |
