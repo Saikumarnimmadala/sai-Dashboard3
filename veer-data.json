@@ -1,84 +1,77 @@
 {
-  "generated": "2026-08-28T13:03:57.457082-07:00",
+  "generated": "2026-11-18T11:49:01.146317-07:00",
   "today": {
-    "training_readiness": 77,
+    "training_readiness": 90,
     "readiness_level": "HIGH",
-    "readiness_feedback": "HIGH_HRV_LOW",
-    "body_battery_start": 17,
-    "body_battery_peak": 69,
-    "body_battery_end": 69,
-    "bb_charged": 52,
-    "bb_drained": 1,
-    "bb_feedback": null,
-    "recovery_time_hours": 8.8,
+    "readiness_feedback": "HIGH_RT_HIGHEST_SS_AVAILABLE_ACWR_POS",
+    "body_battery_start": 34,
+    "body_battery_peak": 89,
+    "body_battery_end": 89,
+    "bb_charged": 55,
+    "bb_drained": 0,
+    "bb_feedback": "MORNING_RECOVERING_AND_INACTIVE",
+    "recovery_time_hours": 0.0,
     "recovery_time_phrase": "NO_CHANGE_SLEEP",
-    "acute_load": 147,
-    "chronic_load": 375,
-    "acwr_ratio": 0.3,
+    "acute_load": 12,
+    "chronic_load": 176,
+    "acwr_ratio": 0.0,
     "acwr_status": "LOW",
-    "load_low_aerobic": 895.81714,
-    "load_high_aerobic": 482.91586,
-    "load_anaerobic": 97.357925,
-    "load_lo_aero_min": 233,
-    "load_lo_aero_max": 634,
-    "load_hi_aero_min": 501,
-    "load_hi_aero_max": 901,
-    "load_ana_min": 133,
-    "load_ana_max": 400,
-    "load_focus_phrase": "AEROBIC_HIGH_SHORTAGE",
-    "training_status_phrase": "STRAINED_3",
-    "hrv_status": "LOW",
+    "load_low_aerobic": 53.975677,
+    "load_high_aerobic": 61.74031,
+    "load_anaerobic": 46.201538,
+    "load_lo_aero_min": 136,
+    "load_lo_aero_max": 347,
+    "load_hi_aero_min": 250,
+    "load_hi_aero_max": 461,
+    "load_ana_min": 0,
+    "load_ana_max": 211,
+    "load_focus_phrase": "AEROBIC_LOW_SHORTAGE",
+    "training_status_phrase": "DETRAINING",
+    "hrv_status": "BALANCED",
     "hrv_last_night": 59,
-    "hrv_5min_high": 83,
-    "hrv_7day_avg": 51,
-    "hrv_feedback": "HRV_LOW_6",
-    "hrv_baseline_low": 63,
-    "hrv_baseline_high": 89,
-    "hrv_low_upper": 57,
+    "hrv_5min_high": 93,
+    "hrv_7day_avg": 52,
+    "hrv_feedback": "HRV_BALANCED_8",
+    "hrv_baseline_low": 51,
+    "hrv_baseline_high": 79,
+    "hrv_low_upper": 46,
     "hrv_streak": 0,
     "hrv_override_active": false,
-    "rhr": 54,
-    "rhr_7day_avg": 54,
-    "hr_min_day": 51,
-    "max_hr_day": 81,
-    "stress_avg": 19,
-    "stress_peak": 78,
-    "sleep_h": 6.9,
-    "sleep_score": 86,
-    "sleep_feedback": "POSITIVE_LONG_AND_CONTINUOUS",
-    "sleep_start": "12:04 AM",
-    "sleep_end": "6:59 AM",
+    "rhr": 52,
+    "rhr_7day_avg": 56,
+    "hr_min_day": 48,
+    "max_hr_day": 82,
+    "stress_avg": 16,
+    "stress_peak": 68,
+    "sleep_h": 6.5,
+    "sleep_score": 81,
+    "sleep_feedback": "POSITIVE_CONTINUOUS",
+    "sleep_start": "11:22 PM",
+    "sleep_end": "5:55 AM",
     "sleep_need_min": 430,
-    "deep_sleep_min": 93,
-    "rem_sleep_min": 94,
-    "light_sleep_min": 228,
-    "awake_min": null,
+    "deep_sleep_min": 89,
+    "rem_sleep_min": 83,
+    "light_sleep_min": 220,
+    "awake_min": 1,
     "awake_count": 0,
     "restlessness_label": "EXCELLENT",
     "sleep_stress_avg": 20.0,
-    "avg_spo2": 95.0,
-    "lowest_spo2": 85,
-    "avg_breathing_rate": 15.0,
-    "lowest_breathing_rate": 7.0,
-    "highest_breathing_rate": 20.0,
+    "avg_spo2": 94.0,
+    "lowest_spo2": 73,
+    "avg_breathing_rate": 17.0,
+    "lowest_breathing_rate": 9.0,
+    "highest_breathing_rate": 22.0,
     "breathing_disruption": "NONE",
-    "vo2max": {
-      "calendarDate": "2026-08-05",
-      "vo2MaxPreciseValue": 43.1,
-      "vo2MaxValue": 43.0,
-      "fitnessAge": null,
-      "fitnessAgeDescription": null,
-      "maxMetCategory": 0
-    },
-    "steps": 63,
-    "active_calories": 1.0,
+    "vo2max": null,
+    "steps": 144,
+    "active_calories": 0.0,
     "floors_ascended": 0.0,
     "intensity_moderate": 0,
     "intensity_vigorous": 0,
-    "weekly_sessions": 8,
-    "weekly_intensity_mod": 73,
-    "weekly_intensity_vig": 62,
-    "weekly_active_calories": 3495,
+    "weekly_sessions": 0,
+    "weekly_intensity_mod": 0,
+    "weekly_intensity_vig": 0,
+    "weekly_active_calories": 0,
     "o2_score": 8.4,
     "o2_lowest": 85,
     "o2_avg": 94,
@@ -265,6 +258,38 @@
     {
       "date": "2026-08-12",
       "lb": 174.3
+    },
+    {
+      "date": "2026-11-03",
+      "lb": 179.2
+    },
+    {
+      "date": "2026-11-04",
+      "lb": 179.2
+    },
+    {
+      "date": "2026-11-06",
+      "lb": 179.4
+    },
+    {
+      "date": "2026-11-07",
+      "lb": 179.0
+    },
+    {
+      "date": "2026-11-08",
+      "lb": 179.0
+    },
+    {
+      "date": "2026-11-09",
+      "lb": 180.3
+    },
+    {
+      "date": "2026-11-17",
+      "lb": 180.7
+    },
+    {
+      "date": "2026-11-18",
+      "lb": 180.7
     }
   ],
   "body_battery": [
@@ -443,6 +468,74 @@
     {
       "date": "2026-08-28",
       "v": 69
+    },
+    {
+      "date": "2026-09-22",
+      "v": 76
+    },
+    {
+      "date": "2026-10-02",
+      "v": 76
+    },
+    {
+      "date": "2026-10-03",
+      "v": 96
+    },
+    {
+      "date": "2026-10-04",
+      "v": 96
+    },
+    {
+      "date": "2026-10-06",
+      "v": 94
+    },
+    {
+      "date": "2026-10-07",
+      "v": 94
+    },
+    {
+      "date": "2026-10-12",
+      "v": 96
+    },
+    {
+      "date": "2026-10-13",
+      "v": 96
+    },
+    {
+      "date": "2026-10-14",
+      "v": 74
+    },
+    {
+      "date": "2026-10-15",
+      "v": 56
+    },
+    {
+      "date": "2026-10-22",
+      "v": 100
+    },
+    {
+      "date": "2026-10-26",
+      "v": 57
+    },
+    {
+      "date": "2026-10-29",
+      "v": 87
+    },
+    {
+      "date": "2026-10-30",
+      "v": 81
+    },
+    {
+      "date": "2026-11-06",
+      "v": 87
+    },
+    {
+      "date": "2026-11-17",
+      "v": 78
+    },
+    {
+      "date": "2026-11-18",
+      "v": 89
     }
   ],
   "hrv": [],
@@ -604,59 +697,5 @@
     }
   },
   "coaches_generated": "2026-07-04T07:47:22.420820-07:00",
-  "last_session": {
-    "date": "2026-08-28",
-    "start_time": "2026-08-28 10:49",
-    "name": "Treadmill Running",
-    "type": "treadmill_running",
-    "duration_s": 2251.162109375,
-    "distance_m": 1795.489990234375,
-    "avg_hr": 122.0,
-    "max_hr": 168.0,
-    "calories": 269.0,
-    "aerobic_te": 2.799999952316284,
-    "aerobic_te_msg": "MAINTAINING_AEROBIC_FITNESS_1",
-    "te_label": "AEROBIC_BASE",
-    "anaerobic_te": 0.20000000298023224,
-    "anaerobic_te_msg": "NO_ANAEROBIC_BENEFIT_0",
-    "exercise_load": 64.12413024902344,
-    "avg_power": 63.0,
-    "max_power": 257.0,
-    "sweat_ml": 178.0,
-    "bb_delta": -5,
-    "hr_z1_s": 328.998,
-    "hr_z2_s": 133.998,
-    "hr_z3_s": 1008.998,
-    "hr_z4_s": 128.988,
-    "hr_z5_s": 0.0
-  },
-  "recent_sessions": [
-    {
-      "date": "2026-08-22",
-      "day": "Sat",
-      "type": "Lower Body",
-      "name": "Lower — 2026-08-22 2026-08-22 09:12",
-      "duration": "1h 33m",
-      "avg_hr": "87.0",
-      "load": "6.3900146484375"
-    },
-    {
-      "date": "2026-08-22",
-      "day": "Sat",
-      "type": "Run/Treadmill",
-      "name": "Treadmill Running — 2026-08-22 2026-08-22 10:45",
-      "duration": "1h 19m",
-      "avg_hr": "100.0",
-      "load": "75.5576171875"
-    },
-    {
-      "date": "2026-08-26",
-      "day": "Wed",
-      "type": "Hike",
-      "name": "Phoenix Hiking — 2026-08-26 2026-08-26 17:14",
-      "duration": "2h 9m",
-      "avg_hr": "127.0",
-      "load": "68.88336181640625"
-    }
-  ]
+  "recent_sessions": []
 }
